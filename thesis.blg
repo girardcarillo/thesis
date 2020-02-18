@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: introduction/introduction.aux
+A level-1 auxiliary file: neutrinophysics/neutrinophysics.aux
+A level-1 auxiliary file: 0nubbexperiments/0nubbexperiments.aux
+A level-1 auxiliary file: SNdemonstrator/SNdemonstrator.aux
+A level-1 auxiliary file: AnalysisTools/AnalysisTools.aux
+A level-1 auxiliary file: timedifference/timedifference.aux
+A level-1 auxiliary file: CoSource/CoSource.aux
+A level-1 auxiliary file: efficiency/efficiency.aux
+A level-1 auxiliary file: commissioning/commissioning.aux
+A level-1 auxiliary file: theory/theory.aux
+A level-1 auxiliary file: conclusion/conclusion.aux
+The style file: unsrt.bst
+Database file #1: bibliography_thesis.bib
+I was expecting an "="---line 91 of file bibliography_thesis.bib
+ : @Comment 
+ :          author        = {},
+I'm skipping whatever remains of this entry
+You've used 6 entries,
+            1791 wiz_defined-function locations,
+            498 strings with 4805 characters,
+and the built_in function-call counts, 1074 in all, are:
+= -- 96
+> -- 24
+< -- 0
++ -- 12
+- -- 6
+* -- 66
+:= -- 187
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 52
+empty$ -- 117
+format.name$ -- 6
+if$ -- 231
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 6
+pop$ -- 6
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 72
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 10
+width$ -- 7
+write$ -- 68
+(There was 1 error message)

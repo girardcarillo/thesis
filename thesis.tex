@@ -1,0 +1,65 @@
+\documentclass[11pt, oneside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{footnote}
+\usepackage{enumerate}
+\usepackage{eucal}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{xspace}
+
+\hypersetup{
+    colorlinks,
+    citecolor=red,
+    filecolor=red,
+    linkcolor=red,
+    urlcolor=red
+}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\newcommand{\zeronu}{0\nu\beta\beta}
+\newcommand{\twonu}{2\nu\beta\beta}
+\newcommand{\Tl}{$^{208}$Tl}
+\newcommand{\Co}{$^{60}$Co}
+\newcommand{\Pb}{$^{208}$Pb}
+\newcommand{\Bi}{$^{214}$Bi}
+\newcommand{\Qbb}{Q_{\beta\beta}}
+\newcommand{\Bckunit}{\text{counts.keV}^{-1}\text{.kg}^{-1}\text{.y}^{-1}}
+\newcommand{\Tbeta}{T_{1/2}^{0\nu}}
+\newcommand{\mbb}{m_{\beta\beta}}
+
+
+
+\title{Searching for the $\zeronu$ decay with the SuperNEMO demonstrator}
+
+\begin{document}
+\maketitle
+\pagebreak
+\tableofcontents
+
+%% \include{introduction/introduction}
+%% \include{neutrinophysics/neutrinophysics}
+%% \include{0nubbexperiments/0nubbexperiments}
+%% \include{SNdemonstrator/SNdemonstrator}
+%% \include{AnalysisTools/AnalysisTools}
+%% \include{timedifference/timedifference}
+%% \include{CoSource/CoSource}
+%% \include{efficiency/efficiency}
+\include{commissioning/commissioning}
+%% \include{theory/theory}
+%% \include{conclusion/conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography_thesis}
+
+\end{document}

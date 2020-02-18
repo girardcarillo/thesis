@@ -1,0 +1,37 @@
+\chapter{Analysis tools}
+
+
+\subsection{Internal probability}
+\label{subsec:internal_prob}
+Internal probability is a mathematical tool used to quantify the probability that two particles (in this study only electrons will be considered) were emitted simultaneously and at the same location in the source foils.
+The internal probability is defined from the associated internal $\chi^{2}$
+\begin{equation}
+  \chi^{2}_{int}=\frac{((t^{exp}_{1} - \frac{L_{1}}{\beta_{1} c}) - (t^{exp}_{2} - \frac{L_{2}}{\beta_{2} c}))^{2}}{\sigma_{tot}^{2}}\,\text{,}
+  \label{eq:int_chi2}
+\end{equation}
+where c is the speed of light, $t^{exp}_{i}$ is the time measured in calorimeters for the particle $i$, $L_{i}$ is the reconstructed track length, and $\beta_{i}$ is defined as $\sqrt{E_{i}(E_{i} + 2m_{e})} / (E_{i} + m_{e})$, $E_{i}$ being the energy of particle $i$ and $m_{e}$ the electron mass.\\
+The denominator in eq.~\ref{eq:int_chi2} is the total uncertainty defined as
+\begin{equation}
+  \sigma_{tot}=\sqrt{\sigma_{t}^{2}+\sigma_{\left(\frac{L}{\beta c}\right)}^{2}+\sigma_{l}^{2}}\,\text{,}
+  \label{eq:sigma_tot}
+\end{equation}
+where the first term $\sigma^{2}_{t}=\sum_{i=1,2}\sigma^{2}_{t_{i}}$ is the uncertainty the time measurement in the calorimeters with $\sigma_{t}$ defined as
+\begin{equation}
+  \sigma_{t}=\sqrt{\dfrac{\tau_{\text{SC}}^{2}+\left(\dfrac{\text{FWHM}(\text{TTS})}{2\sqrt{2\ln{2}}}\right)^{2}}{\text{N}_\text{PE}}}\,\text{.}
+  \label{eq:sigma_t}
+\end{equation}
+The second term $\sigma^{2}_{\left(\frac{L}{\beta c}\right)}=\sum_{i=1,2}\sigma^{2}_{\left(\frac{L_{i}}{\beta_{i}c}\right)}$ is the uncertainty depending on the energy of electron $i$ as
+\begin{equation}
+\sigma_{\left(\frac{L}{\beta c}\right)} = \biggl\lvert \dfrac{\partial t_{th}}{\partial E}  \biggr\rvert \Delta E\,\text{.}
+  \label{eq:sigma_L}
+\end{equation}
+The third term $\sigma_{L}$ represents the typical uncertainty due to track reconstructions of particles\footnote{This value is set to $\sigma_{L}=0.03$ ns in a first approximation (see chapter -ref-).}.\\
+Then the internal probability evaluate the difference between experimentally measured time and theoretical times.
+
+
+
+
+\section{Simulations}
+\subsection{Modifications of simulation software}
+\subsection{Internal background simulations}
+\subsection{$\zeronu$ simulations}
