@@ -38,26 +38,39 @@
 \newcommand{\Tbeta}{T_{1/2}^{0\nu}}
 \newcommand{\mbb}{m_{\beta\beta}}
 
+\newcommand\myshade{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{YellowOrange}
+\colorlet{myurlcolor}{Aquamarine}
+\usepackage{hyperref} %backref
+\hypersetup{
+  linkcolor  = mylinkcolor!\myshade!black,
+  citecolor  = mycitecolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+  colorlinks = true,
+}
 
 
 \title{Searching for the $\zeronu$ decay with the SuperNEMO demonstrator}
+
+\includeonly{commissioning/commissioning}
 
 \begin{document}
 \maketitle
 \pagebreak
 \tableofcontents
 
-%% \include{introduction/introduction}
-%% \include{neutrinophysics/neutrinophysics}
-%% \include{0nubbexperiments/0nubbexperiments}
-%% \include{SNdemonstrator/SNdemonstrator}
-%% \include{AnalysisTools/AnalysisTools}
-%% \include{timedifference/timedifference}
-%% \include{CoSource/CoSource}
-%% \include{efficiency/efficiency}
+\include{introduction/introduction}
+\include{neutrinophysics/neutrinophysics}
+\include{0nubbexperiments/0nubbexperiments}
+\include{SNdemonstrator/SNdemonstrator}
+\include{AnalysisTools/AnalysisTools}
+\include{timedifference/timedifference}
+\include{CoSource/CoSource}
+\include{efficiency/efficiency}
 \include{commissioning/commissioning}
-%% \include{theory/theory}
-%% \include{conclusion/conclusion}
+\include{theory/theory}
+\include{conclusion/conclusion}
 
 \bibliographystyle{unsrt}
 \bibliography{bibliography_thesis}
