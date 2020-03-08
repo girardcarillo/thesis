@@ -1,4 +1,4 @@
-\documentclass[11pt, oneside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[11pt, twoside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
 \usepackage{graphicx}
@@ -15,6 +15,11 @@
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{xspace}
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\usepackage[margin=2cm]{caption}
+
+\captionsetup[figure]{font=footnotesize}
 
 \hypersetup{
     colorlinks,
@@ -50,14 +55,22 @@
   colorlinks = true,
 }
 
+\newenvironment{itemize*}%
+  {\begin{itemize}%
+    \setlength{\itemsep}{0pt}%
+    %\setlength{\parskip}{0pt}
+  }%
+  {\end{itemize}}
 
-\title{Searching for the $\zeronu$ decay with the SuperNEMO demonstrator}
+
+%\title{}
 
 \includeonly{commissioning/commissioning}
 
 \begin{document}
-\maketitle
-\pagebreak
+%\maketitle
+\includepdf{1couverture}
+\cleardoublepage
 \tableofcontents
 
 \include{introduction/introduction}

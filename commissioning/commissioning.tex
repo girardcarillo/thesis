@@ -2,127 +2,208 @@
 \label{sec:commissioning}
 
 By the end of $2019$, the commissioning of the SuperNEMO demonstrator has begun and first calorimeter data were taken.\\
-To clarify, we give some common terms used in the detector assembly.
-The calorimeter of SuperNEMO is segmented in $712$ optical modules (OM), each composed by a coupling between a photomultiplier tube (PMT) and a polystyrene scintillator (see sec.~\ref{sec:calorimeter} for more details).
+The calorimeter of SuperNEMO is segmented in $712$ optical modules (OM), each composed by a coupling between a photomultiplier tube (PMT) and a polystyrene scintillator bloc (see sec.~\ref{sec:calorimeter} for more details).
 The divider of a PMT is connected to $2$ cables, one providing the high voltage (HV), the other one, called signal cable, is a coaxial cable collecting and transporting the charge provided by the PMT.\\
-By the summer $2020$, the SuperNEMO demonstrator will be encapsulated in an anti radon tent (\textcolor{red}{abbrev?}).
-The so called \emph{patch panel} (PP) will insure passage of cables from inside, to outside the anti radon tent, therefore doubling the amount of cables needed for the calorimeter.
-We commonly talk about \emph{internal} cables (from detector to patch panel) and \emph{external} cables (from patch panel to electronics).
-Consequently, regarding only the calorimeter part, 2848 cables were cut, assembled, connector-mounted, transported and installed at Modane.
-Then checking cables condition is mandatory to control and eventually fix the cables.
+By the summer $2020$, the SuperNEMO demonstrator will be encapsulated in an anti radon tent.
+The so called \emph{patch panel} will insure passage of cables from the inside, to the outside of the anti radon tent, therefore doubling the amount of cables needed for the calorimeter.
+We refer to the cables running from detector to patch panel as \emph{internal} cables, and the cables from patch panel to the electronic boards as \emph{external} cables.
+Consequently, regarding only the calorimeter part, 2848 cables were cut, assembled, connector-mounted, transported and installed at LSM.
+Then the check of every cable condition is mandatory to control and eventually fix them.
 
-\section{Reflectometry tests}
+\section{Reflectometry analysis}
 \label{sec:reflecto}
 
-\subsection{Principle and goal}
+\subsection{Goal of the reflectometry analysis}
 
-Taking into account the final demonstrator design, each coaxial cable length were determined, then cables were cut and labelled in LAL, Orsay.
-To check if the cables were cut at right length and if no inversions were made at Modane when connecting them, we want to verify each cable length after installation.
-To do so, a channel at electronic boards send a pulse, called \emph{primary} pulse, in the connected cable.
-The signal will travel from electronics to the PMT through this coaxial cable.
-As the PMT is not alimented (the HV is turned off during this data taking), the impedance at the PMT is infinite, and the signal reflects at the PMT divider.
-Then the signal travels back from the PMT to the channel at electronic boards, were it will be recorded by the acquisition.
-We called this recorded back pulse \emph{secondary} pulse.
-Analysing the shape and arrival time of those secondary pulses will allow us to check coaxial cable conditions and control their lengths.
+Taking into account the final demonstrator design, each coaxial length was determined, cables were cut and labelled in LAL, Orsay.
+All external coaxial cables were designed to be $7$ meters-long -- the distance between electronic boards and patch panel being the same for all channels at electronic boards -- and internal cable lengths have been adapted to fit the distance from the patch panel to each optical module.
+Then, cutting and labelling all cables lasted several weeks.
+After all cables were transported and installed at LSM, we had to check each coaxial cable condition, for several reasons:
+\begin{itemize*}
+\item check if no cable was damaged during the transport and the installation;
+\item control if no swap between cables has been made during cable labelling or calorimeter cabling,
+\item check if the coaxial cable was cut at the right length,
+\item more importantly estimate the signal time delay due to the cable lengths: knowing that the velocity of electrons in the coaxial cables has a known constant value, the longer is the cable, the more the signal takes time to travel from the PMT to the electronic channel.
+  Therefore, each coaxial cable length has to be characterised, especially if we want to do time coincidences between two signals in two different channels.
+\end{itemize*}
+To do so, a pulse, called \emph{primary} pulse, is generated at the electronic board readout.
+The signal will travel all along the coaxial cable, from the electronic board to the PMT divider.
+Whether the cable is correctly connected to the PMT or not, the signal reflects at the other end.
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto.pdf}
+         \captionsetup{justification=centering}
+         \caption{Normal reflection at PMT divider.
+         \label{subfig:reflecto_normal}}
 
-\subsection{Data taking at LSM}
-\textcolor{red}{Explain the pulse sending principle with Jihane's documentation}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_1.pdf}
+         \captionsetup{justification=centering}
+         \caption{Cable not connected at PMT.
+         \label{subfig:reflecto_pmt}}
+
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_2.pdf}
+         \captionsetup{justification=centering}
+         \caption{Cable not connected at patch panel.
+         \label{subfig:reflecto_pp}}
+
+     \end{subfigure}
+     \caption{A representation of pulses sent in a cable for the reflectometry analysis is given.
+       The electronic boards are symbolised by the black chip, and the patch panel by the red vertical bar.
+       Three scenario where a primary pulse is sent in one cable (represented in grey), are represented.
+     (a) The cable is well connected at the patch panel and at the PMT. The signal reflects at the PMT divider.
+     (b) The cable is not connected at PMT and the signal is reflected at the end of the cable.
+     (c) The cable is not connected at patch panel and the signal is reflected at the end of the external cable.}
+        \label{fig:three graphs}
+\end{figure}
+Then the signal travels back from the PMT to the electronic board channel, where it is recorded by the acquisition.
+We called this recorded reflected pulse \emph{secondary} pulse.
+An example of the total recorded signal is displayed in Fig.~\ref{fig:CFD}.
+In order to accumulate enough statistics, we send thousands of pulses in each coaxial cable.
+The analyses of the shape and of the arrival time of those secondary pulses for each channel allow us to check the coaxial cable conditions and to control their lengths.
 
 \subsection{Pulse timing: controlling cable lengths}
 \label{subsec:timing}
 
-After all cables were transported to Modane, to determine precisely each coaxial cable length is important for three reasons:
-\begin{itemize}
-\item to control if no inversions were made during calorimeter cabling: all external coaxial cable is $7$ meters-long (the distance between electronics and patch panel being the same for all channels), but internal cables length have been adapted to fit the distance from the patch panel to each optical module;
-\item to check if cables were cut at right length;
-\item to estimate the delay of signal due to cable lengths: the velocity of electrons in cables has a regular value that delays the signal comming from the PMT. This time delay depends on the cable length and has to be characterised for each electronic channel.
-\end{itemize}
-In order to do this, we determine the difference between primary pulse and secondary pulse times.
-Knowing the velocity of electrons in coaxial cables, we can deduce the corresponding cable length.
-This measure is repeated for each PMT, allowing us to characterise all coaxial cables.\\
-The propagation velocity of electrons in coaxial cables, $v_{p}$, is a parameter given as a fraction of the light speed in vaccuum, $c$, as
-\begin{equation*}
-  v_{p}=\frac{1}{\sqrt{\epsilon}}\,\text{,}
-\end{equation*}
-with $\epsilon$ the dielectric constant of the material.
-For the coaxial cables chosen for the demonstrator, this velocity is $0.69c$.
-
-We define the time of a pulse with a Constant Fraction Discriminator (CFD) parameterised by the fraction $f$, as represented in fig.~\ref{fig:CFD}.
-\textcolor{red}{expliquer CFD dans texte}
-We studied the influence of this fraction on the time measurement precision (see Sec.~\ref{subsec:CFD}).
-In the following, we use $\text{f} = 40\%$.
-The cable length $\mathcal{L}$ is therefore defined as $\mathcal{L}= 0.5\,\mathcal{T}\,v_{p}$, with $\mathcal{T}$ the round trip time from electronics to PMT divider, defined as
+The first step of this analysis is to experimentally determine the length $l_{j}^{m}$ for all signal cables $j$ installed on the demonstrator.
+This length is defined as
 \begin{equation}
-\mathcal{T} = \braket{\text{t}_{\text{secondary pulse}}-\text{t}_{\text{primary pulse}}}_{\text{p}} \, \text{,}
+  l_{j}^{m}= 0.5\,t_{j}\,v_{p}\, ,
 \end{equation}
-$\braket{}_{\text{p}}$ being the average over all pulses sent in one cable, and $t_{i}$ the time of pulse $i$.
-We repeat this operation for all electronic channels so all cables are controlled and characterised.
-A study was also performed to experimentally confirm electron celerity in the used coaxial cables (see Sec.~\ref{subsec:velocity}).
+where $t_{j}$ stands as the time made by the electrons to do a round trip between one electronic channel and one PMT, and $v_{p}$ is the velocity of electrons in the coaxial cables, which can be expressed as a fraction of light speed in vacuum, $c$.
+The time difference $t_{j}$ between the primary pulse and the secondary pulse is written as
+\begin{equation}
+  t_{j} = \braket{t_{\text{secondary pulse}}-t_{\text{primary pulse}}}_{p} \, \text{,}
+\end{equation}
+$\braket{}_{p}$ being the average over all pulses sent in one single cable $j$.
+The velocity $v_{p}$ is given by the cable manufacturer as
+\begin{equation*}
+  v_{p}=\frac{c}{\sqrt{\epsilon_{r}}}\,\text{,}
+\end{equation*}
+with $\epsilon_{r}$ the relative dielectric constant of the material.
+Therefore, this celerity depends on the components.
+For the coaxial cables chosen in the demonstrator design, the data sheet of the cable gives ${v_{p}=0.69\,c}$.
+A study is performed to verify experimentally the value of $v_{p}$.
+Three cables of different lengths are measured with a precision of $1$ cm.
+A thousand of primary pulses are sent in each of the three cables, then the time for each secondary pulse is recorded.
+At the end, we have three independent measures of the velocity $v_{p}$ in the used coaxial cables.
+On Fig.~\ref{fig:celerity} is displayed the lengths $l_{j}$ as a function of the times $t_{j}$.
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm]{commissioning/fig_commissioning/celerity.eps}
+  \caption{Three different lengths $l_{j}$ of cables are measured.
+    Pulses are sent inside all cables.
+    The lengths $l_{j}$ are plotted as a function of the time differences $t_{j}$ between primary and secondary pulses.
+    The value of $v_{p}/c$ fitted from the data points is displayed.
+    This value of $0.697\pm 0.0011$ shows the compatibility with the one given by the constructor, of $0.69$ c.
+    \label{fig:celerity}}
+\end{figure}
+The fitted value of $v_{p}/c = 0.697\pm 0.0011$ is displayed and shows a compatibility up to $7\sigma$ with the data sheet.
 
-The principal aim of this study is to control if cables were correctly cut, following the initial design.
-Therefore, we define $l^{d}_{j}$ as the initial designed length for a given cable $j$, and $l^{m}_{j}$ the cable length measured by reflectometry for a cable $j$.
-Hense the length difference $\Delta L_{j}$ for a cable $j$ is defined as:
+As we want to determine the time interval $t_{j}$, we have to define what is the \emph{time} of a pulse.
+In this analysis, we use a technique called Constant Fraction Discriminator (CFD), providing an amplitude-independent information about time of a pulse.
+This algorithm aims at tracking a signal and defining its time arrival at a given fraction $f$ of its maximal amplitude.
+The two main advantages of this technique is that it provides an efficient rejection of the noise in the acquisition window, and gives a good resolution on the measured time.
+Nevertheless, the possible influence of the chosen value for the $f$ parameter on this time resolution has to be investigated.
+We perform such a study in Sec.~\ref{subsec:CFD}.
+We concluded that the highest precision on the time measurement arises for $f = 40\%$, and we adopt this value for the following analysis.
+A graphic representation of the CFD time search is given in fig.~\ref{fig:CFD}.
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{commissioning/fig_commissioning/CFD_example.pdf}
+
+  \caption{In black is shown an example of a total recorded waveform with the primary pulse (left) and secondary the pulse (right).
+    A representation of time computed with a Constant Fraction Discriminator (CFD) is given for the secondary pulse.
+    Its maximal amplitude (red dotted line) and its fraction for $\text{f}=40\%$ (green dotted line) are displayed.
+    The time $\text{T}_{\text{pulse}}$ (orange dotted line) represents the time of arrival of the secondary pulse computed with CFD, with the fraction $\text{f}=40\%$.
+    \label{fig:CFD}}
+\end{figure}
+
+As we want to measure the installed cable lengths $l^{m}_{j}$, and compare them to the initially designed ones, $l^{d}_{j}$, we define the length difference $\Delta L_{j}$ as:
 \begin{equation}
   \Delta L_{j} = l^{m}_{j}-l^{d}_{j}\, .
 \end{equation}
-On Fig.~\ref{fig:LengthDiff} is displayed the distribution $\Delta L$ for all the measured coaxial cables.
+On Fig.~\ref{fig:LengthDiff} is displayed the distribution $\Delta L$ for all the measured lengths.
 \begin{figure}
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/length_diff.eps}
-  \label{fig:LengthDiff}
-  \caption{The distribution of difference between measured length (by reflectometry) and expected length is displayed in orange plain line.
-  The gaussian fit (red dashed line) has a mean of $10.9 \pm 4.9$ cm.}
+
+  \caption{The distribution of difference between the measured lengths $l^{m}$ and the expected lengths $l^{d}$ is displayed in orange plain line.
+    The black dashed line represents the case where $l^{m}_{j} = l^{d}_{j} \;\forall j$.
+    The Gaussian fit (green dashed line) presents a mean of $10.9 \pm 0.3$ cm.
+    Some data points considered as outliers are beyond $3\sigma$.
+    \label{fig:LengthDiff}}
 \end{figure}
-In hypothetical perfect conditions, all the cables $j$ should have the designed length, in other words, $l^{d}_{j} = l^{m}_{j}$.
-Consequently the $\Delta L$ distribution should be a Dirac peak centered at $0$, as materialised by the black dashed line.
-However, in real conditions, the measured length can be different from the designed one, leading to a gaussian distribution plotted in orange plain line.
-A gaussian fit (green dashed line) performed on this $\Delta L$ distribution point out a $\sigma$ value of $4.9$ cm, revealing the precision of the cutting device.
-The mean value of the gaussian fit is also interesting, with $10.9$ cm, meaning that cables are longer than expected in average.
+In hypothetical perfect conditions, all the cables should fit the design length, in other words, $l^{d}_{j} = l^{m}_{j}$.
+Consequently the $\Delta L$ distribution should a peak at zero, as materialised by the black dashed line.
+However, in real conditions, the measured length can be different from the designed one, leading the $\Delta L$ distribution plotted in orange plain line.
+We conclude that the observed cable length $l^{m}$ differs from $l^{d}$ by $+10.9\pm 0.3$ cm, meaning that cables are longer than expected in average.
 This may reveal a bias coming from the device used to cut the cables.
-On Fig.~\ref{fig:CutBias} is plotted the length difference $\Delta L$ with the initial designed length $l^{d}$ (greened blue).
-A linear fit parameterised by $y = \alpha x + \beta$, is displayed in orange plain line.
+In fact, during cable cutting work, we noticed that the cutting device had a tendency to slip, probably leading to cables with extra lengths.
+We assumed the cutting device has a given probability to slip for one meter of cable.
+If this is the case, the probability for the device to give extra length should increase with the cable length.
+
+To verify this assumption, we plot on Fig.~\ref{fig:CutBias} the length difference $\Delta L$ as a function of the initial design length $l^{d}$ (cyan).
+From those data points, we compute a linear fit (orange plain line), parameterised as $y = \alpha x + \beta$, revealing that the cutting device presents two different biases.
 \begin{figure}
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/cut_biais.eps}
-  \label{fig:CutBias}
-  \caption{}
+
+  \caption{$\Delta L$ is plotted with $l^{d}$ (cyan), where $l^{d}$ is averaged for all the lengths designed to have the same value, being at the origin of vertical error bars.
+    In black dashed line is represented the case where $l^{m} = l^{m}$.
+    Data points are fitted by $\alpha x + \beta$, with $\alpha > 0$ and $\beta < 0$, revealing the two biases of the cutting device.
+    \label{fig:CutBias}}
 \end{figure}
-The $y$-intercept of this linear fit, reprensented by the parameter $\beta$, shows that the cutting devide systematically take away $-4.1$ cm of each cable.
-Besides, the slope of the linear fit, $\alpha$, reveals a slight bias of the cutting device, adding $1$ cm every meter of cable.
-This bias would have been a problem with a negative slope, in other words, if measured cable lengths were systematically smaller than the designed ones, leading to eventual connection issues to PMT.
-However, we can notice that some cables have been cut shorter, one of them being $80$ centimenters shorter than expected.
-Hopefully, this cable were checked at LSM, showing it was succefully connected to PMT despite this deficit.
+The value of $\beta$ shows that the cutting device systematically took away $4.1$ cm of each cable.
+Nevertheless, as the shortest cable was designed to be 10 meters long, there are no important consequences of this bias on the length difference $\Delta L$.
+Besides, the slope $\alpha = 0.011\pm 0.002$ of the linear fit reveals that the cutting device adds one centimetre for every meter of cable, being compatible with the hypothesis on the cutting device sliding.
+Hopefully this bias is not problematic as it makes most of the actual cable lengths longer than the design, while shorter lengths could have lead to systematic connection issues to PMTs.
+However, we notice that a few cables have been cut too short by mistake, the worse of them being $80$ centimetres shorter than expected.
+Fortunately, this cable  was successfully connected to PMT despite this deficit.
+On the contrary, few cables have a large extra length.
+This probably is due to human punctual mistakes on top of the observed bias, but without any strong consequences for the calorimeter operation.
+In conclusion, no important mistakes have been made when cutting cables, and we had no issue for connecting the only problematic cable.
+\\
 
 This study allowed us to control and record the lengths of all coaxial cables installed on the SuperNEMO demonstrator at LSM.
-In addition, reflectometry also aimed at checking the cable condition by performing waveform shape anaysis on secondary pulses.
+We also have understood the main results on measured cable lengths and the functioning of the cutting device that we used.
 
-Rq: controlling the length do not include that the cable is connected (reflection can occur at the end of the cable).
-
+This work achieved, we want to verify if no cable was damaged after installation.
+Reflectometry also aimed at checking cable conditions by performing waveform shape analysis on secondary pulses.
 
 \subsection{Correction on event times}
 \label{subsec:time_correction}
+
+\textcolor{red}{a bouger dans partie cable lengths}
 
 The main goal of this study was to check the lengths of coaxial cables.
 We can also use the results to correct the time of recorded events.
 Given that what we later define as an \emph{event} is firstly an electric signal, we should take into account the time for the signal to travel through cables.
 This become possible with the reflectometry study we performed.
-Knowing real lengths of cables and using the celerity of the signal, we deduce the time needed for the signal to travel from one given PMT divider to the electronics.
+Knowing real lengths of cables and using the celerity of the signal, we deduce the time needed for the signal to travel from one given PMT divider to the electronic boards.
 Then we can correct event times.
 
-
 \subsection{Checking the pulse amplitude attenuation}
-When the signal travels in a cable, its amplitude is attenuated.
+The attenuation of electric signal is a problem common to all electronic fields, and comes from the charge loss of an electromagnetic wave travelling through space.
 Then, another test for controlling the cable condition is to check if this attenuation matches the expectations (i.e. the value given by constructor).
+The signal attenuation car be define in two different ways:
+\begin{itemize*}
+\item using the signal amplitude ratio
+\end{itemize*}
+
+
 We define the amplitude of a pulse as the maximum of this pulse, compared to the baseline.
 The attenuation $\mathcal{A}$ of a given cable is then defined as $\mathcal{A}=\braket{\text{A}_{ \text{secondary pulse}}-\text{A}_{ \text{primary pulse}}}_{\text{p}}$, $\text{A}_{\text{i}}$ the amplitude of the pulse i.
 A map summarising the attenuation for each cable is presented.
-
-\subsection{Checking the constructor signal velocity in cables}
-\label{subsec:velocity}
-As we want to check the celerity of signal given by Axon, we used $3$ cables of different lengths (see Fig.~\ref{fig:cable_lengths}).
-Knowing the length of a cable, we determine the time needed for the signal to make a round trip in the cable, and conclude about the celerity of signal in each cable.
-We found that the mean celerity on the $3$ cables is $0.7$ c, a bit greater than the celerity given by Axon of $0.69$ c.
-
 
 \subsection{Studying influence of CFD on the signal timing study}
 \label{subsec:CFD}
@@ -135,26 +216,9 @@ We found that the mean celerity on the $3$ cables is $0.7$ c, a bit greater than
 
 
 
-\section{Calibrating the electronics}
+\section{Calibrating the electronic boards}
 \label{sec:TimeSynchroFEB}
 
 \subsection{Principle}
 \subsection{Measuring the time offset of front end boards}
 \subsection{Results}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=10cm]{commissioning/fig_commissioning/CFD_example.pdf}
-  \label{fig:CFD}
-  \caption{In black is an example of a waveform with primary pulse (left) and secondary pulse (right).
-    A representation of time CFD is given for the secondary pulse.
-    Its maximal amplitude (red dotted line) and its fraction for $\text{f}=40\%$ (green dotted line) are displayed.
-    The time $\text{T}_{\text{pulse}}$ (orange dotted line) reprensents the time of the secondary pulse calculated with a CFD at $\text{f}=40\%$.}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=10cm]{commissioning/fig_commissioning/length_tests.pdf}
-  \label{fig:cable_lengths}
-  \caption{Primary and secondary pulses for a $698 \pm 1$ cm cable (green), a $1043 \pm 1$ cm cable (red) and a $2025 \pm 1$ cm cable (grey).}
-\end{figure}
