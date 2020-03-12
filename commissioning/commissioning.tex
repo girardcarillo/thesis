@@ -1,7 +1,7 @@
 \chapter{Detector commissioning}
 \label{sec:commissioning}
 
-In the course of $2019$, the commissioning of the SuperNEMO demonstrator has begun and first calorimeter data were taken.\\
+Tthe commissioning of the SuperNEMO demonstrator has begun in $2019$ and first calorimeter data were taken.\\
 The calorimeter of SuperNEMO is segmented in $712$ optical modules (OM), each composed by a coupling between a photomultiplier tube (PMT) and a polystyrene scintillator bloc (see sec.~\ref{sec:calorimeter} for more details).
 The divider of a PMT is connected to $2$ cables, one providing the high voltage (HV), the other one, called signal cable, is a coaxial cable collecting and transporting the charge provided by the PMT.\\
 By the summer $2020$, the SuperNEMO demonstrator will be encapsulated in an anti radon tent.
@@ -122,7 +122,7 @@ A graphic representation of the CFD time search is given in fig.~\ref{fig:CFD}.
   \includegraphics[width=10cm]{commissioning/fig_commissioning/CFD_example.pdf}
 
   \caption{In black is shown an example of a total recorded waveform with the primary pulse (left) and secondary the pulse (right).
-    A representation of time computed with a Constant Fraction Discriminator (CFD) is given for the secondary pulse.
+    A representation of time computed with a Constant Fraction Discriminator (CFD) is provided for the secondary pulse.
     Its maximal amplitude (red dotted line) and its fraction for $\text{f}=40\%$ (green dotted line) are displayed.
     The time $\text{T}_{\text{pulse}}$ (orange dotted line) represents the time of arrival of the secondary pulse computed with CFD, with the fraction $\text{f}=40\%$.
     \label{fig:CFD}}
@@ -163,35 +163,35 @@ From those data points, we compute a linear fit (orange plain line), parameteris
     Data points are fitted by $\alpha x + \beta$, with $\alpha > 0$ and $\beta < 0$, revealing the two biases of the cutting device.
     \label{fig:CutBias}}
 \end{figure}
-The value of $\beta$ shows that the cutting device systematically took away $4.1$ cm of each cable.
+The value of $\beta$ shows that the cutting device systematically took away $3.4$ cm of each cable.
 Nevertheless, as the shortest cable was designed to be 10 meters long, there are no important consequences of this bias on the length difference $\Delta L$.
-Besides, the slope $\alpha = 0.011\pm 0.002$ of the linear fit reveals that the cutting device adds one centimetre for every meter of cable, being compatible with the hypothesis on the cutting device sliding.
+Besides, the slope $\alpha = 0.010\pm 0.002$ of the linear fit reveals that the cutting device adds one centimetre for every meter of cable, being compatible with the hypothesis on the cutting device sliding.
 Hopefully this bias is not problematic as it makes most of the actual cable lengths longer than the design, while shorter lengths could have lead to systematic connection issues to PMTs.
 However, we notice that a few cables have been cut too short by mistake, the worse of them being $80$ centimetres shorter than expected.
 Fortunately, this cable  was successfully connected to PMT despite this deficit.
 On the contrary, few cables have a large extra length.
 This probably is due to human punctual mistakes on top of the observed bias, but without any strong consequences for the calorimeter operation.
 In conclusion, no important mistakes have been made when cutting cables, and we had no issue for connecting the only problematic cable.
-\\
 
-This study allowed us to control and record the lengths of all coaxial cables installed on the SuperNEMO demonstrator at LSM.
-We also have understood the main results on measured cable lengths and the functioning of the cutting device that we used.
-
-This work achieved, we want to verify if no cable was damaged after installation.
-Reflectometry also aimed at checking cable conditions by performing waveform shape analysis on secondary pulses.
-
-\subsection{Correction on event times}
-\label{subsec:time_correction}
-
-\textcolor{red}{a bouger dans partie cable lengths}
-
-The main goal of this study was to check the lengths of coaxial cables.
-We can also use the results to correct the time of recorded events, taking into account the time for the signal to travel through cables.
+If the main goal of this study is to check the lengths of coaxial cables, it also aims at correcting the time of recorded events, from the time made by the signal to travel from a PMT to an electronic channel.
+taking into account the time for the signal to travel through cables.
 This become possible with the reflectometry study we performed.
 Knowing real lengths of cables and using the celerity of the signal, we deduce the time needed for the signal to travel from one given PMT divider to the electronic boards.
 Then we can correct event times.
 
-\subsection{Checking the pulse amplitude attenuation}
+As explained previously, the time $t_{j}$ gives information about the length of the cable $j$.
+We remind the coaxial cables are divided in two parts, one external and one internal, both linked by the so-called patch panel.
+Thus we can use that travel time to detect possible disconnection of a cable at patch panel.
+In fact, if one cable is not connected at the patch panel -- this case is illustrated in Fig.~\ref{subfig:reflecto_pp}, -- the pulse reflects at the end of the external cable part, going back to the electronic board.
+This very short time, giving information about the location of the reflection, is used to tag a patch-panel disconnection.
+Then, a simple check onsite can confirm this observation, and the external part of the cable can be connected to the patch panel.
+\newline
+
+This study allowed us to control and record the lengths of all coaxial cables installed on the SuperNEMO demonstrator at LSM, and gave information on the status of cable connections at patch panel.
+We also have understood the main results on measured cable lengths and the functioning and biases of the cutting device that we used.
+
+\subsection{Signal attenuation}
+\label{subsec:attenuation}
 The attenuation of an electric signal is a problem common to all electronic fields, and comes from the charge loss of an electromagnetic wave travelling in a medium.
 %% Then, another test for controlling the cable condition is to check if this attenuation matches
 %% the expectations (i.e. the attenuation per metre of cable given by constructor).
@@ -200,36 +200,66 @@ The attenuation of an electric signal is a problem common to all electronic fiel
 %% \item using the signal amplitude ratio
 %% \end{itemize*}
 For a coaxial cable, this attenuation mainly depends on the signal frequency $f$ in MHz and on the cable characteristics.
-The theoretical linear attenuation $\alpha_{\text{att}}^{\text{th}}$, so be it the attenuation by metre of coaxial cable given in dB/m, is supplied by the constructor as
+For the coaxial cables, the theoretical linear attenuation $\alpha_{\text{att}}^{\text{th}}$, so be it the attenuation by metre of cable in dB/m, is supplied by the constructor as
 \begin{equation}
   \alpha_{\text{att}}^{\text{th}} = f\sqrt{\epsilon}(\frac{a}{\sqrt{f}}+b)\,,
 \end{equation}
 where the factor $a$ depends on the diameter of the dielectric material on one hand, and of the diameter of the conductor material on the other hand, and where $b$ is function of the dielectric loss factor, characterising the material's dissipation of electromagnetic energy.
-For the used coaxial cables, and with a frequency $f$ of few GHz, this attenuation is valued at $\alpha_{\text{att}}^{\text{th}} = 1.22$ dB/m.
-In a general manner, the attenuation of a signal in dB is defined a $10$ times the decimal logarithm of a power ratio.
-In the reflectometry analysis, we then define the attenuation $\mathcal{A}$, for a given length of cable $l$, as
+For the used coaxial cables, and with a frequency $f$ of few GHz for the signal pulses sent in cables, we calculate this attenuation as $\alpha_{\text{att}}^{\text{th}} = 1.22$ dB/m.
+In a more general manner, the attenuation of a signal in dB is defined with the decimal logarithm of a power ratio.
+We use this definition to determine the attenuation in the framework of the reflectometry analysis, defining the attenuation $\mathcal{A}$, for a given length of cable $l$, as
 \begin{equation}
-  \mathcal{A}=10\log_{10}\frac{P_{\text{primary pulse}}}{P_{\text{secondary pulse}}} \,\text{,}
+  \mathcal{A}=10\log_{10}\frac{V_{\text{primary pulse}}}{V_{\text{secondary pulse}}} \,\text{,}
 \end{equation}
-where $P_{i}$ is a quantity representing the intensity of the signal.
-$P$ can correspond to the maximal amplitude of the signal, as well as
-the amplitude of a pulse, defined as the maximum of this pulse.
-Then, we define the linear attenuation $\alpha_{\text{att}}^{R}$, measured by reflectometry and given in dB/m, with
+where $V_{i}$ is a quantity representing the intensity of the signal.
+$V$ can correspond to the maximal amplitude of the pulse, as well as the \emph{integrated charge} of the pulse, defined as the amount of current received by the acquisition over a given time window.
+As the provided data sheet does not specify the attenuation of which quantity (amplitude or charge) represents $\alpha_{\text{att}}^{\text{th}}$, we decide to investigate both in the following.
+Then, we define the linear attenuation $\alpha_{\text{att}}^{\text{R}}$, measured by reflectometry in dB/m, with
 \begin{equation}
-  \mathcal{A} = \alpha_{\text{att}}^{R}l\,.
+  \mathcal{A} = f_{r}+\alpha_{\text{att}}^{\text{R}}\,l\,,
 \end{equation}
-The goal here is to determine the value of $\alpha_{\text{att}}^{R}$, using the reflectometry data, and to compare it with $\alpha_{\text{att}}^{\text{th}}$.
-In Fig.~\ref{fig:attenuation} is shown the linear dependance between the attenuation $\mathcal{A}_{R}$ and the cable length $l$.
-The fit reveals that the linear attenuation $\alpha_{\text{att}}^{R} = 0.242\pm 0.000$ dB/m, that being $5$ times smaller that expected with the value of $\alpha_{\text{att}}^{\text{th}}$.
+with $f_{r} = -10\log_{10}R$, where $R$ is the reflection factor characterising the pulse reflection on the PMT divider.
+In fact, as the circuit is opened, the pulse is reflected at the PMT divider, but only partially.
+A part of the signal is not reflected but lost through the divider.
+This reflection is characterised by $R$, which is function of the impedance $Z_{c}$ of the cable, and of the impedance $Z_{d}$ at the divider level, where the pulse is reflected.
+It is written as
+\begin{equation}
+  R = \frac{Z_{d}-Z_{c}}{Z_{d}+Z_{c}}\,,
+\end{equation}
+where we have the limit
+\begin{equation}
+  \lim_{Z_{d} \to \infty} f_{r} = 0 \text{ and } R=1\,,
+\end{equation}
+expressing a total reflection occuring when the impedance at the PMT divider is infinite.
+The main goal here is to determine the value of $\alpha_{\text{att}}^{\text{R}}$, using the reflectometry data, and to compare it with $\alpha_{\text{att}}^{\text{th}}$.
+Moreover, the impedance $Z_{d}$ value at PMT divider can be estimated from the determination of $f_{r}$.
+On Fig.~\ref{fig:attenuation} is shown the linear dependence between the attenuation $\mathcal{A}$ and the cable length $l$, and two data set are presented.
+The cyan scattered markers represent the attenuation calculated from the amplitude ratio $A_{\text{primary pulse}}/A_{\text{secondary pulse}}$, and the magenta markers correspond to the attenuation calculated from the charge ratio $Q_{\text{primary pulse}}/Q_{\text{secondary pulse}}$.
+ The amplitude $A_{i}$ is given in mV and the charge $Q_{i}$ in mV.ns.
 \begin{figure}
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/attenuation_length.eps}
-  \caption{\label{fig:attenuation}}
+  \caption{The amplitude $\mathcal{A}$ is displayed as a function of the measured cable length $l$.
+    The data set calculated with the amplitude (charge) is given in cyan (magenta) and fitted by a linear function in orange (green).
+    The values of the slope, which represent the linear attenuation of the coaxial cables in dB/m, are respectively $\alpha_{\text{att}}^{\text{R, amp}} = 0.241\pm 0.000$dB/m and $\alpha_{\text{att}}^{\text{R, ch}} = 0.166\pm0.000$dB/m.
+    The two $y$-intercept values, which represent the reflection of the pulse on the PMT divider, are $f_{r}^{amp} = 0.402\pm 0.032$ dB and $f_{r}^{ch} = -0.020\pm 0.013$ dB.
+    \label{fig:attenuation}}
 \end{figure}
+The values of $\alpha_{\text{att}}^{\text{R}}$ and $f_{r}$, for both amplitude and charge cases, are displayed in the legend.
+Firstly, the two linear fits reveal that, whether calculated with the amplitude, or with the charge, the linear attenuation $\alpha_{\text{att}}^{\text{R}}$ is smaller than the calculated one $\alpha_{\text{att}}^{\text{th}}$ (for the amplitude case, $\alpha_{\text{att}}^{\text{th}}\simeq 5\times \alpha_{\text{att}}^{\text{R, amp}}$, and for the charge case $\alpha_{\text{att}}^{\text{th}}\simeq 7\times \alpha_{\text{att}}^{\text{R, ch}}$).
+That means the signal is less affected, when transmitted by the cable, than expected.
+Secondly, the attenuation in charge is less important that the attenuation in amplitude.
+This can be easily explained: as it is integrated over time, the charge is a quantity less affected by amplitude variations that the amplitude itself.
+For the same reason, the charge data set points are less spread than the amplitude ones, meaning that we are less sensitive to cable length variations when using the charge quantity.
 
+
+This work achieved, we want to verify if no cable was damaged after installation.
+Reflectometry also aimed at checking cable conditions by performing waveform shape analysis on secondary pulses.
 
 \subsection{Pulse shape analysis}
 \label{subsec:pulse_shape}
+On Fig.~\ref{fig:CFD} is displayed an example of \emph{normal} pulse, which corresponds to the case represented in Fig.~\ref{subfig:reflecto_normal}.
+In this case, the pulse sent in the cable travels to the PMT, and goes back to the acquisition after reflection on the divider.
 
 
 \section{Calibrating the electronic boards}

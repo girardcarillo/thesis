@@ -61,12 +61,11 @@
 \contentsline {section}{\numberline {7.1}Reflectometry analysis}{29}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Goal of the reflectometry analysis}{29}{subsection.7.1.1}
 \contentsline {subsection}{\numberline {7.1.2}Pulse timing: controlling cable lengths}{30}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Correction on event times}{34}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Checking the pulse amplitude attenuation}{35}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Pulse shape analysis}{35}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Calibrating the electronic boards}{35}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Principle}{35}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Measuring the time offset of front end boards}{35}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Results}{35}{subsection.7.2.3}
-\contentsline {chapter}{Conclusion}{37}{chapter*.16}
+\contentsline {subsection}{\numberline {7.1.3}Signal attenuation}{35}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Pulse shape analysis}{36}{subsection.7.1.4}
+\contentsline {section}{\numberline {7.2}Calibrating the electronic boards}{37}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Principle}{37}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Measuring the time offset of front end boards}{37}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Results}{37}{subsection.7.2.3}
+\contentsline {chapter}{Conclusion}{37}{chapter*.17}
 \contentsline {chapter}{Bibliography}{39}{section*.9}
