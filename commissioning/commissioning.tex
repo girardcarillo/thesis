@@ -1,7 +1,7 @@
 \chapter{Detector commissioning}
 \label{sec:commissioning}
 
-Tthe commissioning of the SuperNEMO demonstrator has begun in $2019$ and first calorimeter data were taken.\\
+The commissioning of the SuperNEMO demonstrator has begun in $2019$ and first calorimeter data was taken.\\
 The calorimeter of SuperNEMO is segmented in $712$ optical modules (OM), each composed by a coupling between a photomultiplier tube (PMT) and a polystyrene scintillator bloc (see sec.~\ref{sec:calorimeter} for more details).
 The divider of a PMT is connected to $2$ cables, one providing the high voltage (HV), the other one, called signal cable, is a coaxial cable collecting and transporting the charge provided by the PMT.\\
 By the summer $2020$, the SuperNEMO demonstrator will be encapsulated in an anti radon tent.
@@ -230,7 +230,7 @@ where we have the limit
 \begin{equation}
   \lim_{Z_{d} \to \infty} f_{r} = 0 \text{ and } R=1\,,
 \end{equation}
-expressing a total reflection occuring when the impedance at the PMT divider is infinite.
+expressing a total reflection occurring when the impedance at the PMT divider is infinite.
 The main goal here is to determine the value of $\alpha_{\text{att}}^{\text{R}}$, using the reflectometry data, and to compare it with $\alpha_{\text{att}}^{\text{th}}$.
 Moreover, the impedance $Z_{d}$ value at PMT divider can be estimated from the determination of $f_{r}$.
 On Fig.~\ref{fig:attenuation} is shown the linear dependence between the attenuation $\mathcal{A}$ and the cable length $l$, and two data set are presented.
@@ -262,9 +262,103 @@ On Fig.~\ref{fig:CFD} is displayed an example of \emph{normal} pulse, which corr
 In this case, the pulse sent in the cable travels to the PMT, and goes back to the acquisition after reflection on the divider.
 
 
+\subsection{Comparison with $^{60}$Co}
+
 \section{Calibrating the electronic boards}
 \label{sec:TimeSynchroFEB}
 
 \subsection{Principle}
 \subsection{Measuring the time offset of front end boards}
 \subsection{Results}
+
+\chapter{Characterisation of the calorimeter resolution}
+
+Optical modules have been characterised before installation.
+Most of the \Co\ $\beta$ disintegration are followed by the emission of two $\gamma$s in coincidence (see Fig.~\ref{fig:Co_decay_scheme}).
+The idea is to use this source to calibrate in time optical modules of SuperNEMO demonstrator by placing it behind the main calorimeter walls (the demonstrator being closed since ...) and using the two coincidence $\gamma$s.
+Performing simulations of \Co\ disintegration
+
+
+
+\section{Calibration with a Cobalt source}
+\label{sec:CoSource}
+
+\subsection{Experimental setting and goal}
+\subsection{Data taking at LSM}
+\subsection{Analysis}
+\subsection{Results}
+
+
+\section{The Light Injection System}
+\label{sec:LIS}
+
+The SuperNEMO demonstrator is designed to have a long exposure time.
+In this context, calibration systems are necessary to control and calibrate the response of the detector.
+The so called \emph{Light Injection} (LI) System will monitor the stability of the calorimeter response in energy to $1$\%.
+It consists in $20$ Light Emitting Diodes (LED) at $385$ nm, injecting light in each scintillator block via optical fibers.
+A set of reference optical modules (PMTs coupled with scintillator blocks), receiving light from both LEDs and $^{241}$Am sources, monitors the stability of the LEDs.
+A scheme of the complete LI calibration system is given in Fig.~\ref{fig:LIS_scheme}.
+
+First LI commissioning data was taken in March 2019.
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{commissioning/fig_commissioning/LIS_scheme.pdf}
+
+  \caption{The Light Infection (LI) calibration system is schematised.
+    More than $1300$ fibers, distributed in $20$ bundles, carry the light from $20$ LEDs to each scintillator block of the demonstrator.
+    Reference OMs coupled with $^{241}$Am sources monitor the LED light.
+  \label{fig:LIS_scheme}}
+\end{figure}
+
+\subsection{Light injection system commissioning}
+
+
+In the LI system design, the SuperNEMO demonstrator has been segmented in $10$ areas.
+Each area receives light from one given LED
+
+Primary/secondary
+Each LED lights
+Group LEDs/area
+
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_1d_counts.pdf}
+  \caption{The number of counts is displayed for each optical module, labeled by the \emph{OM index}.
+    Each coloured marker represents counting rates for one area of the detector, that is to say one group of optical modules lighted by the same LED.
+    The area \#$1$ (dark red dots) is not receiving light from its coresponding LED.
+    \label{fig:LI_counts}}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_mean_ampl.pdf}
+  \caption{The mean signal amplitude distribution for each optical module is presented.
+    One colour stands for one area of the half detector.
+    In Grey is the total mean amplitude distribution.
+    \label{fig:LI_ampl}}
+\end{figure}
+
+
+\subsection{Time resolution of optical modules}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{commissioning/fig_commissioning/Co_decay_scheme.png}
+
+  \caption{Decay scheme of Cobalt $60$.
+    After the $\beta$ disintegration $99.88$\%,
+  \label{fig:Co_decay_scheme}}
+\end{figure}
+
+
+
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[width=10cm]{commissioning/fig_commissioning/}
+
+%%   \caption{\label{fig:}}
+%% \end{figure}
