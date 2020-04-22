@@ -1,6 +1,7 @@
-\documentclass[11pt, twoside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[12pt, twoside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+%% \geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+\geometry{vmargin=3cm}%% hmargin=2cm
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
@@ -20,6 +21,7 @@
 \usepackage[margin=2cm]{caption}
 
 \captionsetup[figure]{font=footnotesize}
+\captionsetup[subfigure]{font=footnotesize}
 
 \hypersetup{
     colorlinks,
@@ -65,7 +67,7 @@
 
 %\title{}
 
-%\includeonly{commissioning/commissioning}
+\includeonly{commissioning/commissioning}
 
 \begin{document}
 %\maketitle

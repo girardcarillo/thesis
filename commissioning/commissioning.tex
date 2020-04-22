@@ -1,8 +1,8 @@
 \chapter{Detector commissioning}
-\label{sec:commissioning}
+\label{ch:commissioning}
 
 The commissioning of the SuperNEMO demonstrator has begun in $2019$ and first calorimeter data was taken.\\
-The calorimeter of SuperNEMO is segmented in $712$ optical modules (OM), each composed by a coupling between a photomultiplier tube (PMT) and a polystyrene scintillator bloc (see sec.~\ref{sec:calorimeter} for more details).
+The calorimeter of SuperNEMO is segmented in $712$ optical modules (OM), each composed by a coupling between a photomultiplier tube (PMT) and a polystyrene scintillator bloc (see Sec.~\ref{sec:calorimeter} for more details).
 The divider of a PMT is connected to $2$ cables, one providing the high voltage (HV), the other one, called signal cable, is a coaxial cable collecting and transporting the charge provided by the PMT.\\
 By the summer $2020$, the SuperNEMO demonstrator will be encapsulated in an anti radon tent.
 The so called \emph{patch panel} will insure passage of cables from the inside, to the outside of the anti radon tent, therefore doubling the amount of cables needed for the calorimeter.
@@ -29,45 +29,45 @@ After all cables were transported and installed at LSM, we had to check each coa
 To do so, a pulse, called \emph{primary} pulse, is generated at the electronic board readout.
 The signal will travel all along the coaxial cable, from the electronic board to the PMT divider.
 Whether the cable is correctly connected to the PMT or not, the signal reflects at the other end.
-\begin{figure}
-     \centering
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto.pdf}
-         \captionsetup{justification=centering}
-         \caption{Normal reflection at PMT divider.
-         \label{subfig:reflecto_normal}}
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto.pdf}
+    \captionsetup{justification=centering}
+    \caption{Normal reflection at PMT divider.
+      \label{subfig:reflecto_normal}}
 
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_1.pdf}
-         \captionsetup{justification=centering}
-         \caption{Cable not connected at PMT.
-         \label{subfig:reflecto_pmt}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_1.pdf}
+    \captionsetup{justification=centering}
+    \caption{Cable not connected at PMT.
+      \label{subfig:reflecto_pmt}}
 
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_2.pdf}
-         \captionsetup{justification=centering}
-         \caption{Cable not connected at patch panel.
-         \label{subfig:reflecto_pp}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_2.pdf}
+    \captionsetup{justification=centering}
+    \caption{Cable not connected at patch panel.
+      \label{subfig:reflecto_pp}}
 
-     \end{subfigure}
-     \caption{A representation of pulses sent in a cable for the reflectometry analysis is given.
-       The electronic boards are symbolised by the black chip, and the patch panel by the red vertical bar.
-       Three scenario where a primary pulse is sent in one cable (represented in grey), are represented.
-     (a) The cable is well connected at the patch panel and at the PMT. The signal reflects at the PMT divider.
-     (b) The cable is not connected at PMT and the signal is reflected at the end of the cable.
-     (c) The cable is not connected at patch panel and the signal is reflected at the end of the external cable.\label{fig:reflecto_scheme}}
+  \end{subfigure}
+  \caption{A representation of pulses sent in a cable for the reflectometry analysis is given.
+    The electronic boards are symbolised by the black chip, and the patch panel by the red vertical bar.
+    Three scenario where a primary pulse is sent in one cable (represented in grey), are represented.
+    (a) The cable is well connected at the patch panel and at the PMT. The signal reflects at the PMT divider.
+    (b) The cable is not connected at PMT and the signal is reflected at the end of the cable.
+    (c) The cable is not connected at patch panel and the signal is reflected at the end of the external cable.\label{fig:reflecto_scheme}}
 
 \end{figure}
 Then the signal travels back from the PMT to the electronic board channel, where it is recorded by the acquisition.
 We called this recorded reflected pulse \emph{secondary} pulse.
-An example of the total recorded signal is displayed in Fig.~\ref{fig:CFD}.
+An example of the total recorded signal is displayed in Fig.~\ref{subfig:total_waveform}.
 In order to accumulate enough statistics, we send thousands of pulses in each coaxial cable.
 The analyses of the shape and of the arrival time of those secondary pulses for each channel is called \emph{reflectometry}, and allow us to check the coaxial cable conditions and to control their lengths.
 
@@ -97,7 +97,7 @@ Three cables of different lengths are measured with a precision of $1$ cm.
 A thousand of primary pulses are sent in each of the three cables, then the time for each secondary pulse is recorded.
 At the end, we have three independent measures of the velocity $v_{p}$ in the used coaxial cables.
 On Fig.~\ref{fig:celerity} is displayed the lengths $l_{j}$ as a function of the times $t_{j}$.
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/celerity.eps}
   \caption{Three different lengths $l_{j}$ of cables are measured.
@@ -116,28 +116,41 @@ The two main advantages of this technique is that it provides an efficient rejec
 Nevertheless, the possible influence of the chosen value for the $f$ parameter on this time resolution has to be investigated.
 We perform such a study in Sec.~\ref{subsec:CFD}.
 We concluded that the highest precision on the time measurement arises for $f = 40\%$, and we adopt this value for the following analysis.
-A graphic representation of the CFD time search is given in fig.~\ref{fig:CFD}.
-\begin{figure}
+A graphic representation of the CFD time search is given in fig.~\ref{subfig:zoom_secondary}.
+\begin{figure}[h]
+\centering
+\begin{subfigure}[t]{0.7\textwidth}
   \centering
-  \includegraphics[width=10cm]{commissioning/fig_commissioning/CFD_example.pdf}
-
-  \caption{In black is shown an example of a total recorded waveform with the primary pulse (left) and secondary the pulse (right).
-    A representation of time computed with a Constant Fraction Discriminator (CFD) is provided for the secondary pulse.
+  \includegraphics[trim={1.2cm 3.5cm 1.7cm 3.1cm},clip,width=1\textwidth]{commissioning/fig_commissioning/CFD_example.pdf}
+  \captionsetup{justification=centering}
+  \caption{Total recorded waveform
+    \label{subfig:total_waveform}}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.7\textwidth}
+  \centering
+  \includegraphics[trim={1.2cm 1.5cm 1.7cm 3.1cm},clip,width=1\textwidth]{commissioning/fig_commissioning/CFD_example_zoom.pdf}
+  \captionsetup{justification=centering}
+  \caption{Zoom on secondary pulse
+    \label{subfig:zoom_secondary}}
+\end{subfigure}
+\caption{(a) Total recorded waveform: primary pulse (left) and secondary the pulse (right).
+  (b) Zoom on the secondary pulse.
+    A representation of time computed with a Constant Fraction Discriminator (CFD) is provided.
     Its maximal amplitude (red dotted line) and its fraction for $\text{f}=40\%$ (green dotted line) are displayed.
     The time $\text{T}_{\text{pulse}}$ (orange dotted line) represents the time of arrival of the secondary pulse computed with CFD, with the fraction $\text{f}=40\%$.
-    \label{fig:CFD}}
+  \label{fig:CFD}}
 \end{figure}
-
 As we want to measure the installed cable lengths $l^{m}_{j}$, and compare them to the initially designed ones, $l^{d}_{j}$, we define the length difference $\Delta L_{j}$ as:
 \begin{equation}
   \Delta L_{j} = l^{m}_{j}-l^{d}_{j}\, .
 \end{equation}
 On Fig.~\ref{fig:LengthDiff} is displayed the distribution $\Delta L$ for all the measured lengths.
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/length_diff.eps}
 
-  \caption{The distribution of difference between the measured lengths $l^{m}$ and the expected lengths $l^{d}$ is displayed in orange plain line.
+  \caption{The distribution of difference between the measured lengths $l^{m}$ and the expected lengths $l^{d}$ is displayed in orange solid line.
     The black dashed line represents the case where $l^{m}_{j} = l^{d}_{j} \;\forall j$.
     The Gaussian fit (green dashed line) presents a mean of $10.9 \pm 0.3$ cm.
     Some data points considered as outliers are beyond $3\sigma$.
@@ -145,7 +158,7 @@ On Fig.~\ref{fig:LengthDiff} is displayed the distribution $\Delta L$ for all th
 \end{figure}
 In hypothetical perfect conditions, all the cables should fit the design length, in other words, $l^{d}_{j} = l^{m}_{j}$.
 Consequently the $\Delta L$ distribution should a peak at zero, as materialised by the black dashed line.
-However, in real conditions, the measured length can be different from the designed one, leading the $\Delta L$ distribution plotted in orange plain line.
+However, in real conditions, the measured length can be different from the designed one, leading the $\Delta L$ distribution plotted in orange solid line.
 We conclude that the observed cable length $l^{m}$ differs from $l^{d}$ by $+10.9\pm 0.3$ cm, meaning that cables are longer than expected in average.
 This may reveal a bias coming from the device used to cut the cables.
 In fact, during cable cutting work, we noticed that the cutting device had a tendency to slip, probably leading to cables with extra lengths.
@@ -153,8 +166,8 @@ We assumed the cutting device has a given probability to slip for one meter of c
 If this is the case, the probability for the device to give extra length should increase with the cable length.
 
 To verify this assumption, we plot on Fig.~\ref{fig:CutBias} the length difference $\Delta L$ as a function of the initial design length $l^{d}$ (cyan).
-From those data points, we compute a linear fit (orange plain line), parameterised as $y = \alpha x + \beta$, revealing that the cutting device presents two different biases.
-\begin{figure}
+From those data points, we compute a linear fit (orange solid line), parameterised as $y = \alpha x + \beta$, revealing that the cutting device presents two different biases.
+\begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/cut_biais.eps}
 
@@ -204,7 +217,7 @@ For the coaxial cables, the theoretical linear attenuation $\alpha_{\text{att}}^
 \begin{equation}
   \alpha_{\text{att}}^{\text{th}} = f\sqrt{\epsilon}(\frac{a}{\sqrt{f}}+b)\,,
 \end{equation}
-where the factor $a$ depends on the diameter of the dielectric material on one hand, and of the diameter of the conductor material on the other hand, and where $b$ is function of the dielectric loss factor, characterising the material's dissipation of electromagnetic energy.
+where the factor $a$ depends on the diameter of the dielectric material on one side, and of the diameter of the conductor material on the other side, and where $b$ is function of the dielectric loss factor, characterising the material's dissipation of electromagnetic energy.
 For the used coaxial cables, and with a frequency $f$ of few GHz for the signal pulses sent in cables, we calculate this attenuation as $\alpha_{\text{att}}^{\text{th}} = 1.22$ dB/m.
 In a more general manner, the attenuation of a signal in dB is defined with the decimal logarithm of a power ratio.
 We use this definition to determine the attenuation in the framework of the reflectometry analysis, defining the attenuation $\mathcal{A}$, for a given length of cable $l$, as
@@ -235,8 +248,8 @@ The main goal here is to determine the value of $\alpha_{\text{att}}^{\text{R}}$
 Moreover, the impedance $Z_{d}$ value at PMT divider can be estimated from the determination of $f_{r}$.
 On Fig.~\ref{fig:attenuation} is shown the linear dependence between the attenuation $\mathcal{A}$ and the cable length $l$, and two data set are presented.
 The cyan scattered markers represent the attenuation calculated from the amplitude ratio $A_{\text{primary pulse}}/A_{\text{secondary pulse}}$, and the magenta markers correspond to the attenuation calculated from the charge ratio $Q_{\text{primary pulse}}/Q_{\text{secondary pulse}}$.
- The amplitude $A_{i}$ is given in mV and the charge $Q_{i}$ in mV.ns.
-\begin{figure}
+The amplitude $A_{i}$ is given in mV and the charge $Q_{i}$ in mV.ns.
+\begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/attenuation_length.eps}
   \caption{The amplitude $\mathcal{A}$ is displayed as a function of the measured cable length $l$.
@@ -264,6 +277,11 @@ In this case, the pulse sent in the cable travels to the PMT, and goes back to t
 
 \subsection{Comparison with $^{60}$Co}
 
+
+
+
+
+
 \section{Calibrating the electronic boards}
 \label{sec:TimeSynchroFEB}
 
@@ -271,22 +289,226 @@ In this case, the pulse sent in the cable travels to the PMT, and goes back to t
 \subsection{Measuring the time offset of front end boards}
 \subsection{Results}
 
-\chapter{Characterisation of the calorimeter resolution}
+
+
+
+
+
+
+\chapter{Characterisation of the calorimeter time resolution}
+
+The precise knowledge of the different particle interaction times in the optical modules of the SuperNEMO calorimeter is important to better understand and reject background.
+For example, the study of electron time-of-flight allows us to distinguish internal events (coming from source foils) from external events (PMTs, scintillators, tracker...).
+\newline
+
+In this chapter we present different studies conducted in order to characterise the time response of the SuperNEMO optical modules.
+
+
+\section{Time calibration with a Cobalt source}
+\label{sec:CoSource}
+The Cobalt $60$ disintegrates through $\beta^{-}$ decays, to excited levels of Nickel $60$.
+A simplified decay scheme for this atomic element is given in Fig.~\ref{fig:Co_decay_scheme}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm]{commissioning/fig_commissioning/Co_decay_scheme.pdf}
+  \caption{A simplified decay scheme for Cobalt $60$.
+    The Cobalt decays, through $\beta^{-}$, predominantly to the $2.50$ MeV state.
+    Then, two $\gamma$'s (whose energy levels are represented in green) are emitted in $99.66$\% of the cases.
+    The two photons have an energy of $1.17$ MeV and $1.33$ MeV, respectively.
+    As the life times of these two energy levels are short ($<1$ ps), the two photons can be considered as emitted in coincidence.
+    We use this property to calibrate in time the demonstrator optical modules.
+    \label{fig:Co_decay_scheme}}
+\end{figure}
+The extreme majority of Cobalt $\beta^{-}$ disintegration are followed by the emission of two $\gamma$'s of $1.17$ MeV and $1.33$ MeV.
+The life times of these two energy levels are very short, so the two photons are considered as emitted in coincidence with respect to the expected timing precision of the calorimeter.
+The goal of this analysis is to calibrate in time the SuperNEMO optical modules with a Cobalt $60$ source, exploiting the time characteristic of those two emitted photons.
+
+\subsection{Time response of optical modules}
+
+A calorimeter block of SuperNEMO, composed of a scintillator and a photomultiplier, measures the scintillation light generated by the interaction of incoming particles.
+The energy of the incident particle stopping in the scintillator (photon, electron, alpha...) is fully absorbed.
+The photons produced by the scintillating material are converted in electrons at the photomultiplier photocathode.
+After amplification, electrons are collected by the anode which delivers an electric signal whose charge is proportional to the initial amount of incident photoelectrons.
+This signal is then transmitted, via the PM voltage divider, to the electronic readout, where the signal is sampled.
+Energy and time of arrival of the incident particle can be extracted from the signal waveform analysis.
+Especially, the arrival time of the particle, defined in Fig~\ref{subfig:zoom_secondary} in Sec.~\ref{sec:reflecto}, can be estimated.
+Each step, from the incident particle interaction inside the scintillator, to the signal sampling at the electronic readout, can have an impact on this arrival time measurement.
+On this section, we focus on the time resolution $\sigma_{t}$ induced by the optical module, and written as
+\begin{equation}
+  \sigma_{t}=\sqrt{\sigma_{t,\text{sc}}^{2}+\sigma_{t,\text{PM}}^{2}}\,,
+  \label{eq:Co_sigma_t}
+\end{equation}
+where the two terms $\sigma_{t,\text{sc}}$ and $\sigma_{t,\text{PM}}$ represent the time resolutions of the scintillator and of the PMT, respectively.
+We detail the physical origins of those terms.
+
+\subsubsection*{Scintillator time dispersion}
+The temporal dispersion $\sigma_{t,\text{sc}}$ in Eq.~\eqref{eq:Co_sigma_t} is based on the  scintillator operating principle.
+When a particle interacts in the scintillator, two successive mechanisms of light absorption/re-emission take place.
+The excitation of scintillator molecules leads to the creation of fluorescence photons.
+Those photons are then absorbed and re-emitted by the POPOP agent at higher wavelengths.
+These two processes follow the same temporal distribution
+\begin{equation}
+\mathcal{N}_{\text{photons}} = A\times e^{-t/\tau}\,,
+\label{eq:fluorescence_photons_time}
+\end{equation}
+with $\mathcal{N}_{\text{photons}}$ the number of generated photons at time $t$, $A$ a normalisation constant and $\tau$ the fluorescence characteristic time of the considered process.
+
+Another important phenomenon comes with the uncertainty on the interaction point location in the scintillator, which depends on the incident particle type.
+Depending on whether the incident particle is a photon or an electron, the term $\sigma_{t,\text{sc}}$ has a different contribution on the total time resolution $\sigma_{t}$.
+To picture this, we display the radiation length of photons and electrons in polystyrene on Fig~\ref{fig:particle_attenuation}.
+\begin{figure}[h]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/photon_energy_loss.pdf}
+  \captionsetup{justification=justified}
+  \caption{
+    \label{subfig:photon}}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/electron_energy_loss.pdf}
+  \captionsetup{justification=justified}
+  \caption{
+    \label{subfig:electron}}
+\end{subfigure}
+\caption{(a) Cross section of photons in polystyrene: coherent scattering (red dotted line), Compton effect (orange dotted line), photoelectric effect (green solid line) and total contribution (blue solid line).
+  (b) Stopping power for electrons in polystyrene: coherent scattering (red dotted line), radiative effect (orange dotted line) and total contribution (blue solid line).
+  At the considered energy range $10$ keV $ -\; 10$ MeV, the interaction of photons with matter is dominated by Compton effect, while the electrons interact mainly through coherent scattering.
+  At same energies, a photon crosses roughly $10$ times more polystyrene than an electron.
+  \label{fig:particle_attenuation}}
+\end{figure}
+These figures highlight that, at a given energy, a photon has roughly $10$ times less probability to interact with polystyrene than an electron.
+Therefore, an electron has a high probability to be stopped in the first few millimetres of the scintillator, while a photon can interact in a large range of depth inside the detector volume.
+
+On Fig~\ref{fig:photon_scintilator} are schemed the interactions of a photon and that of an electron in a SuperNEMO scintillator.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=8cm]{commissioning/fig_commissioning/Co_multi_reflection.pdf}
+  \caption{A scheme of interaction of particles in a scintillator.
+    The photon case is displayed on the left in rose dotted line, and the electron case is on the right in dark blue dotted line.
+    Both particles enter in the scintillator through the front face.
+    Examples of interaction points inside the scintillator are represented by the black dots.
+    The photons of scintillation emitted after the interaction are materialised by the bright green dotted lines.
+    Due to different interaction probabilities in matter, the two particles are stopped at different depths inside the calorimeter.
+    The photon can interact deeply inside the volume of the scintillating material while the electron has a high probability to interact within the first few millimetres.
+    \label{fig:photon_scintilator}}
+\end{figure}
+When the charged particle interacts in the scintillator, the absorbed energy leads to the emission of scintillation photons.
+They propagate inside the scintillator, in all directions from the interaction point, at the speed $c/n_{sc}$, with $n_{sc}$ the optical index of the scintillator material and $c$ the speed of light in vacuum.
+Depending on their initial direction, some of those photons propagate straightly to the PMT, and others are first reflected on the scintillator internal surface before entering the PMT, leading to time delay.
+
+To illustrate this phenomenon and give an order of magnitude of this effect, we take the example of a photon interacting in the middle of the scintillator.
+A photoelectron travelling straightly to the PM reaches the glass surface at $t_{s} = \frac{L}{2c/n_{sc}}$, $L$ being the scintillator width.
+Now let consider a photoelectron emitted in the opposite direction.
+It will propagate, reflect on the scintillator surface, and reach the PM at $t_{r} = \frac{3L}{2c/n_{sc}}$.
+This photon is then delayed of $\Delta t = t_{r} - t_{s} = \frac{L}{c/n_{sc}}$.
+Taking the width $L=25$ cm and $n_{sc}=1.5$, we obtain $1.25$ ns of delay.
+Moreover, the more the incident particle interacts deeply inside the scintillator, the more those \emph{reflected photons} are delayed.
+This mechanism increases the signal rising time collected at the PM anode, and impacts the scintillator time dispersion $\sigma_{t,\text{sc}}$.
+In addition, giving the cross sections of particles in polystyrene, this effect is more important for incoming photons than for incoming electrons, for which it is quite negligible.
+Therefore, we have $\sigma_{t,\text{sc}}^{\gamma}>\sigma_{t,\text{sc}}^{\text{e}^{-}}$.
+
+
+\subsubsection*{Photomultiplier time dispersion}
+
+The second term $\sigma_{t,\text{PM}}$ in Eq.~\eqref{eq:Co_sigma_t} describes the uncertainty on time measurement taken by the PM.
+A photomultiplier is a photodetector: after the light is collected and converted on the photocathode, the photoelectrons are multiplied.
+The time response depends on the transit time for the photoelectrons emitted at the photocathode to reach the anode after being multiplied.
+This parameter influences only the absolute value of the time measurement and do not play a role in Eq.~\eqref{eq:Co_sigma_t}.
+However, this transit time fluctuates for each photoelectron, this fluctuation being called the transit time spread (TTS).
+It leads to an uncertainty on the time measurement and so has an influence on the photomultiplier time dispersion $\sigma_{t,\text{PM}}$.
+\newline
+
+In this study, we want to characterise the time dispersion bring by the photomultiplier on the time measurement.
+To do so, we used a Cobalt $60$ source.
+
+%% As displayed on Fig.~\ref{fig:supplied_voltage}, these characteristic times depend essentially on the supplied voltage.
+%% \begin{figure}[h]
+%%   \centering
+%%   \includegraphics[width=8cm]{commissioning/fig_commissioning/PM_supplied_voltage.pdf}
+%%   \caption{Different characteristic times of a photomultiplier (R$6427$) with the supplied voltage.
+%%     The electron transit time, falling time, rising time and time transit spread (TTS) are displayed.
+%%     The higher the supplied voltage, the better the characteristic times.
+%%     \label{fig:supplied_voltage}}
+%% \end{figure}
+
+%% 231.8e3  1s
+%% 1e9
+%% 71.9 minutes equiv. temps run pour simus
+%% normalisation simus : Nev * 0.375
+
+\subsection{Experimental setup}
+
+The initial activity of the source we used to achieve this setup was $447.4$ kBq in $2014$.
+With a half-life time of $5.27$ years, this activity was reduced to $232$ kBq at the time of the data taking.
+
+The main goal of this study is to provide a time calibration for all optical modules of both main walls.
+%% precise XW GV
+As the demonstrator is closed at this time, placing the source in the middle of the detector is not possible.
+The better solution is to put it behind the main walls.
+In order to be sure all PMs receive light from the source, we decide to place it at $9$ different positions per wall, approximatively one meter behind the PMs.
+We take $18$ runs roughly $20$ minutes long.
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm]{commissioning/fig_commissioning/Co_setup.pdf}
+  \caption{
+\label{fig:}}
+\end{figure}
+
+\subsection{Detector efficiency}
+
+As decsribed in Sec.~\ref{sec:SNsoftware} of chapter~\ref{ch:detector}, the SuperNEMO collaboration developed its own simulation, reconstruction and analysis environement.
+The Falaise software, specifically designed by and for the SuperNEMO collaboration, holds the \verb!C++! library for the event reconstruction and analysis of simulated and real data.
+Especially, it contains the geometry, the detector material, the event data model, the reconstruction algorithms and the data analysis.
+Finally, the SNFee software is a tool package for the parametrisation, control and monitoring of the SuperNEMO front-end electronics.
+All this software environement has been used in the framework of the current Cobalt analysis.
+
+In order to monitor and compare the real data, I performed \Co\ event simulations in the SuperNEMO demonstrator, using the Falaise software.
+To match the real data, the simulated source has been placed behind one of the two calorimeter main walls of the detector.
+In fact, at this time, the simulated detector is symetrical in terms of detection perfomances.
+Therefore, simulations of \Co\ events behind the two main walls are equivalent.
+Consequently, we only simulated the \Co\ source behind the Italian main wall, and used these simulations for both main calorimeter walls.
+The Falaise and Root softwares have been employed to analyse the simulated data.
+
+As we said, the main goal of this study is to use the \Co\ decay to calibrate in time the optical modules.
+Then, the signal we are looking for is the detection of the $2$ photons of $1.17$ MeV and $1.33$ MeV we described above.
+To maximise the ratio signal over background, some cuts have been applied on the real and simulated data.
+\begin{itemize}
+\item Coincidence time criterion:\\ we define the coincidence time window by events occurring in a $62.5$ ns-long time interval.
+  This allows to avoid accidental coincidence events.
+\item Trigger criteria:\\ we are interested in events that passed both the low and high thresholds, corresponding to $150$ keV and $300$ keV, respectively.
+  Moreover, we only keep events with exactly two triggering electronic channels in the selected coincidence time window and for the given trigger conditions.
+\item Individual energy cuts:\\ given the two photon energies, we only select individual calorimeter hit energies greater than $0.7$ MeV.
+\end{itemize}
+In Fig.~\ref{fig:detector_efficiency}, we compare the real and simulated energy spectra for \Co\ events satisfying to the three criteria described above.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_efficiency_detector.pdf}
+  \caption{Top pad: energy spectra for simulated data (orange plain line) and real data (purple plain line) in logarithmic scale.
+    Bottom pad: ratio of real data over simulated data for each bin in logarithmic scale.
+\label{fig:detector_efficiency}}
+\end{figure}
+The simulated data are normalised to the source activity and the run time.
+Given the amount of real and simulated events, we conclude that the detection efficiency is $29$\%.
+Numerous parameters can affect the detection efficiency.
+\begin{itemize}
+\item Read out efficiency is mainly driven by
+\end{itemize}
+
+
+Efficiency is going to be improuved.
+\subsection{Determination of the individual timing resolution of each optical module}
 
 Optical modules have been characterised before installation.
-Most of the \Co\ $\beta$ disintegration are followed by the emission of two $\gamma$s in coincidence (see Fig.~\ref{fig:Co_decay_scheme}).
-The idea is to use this source to calibrate in time optical modules of SuperNEMO demonstrator by placing it behind the main calorimeter walls (the demonstrator being closed since ...) and using the two coincidence $\gamma$s.
 Performing simulations of \Co\ disintegration
 
 
 
-\section{Calibration with a Cobalt source}
-\label{sec:CoSource}
 
-\subsection{Experimental setting and goal}
-\subsection{Data taking at LSM}
-\subsection{Analysis}
-\subsection{Results}
 
 
 \section{The Light Injection System}
@@ -303,14 +525,14 @@ First LI commissioning data was taken in March 2019.
 
 
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=10cm]{commissioning/fig_commissioning/LIS_scheme.pdf}
 
   \caption{The Light Infection (LI) calibration system is schematised.
     More than $1300$ fibers, distributed in $20$ bundles, carry the light from $20$ LEDs to each scintillator block of the demonstrator.
     Reference OMs coupled with $^{241}$Am sources monitor the LED light.
-  \label{fig:LIS_scheme}}
+    \label{fig:LIS_scheme}}
 \end{figure}
 
 \subsection{Light injection system commissioning}
@@ -323,17 +545,17 @@ Primary/secondary
 Each LED lights
 Group LEDs/area
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_1d_counts.pdf}
-  \caption{The number of counts is displayed for each optical module, labeled by the \emph{OM index}.
+  \caption{The number of counts is displayed for each optical module, labelled by the \emph{OM index}.
     Each coloured marker represents counting rates for one area of the detector, that is to say one group of optical modules lighted by the same LED.
-    The area \#$1$ (dark red dots) is not receiving light from its coresponding LED.
+    The area \#$1$ (dark red dots) is not receiving light from its corresponding LED.
     \label{fig:LI_counts}}
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_mean_ampl.pdf}
   \caption{The mean signal amplitude distribution for each optical module is presented.
@@ -345,20 +567,34 @@ Group LEDs/area
 
 \subsection{Time resolution of optical modules}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=10cm]{commissioning/fig_commissioning/Co_decay_scheme.png}
-
-  \caption{Decay scheme of Cobalt $60$.
-    After the $\beta$ disintegration $99.88$\%,
-  \label{fig:Co_decay_scheme}}
-\end{figure}
 
 
-
-%% \begin{figure}
+%% \begin{figure}[h]
 %%   \centering
 %%   \includegraphics[width=10cm]{commissioning/fig_commissioning/}
+%%   \caption{
+%% \label{fig:}}
+%% \end{figure}
 
-%%   \caption{\label{fig:}}
+
+
+%% \begin{figure}[h]
+%% \centering
+%% \begin{subfigure}[t]{0.48\textwidth}
+%%   \centering
+%%   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/}
+%%   \captionsetup{justification=centering}
+%%   \caption{
+%%     \label{subfig:}}
+%% \end{subfigure}
+%% \hfill
+%% \begin{subfigure}[t]{0.48\textwidth}
+%%   \centering
+%%   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/}
+%%   \captionsetup{justification=centering}
+%%   \caption{
+%%     \label{subfig:}}
+%% \end{subfigure}
+%% \caption{
+%%   \label{fig:}}
 %% \end{figure}
