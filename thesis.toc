@@ -62,11 +62,13 @@
 \contentsline {chapter}{\chapternumberline {7}Characterisation of the calorimeter time resolution}{35}{chapter.7}
 \contentsline {section}{\numberline {7.1}Time calibration with a Cobalt source}{35}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Time response of optical modules}{35}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Experimental setup}{39}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Detector efficiency}{39}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Determination of the individual timing resolution of each optical module}{40}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}The Light Injection System}{41}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Light injection system commissioning}{41}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Time resolution of optical modules}{41}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.1.2}Energy calibration of optical modules}{39}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Experimental setup}{39}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Detector efficiency}{39}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Background estimation}{42}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Determination of the individual timing resolution of each optical module}{42}{subsection.7.1.6}
+\contentsline {section}{\numberline {7.2}The Light Injection System}{43}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Light injection system commissioning}{44}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Time resolution of optical modules}{44}{subsection.7.2.2}
 \contentsline {chapter}{Conclusion}{43}{chapter*.26}
-\contentsline {chapter}{Bibliography}{45}{section*.19}
+\contentsline {chapter}{Bibliography}{45}{section*.20}

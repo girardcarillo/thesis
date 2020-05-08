@@ -473,6 +473,7 @@ We take $18$ runs roughly $20$ minutes long.
 \end{figure}
 
 \subsection{Detector efficiency}
+\label{subsec:detector_efficiency}
 
 As decsribed in Sec.~\ref{sec:SNsoftware} of chapter~\ref{ch:detector}, the SuperNEMO collaboration developed its own simulation, reconstruction and analysis environement.
 The Falaise software, specifically designed by and for the SuperNEMO collaboration, holds the \verb!C++! library for the event reconstruction and analysis of simulated and real data.
@@ -566,8 +567,29 @@ plot hit energy/distance with source?
 Optical modules have been characterised before installation.
 Performing simulations of \Co\ disintegration
 
-
-
+The final goal of this analysis is to determine the time resoltion of optical modules, due to the scintillator time dispersion.
+As displayed in Fig.~\ref{fig:Co_decay_scheme}, the two photon of Cobalt $60$ are emitted in coincidence.
+The cuts described in Sec.~\ref{subsec:detector_efficiency} aim to maximise the ratio signal over background, the signal being the detection of two $\gamma$s interacting in two different optical modules.
+The two $\gamma$s, travelling at speed of light in air, reach the two optical modules at two different times.
+The arrival time of a particle in a given optical block $t^{\gamma}_{i}$, descibed in Fig.~\ref{fig:CFD} in Chapter~\ref{ch:commissioning}, is defined from the amount of charge collected at PM anode and received by the electronic readout.
+We are interested in event topologies where the two $\gamma$s of Cobalt $60$ hit two different calorimeter blocks.
+We then look for topologies where two calorimeter hits occured in a given time window of $60$ ns.
+This coincidence time window where chosen to select the two Cobalt $\gamma$s coincidence events, avoiding accidentals.
+Taking two distinct optical modules $A$ and $B$, we define the time difference between the two calorimeter hits as $\Delta t = t^{\gamma}_{A} - t^{\gamma}_{B}$.
+In Fig.~\ref{fig:Co_deltat} is presented an example of $\Delta t$ distribution for two optical modules.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=15cm]{commissioning/fig_commissioning/Co_deltat_distrib_ex.eps}
+  \caption{\label{fig:Co_deltat}}
+\end{figure}
+Each optical module pair is then characterised by the mean and the $\sigma$ of this distribution, whose depend mainly on three parameters:
+\begin{itemize}
+\item the distance from the Cobalt source to the wall,
+\item the distance between the two optical modules condidered,
+\item the time made by the electric signal to travel from a PM divider to the electronic readout.
+  In other words, the time difference distribution for a given pair of optical module is affected by the difference of lengths of the two coaxial cables from the PMs divider to the electronic channel.
+\end{itemize}
+For two given optical modules,
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -588,7 +610,6 @@ First LI commissioning data was taken in March 2019.
 \begin{figure}[h]
   \centering
   \includegraphics[width=10cm]{commissioning/fig_commissioning/LIS_scheme.pdf}
-
   \caption{The Light Infection (LI) calibration system is schematised.
     More than $1300$ fibers, distributed in $20$ bundles, carry the light from $20$ LEDs to each scintillator block of the demonstrator.
     Reference OMs coupled with $^{241}$Am sources monitor the LED light.
