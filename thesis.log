@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  8 MAY 2020 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  11 MAY 2020 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1131,7 +1131,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<1couverture.pdf, id=100, 597.50829pt x 845.0471pt>
+<1couverture.pdf, id=104, 597.50829pt x 845.0471pt>
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf>
 Package pdftex.def Info: 1couverture.pdf  used on input line 74.
@@ -1140,7 +1140,7 @@ File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf>
 Package pdftex.def Info: 1couverture.pdf  used on input line 74.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<1couverture.pdf, id=103, page=1, 597.50829pt x 845.0471pt>
+<1couverture.pdf, id=107, page=1, 597.50829pt x 845.0471pt>
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf, page 1>
 Package pdftex.def Info: 1couverture.pdf , page1 used on input line 74.
@@ -1175,14 +1175,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3]
-Underfull \vbox (badness 1990) has occurred while \output is active []
-
- [4])
-[5]
+) [3] [4]) [5]
 \openout2 = `commissioning/commissioning.aux'.
 
- (./commissioning/commissioning.tex [24
+
+(./commissioning/commissioning.tex [24
 
 
 
@@ -1201,7 +1198,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
  [25]
-<commissioning/fig_commissioning/scheme_reflecto.pdf, id=300, 738.76pt x 237.88
+<commissioning/fig_commissioning/scheme_reflecto.pdf, id=313, 738.76pt x 237.88
 875pt>
 File: commissioning/fig_commissioning/scheme_reflecto.pdf Graphic file (type pd
 f)
@@ -1214,7 +1211,7 @@ Overfull \hbox (12.90105pt too wide) in paragraph at lines 36--39
  [][] 
  []
 
-<commissioning/fig_commissioning/scheme_reflecto_1.pdf, id=301, 738.76pt x 236.
+<commissioning/fig_commissioning/scheme_reflecto_1.pdf, id=314, 738.76pt x 236.
 885pt>
 File: commissioning/fig_commissioning/scheme_reflecto_1.pdf Graphic file (type 
 pdf)
@@ -1227,7 +1224,7 @@ Overfull \hbox (12.90105pt too wide) in paragraph at lines 45--48
  [][] 
  []
 
-<commissioning/fig_commissioning/scheme_reflecto_2.pdf, id=302, 738.76pt x 236.
+<commissioning/fig_commissioning/scheme_reflecto_2.pdf, id=315, 738.76pt x 236.
 885pt>
 File: commissioning/fig_commissioning/scheme_reflecto_2.pdf Graphic file (type 
 pdf)
@@ -1270,7 +1267,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/celerity-eps-c
 onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
 1.5> allowed
-<commissioning/fig_commissioning/celerity-eps-converted-to.pdf, id=339, 569.126
+<commissioning/fig_commissioning/celerity-eps-converted-to.pdf, id=352, 569.126
 25pt x 277.035pt>
 File: commissioning/fig_commissioning/celerity-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1281,14 +1278,14 @@ Package pdftex.def Info: commissioning/fig_commissioning/celerity-eps-converted
 
 LaTeX Warning: Reference `subsec:CFD' on page 27 undefined on input line 117.
 
-<commissioning/fig_commissioning/CFD_example.pdf, id=341, 845.04686pt x 597.507
+<commissioning/fig_commissioning/CFD_example.pdf, id=354, 845.04686pt x 597.507
 86pt>
 File: commissioning/fig_commissioning/CFD_example.pdf Graphic file (type pdf)
 <use commissioning/fig_commissioning/CFD_example.pdf>
 Package pdftex.def Info: commissioning/fig_commissioning/CFD_example.pdf  used 
 on input line 124.
 (pdftex.def)             Requested size: 301.00192pt x 161.72803pt.
-<commissioning/fig_commissioning/CFD_example_zoom.pdf, id=343, 845.04686pt x 59
+<commissioning/fig_commissioning/CFD_example_zoom.pdf, id=356, 845.04686pt x 59
 7.50786pt>
 File: commissioning/fig_commissioning/CFD_example_zoom.pdf Graphic file (type p
 df)
@@ -1318,7 +1315,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/length_diff-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<commissioning/fig_commissioning/length_diff-eps-converted-to.pdf, id=364, 569.
+<commissioning/fig_commissioning/length_diff-eps-converted-to.pdf, id=377, 569.
 12625pt x 277.035pt>
 File: commissioning/fig_commissioning/length_diff-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -1347,7 +1344,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/cut_biais-eps-
 converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
 <1.5> allowed
-<commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf, id=366, 569.12
+<commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf, id=379, 569.12
 625pt x 277.035pt>
 File: commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -1391,8 +1388,8 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/attenuation_le
 ngth-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
  version <1.5> allowed
-<commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf, id=42
-8, 569.12625pt x 277.035pt>
+<commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf, id=44
+1, 569.12625pt x 277.035pt>
 File: commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf G
 raphic file (type pdf)
 <use commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf>
@@ -1422,7 +1419,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--300
 
  []
 
-<commissioning/fig_commissioning/Co_decay_scheme.pdf, id=459, 845.04686pt x 597
+<commissioning/fig_commissioning/Co_decay_scheme.pdf, id=472, 845.04686pt x 597
 .50786pt>
 File: commissioning/fig_commissioning/Co_decay_scheme.pdf Graphic file (type pd
 f)
@@ -1445,7 +1442,7 @@ Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
 [36 <./commissioning/fig_commissioning/Co_decay_scheme.pdf>]
-<commissioning/fig_commissioning/photon_energy_loss.pdf, id=485, 569.12625pt x 
+<commissioning/fig_commissioning/photon_energy_loss.pdf, id=498, 569.12625pt x 
 384.43625pt>
 File: commissioning/fig_commissioning/photon_energy_loss.pdf Graphic file (type
  pdf)
@@ -1453,7 +1450,7 @@ File: commissioning/fig_commissioning/photon_energy_loss.pdf Graphic file (type
 Package pdftex.def Info: commissioning/fig_commissioning/photon_energy_loss.pdf
   used on input line 362.
 (pdftex.def)             Requested size: 206.40038pt x 139.4235pt.
-<commissioning/fig_commissioning/electron_energy_loss.pdf, id=486, 569.12625pt 
+<commissioning/fig_commissioning/electron_energy_loss.pdf, id=499, 569.12625pt 
 x 384.43625pt>
 File: commissioning/fig_commissioning/electron_energy_loss.pdf Graphic file (ty
 pe pdf)
@@ -1461,7 +1458,7 @@ pe pdf)
 Package pdftex.def Info: commissioning/fig_commissioning/electron_energy_loss.p
 df  used on input line 370.
 (pdftex.def)             Requested size: 206.40038pt x 139.4235pt.
-<commissioning/fig_commissioning/Co_multi_reflection.pdf, id=488, 553.06625pt x
+<commissioning/fig_commissioning/Co_multi_reflection.pdf, id=501, 553.06625pt x
  467.7475pt>
 File: commissioning/fig_commissioning/Co_multi_reflection.pdf Graphic file (typ
 e pdf)
@@ -1485,51 +1482,55 @@ Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
 [38 <./commissioning/fig_commissioning/Co_multi_reflection.pdf>]
-<commissioning/fig_commissioning/Co_setup.pdf, id=601, 660.4675pt x 409.53pt>
+<commissioning/fig_commissioning/Co_setup.pdf, id=614, 660.4675pt x 409.53pt>
 File: commissioning/fig_commissioning/Co_setup.pdf Graphic file (type pdf)
 <use commissioning/fig_commissioning/Co_setup.pdf>
 Package pdftex.def Info: commissioning/fig_commissioning/Co_setup.pdf  used on 
-input line 470.
+input line 472.
 (pdftex.def)             Requested size: 170.71652pt x 105.85664pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [39]
-<commissioning/fig_commissioning/Co_efficiency_detector.pdf, id=610, 569.12625p
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[40 <./commissioning/fig_commissioning/Co_setup.pdf>]
+<commissioning/fig_commissioning/Co_efficiency_detector.pdf, id=639, 569.12625p
 t x 277.035pt>
 File: commissioning/fig_commissioning/Co_efficiency_detector.pdf Graphic file (
 type pdf)
 <use commissioning/fig_commissioning/Co_efficiency_detector.pdf>
 Package pdftex.def Info: commissioning/fig_commissioning/Co_efficiency_detector
-.pdf  used on input line 504.
+.pdf  used on input line 541.
 (pdftex.def)             Requested size: 483.69684pt x 235.45972pt.
 
-Overfull \hbox (53.69221pt too wide) in paragraph at lines 504--507
+Overfull \hbox (53.69221pt too wide) in paragraph at lines 541--544
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[41]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[40 <./commissioning/fig_commissioning/Co_setup.pdf>] [41 <./commissioning/fig_
-commissioning/Co_efficiency_detector.pdf, page is rotated 90 degrees>]
+[42 <./commissioning/fig_commissioning/Co_efficiency_detector.pdf, page is rota
+ted 90 degrees>]
 Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_deltat_
 distrib_ex.eps>
-(epstopdf)                    date: 2020-05-08 11:48:44
-(epstopdf)                    size: 9188 bytes
+(epstopdf)                    date: 2020-05-09 19:16:29
+(epstopdf)                    size: 11038 bytes
 (epstopdf)             Output file: <commissioning/fig_commissioning/Co_deltat_
 distrib_ex-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-08 11:48:51
-(epstopdf)                    size: 8475 bytes
+(epstopdf)                    date: 2020-05-09 19:16:46
+(epstopdf)                    size: 9543 bytes
 (epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
 oning/Co_deltat_distrib_ex-eps-converted-to.pdf commissioning/fig_commissioning
 /Co_deltat_distrib_ex.eps>
-(epstopdf)             \includegraphics on input line 582.
+(epstopdf)             \includegraphics on input line 601.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1537,61 +1538,126 @@ pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_deltat_dist
 rib_ex-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
 st version <1.5> allowed
 <commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf, id=
-684, 569.12625pt x 277.035pt>
+704, 569.12625pt x 277.035pt>
 File: commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf
  Graphic file (type pdf)
 <use commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf>
 
 Package pdftex.def Info: commissioning/fig_commissioning/Co_deltat_distrib_ex-e
-ps-converted-to.pdf  used on input line 582.
+ps-converted-to.pdf  used on input line 601.
 (pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+[43 <./commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pd
+f>]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_corr_si
+gma.eps>
+(epstopdf)                    date: 2020-05-09 20:04:12
+(epstopdf)                    size: 7664 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/Co_corr_si
+gma-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-09 20:04:16
+(epstopdf)                    size: 7679 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/Co_corr_sigma-eps-converted-to.pdf commissioning/fig_commissioning/Co_cor
+r_sigma.eps>
+(epstopdf)             \includegraphics on input line 637.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_corr_sigma-
+eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
+ion <1.5> allowed
+<commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf, id=726, 56
+9.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf Graphi
+c file (type pdf)
+<use commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_corr_sigma-eps-conv
+erted-to.pdf  used on input line 637.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--654
+
+ []
+
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[42] [43 <./commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-
-to.pdf>]
-<commissioning/fig_commissioning/LIS_scheme.pdf, id=705, 631.35875pt x 395.4775
+[44]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_sigma_d
+istance.eps>
+(epstopdf)                    date: 2020-05-11 13:02:44
+(epstopdf)                    size: 10875 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/Co_sigma_d
+istance-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-11 13:03:21
+(epstopdf)                    size: 9134 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/Co_sigma_distance-eps-converted-to.pdf commissioning/fig_commissioning/Co
+_sigma_distance.eps>
+(epstopdf)             \includegraphics on input line 662.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_sigma_dista
+nce-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
+version <1.5> allowed
+<commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf, id=734
+, 569.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf Gr
+aphic file (type pdf)
+<use commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_sigma_distance-eps-
+converted-to.pdf  used on input line 662.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <./commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf>]
+<commissioning/fig_commissioning/LIS_scheme.pdf, id=751, 631.35875pt x 395.4775
 pt>
 File: commissioning/fig_commissioning/LIS_scheme.pdf Graphic file (type pdf)
 <use commissioning/fig_commissioning/LIS_scheme.pdf>
 Package pdftex.def Info: commissioning/fig_commissioning/LIS_scheme.pdf  used o
-n input line 612.
+n input line 698.
 (pdftex.def)             Requested size: 284.52756pt x 178.22874pt.
-<commissioning/fig_commissioning/LI_1d_counts.pdf, id=706, 569.12625pt x 277.03
+
+Underfull \vbox (badness 1742) has occurred while \output is active []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[46 <./commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf> 
+<./commissioning/fig_commissioning/LIS_scheme.pdf>]
+<commissioning/fig_commissioning/LI_1d_counts.pdf, id=772, 569.12625pt x 277.03
 5pt>
 File: commissioning/fig_commissioning/LI_1d_counts.pdf Graphic file (type pdf)
 <use commissioning/fig_commissioning/LI_1d_counts.pdf>
 Package pdftex.def Info: commissioning/fig_commissioning/LI_1d_counts.pdf  used
- on input line 631.
+ on input line 717.
 (pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<commissioning/fig_commissioning/LI_mean_ampl.pdf, id=707, 569.12625pt x 277.03
+<commissioning/fig_commissioning/LI_mean_ampl.pdf, id=773, 569.12625pt x 277.03
 5pt>
 File: commissioning/fig_commissioning/LI_mean_ampl.pdf Graphic file (type pdf)
 <use commissioning/fig_commissioning/LI_mean_ampl.pdf>
 Package pdftex.def Info: commissioning/fig_commissioning/LI_mean_ampl.pdf  used
- on input line 641.
+ on input line 727.
 (pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
+) [47 <./commissioning/fig_commissioning/LI_1d_counts.pdf, page is rotated 90 d
+egrees>]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[44 <./commissioning/fig_commissioning/LIS_scheme.pdf>] [45 <./commissioning/fi
-g_commissioning/LI_1d_counts.pdf, page is rotated 90 degrees> <./commissioning/
-fig_commissioning/LI_mean_ampl.pdf, page is rotated 90 degrees>] (./thesis.bblp
-dfTeX warning (ext4): destination with the same identifier (name{page.44}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \begin{thebibliography}{1}
-                               [44
+[48 <./commissioning/fig_commissioning/LI_mean_ampl.pdf, page is rotated 90 deg
+rees>] (./thesis.bbl [50
 
 
 
@@ -1605,12 +1671,7 @@ Class memoir Warning: The material used in the headers is too large
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 92.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.45}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.92 \end{document}
-                    [45]
+[51]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1625,7 +1686,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 81888680D577789388CAE34F7889E586;1870.
+(rerunfilecheck)             Checksum: CE81C0AA294161DDD3D7BAAAFD93AD8E;1953.
 
 
 LaTeX Warning: There were undefined references.
@@ -1633,14 +1694,14 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 13426 strings out of 492982
- 197677 string characters out of 6134896
- 359942 words of memory out of 5000000
- 16593 multiletter control sequences out of 15000+600000
- 16269 words of font info for 64 fonts, out of 8000000 for 9000
+ 13462 strings out of 492982
+ 198686 string characters out of 6134896
+ 360890 words of memory out of 5000000
+ 16609 multiletter control sequences out of 15000+600000
+ 16890 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,18n,44p,1683b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.26} has been referenced but does not exi
+pdfTeX warning (dest): name{chapter*.31} has been referenced but does not exi
 st, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
@@ -1684,6 +1745,18 @@ exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
 replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1788,30 +1861,31 @@ pdfTeX warning (dest): name{chapter*.2} has been referenced but does not exist,
  replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
-hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (29 pages, 718474 bytes).
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eu
+ler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (32 pages, 746993 bytes).
 PDF statistics:
- 922 PDF objects out of 1000 (max. 8388607)
- 673 compressed objects within 7 object streams
- 136 named destinations out of 1000 (max. 500000)
- 320 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 989 PDF objects out of 1000 (max. 8388607)
+ 730 compressed objects within 8 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
