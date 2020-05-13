@@ -287,6 +287,15 @@ In this case, the pulse sent in the cable travels to the PMT, and goes back to t
 \subsection{Results}
 
 
+\section{Energy calibration}
+\label{sec:comm_energy_calibration}
+
+\section{Baseline studies}
+\label{sec:comm_baseline}
+
+\section{Light Injection System}
+\label{sec:LI}
+
 
 
 
@@ -294,17 +303,27 @@ In this case, the pulse sent in the cable travels to the PMT, and goes back to t
 
 \chapter{Characterisation of the calorimeter time resolution}
 
-The precise knowledge of the different particle interaction times in the optical modules of the SuperNEMO calorimeter is important to better understand and reject background.
-For example, the study of electron time-of-flight allows us to distinguish internal events (coming from source foils) from external events (PMTs, scintillators, tracker...).
+The precise knowledge of the different particle interaction times in the optical modules of the SuperNEMO calorimeter is important to better understand and reject the background.
+For example, the study of electron time-of-flight allows us to distinguish internal events (occuring within the source foils) from external events (radioactive decays occuring outside the source foils, for example in the PMTs or in the external iron shielding).\\
 \newline
-
+During the commossioning phase, a lot of work, presented in Chapter~\ref{ch:commissioning}, was achieved to calibrate the detector.
+Following on from this task and completing it, a great part of the present thesis was allocated to determine the time resolution of the SuperNEMO calorimeter, and give tools to purchase this analysis.\\
+\newline
 In this chapter we present different studies conducted in order to characterise the time response of the SuperNEMO optical modules.
+Despite the goal of the presented studies is to characterise the time resolution of the SuperNEMO calorimeter, some detector adjustment were still ongoing at the time of the acquisition, that could influence the presented results.
+Especially, the energy calibration described in Sec.~\ref{sec:comm_energy_calibration} was not complete, and the Light Injection System presented in Sec.~\ref{sec:ref} was not yet fully operational.
+However, all the work presented here is necessary in the framework of the first calorimeter calibration.
+Moreover, I provide all the analysis tools for the collaboration, with a view to doing a possible update, once all the demonstrator will be complete.\\
+\newline
+The first study presented in this Chapter focuses on the characterisation of the time resolution of a part of the SuperNEMO calorimeter, using an external calibration source.
+A second analysis aims to study the possibility of using the Light Injection System, a setup initially designed to calibrate in energy the calorimeter, to give informations on the calorimeter time resolution.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Time calibration with a Cobalt source}
+\section{Time characterisation with a Cobalt source}
 \label{sec:CoSource}
-Cobalt $60$ decays through $\beta^{-}$ decay, emitting an electron with a maximum energy of $318$ keV, into an excited state of the stable nickel-60.
+The study presented in this section was conducted using a Cobalt $60$ source, a man-made isotope with a $5.27$ years half-life, of which we give the main interseting properties.
+This unstable nucleus decays through $\beta^{-}$ decay, emitting an electron with a maximum energy of $0.32$ MeV, into an excited state of the stable Nickel $60$.
 A simplified decay scheme for this atomic element is given in Fig.~\ref{fig:Co_decay_scheme}.
 \begin{figure}[h]
   \centering
@@ -313,25 +332,28 @@ A simplified decay scheme for this atomic element is given in Fig.~\ref{fig:Co_d
     The Cobalt decays, through $\beta^{-}$, predominantly to the $2.50$ MeV state.
     Then, two $\gamma$'s (whose energy levels are represented in green) are emitted in $99.66$\% of the cases.
     The two photons have an energy of $1.17$ MeV and $1.33$ MeV, respectively.
-    As the life times of these two energy levels are short ($<1$ ps), the two photons can be considered as emitted in coincidence.
+    As the life times of these two energy levels are short ($<1$ ps), the two photons can be considered as emitted in coincidence, with respect to the timing precision of the calorimeter.
     We use this property to calibrate in time the demonstrator optical modules.
     \label{fig:Co_decay_scheme}}
 \end{figure}
-From this energy level, a transition into another excited state takes place with emission of a $1.17$ keV photon, then the ground state is reached with emission of a photon of $1.33$ keV.
-The life times of these two energy levels are very short, so the two photons are considered as emitted in coincidence with respect to the expected timing precision of the calorimeter.
-The goal of this analysis is to calibrate in time the SuperNEMO optical modules with a Cobalt $60$ source, exploiting the time characteristic of those two emitted photons.
+From this energy level, a transition into another excited state takes place with emission of a $1.17$ MeV photon, then the ground state is reached with emission of a photon of $1.33$ MeV.
+The life times of these two energy levels are very short, so the two photons are considered as emitted in coincidence with respect to the expected timing precision of the calorimeter.\\
+\newline
+This section is dedicated to detail the time resolution study performed using a Cobalt $60$ source, exploiting the time characteristic of the two emitted photons.
+A great proportion of the total SuperNEMO demonstrator was successfully characterised using this radioactive source.
+
 
 \subsection{Time response of optical modules}
 \label{subsec:OMtimeResponse}
 
 A calorimeter block of SuperNEMO, composed of a scintillator and a photomultiplier, measures the scintillation light generated by the interaction of incoming particles.
-The energy of the incident particle stopping in the scintillator (photon, electron, alpha...) is fully absorbed.
-The photons produced by the scintillating material are converted in electrons at the photomultiplier photocathode.
+Charged particles (electrons, alphas, electrons produced by Compton interaction of gammas) can be stopped in the scintillator.
+The optical photons produced by the scintillating material are converted in electrons at the photomultiplier photocathode.
 After amplification, electrons are collected by the anode which delivers an electric signal whose charge is proportional to the initial amount of incident photoelectrons.
 This signal is then transmitted, via the PM voltage divider, to the electronic readout, where the signal is sampled.
 Energy and time of arrival of the incident particle can be extracted from the signal waveform analysis.
 Especially, the arrival time of the particle, defined in Fig~\ref{subfig:zoom_secondary} in Sec.~\ref{sec:reflecto}, can be estimated.
-Each step, from the incident particle interaction inside the scintillator, to the signal sampling at the electronic readout, can have an impact on this arrival time measurement.
+Each step, from the incident particle interaction inside the scintillator, to the signal sampling at the electronic readout, can have an impact on this arrival time measurement, and therefore on the calorimeter time resolution.
 On this section, we focus on the time resolution $\sigma_{t}$ induced by the optical module, and written as
 \begin{equation}
   \sigma_{t}=\sqrt{\sigma_{t,\text{sc}}^{2}+\sigma_{t,\text{PM}}^{2}}\,,
@@ -396,10 +418,10 @@ On Fig~\ref{fig:photon_scintilator} are schemed the interactions of a photon and
 \end{figure}
 When the charged particle interacts in the scintillator, the absorbed energy leads to the emission of scintillation photons.
 They propagate inside the scintillator, in all directions from the interaction point, at the speed $c/n_{sc}$, with $n_{sc}$ the optical index of the scintillator material and $c$ the speed of light in vacuum.
-Depending on their initial direction, some of those photons propagate straightly to the PMT, and others are first reflected on the scintillator internal surface before entering the PMT, leading to time delay.
+Depending on their initial direction, some of those photons propagate straight to the PMT, while others are first reflected on the scintillator internal surface before entering the PMT, leading to time delay.
 
 To illustrate this phenomenon and give an order of magnitude of this effect, we take the example of a photon interacting in the middle of the scintillator.
-A photoelectron travelling straightly to the PM reaches the glass surface at $t_{s} = \frac{L}{2c/n_{sc}}$, $L$ being the scintillator width.
+A photoelectron travelling straight to the PM reaches the glass surface at $t_{s} = \frac{L}{2c/n_{sc}}$, $L$ being the scintillator width.
 Now let consider a photoelectron emitted in the opposite direction.
 It will propagate, reflect on the scintillator surface, and reach the PM at $t_{r} = \frac{3L}{2c/n_{sc}}$.
 This photon is then delayed of $\Delta t^{\text{pair}} = t_{r} - t_{s} = \frac{L}{c/n_{sc}}$.
@@ -413,17 +435,16 @@ Therefore, we have $\sigma_{t,\text{sc}}^{\gamma}>\sigma_{t,\text{sc}}^{\text{e}
 \subsubsection*{Photomultiplier time dispersion}
 
 The second term $\sigma_{t,\text{PM}}$ in Eq.~\eqref{eq:Co_sigma_t} describes the uncertainty on time measurement taken by the PM.
-A photomultiplier is a photodetector: after the light is collected and converted on the photocathode, the photoelectrons are multiplied.
+A photomultiplier is a photodetector: after the light is collected and converted at the photocathode, the photoelectrons are multiplied.
 The time response depends on the transit time for the photoelectrons emitted at the photocathode to reach the anode after being multiplied.
 This parameter influences only the absolute value of the time measurement and do not play a role in Eq.~\eqref{eq:Co_sigma_t}.
 However, this transit time fluctuates for each photoelectron, this fluctuation being called the transit time spread (TTS).
 It leads to an uncertainty on the time measurement and so has an influence on the photomultiplier time dispersion $\sigma_{t,\text{PM}}$.
 \newline
 
-In this study, we want to characterise the time dispersion bring by the photomultiplier on the time measurement.
+In this study, we want to characterise the time dispersion brought by the optical module on the time measurement.
 To do so, we used a Cobalt $60$ source.
 
-\subsubsection*{Optical modules' time response in simulated data}
 
 %% As displayed on Fig.~\ref{fig:supplied_voltage}, these characteristic times depend essentially on the supplied voltage.
 %% \begin{figure}[h]
@@ -440,32 +461,28 @@ To do so, we used a Cobalt $60$ source.
 %% 71.9 minutes equiv. temps run pour simus
 %% normalisation simus : Nev * 0.375
 
-\subsection{Energy calibration of optical modules}
-\label{subsec:OMenergyCalib}
-
-As described in Sec.~\ref{subsec:OMtimeResponse}, the collected charge at PM voltage divider is proportional to the amount of incident photoelectrons, and then to the initially deposited energy inside the scintillator.
-Once optical modules were assembled (optical coupling, packing, shielding integration), they were individually tested at Bordeaux laboratory, CENBG.
-Their energy resolutions for $1$ MeV-electrons at the centre of scintillator front face were determined.
-High voltages were set to optimal values, aligning their gain at $300$ mV at $1$ MeV.
-However, after calorimeter integration, due to different environment, amplitude spectra of each optical block have to be re-aligned.
-This work was performed by Axel Pin, PhD student at CENBG.
-We give in this section a summary of this energy calibration study.
-
-*A finir*
-
 \subsection{Experimental setup}
 
-Cobalt $60$ is an man-made isotope with a half-life of $5.27$ years.
-The initial activity of the source we used to achieve this setup was $447.4$ kBq in $2014$.
-This activity was reduced to $232$ kBq at the time of the data taking.
-
-The main goal of this study is to provide a time calibration for all optical modules of both main walls.
-%% precise XW GV
-As the demonstrator is closed at this time, placing the source in the middle of the detector is not possible.
-The better solution is to put it behind the main walls.
-In order to be sure all PMs receive light from the source, we decide to place it at $9$ different positions per wall, approximately one meter behind the PMs.
-We take $18$ runs roughly $20$ minutes long.
-
+The initial activity of the source we used to achieve this setup was $447.4$ kBq in February $2014$.
+Given the half-life of the Cobalt isotope, this activity was reduced to $232$ kBq at the time of the data taking.\\
+\newline
+The main goal of this study is to provide a time calibration for a proportion of optical modules.
+We focused on the characterisation of calorimeter the French main wall of the SuperNEMO demonstrator.
+First of all because, at this time, the acquisition was possible only with the main calorimeter walls, as X-Wall and $\gamma$-Veto parts were in assembly phase.
+Then, after some energy calibration issues, the Italian main wall data were unusable in the framework of this study.\\
+\newline
+Simulations, detailed in Sec.~\ref{subsec:Co_simus}, were performed to determine the amount of data we needed to characterise the time resolution of a best part of optical modules.
+As the demonstrator was closed at this time, setting the Cobalt source inside the detector, at source foils level, was not possible.
+Therefore, in order for all PMs to detect Cobalt decay $\gamma$s, two bunches of data acquisitions were taken:
+the source was placed at $9$ different positions on the $2$ main calorimeter walls, approximately one meter behind.
+Therefore, $19$ data acquisitions were taken in total, $18$ with the Cobalt source and $1$ without, to characterise the background with current calorimeter settings.
+Each acquisition was about $20$ minutes long.\\
+\newline
+The data acquisition using a Cobalt source took place in two weeks, during the summer break $2019$.
+The source, initially used for teaching purposes, was loan by IPN laboratory, Orsay, for two weeks.
+Currently the demonstrator is not protected from the laboratory light by the anti-radon tent.
+As light would damage undervoltage photomultipliers, a temporary solution is used: two removable black curtains are deployed on top of the detector, making data taking possible while allowing possible necessary repairs.
+To not disturb on site activities and to make the loan time profitable, a SuperNEMO team and I performed night shifts to take acquisition data.
 
 \begin{figure}[h]
   \centering
@@ -473,6 +490,32 @@ We take $18$ runs roughly $20$ minutes long.
   \caption{
 \label{fig:}}
 \end{figure}
+
+
+\subsection{Simulated data}
+\label{subsec:Co_simus}
+
+In order to monitor and compare the results obtained using the Cobalt $60$ source, I performed \Co\ event simulations in the SuperNEMO demonstrator, using the Falaise software.
+To match the real data, the simulated source has been placed behind one of the two calorimeter main walls of the detector.
+In fact, at this time, the simulated detector is symmetrical in terms of detection performances.
+Therefore, simulations of \Co\ events behind the two main walls are equivalent.
+Consequently, we only simulated the \Co\ source behind the Italian main wall, and used these simulations for both main calorimeter walls.
+The Falaise and Root softwares have been employed to analyse the simulated data.
+
+
+\subsection{Energy calibration of optical modules}
+\label{subsec:OMenergyCalib}
+
+As described in Sec.~\ref{subsec:OMtimeResponse}, the collected charge at PM voltage divider is proportional to the amount of incident photoelectrons, and then to the initially deposited energy inside the scintillator.
+Once optical modules were assembled (optical coupling, packing, shielding integration), they were individually tested at Bordeaux laboratory, CENBG, with an electron spectrometer [ref].
+Their energy resolutions for $1$ MeV-electrons at the centre of scintillator front face were determined.
+High voltages were set to optimal values, to obtain an amplitude of $300$ mV for $1$ MeV electrons.
+However, after calorimeter integration, due to different environment, amplitude spectra of each optical block have to be re-aligned.
+This work was performed by Axel Pin, PhD student at CENBG.
+We give in this section a summary of this energy calibration study.
+
+*A finir\\
+*A bouger dans partie commissioning
 
 
 \subsection{Background estimation}
@@ -484,10 +527,10 @@ Secondly, the energy calibration discussed in Sec.~\ref{subsec:OMenergyCalib} wa
 These two statements may impact this study's results.
 
 In this section, we want to estimate the amount of background events for each optical module for the data taking time period.
-The main background type are $\gamma$'s emitted during disintegration of \Tl\ and \Bi\ isotopes, coming from natural radioactivity ($^{238}$U and $^{232}$Th decay chains respectively).
+The main background type are $\gamma$'s emitted during disintegration of \Tl , \Bi\ and $^{40}$K isotopes, coming from natural radioactivity ($^{238}$U and $^{232}$Th decay chains respectively).
 
-Unfortunately, we do not have a background run for this time period.
-However, we can extract informations on background events from data runs taken with the Cobalt source placed behind the wall.
+Unfortunately, we do not have a background acquisition for this time period.
+However, we can extract informations on background events from data acquisitions taken with the Cobalt source placed behind the wall.
 We suppose the more one optical block is far from the source, the more the ratio signal over background decreases.
 The idea here is to look only at the data taken with the part of optical modules \emph{far} from the source.
 %% To estimate the number of background event received by each optical module by unit of time, we have to estimate the signal over background ratio for optical modules far from the Cobalt source.
@@ -509,13 +552,6 @@ Especially, it contains the geometry, the detector material, the event data mode
 Finally, the SNFee software is a tool package for the configuration, control and monitoring of the SuperNEMO front-end electronics.
 All this software environment has been used in the framework of the current Cobalt analysis.
 
-In order to monitor and compare the real data, I performed \Co\ event simulations in the SuperNEMO demonstrator, using the Falaise software.
-To match the real data, the simulated source has been placed behind one of the two calorimeter main walls of the detector.
-In fact, at this time, the simulated detector is symmetrical in terms of detection performances.
-Therefore, simulations of \Co\ events behind the two main walls are equivalent.
-Consequently, we only simulated the \Co\ source behind the Italian main wall, and used these simulations for both main calorimeter walls.
-The Falaise and Root softwares have been employed to analyse the simulated data.
-
 
 
 \subsubsection{Cuts on data events}
@@ -528,7 +564,7 @@ To maximise the ratio signal over background, some cuts have been applied on the
   This allows to avoid accidental coincidence events.
 \item Trigger criteria:\\ we are interested in events that passed both the low and high thresholds, corresponding to $150$ keV and $300$ keV, respectively.
   Moreover, we only keep events with exactly two triggering electronic channels in the selected coincidence time window and for the given trigger conditions.
-\item Individual energy cuts:\\ given the two photon energies, we only select individual calorimeter hit energies greater than $0.7$ MeV.
+\item Individual energy cuts:\\ given the two photon energies, we only select individual calorimeter hit energies greater than $0.7$ MeV, to reject double Compton interactions of one single photon in different optical modules.
 \item Geometrical cut: we do not look at events with calorimeter hits in two neighbouring optical modules.
   In fact, we want to avoid background event where one single $\gamma$ interacts in two different scintillators (by two successive Compton interactions).
   Such events occur predominantly in neighbouring scintillators.
@@ -543,7 +579,7 @@ In Fig.~\ref{fig:detector_efficiency}, we compare the real and simulated energy 
     Bottom pad: ratio of real data over simulated data for each bin in logarithmic scale.
 \label{fig:detector_efficiency}}
 \end{figure}
-The simulated data are normalised to the source activity and the run time.
+The simulated data are normalised to the source activity and the acquisition time.
 On the simulated energy spectrum, we observe three different energy peaks.
 The first one, located around $0.95$ MeV, is the Compton edge of the $1.17$ MeV energy photon.
 The second peak stands around $1.1$ MeV. It is a mixing between the energy of first photon
@@ -555,7 +591,7 @@ This may be caused by several reasons.
 Firstly, the energy resolution of the calorimeter blocks.
 Secondly, at the time of the data taking, optical modules where not equalised in gain.
 The real data energy spectrum is also characterised by a high energy part.
-This may be due to external background, which are not taken into account in the simulated data.
+This may be due to external background events, which are not taken into account in the simulated data.
 In Sec.~\ref{subsec:bkg_estimation} is presented a background analysis to investigate the high energy part of the energy spectrum, and better understand the data.
 
 *tableau efficacités cuts
@@ -586,7 +622,7 @@ The cuts described in Sec.~\ref{subsec:detector_efficiency} aim to maximise the 
 The two $\gamma$s, travelling at speed of light in air, reach the two optical modules at two different times.
 The time of a calorimeter hit $t^{\gamma}_{i}$, describes in Fig.~\ref{fig:CFD} in Chapter~\ref{ch:commissioning}, is defined from the amount of charge collected at PM anode and received by the electronic readout.
 %% We are interested in event topologies where the two $\gamma$s of Cobalt $60$ hit two different calorimeter blocks.
-We then look for topologies where two calorimeter hits occurred in a given time window of $60$ ns.
+We then look for topologies where two calorimeter hits occurred in a given time window of $62.5$ ns.
 This coincidence time window where chosen to select the two Cobalt $\gamma$s coincidence events, avoiding accidentals.
 A first event occur in one of the scintillator of the wall, meaning the amount of charge is high enough to pass the high amplitude threshold.
 In the considered coincidence time window, a second particle interacts in another scintillator.
@@ -601,6 +637,8 @@ In Fig.~\ref{fig:Co_deltat} is presented an example of a $\Delta t^{\text{pair}}
   \includegraphics[width=15cm]{commissioning/fig_commissioning/Co_deltat_distrib_ex.eps}
   \caption{$\Delta t^{\text{pair}}$ distributions for real data (green solid line) and simulated data (dark red solid line).
     Two Gaussian fit (orange dotted line) are displayed and fit parameters are given in the legend.
+    The two distributions are not centred on the same $\Delta t$ values because optical modules are not aligned in time.
+    However, this does not disturb the time resolution measurements.
     \label{fig:Co_deltat}}
 \end{figure}
 The two distributions present different behaviours in terms of means and standard deviations.
@@ -618,19 +656,18 @@ We observe such differences in the two distributions presented: the two fitted m
 This result was expected: for the moment, the Falaise software does not take into account, in the reconstruction process, the time made by the electric signal to travel from a PM divider to the electronic readout, discussed in Sec.~\ref{sec:reflecto} of Chapter \ref{ch:commissioning}.
 In other words, the time difference distribution for a given pair of optical module is affected by the difference of lengths of the two coaxial cables.
 This is an important parameter directly affecting the mean time difference between two distinct optical modules detecting particles in coincidence.
-Despite simulations do not perfectly picture the full detector performances, real data and simulation can be compared, since we undertand these differences.
+Despite simulations do not perfectly picture the full detector performances, real data and simulation can be compared, since we understand these differences.
 Moreover, both the real and simulated data are affected by parameters such as the distance from the Cobalt source to the wall, or the distance between the two considered optical modules.
 
 A $\Delta t^{\text{pair}}$ distribution exists for each pair of optical module detecting two events in the time coincidence window.
 The least square method is used to fit data points, which minimises the difference between the measured value and the fitted value.
-A mean and a standard deviation is then defined for each pair of optical module whose fitted data has $\chi^{2}/\text{ndf}<4$.
+A mean and a standard deviation is then defined for each pair of optical module whose fitted data has $\chi^{2}/\text{dof}<4$.
 Therefore, each pair of optical module is characterised by the mean and standard deviation of its corresponding $\Delta t^{\text{pair}}$ distribution.
 The standard deviation, noted as $\sigma_{t}^{\text{pair}}$ in the figure legend, corresponds to the uncertainty on time measurement for this peculiar pair of OM.
 Therefore, a value of the time uncertainty $\sigma_{t}^{\text{pair}}$ can only be given for a proportion of total optical modules.
 
-In the following of this section, in order to make explanations easier, we present results only for one given OM taken as reference with all other blocks on the wall.
-We consider the one that is closest to the Cobalt source, so the optical module located at the wall center.
-Therefore, the total possible pairs of OM considered is $220$: one calorimeter wall is composed of $260$ OMs, of which $220$ are $8$ inches\footnote{The real number of optical modules to be calibrated is $214$: $3$ OMs are damaged on the French wall (*ref commissioning*) and $3$ photomultipliers were not well aligned in gain at this time, and had to be removed from the analysis.}.
+As the detector in commissioning phase, the acquisition was taken with $254$ optical modules\footnote{Three OMs are damaged on the French wall (*ref commissioning*) and three photomultipliers were not well aligned in gain at this time, and had to be removed from the analysis.}.
+In this study, we only consider $8$ inches PMs, hence this analysis aims to characterise the time resolution of $214$ OMs, representing $45796$ possible combinations of pairs.
 In Fig.\ref{fig:Co_corr_sigma} are presented the $\sigma_{t}^{\text{pair}}$ values, both for simulated and real data.
 \begin{figure}[h]
   \centering
@@ -638,31 +675,34 @@ In Fig.\ref{fig:Co_corr_sigma} are presented the $\sigma_{t}^{\text{pair}}$ valu
   \caption{$\sigma_{t}^{\text{pair}}$ distribution for pairs of optical modules.
     \label{fig:Co_corr_sigma}}
 \end{figure}
-Firstly, we notice the mean $\sigma_{t}^{\text{pair}}$ value for simulations is lower than for real data.
-As explained above, this difference is caused by the perfect calorimeter time resolution for simulations on one side, and by the detector characteristics not yet implemeted in the simulation software on the other side.
+In the first place, we notice the mean $\sigma_{t}^{\text{pair}}$ value for simulations is lower than for real data.
+As explained above, this difference is caused by the perfect calorimeter time resolution for simulations on one side, and by the detector characteristics not yet implemented in the simulation software on the other side.
 This second statement is also behind the larger value of the real data distribution's standard deviation.
 In fact, for the simulated case, $\Delta{t}$ distributions, of which an example is given in Fig.~\ref{fig:Co_deltat}, have comparable $\sigma_{t}^{\text{pair}}$ values, for all pairs of optical modules.
 This is not the case for the real data: the $\sigma_{t}^{\text{pair}}$ value for a given pair of OM depends on the difference between the two coaxial cable lengths.
 And this length difference being specific for each pair of optical module.
 
-Secondly, information on $\sigma_{t}^{\text{pair}}$ value is provided for $56$\% of pairs of optical blocks for real data, against $88$\% for simulations.
+Moreover, we successed characterising $\sigma_{t}^{\text{pair}}$ values for $13$\% of pairs of optical blocks for real data, against $43$\% for simulations.
 In fact, the more one optical module is from the source, the more it is background dominated.
 As we explained, such a value is provided for a OM pair only if the fit of the corresponding $\Delta t^{\text{pair}}$ distribution is of high-quality.
-Therefore, the optical modules for which the fit sucesses are the ones around the source.
+Therefore, the optical modules for which the fit successes are the ones around the source.
 This is not valid for simulations are we only have Cobalt events, and no background is simulated.
-\newline
 
-We presented results on the uncertainty on time measurement for pairs of optical module, $\sigma_{t}^{\text{pair}}$.
-However, we are interesting in providing such values, independantly for each optical modules.
-Therefore, in the following, we present the algorithm we used to provide $\sigma_{t}^{\text{indep}}$ values.
-
-
+In Fig.\ref{fig:Co_sigma_distance} is displayed the number of characterised optical blocks, with the distance between the reference block and the Cobalt $60$ source, in units of block width.
 \begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/Co_sigma_distance.eps}
   \caption{Number of characterised OM pairs, with the distance between reference OM and source.
     \label{fig:Co_sigma_distance}}
 \end{figure}
+For a given distance from the source, the amount of characterised OM is lower for the real data case than for the simulated one.
+This explains the different amount of characterised OMs for real and simulated data.
+\newline
+
+We presented results on the uncertainty on time measurement for pairs of optical module, $\sigma_{t}^{\text{pair}}$.
+However, we are interesting in providing such values, independently for each optical modules.
+Therefore, in the following, we present the algorithm we used to provide $\sigma_{t}^{\text{indep}}$ values.
+
 
 
 %%fig distrib mean and sigma
@@ -670,10 +710,35 @@ Therefore, in the following, we present the algorithm we used to provide $\sigma
 \subsubsection*{Decoupling of $\sigma_{t}^{\text{pair}}$ values}
 
 We have determined $\sigma_{t}^{\text{pair}}$ for some of the pairs of OMs on the French wall.
-For example, if we take the source closest OM (OM located at the center of the French main calorimeter wall), it has coincidence events with a certain number of other optical blocks.
+For example, if we take the source closest OM (OM located at the centre of the French main calorimeter wall), it has coincidence events with a certain number of other optical blocks.
 Among them, $119$ different $\Delta t^{\text{pair}}$ distributions are fitted, therefore $119$ values of $\sigma_{t}^{\text{pair}}$ are stored.
+And this work is done for each counting optical modules taken as reference.
+All following steps aim to determine the individual $\sigma_{t}^{\text{indep}}$.
 
+We want to evaluate this value for the closest OM from the source, let us number it $0$.
+We have access to the number of coincidence events this OM has with each other OMs.
+We pick up the two OM that have the more coincidence events with this reference OM, with their associated $\sigma_{t}^{\text{indep}}$ and mean energies.
+We number them as $1$ and $2$.
+Therefore, to find the value of $\sigma_{t}^{\text{indep}}$, we have to solve a set of $3$ linear equations:
+\begin{align}
+  (\sigma_{t}^{0,1})^{2} &= \frac{(\sigma_{t}^{0})^{2}}{\bar{E_{0}}} + \frac{(\sigma_{t}^{1})^{2}}{\bar{E_{1}}}\nonumber \\
+  (\sigma_{t}^{0,2})^{2} &= \frac{(\sigma_{t}^{0})^{2}}{\bar{E_{0}}} + \frac{(\sigma_{t}^{2})^{2}}{\bar{E_{2}}}\\
+  (\sigma_{t}^{1,2})^{2} &= \frac{(\sigma_{t}^{1})^{2}}{\bar{E_{1}}} + \frac{(\sigma_{t}^{2})^{2}}{\bar{E_{2}}} \nonumber\,,
+  \label{eq:Co_sigma}
+\end{align}
+where $\sigma_{t}^{i}$ is the individual uncertainty on time measurement for the block $i$.
+Solving simultaneously these equations comes down to diagonalise the matrix $S$ defined as
+\begin{equation}
+S =
+\begin{pmatrix}
+ 1/\bar{E_{0}} & 1/\bar{E_{1}} & 0 \\
+ 1/\bar{E_{0}} & 0 & 1/\bar{E_{2}} \\
+ 0 & 1/\bar{E_{1}} & 1/\bar{E_{2}}
+\end{pmatrix}
+.
+\end{equation}
 
+We now generalise this method to all possible combinations of OM pairs for which we have informations on $\sigma_{t}^{\text{pair}}$.
 
 
 
