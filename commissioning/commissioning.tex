@@ -118,28 +118,28 @@ We perform such a study in Sec.~\ref{subsec:CFD}.
 We concluded that the highest precision on the time measurement arises for $f = 40\%$, and we adopt this value for the following analysis.
 A graphic representation of the CFD time search is given in fig.~\ref{subfig:zoom_secondary}.
 \begin{figure}[h]
-\centering
-\begin{subfigure}[t]{0.7\textwidth}
   \centering
-  \includegraphics[trim={1.2cm 3.5cm 1.7cm 3.1cm},clip,width=1\textwidth]{commissioning/fig_commissioning/CFD_example.pdf}
-  \captionsetup{justification=centering}
-  \caption{Total recorded waveform
-    \label{subfig:total_waveform}}
-\end{subfigure}
-\hfill
-\begin{subfigure}[t]{0.7\textwidth}
-  \centering
-  \includegraphics[trim={1.2cm 1.5cm 1.7cm 3.1cm},clip,width=1\textwidth]{commissioning/fig_commissioning/CFD_example_zoom.pdf}
-  \captionsetup{justification=centering}
-  \caption{Zoom on secondary pulse
-    \label{subfig:zoom_secondary}}
-\end{subfigure}
-\caption{(a) Total recorded waveform: primary pulse (left) and secondary the pulse (right).
-  (b) Zoom on the secondary pulse.
+  \begin{subfigure}[t]{0.7\textwidth}
+    \centering
+    \includegraphics[trim={1.2cm 3.5cm 1.7cm 3.1cm},clip,width=1\textwidth]{commissioning/fig_commissioning/CFD_example.pdf}
+    \captionsetup{justification=centering}
+    \caption{Total recorded waveform
+      \label{subfig:total_waveform}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.7\textwidth}
+    \centering
+    \includegraphics[trim={1.2cm 1.5cm 1.7cm 3.1cm},clip,width=1\textwidth]{commissioning/fig_commissioning/CFD_example_zoom.pdf}
+    \captionsetup{justification=centering}
+    \caption{Zoom on secondary pulse
+      \label{subfig:zoom_secondary}}
+  \end{subfigure}
+  \caption{(a) Total recorded waveform: primary pulse (left) and secondary the pulse (right).
+    (b) Zoom on the secondary pulse.
     A representation of time computed with a Constant Fraction Discriminator (CFD) is provided.
     Its maximal amplitude (red dotted line) and its fraction for $\text{f}=40\%$ (green dotted line) are displayed.
     The time $\text{T}_{\text{pulse}}$ (orange dotted line) represents the time of arrival of the secondary pulse computed with CFD, with the fraction $\text{f}=40\%$.
-  \label{fig:CFD}}
+    \label{fig:CFD}}
 \end{figure}
 As we want to measure the installed cable lengths $l^{m}_{j}$, and compare them to the initially designed ones, $l^{d}_{j}$, we define the length difference $\Delta L_{j}$ as:
 \begin{equation}
@@ -307,24 +307,26 @@ The precise knowledge of the different particle interaction times in the optical
 For example, the study of electron time-of-flight allows us to distinguish internal events (occuring within the source foils) from external events (radioactive decays occuring outside the source foils, for example in the PMTs or in the external iron shielding).\\
 \newline
 During the commossioning phase, a lot of work, presented in Chapter~\ref{ch:commissioning}, was achieved to calibrate the detector.
-Following on from this task and completing it, a great part of the present thesis was allocated to determine the time resolution of the SuperNEMO calorimeter, and give tools to purchase this analysis.\\
+Following on from this task and completing it, a great part of the present thesis was allocated to determine the time resolution of the SuperNEMO calorimeter, and to provide tools to purchase this analysis.\\
 \newline
 In this chapter we present different studies conducted in order to characterise the time response of the SuperNEMO optical modules.
-Despite the goal of the presented studies is to characterise the time resolution of the SuperNEMO calorimeter, some detector adjustment were still ongoing at the time of the acquisition, that could influence the presented results.
-Especially, the energy calibration described in Sec.~\ref{sec:comm_energy_calibration} was not complete, and the Light Injection System presented in Sec.~\ref{sec:ref} was not yet fully operational.
+Although the goal of the presented studies is to characterise the time resolution of the SuperNEMO calorimeter, some detector adjustment were still ongoing at the time of the acquisition, that could influence the presented results.
+Especially, the energy calibration described in Sec.~\ref{sec:comm_energy_calibration} was not complete, and the Light Injection System presented in Sec.~\ref{sec:LIS} was not yet fully operational.
 However, all the work presented here is necessary in the framework of the first calorimeter calibration.
-Moreover, I provide all the analysis tools for the collaboration, with a view to doing a possible update, once all the demonstrator will be complete.\\
+Moreover, I provide all the analysis tools for the collaboration, with a view to doing a possible update, once the whole demonstrator construction will be complete.\\
 \newline
-The first study presented in this Chapter focuses on the characterisation of the time resolution of a part of the SuperNEMO calorimeter, using an external calibration source.
-A second analysis aims to study the possibility of using the Light Injection System, a setup initially designed to calibrate in energy the calorimeter, to give informations on the calorimeter time resolution.
-
+The first study presented in this chapter focuses on the characterisation of the time resolution of the SuperNEMO calorimeter, using an external calibration source made of Cobalt $60$.
+In the second part of this chapter, we study the possibility to gather informations on the calorimeter time resolution using the Light Injection System, a setup initially designed to calibrate in energy the calorimeter, to give informations on the calorimeter time resolution.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Time characterisation with a Cobalt source}
-\label{sec:CoSource}
-The study presented in this section was conducted using a Cobalt $60$ source, a man-made isotope with a $5.27$ years half-life, of which we give the main interseting properties.
-This unstable nucleus decays through $\beta^{-}$ decay, emitting an electron with a maximum energy of $0.32$ MeV, into an excited state of the stable Nickel $60$.
-A simplified decay scheme for this atomic element is given in Fig.~\ref{fig:Co_decay_scheme}.
+\section{Measurement of the time resolution with a 60Co source}
+\label{sec:Co_analysis}
+This section is dedicated to detail the time resolution study performed using a Cobalt $60$ source, exploiting the time characteristic of two photons emitted during the radioactive disintegration process of this nucleus.
+A great proportion of the whole SuperNEMO demonstrator was successfully characterised using this radioactive source.
+
+\subsection{Description of Cobalt $60$ nucleus}
+\label{subsec:CoSource}
+The Cobalt $60$ is a man-made isotope, with a $5.27$ years half-life, of which we provide the main interesting properties in the simplified decay scheme of Fig.~\ref{fig:Co_decay_scheme}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=10cm]{commissioning/fig_commissioning/Co_decay_scheme.pdf}
@@ -336,31 +338,31 @@ A simplified decay scheme for this atomic element is given in Fig.~\ref{fig:Co_d
     We use this property to calibrate in time the demonstrator optical modules.
     \label{fig:Co_decay_scheme}}
 \end{figure}
-From this energy level, a transition into another excited state takes place with emission of a $1.17$ MeV photon, then the ground state is reached with emission of a photon of $1.33$ MeV.
-The life times of these two energy levels are very short, so the two photons are considered as emitted in coincidence with respect to the expected timing precision of the calorimeter.\\
+The Cobalt $60$ is an unstable nucleus, spontaneously decaying into an excited state of the Nickel $60$, through the $\beta^{-}$ process.
+To reach the ground state of the Nickel $60$, the nucleus goes through two successive energy levels, emitting two photons of $1.17$ MeV and $1.33$ MeV, repectively.
+Life times of these two energy levels are very short (under the picosecond), thus the two photons are considered as emitted in coincidence with respect to the expected timing precision of the calorimeter.\\
 \newline
-This section is dedicated to detail the time resolution study performed using a Cobalt $60$ source, exploiting the time characteristic of the two emitted photons.
-A great proportion of the total SuperNEMO demonstrator was successfully characterised using this radioactive source.
-
+We aim to exploit these two photons emitted after the $\beta^{-}$ disintegration to determine the calorimeter time resolution.
 
 \subsection{Time response of optical modules}
 \label{subsec:OMtimeResponse}
 
-A calorimeter block of SuperNEMO, composed of a scintillator and a photomultiplier, measures the scintillation light generated by the interaction of incoming particles.
-Charged particles (electrons, alphas, electrons produced by Compton interaction of gammas) can be stopped in the scintillator.
-The optical photons produced by the scintillating material are converted in electrons at the photomultiplier photocathode.
+In order to characterise incoming charged particles (alphas, electrons), each calorimeter block of SuperNEMO is composed of a scintillator and a photomultiplier.
+The purpose of the scintillator material is to stop the incoming particles, which will induce the production of the so-called optical photons.
+Those photons are then converted into electrons at the photomultiplier photocathode.
 After amplification, electrons are collected by the anode which delivers an electric signal whose charge is proportional to the initial amount of incident photoelectrons.
 This signal is then transmitted, via the PM voltage divider, to the electronic readout, where the signal is sampled.
-Energy and time of arrival of the incident particle can be extracted from the signal waveform analysis.
-Especially, the arrival time of the particle, defined in Fig~\ref{subfig:zoom_secondary} in Sec.~\ref{sec:reflecto}, can be estimated.
-Each step, from the incident particle interaction inside the scintillator, to the signal sampling at the electronic readout, can have an impact on this arrival time measurement, and therefore on the calorimeter time resolution.
-On this section, we focus on the time resolution $\sigma_{t}$ induced by the optical module, and written as
+Energy and time of arrival of the incident charged particle can be extracted from the signal waveform analysis.
+Especially, the particle arrival time, introduced in Sec.~\ref{sec:reflecto}, can be estimated.
+Each step of the charged particle detection process, from the incident particle interaction inside the scintillator, to the signal sampling at the electronic readout, can have an impact on the precise measurement of the charged particle.
+We introduce the so-called calorimeter time resolution $\sigma_t$, which encapsulates the global uncertainty on the time-arrival measurement of particles into the calorimeter.
+The squared time-resolution can therefore be expressed as the sum of two contributions:
+the scintillator resolution $\sigma_{t, \textrm{sc}}^{2}$, and the PMT resolution $\sigma_{t, \textrm{PM}}^{2}$,
 \begin{equation}
-  \sigma_{t}=\sqrt{\sigma_{t,\text{sc}}^{2}+\sigma_{t,\text{PM}}^{2}}\,,
+  \sigma_{t}=\sqrt{\sigma_{t,\text{sc}}^{2}+\sigma_{t,\text{PM}}^{2}}\,.
   \label{eq:Co_sigma_t}
 \end{equation}
-where the two terms $\sigma_{t,\text{sc}}$ and $\sigma_{t,\text{PM}}$ represent the time resolutions of the scintillator and of the PMT, respectively.
-We detail the physical origins of those terms.
+In the following, we detail in depth the physical origins of these terms.
 
 \subsubsection*{Scintillator time dispersion}
 The temporal dispersion $\sigma_{t,\text{sc}}$ in Eq.~\eqref{eq:Co_sigma_t} is based on the  scintillator operating principle.
@@ -369,8 +371,8 @@ The excitation of scintillator molecules leads to the creation of fluorescence p
 Those photons are then absorbed and re-emitted by the POPOP agent at higher wavelengths.
 These two processes follow the same temporal distribution
 \begin{equation}
-\mathcal{N}_{\text{photons}} = A\times e^{-t/\tau}\,,
-\label{eq:fluorescence_photons_time}
+  \mathcal{N}_{\text{photons}} = A\times e^{-t/\tau}\,,
+  \label{eq:fluorescence_photons_time}
 \end{equation}
 with $\mathcal{N}_{\text{photons}}$ the number of generated photons at time $t$, $A$ a normalisation constant and $\tau$ the fluorescence characteristic time of the considered process.
 
@@ -378,27 +380,27 @@ Another important phenomenon comes with the uncertainty on the interaction point
 Depending on whether the incident particle is a photon or an electron, the term $\sigma_{t,\text{sc}}$ has a different contribution on the total time resolution $\sigma_{t}$.
 To picture this, we display the radiation length of photons and electrons in polystyrene on Fig~\ref{fig:particle_attenuation}.
 \begin{figure}[h]
-\centering
-\begin{subfigure}[t]{0.48\textwidth}
   \centering
-  \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/photon_energy_loss.pdf}
-  \captionsetup{justification=justified}
-  \caption{
-    \label{subfig:photon}}
-\end{subfigure}
-\hfill
-\begin{subfigure}[t]{0.48\textwidth}
-  \centering
-  \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/electron_energy_loss.pdf}
-  \captionsetup{justification=justified}
-  \caption{
-    \label{subfig:electron}}
-\end{subfigure}
-\caption{(a) Cross section of photons in polystyrene: coherent scattering (red dotted line), Compton effect (orange dotted line), photoelectric effect (green solid line) and total contribution (blue solid line).
-  (b) Stopping power for electrons in polystyrene: coherent scattering (red dotted line), radiative effect (orange dotted line) and total contribution (blue solid line).
-  At the considered energy range $10$ keV $ -\; 10$ MeV, the interaction of photons with matter is dominated by Compton effect, while the electrons interact mainly through coherent scattering.
-  At same energies, a photon crosses roughly $10$ times more polystyrene than an electron.
-  \label{fig:particle_attenuation}}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/photon_energy_loss.pdf}
+    \captionsetup{justification=justified}
+    \caption{
+      \label{subfig:photon}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/electron_energy_loss.pdf}
+    \captionsetup{justification=justified}
+    \caption{
+      \label{subfig:electron}}
+  \end{subfigure}
+  \caption{(a) Cross section of photons in polystyrene: coherent scattering (red dotted line), Compton effect (orange dotted line), photoelectric effect (green solid line) and total contribution (blue solid line).
+    (b) Stopping power for electrons in polystyrene: coherent scattering (red dotted line), radiative effect (orange dotted line) and total contribution (blue solid line).
+    At the considered energy range $10$ keV $ -\; 10$ MeV, the interaction of photons with matter is dominated by Compton effect, while the electrons interact mainly through coherent scattering.
+    At same energies, a photon crosses roughly $10$ times more polystyrene than an electron.
+    \label{fig:particle_attenuation}}
 \end{figure}
 These figures highlight that, at a given energy, a photon has roughly $10$ times less probability to interact with polystyrene than an electron.
 Therefore, an electron has a high probability to be stopped in the first few millimetres of the scintillator, while a photon can interact in a large range of depth inside the detector volume.
@@ -461,7 +463,8 @@ To do so, we used a Cobalt $60$ source.
 %% 71.9 minutes equiv. temps run pour simus
 %% normalisation simus : Nev * 0.375
 
-\subsection{Experimental setup}
+\subsection{Principle of the measurement}
+\label{subsec:Co_setup}
 
 The initial activity of the source we used to achieve this setup was $447.4$ kBq in February $2014$.
 Given the half-life of the Cobalt isotope, this activity was reduced to $232$ kBq at the time of the data taking.\\
@@ -471,36 +474,125 @@ We focused on the characterisation of calorimeter the French main wall of the Su
 First of all because, at this time, the acquisition was possible only with the main calorimeter walls, as X-Wall and $\gamma$-Veto parts were in assembly phase.
 Then, after some energy calibration issues, the Italian main wall data were unusable in the framework of this study.\\
 \newline
-Simulations, detailed in Sec.~\ref{subsec:Co_simus}, were performed to determine the amount of data we needed to characterise the time resolution of a best part of optical modules.
+The experimental setup had then to be determined, mainly to define what will be the site of the source near the detector, and how much time amount of data we needed.
+Simulations, whose characteristics are detailed in Sec.~\ref{subsec:Co_simus}, were performed to determine the amount of data we needed to characterise the time resolution of a best part of optical modules.
 As the demonstrator was closed at this time, setting the Cobalt source inside the detector, at source foils level, was not possible.
-Therefore, in order for all PMs to detect Cobalt decay $\gamma$s, two bunches of data acquisitions were taken:
-the source was placed at $9$ different positions on the $2$ main calorimeter walls, approximately one meter behind.
-Therefore, $19$ data acquisitions were taken in total, $18$ with the Cobalt source and $1$ without, to characterise the background with current calorimeter settings.
-Each acquisition was about $20$ minutes long.\\
-\newline
-The data acquisition using a Cobalt source took place in two weeks, during the summer break $2019$.
-The source, initially used for teaching purposes, was loan by IPN laboratory, Orsay, for two weeks.
-Currently the demonstrator is not protected from the laboratory light by the anti-radon tent.
-As light would damage undervoltage photomultipliers, a temporary solution is used: two removable black curtains are deployed on top of the detector, making data taking possible while allowing possible necessary repairs.
-To not disturb on site activities and to make the loan time profitable, a SuperNEMO team and I performed night shifts to take acquisition data.
-
+Therefore, in order for all PMs to detect $\gamma$s from Cobalt decays, several bunches of data acquisitions were taken:
+the source was placed at $9$ different positions on each of the $2$ main calorimeter walls, approximately one meter behind.
+Therefore,  in total, $19$ data acquisitions have been taken, of which:
+\begin{itemize}
+\item $18$ with the Cobalt source placed behind the wall. The $9$ different positions for one wall are represented on Fig.~\ref{fig:Co_setup_wall}.
+\item $1$ acquisition have been taken without the Cobalt source, to characterise the background detected with the current calorimeter settings.
+\end{itemize}
+Let notice that this background aqcuisition was taken with the Italian main wall, because we missed time to take one with the French side.
+Each acquisition was about $20$ minutes long.
+On Fig.~\ref{fig:Co_setup} is schemed the experimental setting, for a given positionning of the Cobalt source.\\
+%% \begin{figure}[h]
+%%   \centering
+%%   \includegraphics[width=6cm]{commissioning/fig_commissioning/Co_setup.pdf}
+%%   \caption{Example of positionning of the Cobalt source behind a calorimeter main wall, schemed by $4$ optical modules (green).
+%%     The emissions of the $2$ interesting $\gamma$s of $1.17$ and $1.33$ MeV are displayed in coloured dotted lines.
+%% \label{fig:Co_setup}}
+%% \end{figure}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=6cm]{commissioning/fig_commissioning/Co_setup.pdf}
-  \caption{
-\label{fig:}}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[height=0.5\textwidth]{commissioning/fig_commissioning/Co_setup.pdf}
+    \captionsetup{justification=justified}
+    \caption{
+      \label{fig:Co_setup}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[height=0.5\textwidth]{commissioning/fig_commissioning/Co_setup_wall.pdf}
+    \captionsetup{justification=justified}
+    \caption{
+      \label{fig:Co_setup_wall}}
+  \end{subfigure}
+  \caption{(a) Side view of an example of positionning of the Cobalt source behind a calorimeter main wall, schemed by $4$ optical modules (green).
+    The emissions of the $2$ interesting $\gamma$s of $1.17$ and $1.33$ MeV are displayed in coloured dotted lines.
+    (b) Front view of the nine source positions behind a main wall.
+    Data acquisitions have been taken with the Cobalt source set on these $9$ different positions, and this for the two main walls ($18$ acquisitions in total).
+    Considering that the simulated detector has so far been symmetrical in terms of performances, only positions number $1$, $2$ and $5$ have been simulated.}
 \end{figure}
+\newline
+The data acquisition, using a Cobalt source, took place in two weeks, during the summer break $2019$.
+The source, initially used for teaching purposes, was loan by IPN laboratory, Orsay, for two weeks.
+Currently the demonstrator is not protected from the laboratory light by the anti-radon tent.
+As it would damage undervoltage photomultipliers, a temporary solution is used.
+Two removable black curtains are deployed on top of the detector, and acquisitions are taken in dark laboratory, making data acquisition possible, while allowing eventual necessary repairs.
+To not disturb on site activities and to make the loan time profitable, a SuperNEMO team and I performed night shifts to take acquisition data.
+These are the data we used for this study.
 
 
 \subsection{Simulated data}
 \label{subsec:Co_simus}
 
-In order to monitor and compare the results obtained using the Cobalt $60$ source, I performed \Co\ event simulations in the SuperNEMO demonstrator, using the Falaise software.
-To match the real data, the simulated source has been placed behind one of the two calorimeter main walls of the detector.
-In fact, at this time, the simulated detector is symmetrical in terms of detection performances.
-Therefore, simulations of \Co\ events behind the two main walls are equivalent.
-Consequently, we only simulated the \Co\ source behind the Italian main wall, and used these simulations for both main calorimeter walls.
-The Falaise and Root softwares have been employed to analyse the simulated data.
+As described in Sec.~\ref{sec:SNsoftware} of Chapter~\ref{ch:detector}, the SuperNEMO collaboration developed its own simulation, reconstruction and analysis environment.
+The Falaise software, specifically designed by and for the SuperNEMO collaboration, holds the \verb!C++! library for the event reconstruction and analysis of simulated and real data.
+Especially, it contains the geometry, the detector material, the event data model, the reconstruction algorithms and the data analysis.
+Finally, the SNFee software is a tool package for the configuration, control and monitoring of the SuperNEMO front-end electronics.
+
+The current analysis relies on simulations of \Co\ disintegrations that I performed for the demonstrator configuration, in order to monitor and compare the results obtained in the framework of this analysis.
+
+\subsubsection*{Cobalt $60$ events simulations}
+As for the data acquisition, the simulated source has been placed behind calorimeter walls.
+However, we do not need to simulate all source positions since, at this time, the simulated detector is symmetrical in terms of detection performances.
+Therefore, simulations of \Co\ events behind the two main walls are equivalent, and we only need to simulate $4$ source locations, other being obtained by symmetry operations.
+The Falaise software was used for simulations, and I developed a set of ROOT codes for data processing and analysis, available on the GitHub plateform.
+%% A visualisation, provided by the Falaise Software, of a simulated Cobalt event, is shown on Fig.~\ref{fig:Co_visu}.
+%% \begin{figure}[h]
+%%   \centering
+%%   \includegraphics[width=6cm]{commissioning/fig_commissioning/Co_visu.pdf}
+%%   \caption{Visualisation of a simulated Cobalt event.
+%% \label{fig:Co_visu}}
+%% \end{figure}
+
+
+\subsubsection*{Background events simulations}
+
+Currently, the Falaise software does not supply a complete background simulation.
+This will be performed as soon as the complete demonstrator performances will be characterised, and implemented in the SuperNEMO Software.
+The important information to remember is that we can't base our study on background simulations.
+
+
+\subsection{Cuts on data events}
+
+The main goal of this study is to use the two $\gamma$s of $1.17$ MeV and $1.33$ MeV energies from \Co\ decays, to characterise the time resolutions of individual optical modules on the SuperNEMO demonstrator.
+Then, the signal we are looking for is two calorimeter hits.
+To maximise the signal to background ratio, some cuts have been applied on the real and simulated data.
+\begin{itemize}
+\item Coincidence time criterion:\\ we define the coincidence time window by events occurring in a $62.5$ ns-long time interval.
+  This allows to avoid accidental coincidence events.
+\item Trigger criteria:\\ as we look for two calorimeter hits, we only keep events with exactly two triggering electronic channels.
+  Moreover, we are interested in events that passed both the low and high amplitude thresholds, $-50$ mV and $-100$ mV respectively, corresponding to approximately $150$ keV and $300$ keV.
+\item Individual energy cuts:\\ given the two photon energies, we only select individual calorimeter hit energies greater than $0.7$ MeV, to reject double Compton interactions of one single photon in different optical modules.
+  This energy cut highly depends on the energy calibration discussed in Sec.~\ref{subsec:OMenergyCalib}.
+\item Geometrical cut:
+  we want to avoid background event where one single $\gamma$ interacts in two different scintillators (by two successive Compton interactions).
+  Such events occur predominantly in neighbouring scintillators.
+  With a well calibrated detector, the individual energy cut would have been sufficient to prevent such events to be selected.
+  But, at this time, the detector was not fully calibrated in energy, and some calorimeter hit energies could be badly reconstructed, therefore some background events could pass this cut.
+  Therefore, we reject events with calorimeter hits in two neighbouring optical modules.
+  In fact,
+\end{itemize}
+
+Cut efficiencies are presented in table~\ref{tab:Co_cut_eff}.
+\begin{table}[h]
+  \centering
+
+  \begin{tabular}{ l c c c }
+    & Simulations & Data \\
+    Cut $2$ calo hits & test & test \\
+    Cut energy & $65$\% & $1.8$\% \\
+    Cut voisins & $3.4$\% & $1.2$\% \\
+  \end{tabular}
+  \caption{Tableau des efficacités des cuts à remplir
+    \label{tab:Co_cut_eff}}
+\end{table}
+
 
 
 \subsection{Energy calibration of optical modules}
@@ -521,63 +613,74 @@ We give in this section a summary of this energy calibration study.
 \subsection{Background estimation}
 \label{subsec:bkg_estimation}
 
-At the time of data taking, the calorimeter of SuperNEMO was in commissioning phase, with some implications for the current analysis.
+The experimental setup has been defined, based on Cobalt events simulations in the demonstrator.
+In order to interpret the current analysis results, and to better characterise the data analysis, we give a background study from the data acquisition week.\\
+\newline
+At the time of the data acquisition, the calorimeter was in commissioning phase, with some implications for the current analysis.
 Firstly, the external shielding was not yet installed, so the calorimeter was not protected from background coming from laboratory.
 Secondly, the energy calibration discussed in Sec.~\ref{subsec:OMenergyCalib} was not completed, and optical modules' gains were not all aligned.
 These two statements may impact this study's results.
-
-In this section, we want to estimate the amount of background events for each optical module for the data taking time period.
 The main background type are $\gamma$'s emitted during disintegration of \Tl , \Bi\ and $^{40}$K isotopes, coming from natural radioactivity ($^{238}$U and $^{232}$Th decay chains respectively).
+In this section, we want to estimate the amount of background events for each optical module for the data taking time period.\\
+\newline
+As it has been discussed in Sec.\ref{subsec:Co_setup}, the only background acquisition we have for this period was taken for the Italian main wall.
+Unfortunately, we can't use this acquisition on Italian side to estimate independantly the signal to background ratio for each optical block on the French wall.
+Primarily, because each optical module has been equalised independantly in gain.
+Then, as each main wall is covered with a provisional curtain, the amount of light coming from the underground laboratory is not equivalent for both sides of the calorimeter detector.
+Above all, unfortunately, be owing to energy calibration issues, data from the Italian side are not usable.
+Nevertheless, characterising the amount of background received by optical blocks during the data acquisition is essential to understand and trust our results.
+Consequently, it is fundamental to find a way to have independant background acquisitions for each wall.\\
+\newline
+On Fig.~\ref{fig:Co_simus_bkg} is displayed, in logarithmic scale, the number of counts detected with the distance to the Cobalt source, for simulated data.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_simus_bkg.eps}
+  \caption{Simulated data: number of signal events with the distance to the source (in units of number of OM), considering all pairs of optical modules located on the source side (green), and on the opposite source side (rose).
+    The vertical dotted line materialises the distance limit of $10$ OMs from the source.
+    \label{fig:Co_simus_bkg}}
+\end{figure}
+Refering to the Fig.~\ref{fig:Co_setup_wall} naming system, the source was put in position $\#2$.
+The green data points picture the number of calorimeter hits ocurring in pairs of optical modules taken on the entire wall.
+The further a calorimeter block is from the source, the less Cobalt events are detected.
+A vertical dotted line materialises the limit where OMs are distant from the source by more than $10$ optical modules.
+We detect around $14$ times more events below this limit than above.
+Let us name as \emph{left part} of the wall, the zone close from the source, below the $10$ OMs limit.
+The \emph{right part} is then the area \emph{far} from the source.
+The number of events ocurring in coincidence only in pairs of optical modules of the right area, are presented on the same figure by the rose data points.
+If we limit to this area for pairs of calorimeter hits, we detect $100$ times less Cobalt events than if we looked at the whole wall.
+For the Cobalt source in position $\#2$, considering data taken with optical modules far from the source allow us to characterise background of the right half part on the main wall.
+In the same way, we can characterise background received OMs belonging to the left part of the wall, using data acquisition with the source in position $\#8$.
+Thus, we have informations on background events for the whole wall, using data taken with the Cobalt source set behind the wall.\\
+\newline
+We propose to consider that for the Cobalt data acquired in Modane, an optical module located beyond a certain distance ($10$ OMs from the source, for instance), is background dominated.
+In other words, we assume the more one optical block is far from the source, the less it detects $\gamma$ particles emitted after Cobalt disintegrations, then the more the signal to background ratio decreases.
+Consequently, concentrating on coincidence events occuring for pairs of optical modules \emph{far} from the source, we intend to extract informations on background events from Cobalt data acquisitions.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_data_bkg.eps}
+  \caption{Real data: number of (signal and background) events for pairs of OMs on the source side (green) and on the opposite source side (rose).
+    \label{fig:Co_data_bkg}}
+\end{figure}
+\newline
+* finir: l'idée c'est de dire sortir un spectre en énergie data+estimation du bdf avec ce qu'on vient de faire.
+Je vais prendre toutes les paires d'OMs possibles pour les OMs loin de la source, et tracer leur spectre en énergie en coincidence.
+ça va me donner un histogramme binné sur l'énergie, et chaque bin aura une certaine dispersion, qui vient des différences des spectres en énergie des OMs
 
-Unfortunately, we do not have a background acquisition for this time period.
-However, we can extract informations on background events from data acquisitions taken with the Cobalt source placed behind the wall.
-We suppose the more one optical block is far from the source, the more the ratio signal over background decreases.
-The idea here is to look only at the data taken with the part of optical modules \emph{far} from the source.
-%% To estimate the number of background event received by each optical module by unit of time, we have to estimate the signal over background ratio for optical modules far from the Cobalt source.
-%% To do so, we pick a run for which the Cobalt source is far from most of the optical modules of the wall, that is to say, placed at a main wall corner.
-%% We then select events occurring far from the source.
-We want to check if this approximation is correct.
+%% We do not have background simulations (simus only Cobalt events)
 
-* A finir *
-plot hit energy/distance with source?
 
-\emph{idea : regarder la stat/forme du spectre en fonction de la coupure}
 
 \subsection{Detector efficiency}
 \label{subsec:detector_efficiency}
 
-As described in Sec.~\ref{sec:SNsoftware} of chapter~\ref{ch:detector}, the SuperNEMO collaboration developed its own simulation, reconstruction and analysis environment.
-The Falaise software, specifically designed by and for the SuperNEMO collaboration, holds the \verb!C++! library for the event reconstruction and analysis of simulated and real data.
-Especially, it contains the geometry, the detector material, the event data model, the reconstruction algorithms and the data analysis.
-Finally, the SNFee software is a tool package for the configuration, control and monitoring of the SuperNEMO front-end electronics.
-All this software environment has been used in the framework of the current Cobalt analysis.
 
-
-
-\subsubsection{Cuts on data events}
-
-As we said, the main goal of this study is to use the \Co\ decay to calibrate in time the optical modules.
-Then, the signal we are looking for is the detection of the $2$ photons of $1.17$ MeV and $1.33$ MeV we described above.
-To maximise the ratio signal over background, some cuts have been applied on the real and simulated data.
-\begin{itemize}
-\item Coincidence time criterion:\\ we define the coincidence time window by events occurring in a $62.5$ ns-long time interval.
-  This allows to avoid accidental coincidence events.
-\item Trigger criteria:\\ we are interested in events that passed both the low and high thresholds, corresponding to $150$ keV and $300$ keV, respectively.
-  Moreover, we only keep events with exactly two triggering electronic channels in the selected coincidence time window and for the given trigger conditions.
-\item Individual energy cuts:\\ given the two photon energies, we only select individual calorimeter hit energies greater than $0.7$ MeV, to reject double Compton interactions of one single photon in different optical modules.
-\item Geometrical cut: we do not look at events with calorimeter hits in two neighbouring optical modules.
-  In fact, we want to avoid background event where one single $\gamma$ interacts in two different scintillators (by two successive Compton interactions).
-  Such events occur predominantly in neighbouring scintillators.
-  With a well calibrated detector, the individual energy cut would have been sufficient to prevent such events to be selected.
-  But, at this time, the detector was not fully calibrated in energy, and some calorimeter hit energies could be badly reconstructed, therefore some background events could pass this cut.
-\end{itemize}
 In Fig.~\ref{fig:detector_efficiency}, we compare the real and simulated energy spectra for \Co\ events satisfying to the four criteria described above.
 \begin{figure}[h]
   \centering
   \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_efficiency_detector.pdf}
   \caption{Top pad: energy spectra for simulated data (orange solid line) and real data (purple solid line) in logarithmic scale.
     Bottom pad: ratio of real data over simulated data for each bin in logarithmic scale.
-\label{fig:detector_efficiency}}
+    \label{fig:detector_efficiency}}
 \end{figure}
 The simulated data are normalised to the source activity and the acquisition time.
 On the simulated energy spectrum, we observe three different energy peaks.
@@ -594,7 +697,6 @@ The real data energy spectrum is also characterised by a high energy part.
 This may be due to external background events, which are not taken into account in the simulated data.
 In Sec.~\ref{subsec:bkg_estimation} is presented a background analysis to investigate the high energy part of the energy spectrum, and better understand the data.
 
-*tableau efficacités cuts
 
 %% Given the amount of real and simulated events, we conclude that the detection efficiency is $29$\%.
 %% Numerous parameters can affect the detection efficiency.
@@ -618,7 +720,7 @@ In Sec.~\ref{subsec:bkg_estimation} is presented a background analysis to invest
 
 The final goal of this analysis is to determine the time resolution of optical modules, due to the scintillator time dispersion.
 As displayed in Fig.~\ref{fig:Co_decay_scheme}, the two photons of Cobalt $60$ are emitted in coincidence.
-The cuts described in Sec.~\ref{subsec:detector_efficiency} aim to maximise the ratio signal over background, the signal being the detection of two $\gamma$s interacting in two different optical modules.
+The cuts described in Sec.~\ref{subsec:detector_efficiency} aim to maximise the signal to background ratio, the signal being the detection of two $\gamma$s interacting in two different optical modules.
 The two $\gamma$s, travelling at speed of light in air, reach the two optical modules at two different times.
 The time of a calorimeter hit $t^{\gamma}_{i}$, describes in Fig.~\ref{fig:CFD} in Chapter~\ref{ch:commissioning}, is defined from the amount of charge collected at PM anode and received by the electronic readout.
 %% We are interested in event topologies where the two $\gamma$s of Cobalt $60$ hit two different calorimeter blocks.
@@ -656,7 +758,7 @@ We observe such differences in the two distributions presented: the two fitted m
 This result was expected: for the moment, the Falaise software does not take into account, in the reconstruction process, the time made by the electric signal to travel from a PM divider to the electronic readout, discussed in Sec.~\ref{sec:reflecto} of Chapter \ref{ch:commissioning}.
 In other words, the time difference distribution for a given pair of optical module is affected by the difference of lengths of the two coaxial cables.
 This is an important parameter directly affecting the mean time difference between two distinct optical modules detecting particles in coincidence.
-Despite simulations do not perfectly picture the full detector performances, real data and simulation can be compared, since we understand these differences.
+Although simulations do not perfectly picture the full detector performances, real data and simulation can be compared, since we understand these differences.
 Moreover, both the real and simulated data are affected by parameters such as the distance from the Cobalt source to the wall, or the distance between the two considered optical modules.
 
 A $\Delta t^{\text{pair}}$ distribution exists for each pair of optical module detecting two events in the time coincidence window.
@@ -729,18 +831,25 @@ Therefore, to find the value of $\sigma_{t}^{\text{indep}}$, we have to solve a 
 where $\sigma_{t}^{i}$ is the individual uncertainty on time measurement for the block $i$.
 Solving simultaneously these equations comes down to diagonalise the matrix $S$ defined as
 \begin{equation}
-S =
-\begin{pmatrix}
- 1/\bar{E_{0}} & 1/\bar{E_{1}} & 0 \\
- 1/\bar{E_{0}} & 0 & 1/\bar{E_{2}} \\
- 0 & 1/\bar{E_{1}} & 1/\bar{E_{2}}
-\end{pmatrix}
-.
+  S =
+  \begin{pmatrix}
+    1/\bar{E_{0}} & 1/\bar{E_{1}} & 0 \\
+    1/\bar{E_{0}} & 0 & 1/\bar{E_{2}} \\
+    0 & 1/\bar{E_{1}} & 1/\bar{E_{2}}
+  \end{pmatrix}
+  .
 \end{equation}
 
 We now generalise this method to all possible combinations of OM pairs for which we have informations on $\sigma_{t}^{\text{pair}}$.
 
 
+\subsection{Conclusion}
+\begin{itemize}
+\item il nous faut des simus bkg
+\item il nous faut un run bkg
+\item ça marche bien
+\item il faudrait refaire une manip avec PMs alignés
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
