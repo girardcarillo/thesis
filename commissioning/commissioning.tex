@@ -372,7 +372,7 @@ In Fig.~\ref{subfig:electron_attenuation} is displayed the stopping power of ele
 Electrons detected in the SuperNEMO calorimeter should deposit a minimal energy of $50$ keV (the acquisition low energy threshold) and a maximal energy of few MeV (depending on the $\twonu$ isotope).
 In this energy range, collisions with the electron cloud are preponderant compared with radiative energy losses.
 In Fig.~\ref{subfig:electron_free_path}, we give informations about the mean free path of an electron in polystyrene.
-In particular, we observe that an electron of $1$ MeV penetrates, in average, several milimetres into a polystyrene scintillator.
+In particular, we observe that an electron of $1$ MeV penetrates, in average, several millimetres into a polystyrene scintillator.
 
 
 \subsection{Interaction of photons}
@@ -405,7 +405,7 @@ Thus, most of $1$ MeV $\gamma$ radiations will interact around $10$ cm inside th
 
 At the considered energy range ($10$ keV $ -\; 10$ MeV), the interaction of photons with matter is dominated by Compton effect, while the electrons interact mainly through coherent scattering.
 The SuperNEMO scintillators are designed to detect such particles.
-Photons have a high probability to interact inside the volume of the scintillator, while electrons are stopped in the first few milimetres.
+Photons have a high probability to interact inside the volume of the scintillator, while electrons are stopped in the first few millimetres.
 
 The following two sections are devoted to the study of the time resolution of the SuperNEMO optical modules.
 
@@ -610,7 +610,7 @@ A visualisation, provided by the Falaise Software, of a simulated Cobalt event b
   \centering
   \includegraphics[width=6cm]{commissioning/fig_commissioning/Co_visu.pdf}
   \caption{Visualisation of a simulated Cobalt event.
-\label{fig:Co_visu}}
+    \label{fig:Co_visu}}
 \end{figure}
 All the simulations carried out as part of this study have been made available to the collaboration.
 
@@ -654,7 +654,7 @@ We observe single $\gamma$ particles depositing energy successively in two optic
   \caption{Maximal energy with minimal energy, for simulated Cobalt events, with source in position $\#5$ (see Fig.~\ref{subfig:Co_setup_wall}).
     High threshold is represented in black dotted line.
     Dashed lines materialise the individual energy selection.
-\label{fig:Co_energy_cut}}
+    \label{fig:Co_energy_cut}}
 \end{figure}
 
 Cut efficiencies are presented in table~\ref{tab:Co_cut_eff}.
@@ -676,76 +676,100 @@ Cut efficiencies are presented in table~\ref{tab:Co_cut_eff}.
 \subsection{Background estimation}
 \label{subsec:bkg_estimation}
 
-In order to interpret the current analysis results, we want to estimate and characterise the background detected by the SuperNEMO calorimeter, during \Co\ the data-taking.\\
+In order to interpret the current analysis results, we aim to estimate and characterise the background detected by the SuperNEMO calorimeter, during the \Co\ data-taking time-period.\\
 
 The main background for the current analysis are of three types.
-Firstly, $\gamma$s from the natural radioactive decay chains of $^{238}$U, $^{232}$Th and $^{40}$K isotopes.
-Especially, the $2.6$ MeV-$\gamma$ from the \Tl\ decay can interact successively in two scintillators through Compton scatterings.
+Firstly, $\gamma$ particles from the natural radioactive decay chains of $^{238}$U, $^{232}$Th and $^{40}$K isotopes.
+Typically, the $2.6$ MeV-$\gamma$ from the \Tl\ decay can interact successively in two scintillators through Compton scatterings.
 Secondly, through the same mechanism, one of the two Cobalt $\gamma$ can deposit energy in two near scintillator blocks.
 As describe in Subsection~\ref{subsec:Co_datacut}, the geometrical and individual energy selections have been set up to reject these background events.
 Finally, at the time of the data acquisition, the calorimeter was in commissioning phase, and the iron shielding was not yet installed.
-Therefore, the calorimeter was not protected from external particles coming from the laboratory and $\gamma$ particles coming from outside the detector can deposit energy in the calorimeter.
-
-In this subsection, we want to estimate the amount of background events for the Cobalt data-taking time period.
-As it has been discussed in Sec.\ref{subsec:Co_setup}, a background acquisition, without the Cobalt calibration source, has been taken.
+Therefore, the calorimeter was not protected from external particles coming from the laboratory.
+Two $\gamma$ particles coming from outside the detector can deposit energy in the coincidence time window.
+All these three topologies can mimic the Cobalt two-$\gamma$s signal.
+A background acquisition, without the Cobalt calibration source, has been taken (see Sec.\ref{subsec:Co_setup}).
 Unfortunately, be owing to energy calibration issues, these data are not usable.
-As estimating the amount of background received by optical blocks during the data acquisition is essential to assess our results, we describe in the following how we used Cobalt data in this purpose.
+As estimating the amount of background received by optical blocks during the acquisition is essential to assess our results, we describe in the following how we used Cobalt data in this purpose.
 
-Let us call the optical modules with a distance to the \Co\ calibration source less than $10$ optical modules as being \emph{close} to the source, the others being considered as \emph{distant} from it.
-
-We aim to provide $\hat{b}$, an estimation of the number of background events detected by each optical module.
-In this way, we define $\hat{b}$ as
+We aim to provide an estimation of $b$, the number of background events detected.
+First of all, let us refer as \emph{close} optical modules those separated from the \Co\ source by less than $10$ OMs, the others being considered as \emph{distant} from it.
+Then, we define $\hat{b}$ as
 \begin{equation}
   \hat{b} = b + s^{\text{far}}\,,
 \end{equation}
-that can also be expressed as
+which can also be expressed as
 \begin{equation}
   \hat{b} = b + \alpha s^{\text{close}}\,,
   \label{eq:estimation_bdf}
 \end{equation}
-where $\alpha$ a is coefficient expressed as the ratio of $s^{\text{far}}$ over $s^{\text{close}}$, the number of signal events detected by an optical module distant from the Cobalt source and close to it, respectively.
-In order to estimate the $\alpha$ coefficient, we display in Fig.~\ref{fig:Co_simus_bkg} the number of counts, after data selection, detected by each optical module, with the distance to the Cobalt source, for simulated data.
+where $\alpha$ a is coefficient representing the ratio of $s^{\text{far}}/s^{\text{close}}$, which are the total number of signal events detected by optical modules distant from the Cobalt source, and close to it, respectively.
+In order to estimate this $\alpha$ coefficient, we display in Fig.~\ref{fig:Co_data_bkg} the number of calorimeter hits, after data selection, counted by each optical module, with $d^{\text{source}}$ the distance to the Cobalt source.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_simus_bkg.eps}
-  \caption{Simulated data: number of signal events with the distance to the source (in units of number of OM), considering all pairs of optical modules located on the source side (green), and on the opposite source side (pink).
+  \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/Co_data_bkg.eps}
+  \caption{Number of (signal and background) events for pairs of OMs on the source side (circle markers) and on the opposite source side (square markers), for real data (green) and simulated data (red).
+    Simulated data: number of signal events with the distance to the source (in units of number of OM), considering all pairs of optical modules located on the source side (point markers), and on the opposite source side (square markers).
     The vertical dotted line materialises the distance limit of $10$ OMs from the source.
-    \label{fig:Co_simus_bkg}}
-\end{figure}
-%Refering to the Fig.~\ref{subfig:Co_setup_wall} naming system, the source was put in position $\#2$.
-The $10$ OMs limit is materialised by a vertical dotted line.
-After the trigger event selection, each selected calorimeter hit detected in one optical module occurred in coincidence with another.
-Events for which the two calorimeter hits occurred below the $10$ OMs limit are displayed in green.
-Similarly, events beyond this limit are displayed in pink.
-As expected, for a given half of the wall, the number of calorimeter hits selected decreases with the distance to the source.
-Therefore, we can evaluate the ratio $s^{\text{far}}/s^{\text{close}}$ which gives $\alpha = 0.5\%$.
-
-For data acquisitions, the total amount of events detected close to the source $\hat{d}$, is defined as
-\begin{equation}
-  \hat{d} = b + s^{\text{close}}\,,
-  \label{eq:estimation_data}
-\end{equation}
-where an estimation of the signal detected $\hat{s}^{\text{close}}$ is given by
-\begin{equation}
-  \hat{s}^{\text{close}} = \hat{d} - \hat{b}\,.
-  \label{eq:estimation_signal_close}
-\end{equation}
-Therefore, given Eq.~\eqref{eq:estimation_bdf} and Eq.~\eqref{eq:estimation_data}, we provide a non-biased estimator for the number of signal events $\hat{s}^{\text{close}}$
-\begin{equation}
-  \hat{s}^{\text{close}} = \frac{\hat{d}-\hat{b}}{1-\alpha} = s^{\text{close}}\,.
-\end{equation}
-In the case where $\alpha << 1$, which is the case for this analysis, the relation given in Eq.~\eqref{eq:estimation_signal_close} is a good estimator for the number of signal events detected close to the source.
-Nevertheless, giving an estimation of $\hat{b}$ with Eq.~\ref{eq:estimation_signal_close} is complicated (on peut pas trop comparer les simus et data comme ça).
-Mais on donne quand même un idée:
-In Fig.~\ref{fig:Co_data_bkg} we propose to do the same study on real data.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_data_bkg.eps}
-  \caption{Real data: number of (signal and background) events for pairs of OMs on the source side (green) and on the opposite source side (pink).
     \label{fig:Co_data_bkg}}
 \end{figure}
+%Refering to the Fig.~\ref{subfig:Co_setup_wall} naming system, the source was put in position $\#2$.
+The $10$ OMs limit is materialised by a vertical dashed line.
+%% After the trigger event selection, each selected calorimeter hit detected in one optical module occurred in coincidence with another.
+Calorimeter hits that occurred above and below this limit are displayed both for simulated and real data.
+We first focus on simulations, where hits for $d^{\text{source}}<10$ give an estimation of the amount of signal events detected close to the source, $s^{\text{close}}$.
+% parler du facteur 2 ?
+Similarly, hits for which $d^{\text{source}}>10$ allow to estimate the amount of signal events $s^{\text{far}}$ remaining for optical modules far from the calibration source site.
+As expected, for a given half of the wall, the number of Cobalt events decreases with the distance to the source.
+Finally, the informations provided by this figure allow to evaluate the ratio $s^{\text{far}}/s^{\text{close}}$, giving $\alpha = 0.5\%$.
 
-Therefore, we can give an estimation of the number of background events detected during the data-taking with the \Co\ source with
+We now consider the real data acquisition with the \Co\ source.
+The total amount of events detected close to the source is defined as
+\begin{equation}
+  \hat{d}^{\text{close}} = b + s^{\text{close}}\,.
+  \label{eq:estimation_data}
+\end{equation}
+Therefore, given Eq.~\eqref{eq:estimation_bdf} and Eq.~\eqref{eq:estimation_data}, a non-biased estimator for the number of signal events, in function of $\hat{d}$ is
+\begin{equation}
+  \hat{s}^{\text{close}} = \frac{\hat{d}^{\text{close}}-\hat{b}}{1-\alpha} = s^{\text{close}}\,.
+\end{equation}
+If $\alpha << 1$, which is the case for this analysis, a good estimator for the number of background events $\hat{b}$ is given by comparing real data events and signal events in simulations
+\begin{equation}
+  \hat{b} = \hat{d}^{\text{close}} - \hat{s}^{\text{close}}\,.
+  \label{eq:estimation_signal_close}
+\end{equation}
+Following the same reasoning for optical modules far from the source, we also have
+\begin{equation}
+  \hat{b} = \hat{d}^{\text{far}} - \hat{s}^{\text{far}}\,.
+  \label{eq:estimation_signal_far}
+\end{equation}
+
+However, comparing quantitatively real data with simulations is hazardous, especially due to detector efficiency considerations, discussed in Sec.~\ref{subsec:detector_efficiency}.
+Nevertheless, we can give an order of magnitude of the amount of background events detected.
+%% In fact, we notice for $d^{\text{source}}<10$ events, that real data follow the same variations as for simulations, but with a slight deficit in counts.
+%% That will be discussed in details in Sec.~\ref{subsec:detector_efficiency}, and is explained by
+%% the loss of efficiency.
+%% différence data/simus dans close : gain equalization ptetre pas dégueu sinon on verrait une diff
+%% à ce niveau là. gain equalisation of optical modules, discussed in Sec.~\ref{sec:comm_energy_calibration}, could impact greatly the .
+Let us return to Fig.~\ref{fig:Co_data_bkg} and provide an interpretation for real data.
+Comparing the amount of events with $d^{\text{source}}>10$, with simulated ones, we observe $\hat{s}^{\text{far}}<<\hat{d}^{\text{far}}$.
+Therefore, Eq.~\eqref{eq:estimation_signal_far} leads us to consider, as a good approximation, that optical modules away from the \Co\ source by more than $10$ OMs are background dominated.
+Moreover, we find that the amount of events with $d^{\text{source}}>10$ for real data is globally stable with the distance to the source, which is compatible with background events.
+Thus, it is reasonable to assume that the number of background events is comparable for all optical modules, regardless of their distance from the source.
+Then, for a $25$ minutes run, each optical module detects around $10^{2}$ background events.
+
+These results lead us to conclude that calorimeter hits, for optical modules close to the Cobalt calibration source are, for the most part, signal events.
+Besides, hits occurring far from the source are predominantly background events.
+Therefore, we provide the signal to background ratio, for each optical module, with the distance to the Cobalt source, in Fig.~\ref{fig:Co_ratioSB}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/Co_ratioSB_distance.pdf}
+  \caption{Signal to background ratio for each optical module, with the distance to the Cobalt source.
+    \label{fig:Co_ratioSB}}
+\end{figure}
+The number of signal events in each optical module depends on the distance to the source, which is not the case for the number of background events, explaining the decreasing of $S/B$ with $d^{\text{source}}$.
+
+%% The observable gap at the $10$ OMs limit level is due to events where the two hits occur in two optical modules each located in one half of the calorimeter, which are not represented in this histogram.
+
 
 %% The discontinuity comes from the separation of the calorimeter hits in two halves.
 %% In fact, the further a calorimeter block is from the source, the less Cobalt events it detects.
@@ -753,15 +777,16 @@ Therefore, we can give an estimation of the number of background events detected
 %% %Using the data with the source in position $\#2$ and position $\#8$, we can conclude on the amount of events remaining for optical modules away from the source.
 %% *Remarque : dans ce plot reste le bdf 1 gamma du cobalt dans 2 OMs*
 
-Thus, we have informations on background events for the whole wall, using data taken with the Cobalt source set behind the wall.
+We gave informations on background events for the whole wall, using data taken with the Cobalt source set behind the wall.
+We postulated that for the Cobalt data acquired in Modane, an optical module located beyond a certain distance ($10$ OMs from the source, for instance), is background dominated.
+In other words, we assumed the more one optical block is far from the source, the less it detects $\gamma$ particles emitted after Cobalt disintegrations, then the more the signal to background ratio decreases.
+Nevertheless, to properly compare simulated and real data, we have to give an order of magnitude of the detector efficiency during the data-taking with the Cobalt source.
 
-We propose to consider that for the Cobalt data acquired in Modane, an optical module located beyond a certain distance ($10$ OMs from the source, for instance), is background dominated.
-In other words, we assume the more one optical block is far from the source, the less it detects $\gamma$ particles emitted after Cobalt disintegrations, then the more the signal to background ratio decreases.
-Consequently, concentrating on coincidence events occurring for pairs of optical modules \emph{far} from the source, we intend to extract informations on background events from Cobalt data acquisitions.
-\newline
-* finir: l'idée c'est de dire sortir un spectre en énergie data+estimation du bdf avec ce qu'on vient de faire.
-Je vais prendre toutes les paires d'OMs possibles pour les OMs loin de la source, et tracer leur spectre en énergie en coincidence.
-ça va me donner un histogramme binné sur l'énergie, et chaque bin aura une certaine dispersion, qui vient des différences des spectres en énergie des OMs\\
+
+%% *Dire que ç'aurait été mieux de prendre un OM de ref pcq là on moyenne mais pas poss car pas de stat*
+%% * finir: l'idée c'est de dire sortir un spectre en énergie data+estimation du bdf avec ce qu'on vient de faire.
+%% Je vais prendre toutes les paires d'OMs possibles pour les OMs loin de la source, et tracer leur spectre en énergie en coincidence.
+%% ça va me donner un histogramme binné sur l'énergie, et chaque bin aura une certaine dispersion, qui vient des différences des spectres en énergie des OMs\\
 
 
 
@@ -769,6 +794,7 @@ Je vais prendre toutes les paires d'OMs possibles pour les OMs loin de la source
 \label{subsec:detector_efficiency}
 
 *A mettre quelque part:
+donnée/simus en fonction distance
 Secondly, the energy calibration discussed in Sec.~\ref{sec:comm_energy_calibration} was not completed, and optical modules' gains were not all aligned.*
 
 In Fig.~\ref{fig:detector_efficiency}, we compare the real and simulated energy spectra for \Co\ events satisfying to the four criteria described above.
