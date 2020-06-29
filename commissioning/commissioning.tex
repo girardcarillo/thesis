@@ -276,7 +276,8 @@ In this case, the pulse sent in the cable travels to the PMT, and goes back to t
 
 \subsection{Comparison with $^{60}$Co}
 
-
+\subsection{Conclusion}
+A faire : regarder le rising time en fonction de la longueur du cable
 
 \section{Calibrating the electronic boards}
 \label{sec:TimeSynchroFEB}
@@ -706,25 +707,25 @@ Accidental events where two decorrelated $\gamma$ particles, can be detected in 
 
 \begin{figure}[h]
   \centering
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.30\textwidth}
     \centering
-    \includegraphics[height=0.55\textwidth]{commissioning/fig_commissioning/Co_bkg_1.pdf}
+    \includegraphics[height=0.50\textwidth]{commissioning/fig_commissioning/Co_bkg_1.pdf}
     \captionsetup{justification=justified}
     \caption{
       \label{subfig:Co_bkg_1}}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.30\textwidth}
     \centering
-    \includegraphics[height=0.55\textwidth]{commissioning/fig_commissioning/Co_bkg_2.pdf}
+    \includegraphics[height=0.50\textwidth]{commissioning/fig_commissioning/Co_bkg_2.pdf}
     \captionsetup{justification=justified}
     \caption{
       \label{subfig:Co_bkg_2}}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.30\textwidth}
     \centering
-    \includegraphics[height=0.55\textwidth]{commissioning/fig_commissioning/Co_bkg_3.pdf}
+    \includegraphics[height=0.50\textwidth]{commissioning/fig_commissioning/Co_bkg_3.pdf}
     \captionsetup{justification=justified}
     \caption{
       \label{subfig:Co_bkg_3}}
@@ -761,7 +762,7 @@ Then, we precise our data modelisation with
   \hat{d}^{\,\text{close}} = b + s^{\,\text{close}}\,,
   \label{eq:estimation_data_close}
 \end{equation}
-where $s^{\,\text{close}}$ is the number of signal events detected by a given optical module for which $D^{\,\text{source}}<10$.
+where $s^{\,\text{close}}$ is the number of signal events detected by a given optical module for which $D_{\,\text{source}}<10$.
 In the same way, considering $s^{\,\text{far}}$ as signal events detected by an optical module from which the source is far, we have
 \begin{equation}
   \hat{d}^{\,\text{far}} = b + s^{\,\text{far}}\,.
@@ -772,7 +773,7 @@ For this purpose, we define the coefficient $\alpha$ as
 \begin{equation}
   \alpha = \tilde{s}^{\,\text{far}}/\tilde{s}^{\,\text{close}}\,,
 \end{equation}
-which depends on the distance $D^{\,\text{source}}$, and we find $0.05 \% < \alpha < 5 \%$ for \Co\ simulated events, meaning that the number of signal events detected by optical modules distant from the source is greatly lower than for close optical modules, for a given source position.
+which depends on the distance $D_{\,\text{source}}$, and we find $0.05 \% < \alpha < 5 \%$ for \Co\ simulated events, meaning that the number of signal events detected by optical modules distant from the source is greatly lower than for close optical modules, for a given source position.
 
 In order to provide a non-biased estimation of $b$, given the data model in Eq.~\eqref{eq:estimation_data_far}, we would remove $\tilde{s}^{\,\text{far}}$ (estimated through simulations) from $\hat{d}^{\,\text{far}}$ (estimated with Cobalt data acquisition).
 However, qualitatively comparing data and simulations is not straightforward, especially due to detector efficiency considerations, discussed in Sec.~\ref{subsec:detector_efficiency}.
@@ -793,15 +794,15 @@ Therefore, events where the two hits occur in two optical modules, each located 
 This explains the observable gap at the $10$ OMs limit level.
 
 We first focus on simulation results.
-Calorimeter hits for which $D^{\,\text{source}}<10$, represent the estimation of the amount of signal events detected close to the source, $\tilde{s}^{\,\text{close}}$.
-Similarly, hits for which $D^{\,\text{source}}>10$ embed for $\tilde{s}^{\,\text{far}}$, the amount of signal events remaining for optical modules far from the calibration source site.
+Calorimeter hits for which $D_{\,\text{source}}<10$, represent the estimation of the amount of signal events detected close to the source, $\tilde{s}^{\,\text{close}}$.
+Similarly, hits for which $D_{\,\text{source}}>10$ embed for $\tilde{s}^{\,\text{far}}$, the amount of signal events remaining for optical modules far from the calibration source site.
 As expected, the number of signal Cobalt events decreases with the distance to the source.
 
 We then compare data events with simulations.
-Calorimeter hits for which $D^{\,\text{source}}<10$ materialise the number of data events estimation $\hat{d}^{\,\text{close}}$.
+Calorimeter hits for which $D_{\,\text{source}}<10$ materialise the number of data events estimation $\hat{d}^{\,\text{close}}$.
 Apart from slight differences, discussed in Sec.~\ref{subsec:detector_efficiency}, these data events follow the same evolution as signal events with the distance to the source.
 This leads us to conclude that optical modules close to the source are dominated by Cobalt signal events.
-Similarly, $D^{\,\text{source}}>10$ events stand for $\hat{d}^{\,\text{far}}$.
+Similarly, $D_{\,\text{source}}>10$ events stand for $\hat{d}^{\,\text{far}}$.
 We observe that $\tilde{s}^{\,\text{far}}/\hat{d}^{\,\text{far}} \ll 1$, which is compatible with the $\alpha$ coefficient values, being $5\%$ in the worse case, explaining the few amount of $\tilde{s}^{\,\text{far}}$ events remaining for optical modules far from the source.
 Moreover, we find that the amount of $\hat{d}^{\,\text{far}}$ events is globally stable with the distance to the source.
 Therefore, we assume that optical modules away from the \Co\ source by more than $10$ OMs are background dominated.
@@ -821,7 +822,7 @@ Therefore, we can compute the signal to background ratio, as a function of the d
   \caption{Signal to background ratio for each optical module, as a function of the distance to the Cobalt source.
     \label{fig:Co_ratioSB}}
 \end{figure}
-The number of signal events in each optical module depends on the distance to the source, which is not the case for the number of background events, explaining the decreasing of $S/B$ with $D^{\,\text{source}}$.
+The number of signal events in each optical module depends on the distance to the source, which is not the case for the number of background events, explaining the decreasing of $S/B$ with $D_{\,\text{source}}$.
 %% on mesure alpha et il est petit donc on peut négliger sfar dans la modélisation
 
 To summarise, in this subsection, we gave informations on background events for the whole French wall, using data taken with the Cobalt source set at different positions.
@@ -1015,6 +1016,9 @@ Solving simultaneously these equations comes down to diagonalise the matrix $S$ 
 
 We now generalise this method to all possible combinations of OM pairs for which we have informations on $\sigma_{t}^{\text{pair}}$.
 
+\subsubsection*{Estimating the variance}
+
+
 
 \subsection{Conclusion}
 \begin{itemize}
@@ -1022,6 +1026,7 @@ We now generalise this method to all possible combinations of OM pairs for which
 \item il nous faut un run bkg
 \item ça marche bien
 \item il faudrait refaire une manip avec PMs alignés
+  \item On aurait pu décorréler les sigmas en utilisant toutes les combinaisons possibles, mais il aurait fallu faire masse de simus pour déterminer les covariances
 \end{itemize}
 
 
