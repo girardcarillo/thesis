@@ -2,11 +2,11 @@
 \label{ch:sensitivity}
 
 
-In this chapter, we present the SuperNEMO sensitivity to the $\zeronu$ decay half-life, and the corresponding effective neutrino masses, for several isotopes.
-The SuperNEMO final detector is expected to exclude $\zeronu$ half-lives up to $1.2\times 10^{26}$ y ($90\%$ CL) if $\zeronu$ decays through the mass mechanism, with a detector exposure of $500$ kg.y \cite{art:SuperNEMO2010}.
+In this chapter, we present the SuperNEMO sensitivity to the search of $\zeronu$ decay, and the corresponding effective neutrino masses, for several isotopes.
+The SuperNEMO final detector is expected to exclude $\zeronu$ half-lives up to $1.2\times 10^{26}$ y ($90\%$ CL) if $\zeronu$ decays through the exchange of a light Majorana neutrino, with a detector exposure of $500$ kg.y \cite{art:SuperNEMO2010}.
 The sensitivity is given as a limit, in case we do not observe the expected signal.
 In $2010$ began the demonstrator installation at the Laboratoire Souterrain de Modane.
-With an exposure of $17.5$ y, the demonstrator could set a limit on the $\zeronu$ process of $5.35\times 10^{24}$ y ($90\%$ CL) \cite{CalvezThesis}.
+With an exposure of $17.5$ kg.y, the demonstrator could set a limit on the $\zeronu$ process of $5.35\times 10^{24}$ y ($90\%$ CL) \cite{CalvezThesis}.
 
 This study aims to explore the impact on the sensitivity of the presence of a magnetic field, and will participate in the final decision on the installation of the coil.
 In a context of investigating the demonstrator and final detector capabilities, different internal source contamination levels are explored.
@@ -15,92 +15,183 @@ Thanks to SuperNEMO tracking capabilities, topological informations are exploite
 
 
 
-\section{Signal and backgrounds considered}
+\section{Signal and background simulations}
+\label{sec:sensitivity_simus}
 
 A full simulation for the SuperNEMO demonstrator was perfomed, in order to determine the longest $\zeronu$ half-life that can be probed with SuperNEMO using the distribution of the sum of electron energies, in the case where the $\zeronu$ decay were not observed.
-In the Tab.~\ref{tab:sensitivity_simulations} is summarised the expected number of signal and background events, both for the SuperNEMO demonstrator and final detector, and we present the amount of simulated Monte-Carlo events for each considered decay.
-
-\subsubsection*{The $\zeronu$ signal}
-
-In the following, the assumed underlying mechanism for the $\zeronu$ decay is the mass mechanism (MM), as it is the most natural and widespread mechanism.
-The hypotetical $\zeronu$ signal would be detected as an excess of events in the region of interest, with respect to the predicted background contamination level.
-The $10^{7}$ $\zeronu$ Monte-Carlo events are generated using the DECAY$0$ software~\cite{art:decay0}.
-The simulations are normalised assuming a $\Tbeta = 6.0\,10^{24}$ y half-life [citation].
-
-\subsubsection*{Internal backgrounds}
-
-As described in Sec.~\ref{subsec:SNbkg_internal}, source foils contaminations by isotopes such as \Tl\ or \Bi\ constitute the principal internal backgrounds with the $\twonu$ decay.
-These backgrounds are processed by the same detector simulation as the $\zeronu$ signal, using DECAY$0$.
-Since internal backgrounds have very low efficiencies in the $2e$ topology, we simulated an important amount of Monte-Carlo events.
-The target background activities were defined so that each background has a similar contribution to that of the $\twonu$ in the region of interest~\cite{internal:SNphysicsCase}.\\
-The dominant two neutrino $\twonu$ background and the background due to foil contamination were normalised assuming a detector exposure of $500$ kg.y.
-
-\subsubsection*{Tracking volume background}
-
-
-\subsubsection*{External background}
-
-All external backgrounds from outside the foil, apart from \Rn\ in the tracking volume, are expected to be negligible and were not simulated.
-
+In the Tab.~\ref{tab:sensitivity_simulations} is summarised the expected number of signal and background events, both for the SuperNEMO demonstrator and final detector, and we present the size of Monte-Carlo simulations for each isotope.
 \begin{table}[h]
-  \caption{Expected and simulated decays for different processes, both for the demonstrator ($17.5$ kg.y) and for the final detector ($500$ kg.y).
-  \label{tab:sensitivity_simulations}}
   \centering
   \begin{tabular}{|c|cc|c|}
     \hline
     &\multicolumn{2}{c|}{Expected decays} & Simulated decays \\
     & Demonstrator & Final detector & \\
     \hline\hline
-    $\zeronu$ ($\Tbeta = 6.0\,10^{24}$ y) & $1.5\,10^{1}$ & $2.7\,10^{7}$ & $1.0\,10^{7}$ \\
-    $\twonu$ & $9.5\,10^{5}$ & $4.2\,10^{2}$ & $1.0\,10^{7}$ \\
+    $\zeronu$ ($\Tbeta = 2.5\,10^{23}$ y) & $3.6\,10^{2}$ & $1.0\,10^{4}$ & $1.0\,10^{7}$ \\
+    $\twonu$ & $9.5\,10^{5}$ & $2.7\,10^{7}$ & $1.0\,10^{7}$ \\
     \Tl  & $5.5\,10^{3}$ & $1.6\,10^{5}$ & $1.0\,10^{7}$ \\
     \Bi  & $1.1\,10^{3}$ & $3.1\,10^{4}$ & $1.0\,10^{7}$ \\
     \Rn  & $1.8\,10^{5}$ & $7.2\,10^{6}$ & $1.0\,10^{7}$ \\
     \hline
- \end{tabular}
+  \end{tabular}
+  \caption{Expected and simulated decays for different processes, both for the demonstrator ($17.5$ kg.y) and for the final detector ($500$ kg.y), assuming target background activities are reached.
+    The $\Tbeta$ value is given only illustratively: the decay has never been observed, so we choose the limit on the half-life obtained with NEMO-$3$ [ref].
+    Exepected number of events are given not taking into account the cut efficiencies, and in the full energy range.
+    We remind the target activities: $\mathcal{A}^{\text{Tl}} = 10\,\mu$Bq.kg, $\mathcal{A}^{\text{Bi}} = 2\,\mu$Bq.kg, $\mathcal{A}^{\text{Rn}} = 0.15$ mBq.m$^{-3}$
+    \label{tab:sensitivity_simulations}}
 \end{table}
 
+
+\subsubsection*{The $\zeronu$ signal}
+
+In the following, the assumed underlying mechanism for the $\zeronu$ decay exist through the exchange of a light Majorana neutrino, the so-called mass mechanism (MM), as it is the most natural and widespread mechanism.
+The hypotetical $\zeronu$ signal would be detected as an excess of events in the region of interest, with respect to the predicted background contamination level.
+The $10^{7}$ $\zeronu$ Monte-Carlo events are generated using the DECAY$0$ software~\cite{art:decay0}.
+The simulations are normalised assuming a $\Tbeta = 6.0\,10^{24}$ y half-life [citation].
+
+\subsubsection*{Inside detector backgrounds}
+
+In the full energy range, the allowed $\twonu$ decay stands as the dominant internal background type.
+However, beyond a certain value in energy, the number of $\twonu$ events decreases very quickly, because of the energy spectrum shape.
+Moreover, its contribution is reduced if the half-life increases, and is enhanced if the energy resolution is worsened.
+To offset this effect, we simulated $10^{7}$ $\twonu$ decays inside the source foils, with a total energy $>2$ MeV, in addition of the normal $\twonu$ decays.
+($\Ttwonu = 9.39 \pm 0.17$ (stat) $\pm 0.58$ (syst) $\times 10^{19}$ years from the NEMO-$3$ experiment~\cite{art:NEMO2018}), and we normalised the total $\twonu$ spectrum.
+As described in Sec.~\ref{subsec:SNbkg_internal}, source foil contaminations by isotopes such as \Tl\ or \Bi\ constitute the principal internal backgrounds with the $\twonu$ decay.
+These backgrounds are processed by the same detector simulation as the $\zeronu$ signal, using DECAY$0$.
+Since internal backgrounds have very low efficiencies in the $2e$ topology, we simulated an important amount of Monte-Carlo events.
+
+A component of the external background producing events similar to the internal background is caused by the presence of \Rn\ inside the tracking detector volume, and constitute a separate background category.
+If such an decay occurs on or near a foil and appears with a $2e$ topology, it becomes hard to distinguish from a double beta decay candidate.
+This isotope being distributed throughout the whole tracking detection volume, it was therefore necessary to simulate a large quantity of this isotope in the detector to maximise the amount of \Bi\ events, coming from \Rn\ decays, in the region of interest.
+
+The target background activities detailed in Sec.~\ref{sec:SNbkg} were defined so that each background has a similar contribution to that of the $\twonu$ in the region of interest~\cite{internal:SNphysicsCase}.
+We remind these nominal in Tab.~\ref{tab:real_target_act}, and give a comparison with the measured activities of the demonstrator source foils contaminations, as well as a measurement of the \Rn\ activity inside the tracker volume.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    & Nominal activities & Real activities \\
+    \hline\hline
+    \Tl  & $10\,\mu$Bq.kg$^{-1}$ & $54\,\mu$Bq.kg$^{-1}$ \\
+    \Bi  & $2\,\mu$Bq.kg$^{-1}$ & $<290\,\mu$Bq.kg$^{-1}$ \\
+    \Rn  & $0.15$ mBq.m$^{-3}$ & $0.15\pm 0.02$ mBq.m$^{-3}$~\cite{conf:radon2017} \\
+    \hline
+  \end{tabular}
+  \caption{Real and targeted nominal activities for the SuperNEMO detector.
+  \label{tab:real_target_act}}
+\end{table}
+
+
+\subsubsection*{Outside detector backgrounds}
+
+This background category is due to the external $\gamma$-ray flux produced by radioactive isotope decays in detector components or surrounding laboratory rocks, as well as neutron interactions in the shield and of the detector's material.
+The limit on external background number of counts set by the NEMO-$3$ experiment was $<0.2$ in the $2e$ total energy range [$2.8$ - $3.2$] MeV, for an exposure of $34.3$ kg·y~\cite{art:NEMO2015}.
+Thus, we consider all external backgrounds from outside the foil, apart from \Rn\ in the tracking volume, are expected to be negligible and were not simulated.
+The most notorious difference is the fact that the SuperNEMO scintillator blocks are thicker than those of NEMO-$3$, and so a gamma is less likely to cross a scintillator without interacting.
+Therefore, for the same PMTs radioactivity,
+Radiopurity measurement for SuperNEMO PMTs allow to conclude that the total activity of SuperNEMO PMTs is better than for NEMO-$3$, for the two principal considered isotopes \Tl\ and \Bi ~\cite{docdb:perrot2017}.\\
+
+We select only events matching the $2e$ toplogy.
+As a reminder, a reconstructed particle is tagged as an electron if it has a negatively curved track with a vertex on the source foils and an associated calorimeter hit.
+Energy spectra of all processes presented above are displayed in Fig.~\ref{fig:sensitivity_energy_spectra}.
+In the following we present an optimisation of the event selection and of the region of interest.
+
+%% \begin{itemize}
+%% \item Justifier bdf externe avec article nemo3 (plus diff roi et meilleure eff)
+%% \item The dominant two neutrino $\twonu$ background and the background due to foil contaminations were normalised assuming a demonstrator exposure of $17.5$ kg.y.
+%% \item The total energy brought by the two electrons is a continuum presenting a reduced number of events in the region of interest, due to electron energy losses before reaching the calorimeter (mainly inside the dense source material, as well as inside the wire chamber).
+%% \end{itemize}
+
+
+\section{Optimisation of event selection}
+\label{sec:sensitivity_ev_selection}
+
+Most of the double beta experiments are only sensitive to the total electron energy sum.
+Such a variable is presented in Fig.~\ref{fig:sensitivity_energy_spectra} in logarithmic scale, for each simulated process detailed in Sec.~\ref{sec:sensitivity_simus}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se.pdf}
-  \caption{
+  \caption{Energy spectra for the $\zeronu$ signal and for the main backgrounds.
+    The region of interest, whose optimisation is discussed in Sec.~\ref{sec:sensitivity_ev_selection}, is matarialised by two dashed vertical lines.
+    \Tl\ events dominate in the ROI.
     \label{fig:sensitivity_energy_spectra}}
+\end{figure}
+The total number of events for each decay represent the amount of selected $2e$ topologies.
+The $\zeronu$ spectrum is peaked around $2.8$ MeV, the $\Qbb = 2.99$ MeV energy being degraded by electron energy losses, explaining the asymetric energy distribution.
+The progeny of \Rn\ produces $\gamma$-rays and $\beta$ decays accompanied by internal conversion (IC), Møller or Compton scattering, the dominant mechanism being the first one.
+\Bi\ and \Rn\ energy distributions have the same variations, \Bi\ being one of the descendents of \Rn.
+
+Tab.~\ref{tab:2e_expected_counts} sums up the expected number of counts in the full energy range as well as in the region of interest.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    & Full energy range & [$2.75$;$2.85$] MeV \\
+    \hline\hline
+    $\zeronu$  & $2.7\,10^{6}$ & $9.5\,10^{-2}$ \\
+    $\twonu$  & $9.1\,10^{5}$ & $1.1\,10^{-1}$ \\
+    \Tl  & $1.7\,10^{4}$ & $9.9^{-3}$ \\
+    \Bi  & $1.1\,10^{4}$ & $2.7\,10^{-2}$ \\
+    \Rn  & $1.1\,10^{4}$ &  \\
+    \hline
+  \end{tabular}
+  \caption{Real and targeted nominal activities for the SuperNEMO detector.
+  \label{tab:2e_expected_counts}}
+\end{table}
+
+To allow the selection of $\zeronu$ signal events while rejecting a high proportion of background events, topological cuts have been set up, in addition with the basical cuts described above (negatively curved track, a vertex on source foil and an associated calorimeter).
+These cuts are designed to reject events where the two electrons are not emitted simultaneously, or from the same location on the source foil, and hence have a high rejection efficiency for \Rn\ events.
+\begin{itemize}
+\item \Pint\ $>4\%$:\\
+  The internal probability, based on TOF computation, is detailed in Sec.~\ref{subsec:internal_prob}.
+  The chosen level insures that non simultaneous events are rejected.
+\item $\Delta y < 60$ mm and $\Delta z < 70$ mm:\\
+  The two reconstruted vertices on source foils should not be separated by more than $60$ mm horizontally, and by more than $70$ mm vertically, to maximise the selection of two electrons emitted at the same spot.
+\end{itemize}
+These cuts follow the NEMO-$3$ analysis on the external background rejection, whose effectiveness were lately confirmed for the SuperNEMO demonstrator~\cite{docdb:calvez2014}.
+
+The integrated efficiency spectra, computed by comparing the number of selected events to the number of Monte Carlo events, are presented in Fig.~\ref{fig:sensitivity_efficiency_spectra}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/efficiency_spectrum_with_B_82Se.pdf}
+  \caption{Efficiency spectra for $\text{E}>\text{E}_{\text{min}}$, for the $\zeronu$ signal and for the main backgrounds.
+    \label{fig:sensitivity_efficiency_spectra}}
+\end{figure}
+Once computed, the efficiency of selection helps finding the number of background events expected, for $\text{E}>\text{E}_{\text{min}}$, presented in Fig.~\ref{fig:sensitivity_Nbkg_spectra}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/Nbackground_spectrum_with_B_82Se.pdf}
+  \caption{Expected number of background events, for $\text{E}>\text{E}_{\text{min}}$.
+    \label{fig:sensitivity_Nbkg_spectra}}
 \end{figure}
 
 
+%% \begin{itemize}
+%% \end{itemize}
 
 
 
 
-
-Justifier bdf externe avec article nemo3 (plus diff roi et meilleure eff)
-Activités bkg considérées à justifier, bkg interne: balek externe à justifier\\
-
-Demies vies 2nu à jusifier
-
-
-Se, Nd avec et sans champs\\
-présentation du PID de Steven (peut être à bouger dans Tl selon développement du plan ou généralités)
-
-Influence des quantités de contaminations sur la sensibilité
-
-\section{Optimisation of event selection}
-plot S/sqrt(B) en fonction E>Emin\\
-
-
-Quel est le signal qu'on cherche\\
-présentation des cuts\\
-efficacité des cuts/ signal + bkg\\
-cuts premier et second ordre
 \section{Expected number of background events}
-plot energy tot
-plus dans région intéret
 
+The number of background expected in a given energy window
+\begin{equation}
+\mathcal{N} = \frac{\mathcal{N}_{a}\log{2}}{M_{\text{Se}}}\times\frac{\epsilon m t}{\Ttwonu}
+\end{equation}
+depends on the number of \Se\ atoms composing the source foils, the detection efficiency $\epsilon$ in this energy window, the exposure $mt$ and the $\twonu$ decay half-life $\Ttwonu$.
+
+\begin{itemize}
+\item plot energy tot
+\item plus dans région intéret
+\end{itemize}
 
 \section{Demonstrator sensitivity}
-Résultats $B=0$, avec activités nominales, puis avec activités caca\\
-Efficiency spretra\\
-Energy spectra
+\begin{itemize}
+\item Résultats $B=0$, avec activités nominales, puis avec activités caca
+\item Efficiency spretra
+\item Energy spectra
+\item Influence des quantités de contaminations sur la sensibilité
+\end{itemize}
 
 \subsection{avec B}
 Parler du champ non uniforme/attenuation
@@ -116,11 +207,12 @@ avec variation coupure énergie\\
 results for $500$kg.y exposure
 
 \section{Other isotopes}
-bam bam le Nd
 
 distribution t1/2 avec différents échantillons de simus (17.5 kg.y)
 
 \section{Conclusion}
-Faut arrêter SN\\
-Etude plus générale avec bkg externe+lab (reprendre chiffres NEMO3)
-+ neutrons (cf NEMO3)
+\begin{itemize}
+\item Etude plus générale avec bkg externe+lab (reprendre chiffres NEMO3) + neutrons (cf NEMO3)
+\item Plot général récap tous résultats
+\item delayed cells->improvement, cf NEMO 3
+\end{itemize}

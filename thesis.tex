@@ -1,4 +1,20 @@
 \documentclass[a4paper,12pt, twoside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+\pagestyle{ruled} %ruled, companion, headings
+%also: empty, plain, headings, myheadings, simple, ruled, Ruled,
+%also: companion, book, chapter, cleared, part, title, titlepage
+\chapterstyle{madsen} % madsen
+%also: default, section, hangnum, companion, article, reparticle
+%also: bianchi, brighthurst, brotherton, chappell, crosshead, culver,
+%also: dash, demo2, demo3,  dowdingell, ell, ger, komalke, lyhne, madsen
+%also: ntglike, pederson,  southall, book, thatcher, veelo, verville,
+%also: wilsondob
+
+
+%% \usepackage[switch, modulo]{lineno}
+%% \linenumbers
+
+
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 %% \geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
 \geometry{vmargin=3cm}%% hmargin=2cm
@@ -40,6 +56,8 @@
 
 \newcommand{\zeronu}{0\nu\beta\beta}
 \newcommand{\twonu}{2\nu\beta\beta}
+\newcommand{\Se}{$^{82}$Se}
+\newcommand{\Nd}{$^{150}$Nd}
 \newcommand{\Tl}{$^{208}$Tl}
 \newcommand{\Co}{$^{60}$Co}
 \newcommand{\Pb}{$^{208}$Pb}
@@ -48,7 +66,9 @@
 \newcommand{\Qbb}{Q_{\beta\beta}}
 \newcommand{\Bckunit}{\text{counts.keV}^{-1}\text{.kg}^{-1}\text{.y}^{-1}}
 \newcommand{\Tbeta}{T_{1/2}^{0\nu}}
+\newcommand{\Ttwonu}{T_{1/2}^{2\nu}}
 \newcommand{\mbb}{m_{\beta\beta}}
+\newcommand{\Pint}{P$_{\text{int}}$}
 
 \newcommand\myshade{85}
 \colorlet{mylinkcolor}{violet}
@@ -73,6 +93,7 @@
 %\title{}
 
 \includeonly{Sensitivity/Sensitivity}
+%\includeonly{commissioning/commissioning}
 
 \begin{document}
 %\maketitle
