@@ -85,16 +85,17 @@ We remind these nominal in Tab.~\ref{tab:real_target_act}, and give a comparison
 \subsubsection*{Outside detector backgrounds}
 
 This background category is due to the external $\gamma$-ray flux produced by radioactive isotope decays in detector components or surrounding laboratory rocks, as well as neutron interactions in the shield and of the detector's material.
-The limit on external background number of counts set by the NEMO-$3$ experiment was $<0.2$ in the $2e$ total energy range [$2.8$ - $3.2$] MeV, for an exposure of $34.3$ kg·y~\cite{art:NEMO2015}.
-Thus, we consider all external backgrounds from outside the foil, apart from \Rn\ in the tracking volume, are expected to be negligible and were not simulated.
-The most notorious difference is the fact that the SuperNEMO scintillator blocks are thicker than those of NEMO-$3$, and so a gamma is less likely to cross a scintillator without interacting.
-Therefore, for the same PMTs radioactivity,
-Radiopurity measurement for SuperNEMO PMTs allow to conclude that the total activity of SuperNEMO PMTs is better than for NEMO-$3$, for the two principal considered isotopes \Tl\ and \Bi ~\cite{docdb:perrot2017}.\\
+The limit on external background number of counts set by the NEMO-$3$ experiment was $<0.2$ in the $2e$ total energy range [$2.8$;$3.2$] MeV, for an exposure of $34.3$ kg·y~\cite{art:NEMO2015}.
+The most notorious difference is the fact that the SuperNEMO scintillator blocks are thicker than those of NEMO-$3$.
+Therefore, a gamma is less likely to cross a scintillator without interacting, and we can reject it if an interaction occurs.
+As a consequence, for the same PMTs radioactivity, the gamma background rate is less important for the SuperNEMO demonstrator than for NEMO-$3$.
+Moreover, radiopurity measurement for SuperNEMO PMTs allow to conclude that the total activity of SuperNEMO PMTs is better than for NEMO-$3$, for the two principal considered isotopes \Tl\ and \Bi ~\cite{docdb:perrot2017}.
+Thus, it is justified to consider that all external backgrounds from outside the foil, apart from \Rn\ in the tracking volume, are expected to be negligible, and were not simulated.\\
 
 We select only events matching the $2e$ toplogy.
-As a reminder, a reconstructed particle is tagged as an electron if it has a negatively curved track with a vertex on the source foils and an associated calorimeter hit.
-Energy spectra of all processes presented above are displayed in Fig.~\ref{fig:sensitivity_energy_spectra}.
-In the following we present an optimisation of the event selection and of the region of interest.
+A reconstructed particle is tagged as an electron if it has a negatively curved track with a vertex on the source foils and an associated calorimeter hit.
+All these represent what we call \emph{the first order cuts}.
+In the following we present an optimisation of the event selection that have been set up to maximise the signal over background ratio.
 
 %% \begin{itemize}
 %% \item Justifier bdf externe avec article nemo3 (plus diff roi et meilleure eff)
@@ -107,19 +108,107 @@ In the following we present an optimisation of the event selection and of the re
 \label{sec:sensitivity_ev_selection}
 
 Most of the double beta experiments are only sensitive to the total electron energy sum.
-Such a variable is presented in Fig.~\ref{fig:sensitivity_energy_spectra} in logarithmic scale, for each simulated process detailed in Sec.~\ref{sec:sensitivity_simus}.
+SuperNEMO, coupling tracking and calorimetry technologies, has the ability to consider individually the two emitted electrons, and to evaluate wether the two particles were emitted simultaneously from the same vertex or not.
+To allow the selection of $\zeronu$ signal events while rejecting a high proportion of background events, topological cuts have been set up, in addition with the basical first order cuts described above.
+\begin{itemize}
+\item \Pint\ $>4\%$:\\
+  The internal probability, based on time-of-flight (TOF) computation, is detailed in Sec.~\ref{subsec:internal_prob}.
+  The chosen level insures that non simultaneous events are rejected.
+\item $\Delta y < 60$ mm and $\Delta z < 70$ mm:\\
+  The two reconstruted vertices on source foils should not be separated by more than $60$ mm horizontally, and by more than $70$ mm vertically, to maximise the selection of two electrons emitted at the same spot.
+\end{itemize}
+These cuts follow the NEMO-$3$ analysis on the external background rejection, whose effectiveness were lately confirmed for the SuperNEMO demonstrator~\cite{docdb:calvez2014}.
+First order and topological cuts have an efficiency of selection that differs for each decays.
+These efficiencies are presented in Tab.~\ref{tab:selections_eff}.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & First order cuts & Internal probability & Vertex distance  \\
+    \hline\hline
+    $\zeronu$  &  & & \\
+    $\twonu$  &  & & \\
+    \Tl  &  & & \\
+    \Bi  &  & & \\
+    \Rn  &  & & \\
+    \hline
+  \end{tabular}
+  \caption{Selection efficiencies for first order cuts and topological cuts.
+  \label{tab:selections_eff}}
+\end{table}
+Topological cuts are designed to reject events where the two electrons are not emitted simultaneously, or from the same location on the source foil, and hence decreases the number of expected events for all the backgrounds but especially for Radon.
+As explained in Sec.~\ref{sec:sensitivity_simus}, the Radon events are not emitted from the source, but mainly from the tracker wires.
+The internal probability and vertices separation can therefore help discriminate such events from signal events.
+
+We present the total energy spectra for each simulated process, after event selection, in Fig.~\ref{fig:sensitivity_energy_spectra}.
 \begin{figure}[h]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
   \centering
   \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se.pdf}
-  \caption{Energy spectra for the $\zeronu$ signal and for the main backgrounds.
-    The region of interest, whose optimisation is discussed in Sec.~\ref{sec:sensitivity_ev_selection}, is matarialised by two dashed vertical lines.
-    \Tl\ events dominate in the ROI.
-    \label{fig:sensitivity_energy_spectra}}
+  \captionsetup{justification=centering}
+  \caption{
+    \label{subfig:sensitivity_energy_spectra_full}}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se_zoom.pdf}
+  \captionsetup{justification=centering}
+  \caption{
+    \label{subfig:sensitivity_energy_spectra_zoom}}
+\end{subfigure}
+\caption{Total energy spectra for the $\zeronu$ signal and main backgrounds, for the full energy range (a) and for the [$2.7$;$3.2$] MeV energy range (b).
+  \label{fig:sensitivity_energy_spectra}}
 \end{figure}
-The total number of events for each decay represent the amount of selected $2e$ topologies.
-The $\zeronu$ spectrum is peaked around $2.8$ MeV, the $\Qbb = 2.99$ MeV energy being degraded by electron energy losses, explaining the asymetric energy distribution.
-The progeny of \Rn\ produces $\gamma$-rays and $\beta$ decays accompanied by internal conversion (IC), Møller or Compton scattering, the dominant mechanism being the first one.
-\Bi\ and \Rn\ energy distributions have the same variations, \Bi\ being one of the descendents of \Rn.
+% The total number of events for each decay represent the amount of selected $2e$ topologies.
+The $\zeronu$ spectrum is peaked around $2.8$ MeV, as the available energy $\Qbb = 2.99$ MeV is degraded by electron energy losses before reaching the calorimeter (mainly inside the dense source material, as well as inside the wire chamber), explaining the asymetric energy distribution.
+% The progeny of \Rn\ produces $\gamma$-rays and $\beta$ decays accompanied by internal conversion (IC), Møller or Compton scattering, the dominant mechanism being the first one.
+\Bi\ being one of the descendents of \Rn, their energy distributions follow the same variations, exept that a high part af \Rn\ events inside the tracker have been rejected by the topological cuts.
+The \Tl\ energy distribution reveals the $2.6$ MeV gamma internal conversion emitted after $\beta^{-}$ \Tl\ disintegrations.
+
+In the following section, we give informations about the expeted number of background events, especially in the region of interest.
+
+\section{Expected number of background events and optimisation of the region of interest}
+
+As the two electrons energy sum for the possible $\zeronu$ is a peak (unlarged by electron energy losses and calorimeter energy resolution), it is interesting to constraint the $\zeronu$ decay searches to a given energy range, the so-called \emph{region of interest} (ROI).
+In the following, we expose how the search for the best limit on $\Tbeta$ is a guid to determine the best ROI.
+%The optimisation of this energy window consists of cutting the full energy range in several sub-ranges, and compute the selection efficiencies for all energy sub-ranges.
+
+For a given energy range, the $\zeronu$ half-life depends on the signal detection efficiency $\epsilon$ in this energy window, on the number of excluded signal events $N_{\text{exclus}}$, as well as on the source isotope nature and the detector's exposure $m\times t$, following
+\begin{equation}
+  \Tbeta > \frac{\mathcal{N}_{\text{A}}\log{2}}{M}\times \frac{\epsilon\times m\times t}{N_{\text{exclus}}}\,,
+\end{equation}
+with $\mathcal{N}_{\text{A}}$ the Avogadro number and $M$ the source isotope's molar mass.
+The half-life is given as a limit, in case we do not observe the expected signal.
+In order to evaluate $N_{\text{exclus}}$, and later the demonstrator's sensitivity to the $\zeronu$ decay, we must determine the number of background events occuring in the region of interest.
+This calculation, for a given energy window, differs with the background type.
+\begin{itemize}
+\item The $\twonu$ background\\
+  The number of $\twonu$ events $N_{2\nu}$ depends, in addition to the exposure, on the number of atoms composing the source foils, on the $\twonu$ decay half-life $\Ttwonu$, and on $\epsilon_{2\nu}$ the selection efficiency for the $\twonu$ process, as
+  \begin{equation}
+    N_{2\nu} = \frac{\mathcal{N}_{\text{A}}\log{2}}{M}\times\frac{\epsilon_{2\nu}\times m\times t}{\Ttwonu}\,.
+  \end{equation}
+\item Natural radioactive internal backgrounds (\Tl\ and \Bi)\\
+  Considering $A_{\text{int}}$ as the internal background activities, and $\epsilon_{\text{int}}$ their selection efficiencies in a given energy window, the number of background events emitted from the source is
+  \begin{equation}
+    N_{\text{int}} = A_{\text{int}}\epsilon_{\text{int}}\times m\times t\,.
+  \end{equation}
+\item Radon background\\
+  The same way, we can define the number of radon events occuring in the whole tracker volume $V$ as
+  \begin{equation}
+    N_{\text{Rn}} = A_{\text{Rn}}\epsilon_{\text{Rn}}\times V\times t\,.
+  \end{equation}
+\end{itemize}
+The efficiency spectra, computed by comparing the number of selected events to the number of Monte Carlo events, are presented in Fig.~\ref{fig:sensitivity_efficiency_spectra}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/efficiency_spectrum_with_B_82Se.pdf}
+  \caption{Efficiency spectra for $\text{E}>\text{E}_{\text{min}}$, for the $\zeronu$ signal and for the main backgrounds.
+    \label{fig:sensitivity_efficiency_spectra}}
+\end{figure}
+These are cumulated efficiencies, and given as a function of $E>E_{\text{min}}$.
+
 
 Tab.~\ref{tab:2e_expected_counts} sums up the expected number of counts in the full energy range as well as in the region of interest.
 \begin{table}[h]
@@ -135,28 +224,10 @@ Tab.~\ref{tab:2e_expected_counts} sums up the expected number of counts in the f
     \Rn  & $1.1\,10^{4}$ &  \\
     \hline
   \end{tabular}
-  \caption{Real and targeted nominal activities for the SuperNEMO detector.
+  \caption{Expected number of counts for the full energy range and for the region of interest.
   \label{tab:2e_expected_counts}}
 \end{table}
 
-To allow the selection of $\zeronu$ signal events while rejecting a high proportion of background events, topological cuts have been set up, in addition with the basical cuts described above (negatively curved track, a vertex on source foil and an associated calorimeter).
-These cuts are designed to reject events where the two electrons are not emitted simultaneously, or from the same location on the source foil, and hence have a high rejection efficiency for \Rn\ events.
-\begin{itemize}
-\item \Pint\ $>4\%$:\\
-  The internal probability, based on TOF computation, is detailed in Sec.~\ref{subsec:internal_prob}.
-  The chosen level insures that non simultaneous events are rejected.
-\item $\Delta y < 60$ mm and $\Delta z < 70$ mm:\\
-  The two reconstruted vertices on source foils should not be separated by more than $60$ mm horizontally, and by more than $70$ mm vertically, to maximise the selection of two electrons emitted at the same spot.
-\end{itemize}
-These cuts follow the NEMO-$3$ analysis on the external background rejection, whose effectiveness were lately confirmed for the SuperNEMO demonstrator~\cite{docdb:calvez2014}.
-
-The integrated efficiency spectra, computed by comparing the number of selected events to the number of Monte Carlo events, are presented in Fig.~\ref{fig:sensitivity_efficiency_spectra}.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/efficiency_spectrum_with_B_82Se.pdf}
-  \caption{Efficiency spectra for $\text{E}>\text{E}_{\text{min}}$, for the $\zeronu$ signal and for the main backgrounds.
-    \label{fig:sensitivity_efficiency_spectra}}
-\end{figure}
 Once computed, the efficiency of selection helps finding the number of background events expected, for $\text{E}>\text{E}_{\text{min}}$, presented in Fig.~\ref{fig:sensitivity_Nbkg_spectra}.
 \begin{figure}[h]
   \centering
@@ -166,30 +237,10 @@ Once computed, the efficiency of selection helps finding the number of backgroun
 \end{figure}
 
 
-%% \begin{itemize}
-%% \end{itemize}
-
-
-
-
-\section{Expected number of background events}
-
-The number of background expected in a given energy window
-\begin{equation}
-\mathcal{N} = \frac{\mathcal{N}_{a}\log{2}}{M_{\text{Se}}}\times\frac{\epsilon m t}{\Ttwonu}
-\end{equation}
-depends on the number of \Se\ atoms composing the source foils, the detection efficiency $\epsilon$ in this energy window, the exposure $mt$ and the $\twonu$ decay half-life $\Ttwonu$.
-
-\begin{itemize}
-\item plot energy tot
-\item plus dans région intéret
-\end{itemize}
-
 \section{Demonstrator sensitivity}
+
 \begin{itemize}
 \item Résultats $B=0$, avec activités nominales, puis avec activités caca
-\item Efficiency spretra
-\item Energy spectra
 \item Influence des quantités de contaminations sur la sensibilité
 \end{itemize}
 
