@@ -44,11 +44,11 @@
 \captionsetup[subfigure]{font=footnotesize}
 
 \hypersetup{
-    colorlinks,
-    citecolor=red,
-    filecolor=red,
-    linkcolor=red,
-    urlcolor=red
+  colorlinks,
+  citecolor=red,
+  filecolor=red,
+  linkcolor=red,
+  urlcolor=red
 }
 
 \setcounter{tocdepth}{3}
@@ -58,6 +58,9 @@
 \newcommand{\twonu}{2\nu\beta\beta}
 \newcommand{\Se}{$^{82}$Se}
 \newcommand{\Nd}{$^{150}$Nd}
+\newcommand{\U}{$^{238}$U}
+\newcommand{\Th}{$^{232}$Th}
+\newcommand{\K}{$^{40}$K}
 \newcommand{\Tl}{$^{208}$Tl}
 \newcommand{\Co}{$^{60}$Co}
 \newcommand{\Pb}{$^{208}$Pb}
@@ -83,36 +86,36 @@
 }
 
 \newenvironment{itemize*}%
-  {\begin{itemize}%
-    \setlength{\itemsep}{0pt}%
-    %\setlength{\parskip}{0pt}
-  }%
-  {\end{itemize}}
+               {\begin{itemize}%
+                   \setlength{\itemsep}{0pt}%
+                   %\setlength{\parskip}{0pt}
+               }%
+               {\end{itemize}}
 
 
-%\title{}
+               %\title{}
 
-\includeonly{Sensitivity/Sensitivity}
-%\includeonly{commissioning/commissioning}
+               \includeonly{Sensitivity/Sensitivity}
+               %% \includeonly{commissioning/commissioning}
+               %% \includeonly{timedifference/timedifference}
 
-\begin{document}
-%\maketitle
-\includepdf{1couverture}
-\cleardoublepage
-\tableofcontents
+               \begin{document}
+               %\maketitle
+               \includepdf{1couverture}
+               \cleardoublepage
+               \tableofcontents
 
-\include{introduction/introduction}
-\include{neutrinophysics/neutrinophysics}
-\include{0nubbexperiments/0nubbexperiments}
-\include{SNdemonstrator/SNdemonstrator}
-\include{AnalysisTools/AnalysisTools}
-\include{timedifference/timedifference}
-\include{Sensitivity/Sensitivity}
-\include{commissioning/commissioning}
-\include{theory/theory}
-\include{conclusion/conclusion}
+               \include{introduction/introduction}
+               \include{neutrinophysics/neutrinophysics}
+               \include{0nubbexperiments/0nubbexperiments}
+               \include{SNdemonstrator/SNdemonstrator}
+               \include{AnalysisTools/AnalysisTools}
+               \include{commissioning/commissioning}
+               \include{Sensitivity/Sensitivity}
+               \include{timedifference/timedifference}
+               \include{conclusion/conclusion}
 
-\bibliographystyle{unsrt}
-\bibliography{bibliography_thesis}
+               \bibliographystyle{unsrt}
+               \bibliography{bibliography_thesis}
 
-\end{document}
+               \end{document}
