@@ -287,7 +287,7 @@ The first parameter we will focus on is the level of isotope contaminations (ins
 Secondly, we will evaluate the influence of the $25$~G magnetic field on the final sensitivity result that has been given.
 
 \subsection{Influence of the contamination levels}
-
+\label{subsec:Influence_cont}
 Specified contamination levels have been established in order to achieve the $\zeronu$ half-life target of $\sim 1\times 10^{26}$~years for the final detector.
 The \Se\ demonstrator source is segmented in $34$ foils, whose production was the responsibility of different laboratories (Dubna, LAPP and Tomsk).
 The sources have undergone different purification treatments, in order to compare them with those of NEMO-$3$.
@@ -320,7 +320,7 @@ Radon emissions from the tracker were also measured, and extrapolated with an ai
 We give in the following the influence of the contamination levels on the demonstrator's sensitivity to the $\zeronu$ decay.
 
 In Sec.~\ref{sec:Nbkg_ROI}, we developed the general procedure allowing to set a $90\%$ confidence interval limit on $\Tbeta$.
-For the demonstrator, supposing the specified activities are reached, the demonstrator would achieve a sensitivity of $5.4\times~10^{24}$~years on the searched decay, in $2.5$~years of data taking, with $7$~kg of \Se.
+For the demonstrator, supposing the specified activities are reached, the demonstrator would achieve a sensitivity of $5.68\times~10^{24}$~years on the searched decay, in $2.5$~years of data taking, with $7$~kg of \Se.
 This sensitivity could be affected by the level of contaminations, measured by BiPo, inside the source foils.
 We expose in Fig.~\ref{fig:real_target_act} the $\Tbeta$ limit as a function of the contamination levels, as well as the corresponding ROI.
 \begin{figure}[h]
@@ -333,9 +333,9 @@ We expose in Fig.~\ref{fig:real_target_act} the $\Tbeta$ limit as a function of 
     We consider successively a null \Bi\ contamination (\emph{measured act. w/o \Bi}), or equals to the $290\mu\,$Bq/kg upper limit (\emph{measured act. w/ \Bi}).
     \label{fig:real_target_act}}
 \end{figure}
-For each level, we oppose two distinct magnetic field cases: a $25$~G magnetic field, or no field.
-In the current subsection, we focus on the comparison between different contamination levels.
-The conclusions about the presence of the magnetic field we will be discussed in the next subsection.
+%% For each level, we oppose two distinct magnetic field cases: a $25$~G magnetic field, or no field.
+%% In the current subsection, we focus on the comparison between different contamination levels.
+%% The conclusions about the presence of the magnetic field we will be discussed in the next subsection.
 Four distinct levels of internal contaminations are considered:
 \begin{itemize}
 \item the \emph{zero activities} case, a hypothetical case where the source foils and the tracker are non contaminated at all,
@@ -344,11 +344,7 @@ Four distinct levels of internal contaminations are considered:
   As the \Bi\ activity is provided by BiPo measurements as an upper limit, it is possible for this level to be lower than $290\,\mu$Bq/kg.
   So we present the results either considering a zero (\emph{without \Bi}) or $290\,\mu$Bq/kg (\emph{with \Bi}) activity.
 \end{itemize}
-
-The conclusions about the influence of the contamination levels are valid both for the $25$~G or zero magnetic field.
-Parler des cuts topos qui dégradent la sensibilité, pcq artificiellement
-
-Let us first compare the two firsts, where no difference between the best $\Tbeta$, nor between the region of interests, is observed.
+Regarding at the two first cases, no difference between the best $\Tbeta$, nor between the region of interests, is observed.
 This is explained by the Feldman-Cousins statistics employed to determine the number of expected signal events, given the number of observed background events.
 When the expected number of background events is negligible (which is the case here), the probability $p$ to observe $n_{s}$ events, expecting $s$ signal events is given by a Poisson distribution
 \begin{equation}
@@ -360,26 +356,100 @@ The upper limit for a negligible expected number of background and no signal eve
 A direct consequence is, considering that the background levels for the two first cases are negligible, they both reach this limit on the expected number of signal events.
 
 We focus now on the two last contamination cases, for which the measured natural isotope activities are used to determine the best limit on $\Tbeta$.
-For the case where we consider the foils are non contaminated by the \Bi\ isotope, only a slight decrease in sensitivity is observed, compared with the ideal zero activities case [à revoir avec ajout du Radon qui devrait affecter la demie-vie].
+For the case where we consider the foils are non contaminated by the \Bi\ isotope, a decrease in sensitivity is observed, compared with the ideal zero activities case.
 If we now apply the $290\,\mu$Bq/kg upper limit, the level of total internal contaminations is no more negligible, and influence greatly the value of $\Tbeta$, decreasing the experiment's sensitivity by a factor $1.5$.
+*Partie à finir*
 
-After looking at the effect of contaminations on the sensitivity, we review the influence of the magnetic field inside the detector.
-
-
+In the next part, we explore different event selection techniques, with the aim of maximizing the signal-to-background ratio, and thus maximizing the limit on $\zeronu$ half-life.
 
 \subsection{Optimisation of the event selection}
 \label{sec:opti_ev_selection}
 
+The measured level of \Tl\ isotope inside the source foils is greater than expected.
+Moreover, only an upper limit has been set by the BiPo detector regarding the internal \Bi\ level.
+Thus, we aim to set specialised event selections, specially adapted to the measured internal contamination levels.
+
 Most of the double beta experiments are only sensitive to the total electron energy sum.
-SuperNEMO, by coupling both tracking and calorimetry technologies, is sensitive to individual energies and the angle between the two electrons.
-This feature confers the experiment the ability to individually characterise both electrons.
+The unique SuperNEMO tracko-calo technology confers the experiment the ability to individually characterise particles (individual energies, emission angles...)
 By relying on these additional observables, \emph{topological cuts} have been set up, in addition with the basic first order cuts described in Sec.~\ref{sec:sensitivity_ev_selection}.
 These topological cuts are designed to reject events where the two electrons are not emitted simultaneously, or from the same location on the source foils.
-\begin{itemize}
-\item The internal probability (\Pint), based on time-of-flight (TOF) computation, is detailed in Sec.~\ref{subsec:internal_prob}.
-  We chose to select events for which \Pint\ $>4\%$, insuring that non simultaneous emitted electrons are rejected.
-\item The two reconstructed vertices on source foils should not be separated by more than $60$ mm horizontally ($|\Delta y| < 60$ mm), and by more than $70$ mm vertically ($|\Delta z| < 70$ mm), to maximise the selection of two electrons emitted at the same spot.
-\end{itemize}
+
+\paragraph{The internal probability}
+Based on time-of-flight (TOF) computation, is derived from the internal $\chi^{2}$ (see details in Sec.~\ref{subsec:internal_prob}).
+In Fig.~\ref{fig:Pint} are presented the internal probability spectra for the $\zeronu$ signal and all background processes, after the first order cuts selections.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/InternalProbability.pdf}
+  \caption{Internal probabilities for all processes.
+    First order cuts have been applied.
+    \label{fig:Pint}}
+\end{figure}
+The internal probability distributions for the $\zeronu$ and $\twonu$ processes follow the expected flat distribution for electrons emitted simultaneously from the source.
+The \Tl\ and \Bi\ distributions are also flat.
+However, the \Tl\ distribution is distorted at low internal probabilities.
+This might be explained by the existence of a metastable excited state ($\tau_{1/2} = 294 ps$) of the daughter nuclei, which would slightly delay the second electron emitted via internal conversion.
+This feature will be adressed in detail in Chap.~\ref{ch:timediff}.
+The Radon, being a non-internal background, presents a peak at low internal probabilities.
+Looking at its influence on the final sensitivity, we will establish the most adequate internal probability cut-off, insuring that non simultaneous emitted electrons are rejected.
+
+In Fig.~\ref{fig:cont_Pint}, we look at the $\Tbeta$ best limit set, as a funciton of the internal probability cut-off applied on the simulated processes.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/contamination_Pint.pdf}
+  \caption{Best limit set on $\Tbeta$ at $90\%$ CL, as a function of the cut-off applied on internal probability.
+    \label{fig:cont_Pint}}
+\end{figure}
+We explore the influence of the cut-off for each of the three contamination levels detailed in the previous subsection.
+The sensitivity displayed for a $0\%$ cut-off corresponds to the results displayed in Fig.~\ref{fig:real_target_act}.
+With background constraints as low as the specified activities, the internal probability cut-off only decreases the sensitivity to the $\zeronu$ decay.
+Paradoxically, the internal probability cut-off worth it only if there is enough background to be rejected.
+We are starting to see the usefulness of this cut-off if we take into account the measured activities.
+An improvement of the sensitivity is obtained for levels ranging from $0$ to $3\%$, the maximum being reached at $3\%$.
+If now we take the upper limit for radon contamination, we have to apply a very low cut-off of $1\%$, to improve slightly the sensitivity.
+Tab.~\ref{tab:cut_Pint} summarizes the best internal probability cut-off to be applied, as well as the corresponding sensitivity achieved.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Activity & P$_{\text{int}}$ cut-off & $\Tbeta$ ($90\%$ CL) \\
+    \hline\hline
+    Specified & $0\%$ & $5.68\times 10^{24}$ y \\
+    Measured w/o \Bi & $3\%$ & $5.37\times 10^{24}$ y \\
+    Measured w/ \Bi & $1\%$ & $3.65\times 10^{24}$ y \\
+    \hline
+  \end{tabular}
+  \caption{The optimisation of internal probability selection is presented for each internal background case, and the corresponding limit on $\Tbeta$ at $90\%$ level is given.
+  \label{tab:cut_Pint}}
+\end{table}
+Now that for each activity case, the best cut-off in internal probability has been determined, we set out to study the impact of the cut-off on the distance between vertices.
+
+\paragraph{Vertices distance}
+With the track reconstruction, we have access to the coordinates of the reconstructed vertices on source foils.
+We can use this information in order to maximise the $2\nu$ decays to be selected, while rejecting natural isotope disintegrations.
+%% The two reconstructed vertices on source foils should not be separated by more than $60$ mm horizontally ($|\Delta y| < 60$ mm), and by more than $70$ mm vertically ($|\Delta z| < 70$ mm), to maximise the selection of two electrons emitted at the same spot.
+%% These topological cuts have to be adjusted to match the contamination levels presented in Tab.~\ref{tab:real_target_act}.
+Fig.~\ref{fig:vertex_dist} shows the distributions of distance between vertices for each process studied.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/Vertex_distance.eps}
+  \caption{
+    \label{fig:vertex_dist}}
+\end{figure}
+The two electrons of $\zeronu$ and $\twonu$ decays are actually emitted from the same vertex, unlike natural isotope disintegrations.
+* a finir*
+
+Fig.~\ref{fig:cont_vertex} displays the limit set on $\Tbeta$ as a function of the applied cut-off on the vertex distance in the Z direction.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/contamination_vertex.eps}
+  \caption{
+    \label{fig:cont_vertex}}
+\end{figure}
+For all three contamination levels, we reach a plateau for a cut-off of more than 60 mm in $\Delta z$.
+The same conclusions apply to the $\Delta y$ cut-off.
+These results are consistent with the findings of the previous analysis conducted by Steven Calvez, asserting the two reconstructed vertices on source foils should not be separated by more than $60$ mm horizontally ($|\Delta y| < 60$ mm), and by more than $70$ mm vertically ($|\Delta z| < 70$ mm).
+
+
 These cuts follow the NEMO-$3$ analysis on the background rejection, whose effectiveness were lately confirmed for the SuperNEMO demonstrator~\cite{docdb:calvez2014}.
 First order and topological cuts have efficiencies of selection differing for each type of decay.
 We computed these efficiencies, presented in Tab.~\ref{tab:selections_eff}.
@@ -403,11 +473,12 @@ We observe topological cuts allow the selection of a high proportion of $\zeronu
 %% As explained in Sec.~\ref{sec:sensitivity_simus}, the \Bi\ decays following a Radon contamination of the tracker are not emitted from the source, but mainly from the tracker wires.
 %% The internal probability and vertices separation can therefore help discriminate such events from signal events.
 
+After looking at the effect of contaminations on the sensitivity, we review the influence of the magnetic field inside the detector.
 
 \begin{itemize}
-\item parler de la dégradation de la demie vie par les coupures topos quand pas ``assez'' de bdf
+\item The conclusions about the influence of the contamination levels are valid both for the $25$~G or zero magnetic field.
+\item Parler des cuts topos qui dégradent la sensibilité, pcq artificiellement : parler de la dégradation de la demie vie par les coupures topos quand pas ``assez'' de bdf
 \end{itemize}
-
 
 
 \section{Influence of the magnetic field}
