@@ -24,11 +24,11 @@
 \captionsetup[subfigure]{font=footnotesize}
 
 \hypersetup{
-    colorlinks,
-    citecolor=red,
-    filecolor=red,
-    linkcolor=red,
-    urlcolor=red
+  colorlinks,
+  citecolor=red,
+  filecolor=red,
+  linkcolor=red,
+  urlcolor=red
 }
 
 \setcounter{tocdepth}{3}
@@ -58,46 +58,53 @@
 }
 
 \newenvironment{itemize*}%
-  {\begin{itemize}%
-    \setlength{\itemsep}{0pt}%
-    %\setlength{\parskip}{0pt}
-  }%
-  {\end{itemize}}
+               {\begin{itemize}%
+                   \setlength{\itemsep}{0pt}%
+                   %\setlength{\parskip}{0pt}
+               }%
+               {\end{itemize}}
 
 
 
 
-\begin{document}
+               \begin{document}
 
-\chapter{Characterisation of the calorimeter time resolution}
-\section{Measurement of the time resolution with a \Co\ source}
-\begin{itemize}
-\item est-ce qu'avec la digitisation du pulse on pourrait distinguer un signal électron d'un signal gamma, voire pour un gamma avoir une indication même grossière de la profondeur dans le scintillateur où il a interagi?
-\item Corrélation angulaire des deux gammas de 1.17 et 1.33 MeV1+1/8*cos**2+1.24*cos**4
-\end{itemize}
+               \chapter{Characterisation of the calorimeter time resolution}
+               \section{Measurement of the time resolution with a \Co\ source}
+               \begin{itemize}
+               \item est-ce qu'avec la digitisation du pulse on pourrait distinguer un signal électron d'un signal gamma, voire pour un gamma avoir une indication même grossière de la profondeur dans le scintillateur où il a interagi?
+               \item Corrélation angulaire des deux gammas de 1.17 et 1.33 MeV1+1/8*cos**2+1.24*cos**4
+               \end{itemize}
 
 
-\chapter{Sensitivity study}
-\begin{itemize}
-\item Modification du Z de la source (par ex Nd->Se) peut avoir un faible effet sur le internal bkg: petit changement de Z du milieu qui peut modifier la probabilité d'effet Compton ou Möller
-\item Pour retrouver le rapport entre Radon et 214Bi
-Radon (en supposant que seule la première rangée de cellule contribue) : 0,15 mBq/m3 *15,3 m3 *1/9 = 0,255 mBq
-214Bi : 0,010 mBq/kg * 6,23  kg = 0,063 mBq
-soit un rapport 3 entre les 2 (bon tu as sans doute un peu moins car dans le cas du Radon on voit plus souvent au moins une cellule retardée donc on peut le rejeter, alors que dans le cas du Bi214 l'alpha peut être complètement absorbée dans la feuille source.
-\item  le fait que le champ soit moins intense, s'il restait homogène, ne changerait pas le fit en hélice des traces, simplement à plus haute énergie on aurait du mal à distinguer les électrons des positrons.
-Le champ homogène complique les choses car la trajectoire n'est plus une hélice.
-Sans compter qu'avec les pertes en énergie dans le tracker, l'hélice n'est sans doute pas le modèle idéal pour fitter les trajectoires des particules.
-\item If I understand correctly you are speaking about NEMO-3 Mo-100 data.
-The external background will increase by 0.73 events if
-instead of taking the [2.8,3.2] ROI of NEMO-3, we take a [2.7,3.15] energy range.
-At the moment when the paper have been written we did not worry much about
-optimization of the boundaries of the region of the interest, since the 0-nu limit
-setting was performed with Collie using the full spectrum.
-The ROI was not used for the limit setting, it was needed just to demonstrate that
-we observe roughly the expected number of events without any significant excess.
-\item bdf externe neutrons : il s'agit de l'interaction de neutrons thermiques dans le blindage en fer, donc de neutrons qui se sont préalablement thermalisés (notamment dans les scintillateurs plastiques)
-\item Le fait qu'on n'ait plus d'evts 2n2b au-delà de 2,85 MeV est dû au fait qu'on simule au-delà de 2 MeV. Sans-doute aurait-il fallu simuler de la 2n2b au-delà de 2,3 ou 2,5 MeV pour avoir quelques evts après. Cela dit je ne pense pas que cela affecte ton étude de sensibilité. (Cela aurait été le cas si la fenêtre optimisée démarrait plus tôt)
-  \item Remarque : la borne supérieure de la ROI pourrait avoir une influence si on considérait certains bruits de fond comme les neutrons.
-\end{itemize}
+               \chapter{Sensitivity study}
+               \begin{itemize}
+               \item Modification du Z de la source (par ex Nd->Se) peut avoir un faible effet sur le internal bkg: petit changement de Z du milieu qui peut modifier la probabilité d'effet Compton ou Möller
+               \item Pour retrouver le rapport entre Radon et 214Bi
+                 Radon (en supposant que seule la première rangée de cellule contribue) : 0,15 mBq/m3 *15,3 m3 *1/9 = 0,255 mBq
+                 214Bi : 0,010 mBq/kg * 6,23  kg = 0,063 mBq
+                 soit un rapport 3 entre les 2 (bon tu as sans doute un peu moins car dans le cas du Radon on voit plus souvent au moins une cellule retardée donc on peut le rejeter, alors que dans le cas du Bi214 l'alpha peut être complètement absorbée dans la feuille source.
+               \item  le fait que le champ soit moins intense, s'il restait homogène, ne changerait pas le fit en hélice des traces, simplement à plus haute énergie on aurait du mal à distinguer les électrons des positrons.
+                 Le champ homogène complique les choses car la trajectoire n'est plus une hélice.
+                 Sans compter qu'avec les pertes en énergie dans le tracker, l'hélice n'est sans doute pas le modèle idéal pour fitter les trajectoires des particules.
+               \item If I understand correctly you are speaking about NEMO-3 Mo-100 data.
+                 The external background will increase by 0.73 events if
+                 instead of taking the [2.8,3.2] ROI of NEMO-3, we take a [2.7,3.15] energy range.
+                 At the moment when the paper have been written we did not worry much about
+                 optimization of the boundaries of the region of the interest, since the 0-nu limit
+                 setting was performed with Collie using the full spectrum.
+                 The ROI was not used for the limit setting, it was needed just to demonstrate that
+                 we observe roughly the expected number of events without any significant excess.
+               \item bdf externe neutrons : il s'agit de l'interaction de neutrons thermiques dans le blindage en fer, donc de neutrons qui se sont préalablement thermalisés (notamment dans les scintillateurs plastiques)
+               \item Le fait qu'on n'ait plus d'evts 2n2b au-delà de 2,85 MeV est dû au fait qu'on simule au-delà de 2 MeV. Sans-doute aurait-il fallu simuler de la 2n2b au-delà de 2,3 ou 2,5 MeV pour avoir quelques evts après. Cela dit je ne pense pas que cela affecte ton étude de sensibilité. (Cela aurait été le cas si la fenêtre optimisée démarrait plus tôt)
+               \item Remarque : la borne supérieure de la ROI pourrait avoir une influence si on considérait certains bruits de fond comme les neutrons.
+               \item C'est un détail mais réfléchir au fait que le noyau fils recule, a donc une impulsion (très faible mais d'ailleurs c'est à cause de cela que les deux électrons ne sont pas émis dos à dos dans la 0nu), donc peut-être que le pic n'est pas infiniment fin.
 
-\end{document}
+               \end{itemize}
+
+               \chapter{Tl analysis}
+               \begin{itemize}
+               \item Pour la distrib Pint pour la 0nu : pourquoi tu as un pic à zéro, même dans le cas sigma_L = 0.038 (Est-ce que ce pic est moins important si tu sélectionnes des événements dans le RoI? Sinon diffusion multiple dans le tracker, retrodiffusion à la surface d'un scintillateur...). Pourquoi tu as un pic à zéro, même dans le cas sigma_L = 0.038 (Est-ce que ce pic est moins important si tu sélectionnes des événements dans le RoI? Sinon diffusion multiple dans le tracker, retrodiffusion à la surface d'un scintillateur...)
+               \end{itemize}
+
+               \end{document}
