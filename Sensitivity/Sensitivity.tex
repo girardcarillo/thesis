@@ -32,7 +32,7 @@ For \Se\ sources, we take the $\twonu$ half-life measured by NEMO-$3$, $\Ttwonu~
 Moreover, we choose to consider the best limit set on the $\zeronu$ process, of $\Tbeta > 2.5\times 10^{23}$~y~\cite{art:NEMO2018}.
 This value is given for illustration purposes only and is not used to estimate the sensitivity of the detector.
 In the Tab.~\ref{tab:sensitivity_simulations} is summarised the expected number of signal and background events taking into account the specified activities, for the demonstrator and for the final detector.
-\begin{table}[h]
+\begin{table}[h!]
   \centering
   \begin{tabular}{|l|cc|c|}
     \hline
@@ -110,7 +110,7 @@ Unfortunately, these measurements also revealed that the total budget in \Tl\ is
 This could lead us to think that the external background contribution for SuperNEMO could be higher than that of NEMO-$3$.
 However, on that level, the most notorious difference between the two detectors is the fact that the SuperNEMO scintillator blocks are thicker than those of NEMO-$3$.
 Therefore, a gamma is more likely to be detected before crossing the source foils and, in that case, the event would not contribute to the background in the $2e$ channel.
-Even if the regions of interest are slightly different between these two experiments, it produces a negligible increase on the external background contribution\footnote{A study conducted by the SuperNEMO collaboration shown that only $0.73$ additional external background events would have been expected for the NEMO-$3$ detector, if instead of taking the [$2.8$;$3.2$]~MeV energy range, we would have considered the [$2.7$;$3.15$]~MeV region of interest.}.
+Even if the regions of interest are slightly different between these two experiments, it produces a negligible increase on the external background contribution\footnote{A study conducted by the SuperNEMO collaboration shown that at most $0.73$ additional external background events would have been expected for the NEMO-$3$ detector, if instead of taking the [$2.8$;$3.2$]~MeV energy range, we would have considered the [$2.7$;$3.15$]~MeV region of interest.}.
 After all, given the fact that SuperNEMO is expected to be better than NEMO-$3$ at rejecting external background events, we consider that all external backgrounds from outside the foil, apart from \Rn\ in the tracking volume, are expected to be negligible, and were not simulated.
 
 
@@ -129,13 +129,13 @@ Therefore, we conducted this analysis selecting only events matching the $2e$ to
   In the first case, particles such as electrons and positrons of a few~MeV have a curved trajectory in the tracker.
   In the second case, the tracks of the particles may be similar to straight lines (not to mention the possible multiple scattering on the wires of the tracker).
   It is then necessary to adapt the selection of events to each case.
-  We then consider an additional criterion: a particle is identified as an electron if its track has a negative curvature.
+  We then consider an additional criterion: a particle is identified as an electron if its track has a negative curvature\footnote{A trajectory is said to be negative if it has the same curvature as that of an electron moving from the source to the calorimeter, in a magnetic field oriented according to $+Z$}.
   In the following, we present results where the magnetic field is turned on.
   The off-field study is addressed in Sec.~\ref{sec:magnetic_field}.
 \end{itemize}
 All these selections represent the so-called \emph{first-order} cut-offs.
 We present the total energy spectra for each simulated process, after application of these cut-offs, in Fig.~\ref{fig:energy_spectra}.
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.7\textwidth}
   \centering
@@ -153,6 +153,7 @@ We present the total energy spectra for each simulated process, after applicatio
     \label{subfig:energy_spectra_zoom}}
 \end{subfigure}
 \caption{Total energy spectra for the $\zeronu$ signal and main backgrounds, for (a) the full energy range, and (b) for the [$2.7$;$3.15$]~MeV energy range, whose optimisation is discussed in Sec.~\ref{sec:Nbkg_ROI}.
+  The $\twonu$ spectrum is normalised to $\Ttwonu~=~9.39\times~10^{19}$~y, and \Tl,\Bi\ and \Rn\ backgrounds are normalised to the nominal activities.
   The amplitude of the $\zeronu$ is arbitrarily set at the limit obtained with NEMO-$3$.
   \label{fig:energy_spectra}}
 \end{figure}
@@ -228,7 +229,7 @@ Indeed, the \Tl\ background dominates at these energies, with $0.03$ count for E
 This is why the upper limit E$_{\text{max}}$ of the energy interval has only a limited impact on the search for the best ROI.
 It is then natural to study mainly the influence of the upper limit E$_{\text{min}}$.
 Therefore, the selection efficiencies, entering in the calculation of the $\Tbeta$ upper limit, are presented in Fig.~\ref{fig:efficiency_spectra}, as a function of the lower bound $\text{E}_{\text{min}}$.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/efficiency_spectrum_with_B_82Se.pdf}
   \caption{Efficiency spectra as a function of $\text{E}>\text{E}_{\text{min}}$, for the $\zeronu$ signal (dashed black line) and for the main backgrounds (plain lines).
@@ -238,7 +239,7 @@ Therefore, the selection efficiencies, entering in the calculation of the $\Tbet
 We remind a selection efficiency $\epsilon$ is the ratio of the number of selected events, to the number of simulated events.
 As a matter of fact, we look for an energy region where $\epsilon_{0\nu}$ is high, and where selection efficiencies for the background are low.
 This choice directly determines the best value for $\Tbeta$ ($90\%$ CL), whose variation as a function of E$_{\text{min}}$ and E$_{\text{max}}$ are presented in Fig.~\ref{fig:sensitivity_cont}.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/sensitivity_spectrum_with_B_82Se.pdf}
   \caption{Two-dimensional histogram showing the evolution of the $\Tbeta$ value as a function of the lower and upper energy bounds.
@@ -256,7 +257,7 @@ This result is compatible with previous SuperNEMO analysis~\cite{CalvezThesis}.
 
 %% That work achived, we derive the expected number for each background, following Eqs.~\eqref{eq:N_2nu} to~\eqref{eq:N_Rn}, still as a function of the $\text{E}>\text{E}_{\text{min}}$ energy.
 %% These are summurised in Fig.~\ref{fig:Nbackground_spectra}.
-%% \begin{figure}[h]
+%% \begin{figure}[h!]
 %%   \centering
 %%   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/Nbackground_spectrum_with_B_82Se.pdf}
 %%   \caption{Expected number of background events, for $\text{E}>\text{E}_{\text{min}}$.
@@ -308,7 +309,7 @@ The sources have undergone different purification treatments, in order to invest
 After the sources production and purification, preliminary measurements have been performed with the BiPo-$3$ detector to determine the actual \Tl\ and \Bi\ contamination levels inside the foils~\cite{internal:bipo}.
 The level of radon emissions inside the tracker was also measured by the collaboration, for each of the four sections of the chamber, using a concentration line.
 We summarise all these contamination levels in Tab.~\ref{tab:real_target_act}, and give a comparison with the detector initial specifications.
-\begin{table}[h]
+\begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
@@ -337,21 +338,12 @@ Radon emissions from the tracker were also measured, and extrapolated with an ai
 In Sec.~\ref{sec:Nbkg_ROI}, we developed the general procedure allowing to set a $90\%$ confidence interval limit on $\Tbeta$.
 For the demonstrator, supposing the specified activities are reached, the demonstrator would achieve a sensitivity of $5.7\times~10^{24}$~years on the searched decay, in $2.5$~years of data acquisition, with $7$~kg of \Se.
 This sensitivity could be affected by the higher-than-specified level of contaminations, measured by BiPo, inside the source foils.
-We expose in Fig.~\ref{fig:real_target_act} the $\Tbeta$ limit as a function of the contamination levels, as well as the corresponding chosen region of interest.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/contamination_level_Se_B.pdf}
-  \caption{The $90\%$ CL limit on the $\zeronu$ half-life (top pad), and the corresponding ROI (bottom pad), as a function of the contamination level considered.
-    For the \emph{zero activities} case, we consider hypothetical contamination levels where $\mathcal{A}^{\text{Bi}}~=~\mathcal{A}^{\text{Tl}}~=~0~$Bq/kg.
-    The \emph{specified activities} are presented in Tab.~\ref{tab:real_target_act}.
-    The \emph{measured activities}, provided by the BiPo detector~\cite{internal:bipo}, are presented in the same table.
-    We consider successively a null \Bi\ contamination (\emph{measured act. w/o \Bi}), or equals to the $290\mu\,$Bq/kg upper limit (\emph{measured act. w/ \Bi}).
-    \label{fig:real_target_act}}
-\end{figure}
+
+
 %% For each level, we oppose two distinct magnetic field cases: a $25$~G magnetic field, or no field.
 %% In the current sub-section, we focus on the comparison between different contamination levels.
 %% The conclusions about the presence of the magnetic field we will be discussed in the next sub-section.
-Four distinct levels of internal contaminations are considered:
+In this sub-section, four distinct levels of internal contaminations are considered:
 \begin{itemize}
 \item the \emph{zero activities} case, a hypothetical case where the source foils and the tracker are non contaminated at all,
 \item the \emph{specified activities} case, were the targeted level of contaminations would have been reached,
@@ -375,28 +367,58 @@ We only can say that no signal event has been observed \emph{a priori}.
 To account for this particular case, the quantity $s$ should no longer be viewed as the number of expected signal events, but as the number of excluded signal events, $N_{0\nu}^{\text{excl.}}$.
 In the end, for a negligible expected number of background events, and no signal event observed, we can set an upper limit on the number of excluded signal events, excluding values for which $p < \alpha$.
 Taking a $90\%$ confidence interval, that is to say $\alpha~=~10\%$, we obtain $s \leq 2.303$.
-A direct consequence of this statement is, considering that the background levels for the two first cases are negligible (or null) in the region of interest, they both reach this limit of $2.303$ on the excluded number of signal events.
-Therefore, due to the Feldman-Cousins statistics, no difference is observed in terms of half-life limits between these two contamination cases.
+
+\paragraph{}
+Tab.~\ref{tab:eff_first_order_contamination} summarises the expected number of background for each non-zero contamination case presented in Fig.~\ref{fig:real_target_act}.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Activity & Specified & Measured (w/o \Bi) & Measured (w/ \Bi) \\
+    ROI & [$2.7$;$3.15$]~MeV & [$2.75$;$2.95$]~MeV & [$2.7$;$2.9$]~MeV \\
+    \hline\hline
+    $\epsilon_{0\nu}$ (\%) & $14.7$ & $11.3$ & $14.3$ \\
+    $\twonu$  & $0.418$ & $0.122$ & $0.418$ \\
+    \Tl  & $0.0475$ & $0.688$ & $0.699$ \\
+    \Bi  & $0.0546$ & $0$ & $1.55$ \\
+    \Rn  & $0.292$ & $0.173$ & $0.287$ \\
+    \hline
+  \end{tabular}
+  \caption{Expected number of background events in the $2e$ topology, in the [$2.7$;$3.15$]~MeV ROI, for the SuperNEMO demonstrator ($17.5$~kg.y), for specified activities.
+    The selection efficiency of $\zeronu$ events, $\epsilon_{0\nu}$, is also given.
+    \label{tab:eff_first_order_contamination}}
+\end{table}
+For each case, the ROI is optimised.
+A direct consequence of the statement on Feldman-Cousins statistics is that, considering the background levels for the two first cases are negligible (or null) in the region of interest, they both reach this limit of $2.303$ on the excluded number of signal events.
+For the two mesaured activities cases considered, the expected number of background events increases, although the narrow ROI for the case without \Bi\ limits it.
+Indeed, both region of interests are highly reduced, especially for the case without \Bi, where the lower bound is increased from $2.7$ to $2.75$~MeV.
+As this $50$~keV wide energy region is populated with a non-negligible number of background events, this change in $\text{E}_{\text{min}}$ usefully reduces the $\twonu$ background contribution, thereby limiting the increase of total expected number of background.
+
+We show in Fig.~\ref{fig:real_target_act} the $90$~\%~CL $\Tbeta$ limit as a function of the contamination levels, as well as the corresponding chosen region of interest.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/contamination_level_Se_B.pdf}
+  \caption{The $90\%$ CL limit on the $\zeronu$ half-life (top pad), and the corresponding ROI (bottom pad), as a function of the contamination level considered.
+    For the \emph{zero activities} case, we consider hypothetical contamination levels where $\mathcal{A}^{\text{Bi}}~=~\mathcal{A}^{\text{Tl}}~=~0~$Bq/kg.
+    The \emph{specified activities} are presented in Tab.~\ref{tab:real_target_act}.
+    The \emph{measured activities}, provided by the BiPo detector~\cite{internal:bipo}, are presented in the same table.
+    We consider successively a null \Bi\ contamination (\emph{measured act. w/o \Bi}), or equals to the $290\mu\,$Bq/kg upper limit (\emph{measured act. w/ \Bi}).
+    \label{fig:real_target_act}}
+\end{figure}
+As expected from previous conclusions on the Feldman-Cousins statistics, no difference is observed in terms of half-life limits between the zero and specified activities cases.
+However, when considering the measured internal activities, a decrease in sensitivity is observed.
+Indeed, the number of background events in the ROI is no more negligible, and influence significantly the value of $\Tbeta$, decreasing the experiment's sensitivity by $23\%$ (without \Bi) and $37\%$ (with \Bi).
 %% To help visualise the situation, we show in Fig.~\ref{} the distribution of $N_{0\nu}^{\text{excl.}}$, for the demonstrator case, for the two first contamination cases.
-%% \begin{figure}[h]
+%% \begin{figure}[h!]
 %%   \centering
 %%   \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/}
 %%   \caption{
 %%     \label{fig:}}
 %% \end{figure}
 
-\paragraph{}
-When considering the measured internal activities, a decrease in sensitivity is observed, compared with the specified activities case.
-Indeed, the number of background events in the ROI is no more negligible, and influence significantly the value of $\Tbeta$, decreasing the experiment's sensitivity by $23\%$ (without \Bi) and $37\%$ (with \Bi).
-Both region of interests are also highly reduced, especially for the third contamination case, where the lower bound is increased from $2.7$ to $2.75$~MeV, to reduced the \Bi\ background.
-As this energy region populated with a non-negligible number of background events, it impacts significantly the number of selected background events, as addressed in the next sub-section~\ref{subsec:opti_ev_selection}.
-
-The degradation of the limit with the level of contamination remains acceptable.
-However, we can try to improve the situation by exploring new event selection techniques, with the aim of maximising the limit on $\zeronu$ half-life.
-
-\begin{itemize}
-\item préciser que si ça se trouves les niveaux de cont. sont plus élevés que ça, car pas toutes les sources ont été mesurées, et que certaines valeurs sont des limites sup.
-\end{itemize}
+The degradation of the limit on the $\zeronu$ half-life with the level of contamination remains acceptable.
+However, we can try improving the situation by exploring new background rejection techniques.
+This would be especially useful for the final detector case, where a slight increase in internal contaminations could be highly harmful, all the more so as the upper limit given for \Bi\ turns out to be the true contamination level.
 
 \subsection{Optimisation of the event selection}
 \label{subsec:opti_ev_selection}
@@ -412,7 +434,7 @@ They are especially designed to reject events where the two electrons are not em
 \paragraph{The internal probability}
 Based on time-of-flight (TOF) computation, the internal probability (\Pint) is derived from the internal $\chi^{2}$ (see details in Sec.~\ref{subsec:internal_prob}).
 In Fig.~\ref{fig:Pint} are presented the internal probability spectra for the $\zeronu$ signal and all background processes, after the first-order selections.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/InternalProbability.pdf}
   \caption{Internal probabilities for all processes.
@@ -441,34 +463,44 @@ To better understand this optimisation, let us present the $\epsilon_{0\nu}$ val
 \begin{subfigure}[t]{0.49\textwidth}
   \centering
   \includegraphics[width=0.82\textwidth]{Sensitivity/fig_sensitivity/cont_cut_eff_B.pdf}
-  \captionsetup{justification=justified}
-  \caption{
+  \captionsetup{justification=centering}
+  \caption{$\zeronu$ selection efficiency.
     \label{subfig:cont_Pint_eff}}
 \end{subfigure}
 \hfill
 \begin{subfigure}[t]{0.49\textwidth}
   \centering
   \includegraphics[width=0.82\textwidth]{Sensitivity/fig_sensitivity/ROI_cut_Pint_B.pdf}
-  \captionsetup{justification=justified}
-  \caption{
+  \captionsetup{justification=centering}
+  \caption{ROI optimisation.
     \label{subfig:cont_Pint_ROI}}
 \end{subfigure}
 \vskip\baselineskip
 \begin{subfigure}[t]{0.49\textwidth}
   \centering
   \includegraphics[width=0.82\textwidth]{Sensitivity/fig_sensitivity/cont_cut_T12_B.pdf}
-  \captionsetup{justification=justified}
-  \caption{
+  \captionsetup{justification=centering}
+  \caption{Limit on $\Tbeta$.
     \label{subfig:cont_Pint_T12}}
 \end{subfigure}
 \hfill
 \begin{subfigure}[t]{0.49\textwidth}
   \centering
-  \includegraphics[width=0.82\textwidth]{Sensitivity/fig_sensitivity/legend_cut_Pint.pdf}
+  \includegraphics[width=0.82\textwidth]{Sensitivity/fig_sensitivity/82Se_cont_cut_nexcl_B.pdf}
+  \captionsetup{justification=centering}
+  \caption{Total expected number of background.
+    \label{subfig:cont_Pint_Nexp}}
+\end{subfigure}
+\vskip\baselineskip
+\begin{subfigure}[t]{0.49\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{Sensitivity/fig_sensitivity/legend_cut_Pint.pdf}
   \end{subfigure}
 \caption{The $\zeronu$ selection efficiency, $\epsilon_{0\nu}$ (a),
   evolution of the region of interests (b),
-  and best limits set on $\Tbeta$ at $90\%$ CL, as a function of the cut-off applied on internal probability, \Pint.
+  best limits set on $\Tbeta$ at $90\%$ CL (c),
+  and total number of expected background (d),
+  as a function of the cut-off applied on internal probability, \Pint.
   The ROI is optimised for each \Pint\ value.
   Results are displayed for two contamination levels: the specified (blue) and the measured (orange) activities (taking into account the upper limit provided for \Bi).
   An exposure of $17.5$~kg.y is considered.
@@ -486,6 +518,9 @@ Nevertheless, in the measured activities case, for a \Pint~$>~0~\%$ level, the R
 Therefore, even small variations in this ROI has a great impact on the results, explaining the local increase in efficiency.
 For \Pint\ selections greater than $1~\%$, we come back in cases where the upper limit of the ROI no longer has an impact on $\epsilon_{0\nu}$.
 For the specified ativities case, the ROI bounds are stable, not impacting the selection efficiency.
+In Fig.~\ref{subfig:cont_Pint_Nexp}, the total expected number of background is displayed.
+For specified activities, this number decreases with the \Pint\ cut-off, as the ROI is stable.
+However, this number tends to reach a plateau after increasing, again explained by the ROI variations.
 
 %% Indeed, the amount of background event selected varies with the \Pint\ cut-off value.
 %% This number has a strong influence on the chosen region of interest, as explained in Sec.~\ref{sec:Nbkg_ROI}.
@@ -498,7 +533,7 @@ The former $4~\%$ value recommended by the NEMO-$3$ analysis is then too high fo
 
 %%, and we start to see the usefulness of this cut-off when we take into account the measured activities.
 %% Tab.~\ref{tab:cut_Pint} summarises the best internal probability cut-off to be applied in each contamination case, as well as the corresponding sensitivity achieved.
-%% \begin{table}[h]
+%% \begin{table}[h!]
 %%   \centering
 %%   \begin{tabular}{|c|c|cc|}
 %%     \hline
@@ -522,13 +557,16 @@ As we shown that the additional \Pint\ cut-off is poorly adapted for the low act
 As discussed in Sec.~\ref{sec:sensitivity_ev_selection}, an electron is defined as a reconstructed track inside the wire chamber, with one extremity on a calorimeter block, and another on a source foil.
 Therefore, the $2e$ topology involves two distinct calorimeter hits, two reconstructed tracks, and two foil vertices.
 Thanks to the trajectory fitting algorithm, we have access to the ($Y,Z$) coordinates of the latter, and by extension, to the distance between them.
-In the previous studies, the choice was made to look at the effect of this selection, separately on the $Y$ (perpendicular to the wires) and $Z$ (paralel to the wires) directions.
-We choose to follow the same approach, and we give the results for a cut along the $Z$ axis, but the conclusions remain valid for the $Y$ direction.
+In the previous studies, the choice was made to look at the effect of this selection, separately on the $Y$ (perpendicular to the wires) and $Z$ (parallel to the wires) directions.
+We choose to follow the same approach, and we give the results for a cut along the $Z$ axis, but the conclusions would remain valid for the $Y$ direction.
 Fig.~\ref{fig:vertex_dist} shows the distributions of the absolute value of the distance between foil vertices for each process studied.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/Vertex_distance.eps}
-  \caption{Distance between vertices along the $Z$ direction, $|\Delta Z|$, for each process considered.
+  \caption{Distance along the $Z$ direction between the vertices of the $2$ reconstructed electrons, for each process considered.
+    The $\twonu$ spectrum is normalised to $\Ttwonu~=~9.39\times~10^{19}$~y, and \Tl,\Bi\ and \Rn\ backgrounds are normalised to the nominal activities.
+    The amplitude of the $\zeronu$ is arbitrarily set at the limit obtained with NEMO-$3$.
+    No energy cut is applied.
     \label{fig:vertex_dist}}
 \end{figure}
 %% The two electrons of $\zeronu$ and $\twonu$ decays are actually emitted from the same vertex, unlike natural isotope disintegrations.
@@ -538,11 +576,12 @@ We would use this information in order to maximise the double $\beta$ decays to 
 %% These topological cuts have to be adjusted to match the contamination levels presented in Tab.~\ref{tab:real_target_act}.
 
 Fig.~\ref{fig:cont_vertex} displays the limit set on $\Tbeta$ as a function of this event selection, allowing to study the impact of the vertices distance cut-off on the final sensitivity.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/contamination_vertex.eps}
-  \caption{Best reached limit on $\Tbeta$, as a function of the cut-off applied on the $Z$ distance between vertices, $|\Delta Z|$.
-    Results are displayed for specified (blue), and measured contaminations (with the \Bi\ contamination (orange) or without it (green)).
+  \caption{Limit reached for $\Tbeta$ ($90$\% CL), as a function of the cut-off applied on the $Z$ distance between vertices, $|\Delta Z|$.
+    Results are displayed for specified (blue), and measured contaminations taking into account the upper limit for \Bi\ activity (orange).
+    The ROI is optimised for each \Pint\ value.
     No improvement in sensitivity is obtained with this event selection.
     \label{fig:cont_vertex}}
 \end{figure}
@@ -552,7 +591,7 @@ Regardless of the level of contamination, the number of background events is too
 Therefore, the cut-off only degrades the sensitivity, as does the selection on internal probability.
 The same conclusions apply to the $| \Delta Y |$ cut-off.
 
-However, such a cut-off could be useful for rejecting unexpected background (where two electrons are emitted from two independent sources, for instance).
+However, such a cut-off could be useful for rejecting unexpected background (coincidence between independent events, for instance).
 For example, we note that a cut-off at $|~\Delta Z~|~<~80$~mm does not significantly degrade sensitivity.
 In practice, a selection on vertex distance will always be applied, even if it is very loose.
 
@@ -562,25 +601,55 @@ However, in practice, appling loose topological selections on the data remains n
 The minimal cut-off level to be applied is \Pint~$>~4~\%$ and $|~\Delta~Z~|~<~80$~mm (samely for $|~\Delta~Y~|$).
 %% Finally, the best \Pint\ level to be applied depends on the source activities.
 
-For future studies, it is useful to know the efficiencies of selection of these loose selections, for the signal and for each background considered.
-Those are given in Tab.~\ref{tab:Pint_eff}.
+For future studies, it is useful to give the efficiencies of these loose selections, for the signal and for each background considered (Tab.~\ref{tab:Pint_eff}), as well as the expected number of background in the ROI (Tab.~\ref{tab:Nexp_topo_contamination}).
+
 \begin{table}[h]
-  \centering
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-    Process & First-order cuts (\%) & Internal probability (\%) & Vertex distance (\%) \\
-    \hline\hline
-    $\zeronu$  & $26.9$ & $26.2$ & $25.4$ \\
-    $\twonu$  & $9.15$ & $8.90$ & $8.51$ \\
-    \Tl  & $0.106$ & $0.0955$ & $0.0905$ \\
-    \Bi  & $0.168$ & $0.158$ & $0.149$ \\
-    \Rn  & $0.0177$ & $8.99\times~10^{-3}$ & $5.94\times~10^{-3}$ \\
-    \hline
-  \end{tabular}
-  \caption{Selection efficiencies (number of selected $2e$ topologies compared with the total number of simulated decays), for the three levels of selection (first-order, \Pint\ and vertex distance), in the full energy range.
-  \label{tab:Pint_eff}}
+  \begin{subtable}[h]{1.\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      Cut-off & First-order cuts (\%) & Internal probability (\%) & Vertex distance (\%) \\
+      && \Pint$~>~4\%$ & $|~\Delta~Z~|~<~80$~mm \\
+      \hline\hline
+      $\zeronu$  & $26.9$ & $25.3$ & $24.7$ \\
+      $\twonu$  & $9.15$ & $8.56$ & $8.21$ \\
+      \Tl  & $0.106$ & $0.0889$ & $0.0846$ \\
+      \Bi  & $0.168$ & $0.151$ & $0.144$ \\
+      \Rn  & $0.0177$ & $7.91\times~10^{-3}$ & $5.34\times~10^{-3}$ \\
+      \hline
+    \end{tabular}
+    \captionsetup{justification=justified}
+    \caption{Selection efficiencies (number of selected $2e$ topologies compared with the total number of simulated decays), for the three levels of selection (first-order, \Pint\ and vertex distance), in the full energy range.
+      \label{tab:Pint_eff}}
+  \end{subtable}
+  \vskip\baselineskip
+  \begin{subtable}[h]{1.\textwidth}
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      Activity & \multicolumn{2}{c|}{Specified} & \multicolumn{2}{c|}{Measured (w/ \Bi)} \\
+      \hline
+      Cut-off & \Pint~$>~4~$\% & $|~\Delta~Z~|~<~80$~mm & \Pint~$>~4~$\% & $|~\Delta~Z~|~<~80$~mm  \\
+      ROI (MeV) & [$2.7$;$3.15$] & [$2.7$;$3.15$] & [$2.7$;$3.25$] & [$2.7$;$3.3$] \\
+      \hline\hline
+      $\epsilon_{0\nu}$ (\%) & $14.1$ & $13.9$ & $14.1$ & $13.9$ \\
+      $\twonu$  & $0.392$ & $0.383$ & $0.392$ & $0.383$ \\
+      \Tl  & $0.0338$ & $0.0323$ & $1.08$ & $1.09$ \\
+      \Bi  & $0.0491$ & $0.0491$ & $1.42$ & $1.42$ \\
+      \Rn  & $0.115$ & $0.0782$ & $0.115$ & $0.0782$ \\
+      \hline
+    \end{tabular}
+    \captionsetup{justification=justified}
+    \caption{Expected number of background events in the optimised ROI, for successive application of topological selections.
+      The selection efficiency of $\zeronu$ events in the ROI, $\epsilon_{0\nu}$, is also given.
+      Specified and measured activities (taking into account the upper limit for \Bi\ contamination) are considered.
+      The SuperNEMO demonstrator exposure of $17.5$~kg.y is taken.
+      \label{tab:Nexp_topo_contamination}}
+  \end{subtable}
+  \caption{The selection efficiencies and expected number of background events for the topological selections.}
 \end{table}
-The topological cuts have a huge impact on Radon selection, as they are especially designed to reject non-internal events.
+
+Regions of interest are optimised for each selection.
+The topological cuts have a huge impact on Radon, as they are especially designed to reject non-internal events.
 They are also efficient in rejecting Thallium internal events, because of the existence of a metastable exited state, described earlier.
 A special technique to reject efficiently \Tl\ bacground is also addressed in Chapter~\ref{ch:timediff}.
 
@@ -588,7 +657,7 @@ After the topological cut-off optimisation, the SuperNEMO demonstrator would rea
 After looking at the effect of contaminations on the sensitivity, we review the influence of the magnetic field inside the detector.
 %% First-order and topological cuts have efficiencies of selection differing for each type of decay.
 %% We computed these efficiencies, presented in Tab.~\ref{tab:selections_eff}.
-%% \begin{table}[h]
+%% \begin{table}[h!]
 %%   \centering
 %%   \begin{tabular}{|c|c|c|c|}
 %%     \hline
@@ -612,7 +681,7 @@ After looking at the effect of contaminations on the sensitivity, we review the 
 \label{sec:magnetic_field}
 
 The SuperNEMO demonstrator was originally designed with a copper coil, similarly to NEMO-$3$, delivering a magnetic field inside the tracker volume, aiming to provide an electron/positron discrimination.
-This $25$~Gauss magnetic field is high enough to bend the trajectory of the few~MeV electrons and positrons of interest for SuperNEMO, without preventing them from reaching the calorimeter.
+This $25$~Gauss magnetic field is high enough to bend the trajectory of the few~MeV electrons and positrons of interest for SuperNEMO, without too strongly preventing them from reaching the calorimeter.
 In practice, this magnetic field is mainly used to identify and reject the electron-positron pairs created by high energy $\gamma$’s, themselves emitted after a neutron capture.
 However, as explained in sub-section~\ref{subsec:ext_bkg}, we choose to not consider the contribution of this external background.
 We therefore focus on evaluating the influence of the presence of the magnetic field on the rejection of internal and wire chamber backgrounds.
@@ -630,7 +699,7 @@ We therefore focus on evaluating the influence of the presence of the magnetic f
 
 In order to study the influence of the magnetic field on the \Se\ $\zeronu$ sensitivity, the simulations and reconstructions of decays described in Sec.~\ref{sec:sensitivity_simus} have been performed in two different conditions.
 \begin{itemize}
-\item Simulations with a $25$ Gauss magnetic field (following recommendations \cite{CalvezThesis}).
+\item Simulations with a uniform $25$ Gauss magnetic field (following recommendations \cite{CalvezThesis}).
   Results about the final sensitivity achieved in this condition have already been presented earlier in this chapter.
   The possible variations of the field intensity, mainly due to the calorimeter magnetic shields, are not taken into account for these simulations.
   This will be discussed in sub-section~\ref{subsec:mapped_field}.
@@ -639,7 +708,7 @@ In order to study the influence of the magnetic field on the \Se\ $\zeronu$ sens
 \end{itemize}
 Each magnetic field condition has the same number of simulated events, as summed up in Tab.~\ref{tab:sensitivity_simulations}.
 Depending on the case considered, the electrons do not have the same trajectory curvature.
-In the first uniform on-field case, the best track fit is performed by helices.
+In the first uniform on-field case, the best track fit is performed by an helix.
 In the second off-field case, the trajectory of an electron is modelised by a straight line.
 The fitting algorithm is thus modified to match line trajectories.
 %Finally, the best tracking option (line or helix) for the third mapped on-field case is discussed in the next section.
@@ -647,14 +716,14 @@ The fitting algorithm is thus modified to match line trajectories.
 \subsection{Impact of the magnetic field on signal and background selections}
 %%%
 
-Among the various event selection criteria considered in Sec.~\ref{sec:sensitivity_ev_selection}, the last one is of primary importance with regard to the influence of the magnetic field on the final sensitivity of the detector.
+Among the various event selection criteria considered in Sec.~\ref{sec:sensitivity_ev_selection}, the one on the trajectory curvature is of primary importance with regard to the influence of the magnetic field on the final sensitivity of the detector.
 Indeed, when the magnetic field is switched on, the charged particles of few~MeV (as electrons and positrons) have curved trajectories.
-A particle is then identified as an electron when the trajectory fitting results in a negative curvature\footnote{A track curvature is defined by the Lorentz force $\overrightarrow{F}$ applied on a charged particle of charge $q$ and speed $\overrightarrow{v}$, travelling in a magnetic field $\overrightarrow{B}$, as $\overrightarrow{F}~=~q\overrightarrow{v}~\times~\overrightarrow{B}$.}.
+A particle is then identified as an electron when the trajectory fitting results in a negative curvature.
 When the magnetic field is switched off, the trajectory of the charged particles takes place in a straight line\footnote{In saying this, we do not take into account possible deviations in the trajectory of the particles, due in particular to multiple scattering in the tracker.}.
 This last selection criterion on the track curvature is then no longer applied.
 Consequently, the number of identified $2e$ topologies, selected by the first-order cuts, are increased, for the signal and background simulated events.
 To illustrate this effect, we give in Fig.~\ref{fig:eff_0nu_w_wo_B} the selection efficiencies of signal and background as a function of the $2e$ total energy, for the two cases of magnetic field presented above.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/Nbkg_field.pdf}
   \caption{The $\zeronu$ selection efficiency (plain line), and expected number of background events (dashed line), as a function of the $2e$ energy, for the on-field (blue) and the off-field (orange) cases.
@@ -680,11 +749,12 @@ As expected, this results in a decrease in sensitivity when the field is switche
 \Tbeta > 4.80\times 10^{24}\,\text{y}\qquad (90\% \text{CL})\, (\text{off-field}).
 \end{equation}
 We present in Tab.~\ref{tab:eff_field} the selection efficiencies of the signal and backgrounds, in the ROI, for the two field cases.
-\begin{table}[h]
+\begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
     Process & On-field & Off-field \\
+    & [$2.7$;$3.15$]~MeV & [$2.75$;$3.2$]~MeV \\
     \hline\hline
     $\epsilon_{0\nu}$ (\%) & $14.7$ & $12.4$ \\
     $\twonu$  & $0.40$ & $0.063$ \\
@@ -696,15 +766,14 @@ We present in Tab.~\ref{tab:eff_field} the selection efficiencies of the signal 
   \caption{Expected number of background events in the $2e$ topology, in the ROI, for the SuperNEMO demonstrator (17.5 kg.y), for specified activities.
     The selection efficiency of $\zeronu$ events, $\epsilon_{0\nu}$, is also given.
     The two on- and off-field cases are compared.
-    The region of interests are [$2.7$;$3.15$]~MeV for the on-field case, and [$2.75$;$3.2$]~MeV whan the field is switched-off.
     \label{tab:eff_field}}
 \end{table}
 We principally notice that the \Tl\ and \Rn\ contributions are higher in the second case.
 As concluded in Sec.~\ref{sec:demonstrator_sensitivity}, topological selections are especially efficient in rejecting these two backgrounds.
 Therefore, the application of these additionnal cut-offs, for the off-field case, could be interesting, in order to increase the sensitivity.
 Following the work presented in the previous section, we optimise these selections for the particular off-field case, both for the specified and measured contamination levels\footnote{As done in sub-section~\ref{subsec:opti_ev_selection}, for the Bismuth measured contamination, we consider here the upper limit where $\mathcal{A}^{\text{Bi}}=290~\mu$Bq/kg.}.
-The results in the sensitivity are summurised in Fig.~\ref{fig:sensitivity_B}.
-\begin{figure}[h]
+The results in the sensitivity are summarised in Fig.~\ref{fig:sensitivity_B}.
+\begin{figure}[h!]
   \centering
   \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf}
   \caption{$\Tbeta$ ($90$\% CL) considering various conditions: on- and off-field (white and gray stripes), first-order and addition of topological cut-offs (left/right parts of the panel), specified and measured activities (blue and orange triangle markers).
@@ -732,14 +801,14 @@ However, as things stand now, some features of the demonstrator are not yet impl
 In particular, studies have been lead by the collaboration to evaluate the influence a $25$~Gauss magnetic field on the optical modules,  as well as on the event reconstruction~\cite{CalvezThesis}\cite{internal:magnetic_field}.
 
 SuperNEMO PMTs are protected from the external magnetic field by individual, cylindrical, iron shields.
-Unfortunately, the latter do not perfectly protect the PMTs, and a residual magnetic field is measured inside the shieldings, leading to charge losses close to $8\%$.
-This study also revealed the energy resolution would be worsened, of $\sim 3\%$ of the initial value of $8\%$ at $1$~MeV.
+Unfortunately, the latter do not perfectly protect the PMTs, and a residual magnetic field is measured inside the shieldings, leading to losses in charge collected by PMTs close to $8\%$.
+This study also revealed the energy resolution would be worsened with a relative decrease of $3\%$ of the initial value of $8\%$ at $1$~MeV.
 Moreover, the PMTs shieldings could themselves severely impact the shape of the field lines, as well as its strength.
 In fact, with a $25$ Gauss magnetic field generated by the copper coil, the magnetic shields are responsible for the field strength decreasing, and barely $10$ G is expected near the source foils.
 Worse, the magnetic field strength decreases very quickly as we get closer to the calorimeter walls where nearly 0G could be expected.
 The reconstruction efficiency could therefore be greatly impacted:
 the magnetic field intensity varying from the source foils to the calorimeter wall, electrons trajectory curvatures are not constant, and the track-fitting algorithm is less performing.
-And this effect is higher as the electron energy decreases.
+A non correct description of the distribution of the magnetic field would more strongly impact low-energy electrons.
 
 In the light of these conclusions, it could be interesting to study the evolution of the sensitivity, considering field simulations with more realistic variations inside the detector.
 
@@ -750,19 +819,19 @@ In the light of these conclusions, it could be interesting to study the evolutio
 
 Simulations with a $25$ Gauss \emph{mapped} magnetic field have been performed, taking into account more realistic variations of the field inside the detector~\cite{docdb:map_magnetic_field2015}.
 Unfortunately, not all isotopes could be simulated with this magnetic field configuration.
-In particular, radon, as it is present in the entire wire chamber, would have required too many computing resources.
+In particular, radon, as it is present in the entire wire chamber, would have required too many additional storing resources.
 Thus, final conclusions on the sensitivity can't be given.
 However, it is possible to assess the selection efficiencies of the different processes, and thus get an idea of the influence of realistic variations of the field on the final results.
 
 %% Fig.~\ref{} displays
-%% \begin{figure}[h]
+%% \begin{figure}[h!]
 %%   \centering
 %%   \includegraphics[width=1.1\textwidth]{Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf}
 %%   \caption{Best limit set on $\zeronu$ half-life (top pad), and the corresponding ROI (bottom pad), as a function of the contamination level considered, for both on-field and off-field cases.
 %%     \label{fig:}}
 %% \end{figure}
 Tab.~\ref{tab:mapped_eff} compares the selection efficiencies, for the three field cases (uniform field, mapped field and off-field), in the total energy range [$0$;$4$]~MeV.
-\begin{table}[h]
+\begin{table}[h!]
   \centering
   \begin{tabular}{|c|ccc|}
     \hline
@@ -782,11 +851,6 @@ The mapped field case has lower selection efficiencies in the total energy range
 As announced in the previous sub-section, the magnetic shields distort the field intensity accross the detector.
 Therefore, the fitting algorithm is less performant in identifying particles with a negative curvature inside the tracker.
 
-
-\begin{itemize}
-\item du coup faudrait dire aussi que c'est la constatation de la variation de l'intensité du champ qui a motivé l'étude
-\end{itemize}
-
 \section{Searching for the Neodymium-$150~\zeronu$ decay}
 \label{sec:Nd}
 
@@ -801,7 +865,7 @@ In the case SuperNEMO demonstrates the feasibility of a large-scale tracko-calo 
 As explained in Chapter~\ref{ch:detector}, the $2.615$~MeV $\gamma$-ray produced in the decay of \Tl\ is a troublesome source of background.
 It is then important to select $\beta\beta$ candidates with a $\Qbb$ value above this transition.
 The natural isotopic abundance is another useful criterion, and typically considering only isotopic abundances greater than 2\% is a good basis for making a choice.
-Five nuclei satisfy these two criteria: $^{116}$Cd, \Se, \Mo, $^{96}$Zr and \Nd\ (with respective $\Qbb$ values of $2.80$, $2.99$,$3.03$, $3.35$ and $3.36$ keV and respective isotope abundance values of $7.5$, $9.2$, $9.6$, $2.8$ and $5.6$~\%~\cite{art:atomic_mass}).
+Five nuclei satisfy these two criteria: $^{116}$Cd, \Se, \Mo, $^{96}$Zr and \Nd\ (with respective $\Qbb$ values of $2.80$, $2.99$,$3.03$, $3.35$ and $3.36$~MeV and respective isotope abundance values of $7.5$, $9.2$, $9.6$, $2.8$ and $5.6$~\%~\cite{art:atomic_mass}).
 Given the availability of \Mo, much effort has been focused by the NEMO-$3$ collaboration on this isotope (it had already been studied by the NEMO-$2$ prototype~\cite{art:NEMO2}).
 As the \Nd\ isotope has the highest $\Qbb$ value, the current section focuses on evaluating the SuperNEMO sensitivity to the $\zeronu$ decay of this isotope, supposing we have several kg at our disposal.
 
@@ -811,54 +875,55 @@ Until recently, Neodymium was not enrichable in large quantities.
 Recent developments have resulted in the production of several grams of enriched Neodymium, making this $\beta\beta$ isotope interesting for the search of $\zeronu$.
 The best limit for the seach for neutrinoless double $\beta$ decay of \Nd\ was reached by the NEMO-$3$ detector, using $36.6$~g of enriched material for $5.25$~years of data acquisition.
 The collaboration achieved $\Tbeta~<~2.0\times~10^{23}$~y~($90$~\%~CL), corresponding to an upper limit on the effective neutrino mass of $\langle\mbb\rangle~<~[1.6-5.3]$~eV.
-The collaboration also measured the $\twonu$ half-life, with $\Ttwonu~=~$[$9.34~\pm~0.22$~(stat.)~+~$0.62-0.60$~(syst.)]$\times~10^{18}$~y~\cite{art:NEMO3_Nd}.
+The collaboration also measured the $\twonu$ half-life, with $\Ttwonu~=~$[$9.34~\pm~0.22$~(stat.)~$\pm~^{0.62}_{0.60}$~(syst.)]$\times~10^{18}$~y~\cite{art:NEMO3_Nd}.
 
 We wish to determine the limit on the $\zeronu$ of the \Nd\ that could be reached by the SuperNEMO demonstrator.
 We lead this study considering the specified activities given for the \Se\ sources are reached.
 We use simulations with the $25$~Gauss uniform magnetic field.
 Fig.~\ref{fig:energy_Nd} presents the normalised energy distributions for the $2e$ topologies selected after application of first-order and topological selections.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/energy_spectrum_with_B_150Nd.pdf}
-  \caption{Normalised energy distributions of selected $2e$ topologies, for signal and background, in the case of \Nd\ sources.
+  \caption{Total energy spectra for the $\zeronu$ signal and main backgrounds, for \Nd\ sources.
+    The $\twonu$ spectrum is normalised to $\Ttwonu~=~9.39\times~10^{19}$~y, and \Tl, \Bi\ and \Rn\ backgrounds are normalised to the nominal activities.
+    The amplitude of the $\zeronu$ is arbitrarily set at the limit obtained with NEMO-$3$.
     We assume a $17.5$~kg.y exposure.
-    Specified activities are taken ($\mathcal{A}^{\text{Tl}} = 2~\mu$Bq/kg and $\mathcal{A}^{\text{Bi}} = 10~\mu$Bq/kg).
     First-order and optimised topological cuts have been applied.
-    The $\beta\beta$ spectrum are normalised to $\Tbeta~=~2.0\times~10^{23}$~y ($90$~\% CL), and $\Ttwonu~=~9.34\times~10^{18}$~y~\cite{art:NEMO3_Nd}.
     The ROI of [$3.1$;$3.55$]~MeV is represented by to vertical dashed lines.
     \label{fig:energy_Nd}}
 \end{figure}
 Signal and background selection efficiencies for \Nd\ sources, in the total energy range, are given in Tab.~\ref{tab:energy_spect_Nd}.
-\begin{table}[h]
+\begin{table}[h!]
   \centering
   \begin{tabular}{|c|cc|}
     \hline
     & \multicolumn{2}{c|}{Selection efficiencies (\%)} \\
     Process & Selenium & Neodynium \\
     \hline\hline
-    $\zeronu$  & $25.8$ & $26.6$ \\
-    $\twonu$  & $8.64$ & $8.85$ \\
-    \Tl  & $0.0986$ & $0.0881$ \\
-    \Bi  & $0.153$ & $0.147$ \\
-    \Rn  & $0.0110$ & $0.0110$ \\
+    $\zeronu$  & $25.8$ & $25.5$ \\
+    $\twonu$  & $8.21$ & $8.11$ \\
+    \Tl  & $0.0846$ & $0.0749$ \\
+    \Bi  & $0.144$ & $0.138$ \\
+    \Rn  & $5.34\times 10^{-3}$ & $5.34\times 10^{-3}$ \\
     \hline
   \end{tabular}
-  \caption{Selection efficiencies in the full energy range [$0$;$4$]~MeV, after the application first-order and topological cut-offs.
+  \caption{Selection efficiencies in the full energy range [$0$;$4$]~MeV, for \Se\ and \Nd\ sources.
+    First-order and optimised topological cuts have been applied.
     \label{tab:energy_spect_Nd}}
 \end{table}
 In this energy range, the background is dominated by the $\twonu$ decay.
 The selection efficiencies of backgrounds are lower for \Nd\ sources than for \Se\ sources.
-This is caused by the higher number of protons in the Neodynium nucleus.
-Indeed, internal electrons are more likely to interact with the source material, by Coulombian interactions.
-Then, in average, their energy is degraded, which increases their probability to undergone multiple scatterings inside the wire chamber, and then to be rejected by first-order cuts.
+This is caused by the higher number of protons in the Neodynium nucleus which induces a stronger Coulombian effect.
+Indeed, internal electrons are more likely to interact with the source material by Coulombian interactions, which is particularly true for low energy electrons.
 We used the same Radon simulations as for \Se\ sources, neglecting possible effects due to a higher proton number.
 
-In Tab.~\ref{tab:eff_Nd_ROI} we give the expected number of background events in the ROI [$3.1$;$3.55$]~MeV.
-\begin{table}[h]
+In Tab.~\ref{tab:eff_Nd_ROI} we give the expected number of background events in the optimised ROI [$3.1$;$3.55$]~MeV.
+\begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
     Process & Selenium & Neodynium \\
+    & [$2.7$;$3.15$]~MeV & [$3.1$;$3.55$]~MeV \\
     \hline\hline
     $\epsilon_{0\nu}$ (\%) & $14.4$ & $10.3$ \\
     $\twonu$  & $0.39$ & $0.28$ \\
@@ -867,8 +932,10 @@ In Tab.~\ref{tab:eff_Nd_ROI} we give the expected number of background events in
     \Rn  & $0.20$ & $0.0$ \\
     \hline
   \end{tabular}
-  \caption{Expected number of background events in the ROI [$3.1$;$3.55$]~MeV, after the application first-order and topological selections.
-    The demonstrator exposure of $17.5$~kg.y is considered, with specified activities.
+  \caption{Expected number of background events in the optimised region of interests, for \Se\ and \Nd\ sources.
+    The $\twonu$ half-life taken as $\Ttwonu~=~9.39\times~10^{19}$~y, and the nominal background activities are considered.
+    We assume a $17.5$~kg.y exposure.
+    First-order and optimised topological cuts have been applied.
     \label{tab:eff_Nd_ROI}}
 \end{table}
 The selection efficiency of the $\zeronu$ decay in this energy range is also given.
@@ -880,6 +947,12 @@ The $\twonu$ and \Tl\ events are therefore the majority contributors to the back
 The SuperNEMO demonstrator, with $7$~kg of material and $2.5$~years of data acquisition, would achieve a $\Tbeta~>~2.2\times~10^{24}$~y sensitivity, one order of magnitude higher than the best limit ever reached.
 The corresponding limit on the effective neutrino mass is $\langle\mbb\rangle~=~[0.15-0.50]$~eV.
 This is a better result than for \Se\ sources, as the \Nd\ has a higher $G^{0\nu}$ factor.
+
+\begin{itemize}
+\item revérifier chiffers dans tableau car coupures lâches Pint et vertex ajkoutées
+\item relire conclusion sur comparaison nb bdf attendu Se/Nd
+\item peut-être (sans doute) pour le 150Nd, on pourrait alléger les spécifications sur le 214Bi et le Radon. Pour cela il faudrait connaitre la composition des bruits de fond dans le RoI optimisé pour le 150Nd.
+\end{itemize}
 
 %% The \Nd\ has a more favourable $\Qbb$ than \Se, with $\Qbb = 3.37$~MeV, .
 %% However, its $\Ttwonu$ is lower, with $9.1\times 10^{18}$~years [ref].
@@ -897,7 +970,7 @@ The expected number of background events in the region of interest [$2.75$;$3.1$
 The corresponding sensitivity to the neutrino mass is $\langle\mbb\rangle~=~[0.079-0.15]$~eV.
 
 
-%% \begin{figure}[h]
+%% \begin{figure}[h!]
 %%   \centering
 %%   \includegraphics[width=0.8\textwidth]{Sensitivity/fig_sensitivity/HyperNEMO_T12_cut_Pint.pdf}
 %%   \caption{
@@ -909,11 +982,11 @@ The corresponding sensitivity to the neutrino mass is $\langle\mbb\rangle~=~[0.0
 
 \section{Conclusion}
 
-Assuming the target background levels are reached, the SuperNEMO demonstrator, running for two and half years with $7$~kg of \Se\ would be able to a set a limit on the $\zeronu$ process $\Tbeta~>~5.6\times~10^{24}$~years, translating into a limit on the neutrino effective mass $\langle\mbb\rangle~<~[0.25-0.48]$~eV (depending on the Nuclear Matrix Elements).
-Latest measurements of source activities show that the specified background levels are not reached, although they were improved in average by a factor of 2, compared to NEMO-$3$.
+Assuming the target background levels are reached, the SuperNEMO demonstrator, running for two and half years with $7$~kg of \Se\ would be able to a set a limit on the $\zeronu$ process $\Tbeta~>~5.6\times~10^{24}$~years, translating into a limit on the neutrino effective mass $\langle\mbb\rangle~<~[0.25-0.48]$~eV (depending on the Nuclear Matrix Elements)\footnote{The real mass of isotope is $6.23$~kg, then to achieve a $17.5$~kg.y exposure, the demonstrator should run a little more than two years and a half.}.
+Latest measurements of source activities show that the specified background level for \Tl\ isotope is not reached, although it is improved in average by a factor of 2, compared to NEMO-$3$.
 To offset this, topological selections, designed to reject non-internal and non-simultaneous $2e$ events, have been optimised.
 The calorimeter time resolution plays an important role on the cut-off efficiencies, especially on the internal probability.
-Future studies would investigate the influence of this resolution on the final limit set on $Tbeta$.
+Future studies would investigate the influence of this resolution on the final limit set on $\Tbeta$.
 Finally, assuming the worst activity is reached for the internal Bismuth isotope, we would set a limit on the $\Tbeta~>~3.6\times~10^{24}$~years, a decrease of $35$~\% compared to the specified activities result.
 This corresponds to $\langle\mbb\rangle~<~[0.31-0.59]$~eV.
 Finally, the limit on $\Tbeta$ could be enhanced by using a multivariate analysis, similarly to what is done in other double beta decay experiments, taking advantage of the several topological variables offered by SuperNEMO.
@@ -928,7 +1001,7 @@ A more complete study would also take into account the possible impacts on the c
 Like its predecessor, the SuperNEMO demonstrator was designed to study several isotopes, such as the \Nd.
 Assuming the target background activities are reached for \Nd\ sources, the SuperNEMO demonstrator would achieve a $\Tbeta~>~2.2\times~10^{24}$~years, and $\langle\mbb\rangle~<~[0.15-0.50]$~eV.
 
-Finally, assuming we reach the target background levels, the superNEMO final detector would achieve an unprecedented limit of $\Tbeta~>~5.4\times~10^{25}$~years for \Se\ sources, and $\Tbeta~>~2.4\times~10^{25}$~years for \Nd\ sources.
+Finally, assuming we reach the target background levels, the SuperNEMO final detector would achieve an unprecedented limit of $\Tbeta~>~5.4\times~10^{25}$~years for \Se\ sources, and $\Tbeta~>~2.4\times~10^{25}$~years for \Nd\ sources.
 To complete these results, the SuperNEMO collaboration would study the influence on the sensitivity of external backgrounds, coming from detector materials as well as the laboratory.
 
 
@@ -941,3 +1014,7 @@ To complete these results, the SuperNEMO collaboration would study the influence
 %% \item cellules tracker dead-> refaire analyse
 %% \item delayed cells->improvement, cf NEMO 3
 %% \end{itemize}
+
+\begin{itemize}
+\item écrire commentaires tab bdf
+\end{itemize}

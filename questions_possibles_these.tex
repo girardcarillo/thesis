@@ -99,12 +99,19 @@
                \item Le fait qu'on n'ait plus d'evts 2n2b au-delà de 2,85 MeV est dû au fait qu'on simule au-delà de 2 MeV. Sans-doute aurait-il fallu simuler de la 2n2b au-delà de 2,3 ou 2,5 MeV pour avoir quelques evts après. Cela dit je ne pense pas que cela affecte ton étude de sensibilité. (Cela aurait été le cas si la fenêtre optimisée démarrait plus tôt)
                \item Remarque : la borne supérieure de la ROI pourrait avoir une influence si on considérait certains bruits de fond comme les neutrons.
                \item C'est un détail mais réfléchir au fait que le noyau fils recule, a donc une impulsion (très faible mais d'ailleurs c'est à cause de cela que les deux électrons ne sont pas émis dos à dos dans la 0nu), donc peut-être que le pic n'est pas infiniment fin.
-
+               \item Juste en remarque : la coupure sur Pint permet de rejeter seulement 10\% du 208Tl, alors qu'elle permet de rejeter 50\% du Radon.
+               \item En remarque, il y aurait sans doute aussi des variations de la direction du champ
+                 Il faudra se préparer à la question: pourquoi on perd un facteur ~2 sur la sensibilité sur la demi-vie par rapport aux études précédentes?
+                 réponse :
+                 ->likelihood, pas de radon, act. différentes
+                 ->regarder mes résultats sans radon
+                 ->efficacité 0nu surestimée (ancien soft)
+                 \item Remarque: l'utilisation de l'énergie individuelle permet de rejeter du 208Tl par exemple.Cependant vu que tu as déjà très peu de bruit de fond, est-ce que tu vas gagner beaucoup? Peut-être considérer aussi les evts à 2 électrons d'énergie un peu plus faible, ce -> il serait poss d'avoir un Emin de la ROI plus petit si on arrive à couper Tl avec coupure sur Eindiv
                \end{itemize}
 
                \chapter{Tl analysis}
                \begin{itemize}
-               \item Pour la distrib Pint pour la 0nu : pourquoi tu as un pic à zéro, même dans le cas sigma_L = 0.038 (Est-ce que ce pic est moins important si tu sélectionnes des événements dans le RoI? Sinon diffusion multiple dans le tracker, retrodiffusion à la surface d'un scintillateur...). Pourquoi tu as un pic à zéro, même dans le cas sigma_L = 0.038 (Est-ce que ce pic est moins important si tu sélectionnes des événements dans le RoI? Sinon diffusion multiple dans le tracker, retrodiffusion à la surface d'un scintillateur...)
+               \item Pour la distrib Pint pour la 0nu : pourquoi tu as un pic à zéro, même dans le cas sigma L = 0.038 ns (Est-ce que ce pic est moins important si tu sélectionnes des événements dans le RoI? Sinon diffusion multiple dans le tracker, retrodiffusion à la surface d'un scintillateur...). Pourquoi tu as un pic à zéro, même dans le cas sigma L = 0.038 (Est-ce que ce pic est moins important si tu sélectionnes des événements dans le RoI? Sinon diffusion multiple dans le tracker, retrodiffusion à la surface d'un scintillateur...)
                \end{itemize}
 
                \end{document}
