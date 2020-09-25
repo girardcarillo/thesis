@@ -1,8 +1,8 @@
-\chapter{The SuperNemo demonstrator}
+\chapter{The SuperNEMO demonstrator}
 \label{ch:detector}
 
-\section{The SuperNemo demonstrator}
-\subsection{Comparison with Nemo$3$ experiment}
+\section{Demonstrator design}
+\subsection{Comparison with NEMO$3$ experiment}
 \subsection{Expermimental design}
 \subsection{Sources}
 \begin{itemize}
@@ -79,8 +79,41 @@ However, since the particles share the same fixed energy, the more particles the
 It is therefore less likely for three $\gamma$ to be detected at the same time.
 A significant contribution to the $1e1\gamma$ and $1e2\gamma$ channels is also expected from other radio contaminants, like \Bi, and from radon events.
 
+Specified contamination levels have been established in order to achieve the $\zeronu$ half-life target of $\sim 1\times 10^{26}$~years for the final detector.
+The \Se\ demonstrator source is segmented in $34$ foils, whose production was the responsibility of different laboratories (Dubna, LAPP and Tomsk).
+The sources have undergone different purification treatments, in order to investigate new techniques, and to compare them with those of NEMO-$3$.
+After the sources production and purification, preliminary measurements have been performed with the BiPo-$3$ detector to determine the actual \Tl\ and \Bi\ contamination levels inside the foils~\cite{internal:bipo}.
+The level of radon emissions inside the tracker was also measured by the collaboration, for each of the four sections of the chamber, using a concentration line.
+We summarise all these contamination levels in Tab.~\ref{tab:real_target_act}, and give a comparison with the detector initial specifications.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    & Specified activities & Measured activities \\
+    \hline\hline
+    \Tl  & $2\,\mu$Bq.kg$^{-1}$ & $54\,\mu$Bq.kg$^{-1}$ [$26$~-~$102$] \\
+    \Bi  & $10\,\mu$Bq.kg$^{-1}$ & $<290\,\mu$Bq.kg$^{-1}$ \\
+    \Rn  & $0.15$ mBq.m$^{-3}$ & $0.15\pm 0.02$ mBq.m$^{-3}$ \\
+    \hline
+  \end{tabular}
+  \caption{Measured and specified activities for the SuperNEMO demonstrator.
+    The \Rn\ tracker contamination is measured with a concentration line~\cite{conf:radon2017}, extrapolated with a $2$~m$^{3}$/h flow rate.
+    The limit on \Bi\ contamination is provided by BiPo measurements for a $90\%$ CL~\cite{internal:bipo}.
+    \label{tab:real_target_act}}
+\end{table}
+The targeted \Tl\ level is not reached, being almost $27$ times higher than expected, and $3.0\times 10^{4}$ internal Thallium events are expected in $2.5$ years.
+Nevertheless, on average, the activity of the sources was improved by a factor of $2$ compared to the $^{100}$Mo sources of NEMO-$3$.
+In addition, valuable information has been accumulated on the different production techniques, which are of great importance for the final detector construction.
+In particular, the two best \Tl\ sources activities were reached by inverse chromatography, reaching a $20\pm10~\mu$Bq/kg level, an improvement by a factor $5$ compared to NEMO-$3$.
+This encourages for further investigations in this direction.
+The sensitivity of BiPo detector only allowed to give an upper limit on the level of internal \Bi\ (an activity of $290~\mu$Bq/kg would correspond to $1.6\times~10^{5}$ internal Bismuth events in $2.5$ years).
+Precise measurements are expected from the demonstrator calibration.
+Radon emissions from the tracker were also measured, and extrapolated with an air flow rate of $2$~m$^{3}$/h inside the chamber, showing the targeted level of $0.15$ mBq.m$^{-3}$ was reached.
+
 
 \subsection{External background}
+\label{subsec:SNexternal_bkg}
+
 Radon:\\
 Radon is a noble gas which occurs as an indirect decay product of uranium and thorium.
 Due to its chemical properties, radon has a long diffusion length in solids, making it difficult to remove.
@@ -100,7 +133,7 @@ The progeny of radon and thoron produces $\gamma$-rays and $\beta$ decays accomp
 It is, however, not high enough to impact significantly neither the few muons nor the $\alpha$ particles expected to be detected by the tracker.
 Due to their much higher momenta, they will instead leave straight tracks in the wire chamber.
 
-\section{The SuperNemo software}
+\section{The SuperNEMO software}
 \label{sec:SNsoftware}
 \subsection{Simulation}
 
