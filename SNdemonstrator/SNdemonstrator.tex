@@ -1,34 +1,253 @@
 \chapter{The SuperNEMO demonstrator}
 \label{ch:detector}
 
-\section{Demonstrator design}
-\subsection{Comparison with NEMO$3$ experiment}
-\subsection{Expermimental design}
-\subsection{Sources}
+
+\section{The SuperNEMO technology}
+
+The Neutrino Ettore Majorana Observatory (NEMO) is an international collaboration of scientists searching for the yet never-observed $\zeronu$ decay.
+This collaboration began in $1989$ with a first device based on an innovative technology coupling a charged particles tracking chamber and a calorimeter measuring the particle energies.
+Since then, $3$ detectors based on the same technology were installed and collected data in the Modane Underground Laboratory (Laboratoire Souterrain de Modane in French), a subterranean laboratory located in the Fréjus road tunnel, below the Fréjus peak.
+In particular, the third generation of detector, the so-called NEMO-$3$ experiment, which had been operating from $2003$ to $2010$, derived a lower limit on the half-life of $\zeronu$ decays of \Mo\ of $\Tbeta>1.1\times~10^{24}$~years at the $90$\% Confidence Level, under the hypothesis of light Majorana neutrino exchange.
+Depending on the model adopted for calculating nuclear matrix elements, the limit for the effective Majorana neutrino mass lies in the range $\langle\mbb\rangle~<~[0.33-0.62]$~eV.
+Therefore, if existing, the $\zeronu$ decay would remain an extremely rare event.
+The NEMO experiments have then been designed to be ultra-low background detectors, reaching high radiopurity levels, and removing efficiently background events thanks to the tracko-calo technology.
+
+Based on a similar principle, the SuperNEMO detector stands as the successor of NEMO-$3$, and is expected to set a lower limit of $\Tbeta~<~1\times~10^{26}$~years with $100$~kg of \Se\ in $5$~years af data acquisition.
+In order to prove the NEMO technology is scalable to such considerable masses of isotope, while remaining an ultra-low background detector, the SuperNEMO demonstrator had been designed with a reduced mass of $\beta\beta$ isotope, being $6.23$~kg of \Se.
+Installation has begun at LSM in $2018$ [a vérifier].
+The sources had been installed, the tracker and calorimeter were assembled.
+It was an honour to personally participate in the detector closure, the $22$nd of November $2018$ (Fig.~\ref{fig:detector_closing}).
+The demonstrator is currently in the commissioning phase: the calorimeter is fully calibrated while the tracker enters in this critical phase.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{SNdemonstrator/fig_SNdemonstrator/detector_closing.pdf}
+\caption{Last picture of the SuperNEMO demonstrator before closing it, the $22$nd of November $2018$.
+  The picture is taken from one side of the detector, facing the other side.
+  We can distinguish on the right the front of one of the two calorimeter main walls, and on the left one of the two tracker chambers.
+\label{fig:detector_closing}}
+\end{figure}
+
+\subsection{Detection principle}
+
+
+The SuperNEMO demonstrator, in the manner of NEMO-$3$, combine tracking technology and calorimetry to record the full event cinematic, and measure the particle energies.
+It is designed to search for the $\zeronu$ decay which, if observed, would prove the Majorana nature of the neutrino particle, opening the door of physics beyond the Standard Model, with huge implications in numerous physics research fields (in cosmology, for instance).
+The SuperNEMO demonstrator is $6$~meters long, $3$~meters tall and $2$~meters deep.
+It is the first of the $20$ modules that will make up the final detector.
+This unique technology allows the experiment to characterise with a significant performance its own background, placing the detector in the ultra-low background category of experiments.
+
+In Fig.~\ref{fig:demonstrator_scheme} is drawn a simplified scheme of the SuperNEMO demonstrator.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{SNdemonstrator/fig_SNdemonstrator/demonstrator_sheme.pdf}
+\caption{Sheme of an open view of the SuperNEMO demonstrator (not to scale).
+An example of emission from the source foils of two negatively charged particles is drawn.
+\label{fig:demonstrator_scheme}}
+\end{figure}
+The isotope $\beta\beta$ emitter is distributed between ultra thin foils, at the centre of the detector.
+The mass of isotopes studied with this technology is lower than for experiments using liquid scintillators or TPCs.
+However, with the SuperNEMO design, the source is separated from the detector which allows to study any $\beta\beta$ isotope as long as it can be set up in thin foils of material, making this technology very interesting for the search of the $\zeronu$ decay.
+We also schematise an emission of two negatively charged particles from the source, exiting it in opposite directions.
+The design of SuperNEMO as a layer of successive sub-detectors makes it possible to collect information on the emitted particle.
+When crossing the wire chamber, the charged particle ionises the gas, and the collected charge allows for the track reconstruction.
+The detector is surrounded by a copper coil, delivering a magnetic field inside the wire chamber.
+The trajectories of charged particles of few MeV are bent, allowing to discriminate electrons and positron of few MeV (which is not the case for muons and $\alpha$ particles).
+Although the energy resolution and detection efficiency are modest compared to germanium or bolometer experiments, it is compensated by the powerful particle identification useful in identifying events from natural radioactivity.
+Therefore, the tracking technology make it possible to discriminate electrons from positrons (with the trajectory curvature), to identify $\gamma$ particles (corresponding to an energy deposit inside the calorimeter with no associated track), and to tag $\alpha$ particles (characterised by a short track inside the wire chamber).
+The particle ends up in one of the scintillator blocks, where the collection of deposited charge by a photomultiplier tube (PMT) allows for the energy measurement.
+Electric signals are sent to electronic boards where it is sampled and recorded for off-line analysis.
+
+In addition to the search of the $\zeronu$ decay, the SuperNEMO technology is suitable for the search of other processes like double beta decays to exited states of the daugher nucleus can be studied in dedicated channels (two-electrons one/two-$\gamma$'s' for instance).
+If the $\zeronu$ signal was observed, the SuperNEMO technology would also have the ability to discriminate between different hypothetised underlying mechanisms, allowing to investigate physics beyond the standard model.
+
+In the following we describe in detail the successive layers of the SuperNEMO demonstrator, from the source foils to the electronic boards where the signal is sampled.
+
+
+\subsection{The source foils}
+
+\subsubsection*{Choice of isotope}
+
+It exists numerous $\beta\beta$ emitters, coming from natural isotopes enriched in laboratory for physics research purposes.
+The choice of the isotope is directed by several factors and, depending on the experimental constraints.
+Although this choice is specific to each detector design, certain constraint are common to all $\zeronu$ experiments.
 \begin{itemize}
-\item Choice of source material
+\item The energy transition $\Qbb$: the higher, the better.
+Indeed, the ultimate background coming from natural radioactivity is the $\gamma$ of $2.615$~MeV emitted after the $\beta$ disintegration of \Tl.
+Therefore, a high $\Qbb$ would guarantee a background-free experiment.
+\item The phase space factor and the nuclear matrix element: as described in Sec.~\ref{sec:}, the $\zeronu$ half-life depends on these two parameters.
+The higher they are, the more signal events are expected for a given data acquisition time.
+\item The $\twonu$ half-life: this process represents an unavoidable background for the search of $\zeronu$.
+Then, the higher the half-life of this process, the less $\twonu$ events are expected.
+\item The natural abundance: The higher it is, the more we can produce substantial quantities of the enriched isotope.
+\item Ease of enrichment: although it is not a measurable quantity as previous requirements, known purification techniques must be applicable to the isotope considered to reach high quantities of $\beta\beta$ emitter.
+\end{itemize}
+In Tab.~\ref{tab:bb_isotopes} are given some of the $\beta\beta$ emitter characteristics presented above [Pour Laurent: je ne suis pas totalement sûr de tous les chiffres, est-ce qu'on pourrait les vérifier ensemble?].
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Isotope & $Q_{\beta\beta}$ (MeV) & $G_{0\nu}$ ($10^{-15}$ y$^{-1}$) & $T^{2\nu}_{1/2}$ (y) & $\eta$ ($\%$) \\
+\hline
+\hline
+$^{48}$Ca & $4.273$ & $24.81$ & $6.37\times 10^{19}$ & $0.187$ \\
+$^{76}$Ge & $2.039$ & $2.363$ & $1.926\times 10^{21}$ & $7.8$ \\
+$^{82}$Se & $2.995$ & $10.16$ & $9.6\times 10^{19}$ & $9.2$ \\
+$^{96}$Zr & $3.350$ & $20.58$ & $2.35\times 10^{19}$ & $2.8$ \\
+$^{100}$Mo & $3.035$ & $15.92$ & $6.93\times 10^{18}$ & $9.6$ \\
+$^{116}$Cd & $2.809$ & $16.70$ & $2.8\times 10^{19}$ & $7.6$ \\
+$^{130}$Te & $2.530$ & $14.22$ & $6.9\times 10^{20}$ & $34.5$ \\
+$^{136}$Xe & $2.458$ & $14.58$ & $2.165\times 10^{21}$ & $8.9$ \\
+$^{150}$Nd & $3.367$ & $63.03$ & $9.11\times 10^{18}$ & $5.6$ \\
+\hline
+\end{tabular}
+\caption{$\beta\beta$ emitter used in current $\zeronu$ search.
+$\Qbb$, phase space factor, $\twonu$ half-life and natural abundance are given.
+\label{tab:bb_isotopes}}
+\end{table}
+\Se\ was chosen for SuperNEMO because of its high transition energy, and preferred to \Mo\ because of its higher $\twonu$ half-life.
+Its nuclear phase space factor and natural abundance are satisfying and its enrichment does not pose any problem.
+
+\subsubsection*{Source foils production}
+
+The \Se\ isotope is enriched and purified by the ITEP laboratory in Russia.
+Two purification techniques have been employed, given in Tab.~\ref{tab:Se_purification}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Enrichment technique & \Se\ quantity (kg) & Number of foils \\
+\hline
+\hline
+Double distillation & $2$+$1.5$ & $11$+$8$\\
+Reverse chromatography & $3$ & $15$\\
+\hline
+\end{tabular}
+\caption{Different purification techniques and corresponding quantity of \Se\ isotope.
+Two batches of \Se\ have been produced through double distillation.
+\label{tab:Se_purification}}
+\end{table}
+Approximate isotope quantities are given for each technique.
+A total of $6.23$~kg of \Se\ powder have been produced and purified.
+The \Se\ is ground down to a fine powder ($50~\mu$m grains) is mixed with a radiopure glue.
+
+To shape the \Se\ powder into the final SuperNEMO source foils, two distinct designs have been tested, one by ITEP and the other by the LAPP laboratory in Annecy (Fig.~\ref{fig:foils_design}).
+\begin{itemize}
+\item The ITEP implemented the same technique as for NEMO-$3$ source foils, by smearing the \Se+glue mixture between two $12~\mu$m thick Mylar backing films, creating $3$~meters long foils.
+The Mylar is perforated by irradiation, allowing the mixture to dry and better adhere to the film.
+\item The LAPP team split up the foils in several pads: two mylar sheets are heat welded together to host the several pads.
+\end{itemize}
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=0.9\textwidth]{SNdemonstrator/fig_SNdemonstrator/ITEP_source_foils.png}
+\captionsetup{justification=centering}
+\caption{ITEP style foils.
+\label{subfig:ITEP_foils}}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=0.9\textwidth]{SNdemonstrator/fig_SNdemonstrator/LAPP_source_foils.png}
+\captionsetup{justification=centering}
+\caption{LAPP style foils.
+\label{subfig:LAPP_foils}}
+\end{subfigure}
+\caption{Two designs of source foils, ITEP (left) and LAPP (right).
+\label{fig:foils_design}}
+\end{figure}
+The principal interest in designing the sources than thin is to maximise the chances of the electrons produced inside the source to escape, so that they can be detected.
+In addition, the collaboration made this design choice in order to leave the possibility of easy isotope change in the future.
+Finally, the $6.23$~kg of \Se\ have been distributed into $34$ source foils measuring $135.5\times2700$~mm.
+
+\subsubsection*{Source foils installation}
+
+Each strip was fasten to the source frame of $4.857$~meters long and $2.7$~meters large.
+The source foils have been installed the $24$th Spetember $2018$.
+The original plan was to place the ITEP sources next to each other and to do the same for the LAPP sources.
+Unfortunately, some of the sources had to be relocated because of source shape issues (in particular, some sources were in contact with the Bismuth calibration sources, discussed in Sec.~\ref{subsec:calib}).
+The final position decided for the source foils are pictured in Fig.~\ref{fig:source_foils_installation}, where we can see the alternation of ITEP and LAPP sources.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{SNdemonstrator/fig_SNdemonstrator/source_foils_final_position.pdf}
+\caption{Final source foils position.
+  The ITEP foils (one-piece long foils) and LAPP foils (divided in pads) are easily distinguishable.
+\label{fig:source_foils_installation}}
+\end{figure}
+The final shape of the sources differs between the two types of sources: ITEP sources appear slightly curved on the image.
+This probably happened when the sources were drying, because of the glue that was used for mixing with the \Se\ powder.
+The curvature of the sources have been precisely measured using a laser, for future integration in the reconstruction software.
+I was part of the team that carried out the first curvature measurements.
+
+\begin{itemize}
+\item Annexe position des sources
+\item dire pq deux techniques : cf thèse Delphine (radiopurity)
 \end{itemize}
 
-\subsection{Tracker}
-\subsection{Calorimeter}
+\subsection{The tracker}
+
+The tracker is a detector aiming at measuring the charged particle three-dimensional trajectories through their electromagnetic interaction with the gas filling the wire chamber.
+
+
+\begin{itemize}
+\item reconstruction en 3D de l'événement
+\item choix du gaz
+\item $2034$ geiger cells, $9$ layers, $3$m long
+\item décrire anodes/cathodes
+\item décrire le pincipe de drift/avalanche des électrons, Geiger regime (schéma)
+\item assemblage du tracker puis intégration (photos)
+\item étanchéïté notamment pour Helium et surpression (participé aussi)
+\item le milieu doit être peu dense pour minimise la perte en énergie avec multiple scattering
+\item spacial résolution: identification emplacement vertex
+\item identification hotspots
+\item each individual cell is capable of measuring the radial distance (the distance of the particle from the anode) and the longitudinal distance (the position along the cell axis).
+\item peut être montrer un signal électronique
+\item C-sections
+\item donner résolution spaciales et temporelles
+\item assamblage à Manchester
+\end{itemize}
+
+\subsection{The calorimeter}
 \label{subsec:SN_calo}
 
+\begin{itemize}
+\item Bien détailler cette partie puisque on a fait le commissioning
+\item On mesure l'énérgie des particules car c'est la variable discriminante 2nu/0nu
+\item MW, gamma-V et XW (nb de calo dans chaque catégorie)
+\item scintillator (polystyrene, POPOP...) peut être aller voir dans le chapitre Cobalt ce que j'ai écrit et qui peut être déplacé ici. Décrire toute la chaine d'interaction
+\item PM, pareil décrire en détail le principe de détection
+\item Teflon et Mylar
+\item energy resolution
+\end{itemize}
 
+\subsection{The magnetic coil and the shieldings}
 
-\subsubsection{Scintillator}
+\label{sec:magnetic_field}
 
+It is, however, not high enough to impact significantly neither the few muons nor the $\alpha$ particles expected to be detected by the tracker.
+Due to their much higher momenta, they will instead leave straight tracks in the wire chamber.
 
+\subsection{Calibration strategy}
+\label{subsec:calib}
 
-
-
-\subsubsection{Photomultiplier}
-\label{sec:calorimeter}
-\subsection{Calibration systems}
 \subsection{Control Monitoring system}
-\subsection{Electronics}
 
-\section{The backgroung of SuperNEMO}
+\subsection{Electronics}
+\begin{itemize}
+\item The electronics commissioning has begun in June 2018 at Manchester.
+\end{itemize}
+
+
+\subsection{Detector cabling}
+
+\section{Backgrounds}
 \label{sec:SNbkg}
+
+\begin{itemize}
+\item radiopurity
+\item section sur BiPo (voir artcile sur site SuperNEMO.org)
+\end{itemize}
+
 \subsection{Internal background}
 \label{subsec:SNbkg_internal}
 
@@ -124,14 +343,14 @@ Radon concentration measurements inside the demonstrator tracker have been perfo
 %%Repris d'un article -> a changer:
 They are outgased in the air from the rock walls of the experimental hall and can enter the detector either through tiny gaps between sectors or through gas pipe joints.
 The progeny of radon and thoron produces $\gamma$-rays and $\beta$ decays accompanied by internal conversion (IC), Møller or Compton scattering.
-\subsection{Background specifications}
-\subsection{Measured demonstrator background levels}
 
-\section{Magnetic field}
-\label{sec:magnetic_field}
 
-It is, however, not high enough to impact significantly neither the few muons nor the $\alpha$ particles expected to be detected by the tracker.
-Due to their much higher momenta, they will instead leave straight tracks in the wire chamber.
+\subsection{Background reduction}
+
+\subsubsection{The underground laboratory}
+
+\subsubsection{External shield}
+
 
 \section{The SuperNEMO software}
 \label{sec:SNsoftware}
@@ -146,7 +365,14 @@ Finally, the SNFee software is a tool package for the configuration, control and
 
 Particle identification with detector scheme
 
+\subsection{Monte-Carlo simulations}
+
+\subsection{Analysis chain}
+
+
 \subsection{Modifications of simulation software}
+
+
 
 \section{Analysis tools}
 
@@ -215,7 +441,7 @@ where $\sigma_{E}= \text{FWHM}_{\text{E}} \times \sqrt{E_{i}}$ represents the en
 \paragraph{The uncertainty $\sigma_{L}$ on the reconstructed track length}
 This corresponds to the typical uncertainty due to particles track reconstructions, due to the uncertainty on the interaction point inside the scintillator block.
 This uncertainty is greater for $\gamma$ particles than for electrons.
-Indeed, thanks to the gas chamber and the trajectory fitting, valuable informations on the impact point inside the scintillator are provided for electrons crossing the tracker, while photons only deposit their energy inside the calorimeter, without ionising the tracker gas.
+Indeed, thanks to the gaseous detector and the trajectory fitting, valuable informations on the impact point inside the scintillator are provided for electrons crossing the tracker, while photons only deposit their energy inside the calorimeter, without ionising the tracker gas.
 In the framework of the optimisation of $\gamma$ reconstruction in the superNEMO detector, a previous study has evaluated the uncertainty on the track length for $\gamma$'s, by simulating monokinetic $\gamma$'s, and estimated $\sigma_{L}=0.9$~ns~\cite{CalvezThesis}.
 The value used in the simulation/reconstruction pipeline, for the case of electrons, is inherited from the NEMO-$3$ analysis with $\sigma_{L}=0.1$~ns.
 An optimisation of this parameter is given in Chapter~\ref{ch:timediff}.
@@ -239,3 +465,12 @@ On the other hand, a flat distribution signifies an appropriate estimation of th
 
 
 \subsection{External probability}
+
+
+\section{Goals and comparison with NEMO-3}
+
+\begin{itemize}
+\item Expected sensitity
+\end{itemize}
+
+\section{Conclusion}
