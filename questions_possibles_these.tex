@@ -107,6 +107,8 @@
                  ->regarder mes résultats sans radon
                  ->efficacité 0nu surestimée (ancien soft)
                  \item Remarque: l'utilisation de l'énergie individuelle permet de rejeter du 208Tl par exemple.Cependant vu que tu as déjà très peu de bruit de fond, est-ce que tu vas gagner beaucoup? Peut-être considérer aussi les evts à 2 électrons d'énergie un peu plus faible, ce -> il serait poss d'avoir un Emin de la ROI plus petit si on arrive à couper Tl avec coupure sur Eindiv
+                   \item Remarque: pour le processus de neutrino de Majorana léger, je ne suis pas sûr qu'on gagne beaucoup avec une analyse multivariée
+(Par exemple entre 2n2b et 0n2b les variables cinématiques sont assez similaires, et le 2n2b est le bruit de fond dominant.)
                \end{itemize}
 
                \chapter{Tl analysis}
@@ -115,3 +117,12 @@
                \end{itemize}
 
                \end{document}
+
+               \chapter{Detector}
+
+               \begin{itemize}
+               \item due to difficulties with the mechanical design and degradation of $\Delta E/E$ as a result of the energy loss of electrons in the entrance window of the liquid scintillator container these options were not considered for the final design.
+               \item La granularité di calo peut jouer si on empile un gamma et un électron.
+                 Cela avait été discuté quand on avait réfléchi à un calorimètre en barre : moins coûteux mais à priori moins performant.
+                 \item Remarque pour tag du bdf Tl dans le canal 1eng: dans la très grande majorité des cas, c'est au moins 2 gammas mais on peut louper la détection de 1 gamma, ce qui donne des événements à 1 électron et 1 gamma.
+               \end{itemize}
