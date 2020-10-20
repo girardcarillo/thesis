@@ -2,7 +2,7 @@
 \label{ch:sensitivity}
 
 a study aiming to evaluate the SuperNEMO sensitivity to the $\zeronu$ decay, and the corresponding effective neutrino mass is presented.
-The final detector, based on the NEMO-$3$ technology, is expected to exclude half-lives up to $1.2\times 10^{26}$~y ($90\%$ CL), with an exposure of $500$~kg.y with Selenium sources\footnote{Supposing the $\zeronu$ decay of \Se\ occurs through the exchange of a light Majorana neutrino.}~\cite{art:SuperNEMO2010}.
+The final detector, based on the NEMO-$3$ technology, is expected to exclude half-lives up to $1\times 10^{26}$~y ($90\%$ CL), with an exposure of $500$~kg.y with Selenium sources\footnote{Supposing the $\zeronu$ decay of \Se\ occurs through the exchange of a light Majorana neutrino.}~\cite{art:SuperNEMO2010}.
 The SuperNEMO demonstrator was designed in order to assess the technical feasibility of such a large-scale detector and to show that background specifications can be achieved.
 Its installation started in early $2015$, at the Laboratoire Souterrain de Modane.
 With a reduced exposure of $17.5$~kg.y, this demonstrator is expected to reach a sensitivity on the $\zeronu$ process of $5.3\times~10^{24}$~y ($90\%$ CL)~\cite{CalvezThesis}.
@@ -142,6 +142,8 @@ The off-field study is addressed in Sec.~\ref{subsec:magnetic_field}.
 
 A two-electron ($2e$) topology is then defined as two reconstructed tracks with negative curvatures, each one associated with a vertex on the source foils and a calorimeter hit.
 These selections represent the so-called \emph{first-order} cut-offs.
+The $2e$ topologies have been selected using the Particle Identification module at the end of the Falaise reconstruction pipeline~\cite{CalvezThesis}.
+I wrote my own module and added it to the collaboration software in order to store the selected events in a data format matching my off-line analysis chain.
 Second order selections taking into account topological information (time of flight, location of vertices on the source foils) are presented in Sec.~\ref{sec:demonstrator_sensitivity}.
 
 \subsection{Total energy spectrum}
