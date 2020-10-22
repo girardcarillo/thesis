@@ -127,13 +127,13 @@ We aim to exploit these two photons emitted after the $\beta^{-}$ disintegration
 \label{subsec:OMtimeResponse}
 
 In order to characterise the energy and time-of-flight of incoming particles (photons, electrons), each calorimeter block of SuperNEMO is composed of a scintillator and a photomultiplier.
-The purpose of the scintillator material is to stop the incoming particles, which will induce the production of the so-called optical photons.
+As detailed in Chapter~\ref{ch:detector}, the purpose of the scintillator material is to stop the incoming particles, which will induce the production of the so-called optical photons.
 The optical photons reaching the photomultiplier photocathode are then converted into electrons, with an efficiency called quantum efficiency.
-After amplification, electrons are collected by the anode which delivers an electric signal whose charge is proportional to the initial amount of incident photoelectrons.
+After amplification, electrons are collected by the anode which delivers an electric signal whose charge proportional to the initial amount of incident photoelectrons.
 This signal is then transmitted, via the PM voltage divider, to the electronic readout, where the signal is sampled.
 The particle energy, as well as the time-of-flight, can be extracted from the signal waveform analysis.
 Each step of the particle detection process, from the incident particle interaction inside the scintillator, to the signal sampling at the electronic readout, can have an impact on the precise time measurement of the charged particle.
-We introduce the so-called calorimeter time resolution $\sigma_t$, which encapsulates the global uncertainty on the time-of-flight measurement of particles into the calorimeter.
+In Chapter~\ref{ch:detector} and \ref{ch:timediff} we introduced the so-called calorimeter time resolution $\sigma_t$, which encapsulates the global uncertainty on the time-of-flight measurement of particles into the calorimeter (Eq.~\eqref{eq:sigma_t}).
 The squared time-resolution can therefore be expressed as the sum of two contributions:
 the scintillator resolution $\sigma_{t, \textrm{sc}}^{2}$, and the PMT resolution $\sigma_{t, \textrm{PM}}^{2}$,
 \begin{equation}
@@ -285,7 +285,6 @@ The acquisition took place during two weeks, at the summer break $2019$.
 The same way as for the Thallium study discussed in Chapter~\ref{ch:timediff}, all simulations were performed with an ideal calorimeter, setting up the uncertainty on optical modules to zero.
 The same Root code was also used to adjust this parameter to the desired value.
 
-\paragraph{Cobalt events simulations:}
 As for the data acquisition, the simulated source has been placed behind the calorimeter walls.
 Hopefully, there was no need to simulate all the $18$ positions.
 In fact, at this time, the detector implemented in simulations is symmetrical in terms of detection performances.
@@ -299,12 +298,11 @@ Four bunches, for a total of $10^{9}$ Cobalt events, were simulated with the off
 %%     \label{fig:Co_visu}}
 %% \end{figure}
 
-\paragraph{Background events simulations:}
-As already discussed in Chapter~\ref{ch:sensitivity}, currently the collaboration does not supply a complete set of external background simulations for the demonstrator design.
-This will be implemented as soon as the final demonstrator performances has been determined.
-Thus, we did not have at our disposal background events simulations for this analysis.
+%% \paragraph{Background events simulations:}
+%% As already discussed in Chapter~\ref{ch:sensitivity}, currently the collaboration does not supply a complete set of external background simulations for the demonstrator design.
+%% This will be implemented as soon as the final demonstrator performances has been determined.
+%% Thus, we did not have at our disposal background events simulations for this analysis.
 
-\paragraph{}
 The entire experimental set-up was designed and carried out by me and a group of physicists from LAL, Orsay and LPC, Caen.
 I developed a complete set of ROOT codes for data processing and analysis, available on the GitHub platform~\cite{myGit}.
 As the tracker is not yet operational for data collection at Modane, we are only interested in the part of the simulations with the calorimeter.
@@ -318,8 +316,8 @@ We aim to use the two $\gamma$'s of $1.17$ MeV and $1.33$ MeV from Cobalt $60$ $
 Thus, the signal we are looking for is two particles detected in coincidence in distinct optical modules.
 In order to maximise the signal to background ratio, some selections have been applied on data.
 \begin{itemize}
-\item Trigger criteria:\\ as we look for two calorimeter hits, we only keep events with exactly two triggering electronic channels.
-  Moreover, we are interested in events with two hits which passed both the high amplitude threshold, corresponding to approximately $150$ keV.
+\item Trigger criteria:\\ in the two calorimeter hits channel, the trigger condition is defined so as one of the two hit has to trigger the low energy (or amplitude) threshold, of $50$~keV for the data acquisition.
+  As we look for two calorimeter hits, we set an additional off-line selection events whose two hits passed both the high amplitude threshold, corresponding to approximately $150$ keV.
 \item Coincidence time criterion:\\ we define the coincidence time-window by events occurring in a $62.5$ ns-long time interval.
   This allows to avoid accidental coincidence events (interactions of two gammas, produced by different sources, in two optical modules), while keeping events where two $\gamma$ particles interact at both ends of the wall.
   This time-window was set for the data-taking and can be improved for eventual future acquisitions.
@@ -347,11 +345,12 @@ In order to maximise the signal to background ratio, some selections have been a
   As such intercations occur predominantly in two close scintillators, we reject topologies where two neighbouring optical modules detect signal in the coincidence window.
   The detector energy calibration is discussed in Sec.~\ref{subsec:Co_energy_calib}.
 \end{itemize}
+These four selections are intended to improve the Cobalt signal to background ratio.
+The coincidence time selection is only applied to real data, while others are applied both to simulations and real data.
+Indeed, what we call an \emph{event} does not have the same meaning depending on whether we are talking about simulation or real data.
+We simulate a given amount of disintegrations at given location(s) of the detector, so the definition of a Monte Carlo event is straightforward, and concepts such as the pile up has no sense.
+For real data acquisitions, a set of criteria have to be established in order to define what an event is, as the time coincidence window for example.
 
-These four selections aim to improve the Cobalt signal to background ratio.
-The coincidence time selection is only applied on real data, while others are applied both on simulations and real data.
-In fact, the signification of an \emph{event} is not the same for simulations as for real data: we simulate one Cobalt disintegration after another.
-*a réécrire*
 We remind the signification of selection efficiency $\epsilon$ which is
 \begin{equation}
   \epsilon = \frac{\text{Number of selected events}}{\text{Total number of events}}\,.
@@ -359,18 +358,22 @@ We remind the signification of selection efficiency $\epsilon$ which is
 Selection efficiencies are presented in table~\ref{tab:Co_cut_eff}.
 \begin{table}[h]
   \centering
-
-  \begin{tabular}{ l c c c }
+  \begin{tabular}{|c|c|c|c|}
+    \hline
     & Simulations & Data \\
-    Trigger & $65$\% & $1.8$\% \\
-    Time coincidence & - & test \\
-    Individual energy & $27.6$\% & $70.4$\% \\
-    Geometrical & $26.7$\% & $61.1$\% \\
+    \hline\hline
+    High thresold & $35.7$\% & $98.0$\% \\
+    Individual energy & $17.0$\% & $70.2$\% \\
+    Geometrical & $16.5$\% & $61.0$\% \\
+    \hline
   \end{tabular}
-
   \caption{Selection efficiencies for simulations and real data.
     \label{tab:Co_cut_eff}}
 \end{table}
+Significant differences are observed between simulations are real data, mainly due to the energy calibration.
+Indeed, at the time of the data taking, the gain equalisation and energy calibration were preliminary and had to be improved.
+Therefore, this statement directly affect the reconstructed energies of calorimeter hits.
+We address this question in Sec.~\ref{subsec:Co_energy_calib}.
 
 %% simus
 %% before = 1000001 side = 917239 main = 907700 mult = 35061 event_deltat = 35061
@@ -379,20 +382,12 @@ Selection efficiencies are presented in table~\ref{tab:Co_cut_eff}.
 \subsection{Background estimation}
 \label{subsec:bkg_estimation}
 
-In order to interpret the current analysis results, we aim to estimate and characterise the background detected by the SuperNEMO calorimeter, during the \Co\ data-taking time period.
+The signal for this analysis is composed two $\gamma$'s of $1.17$ MeV and $1.33$ MeV, emitted after Cobalt disintegrations.
+After application of the four selections, it is primordial to estimate and characterise the remaining background in the selected topology, detected by the calorimeter during the data acquisition.
 
-As described previously, we aim to detect two $\gamma$'s of $1.17$ MeV and $1.33$ MeV, emitted after Cobalt disintegrations.
-Therefore, we can mainly distinguish three different types of background, presented in Fig.~\ref{fig:Co_bkg}.
-\begin{itemize}
-\item Photons coming from the natural radioactive decay chains of $^{238}$U, $^{232}$Th and $^{40}$K isotopes.
-Typically, the $2.61$ MeV-$\gamma$, from \Tl\ decay, can interact successively in two scintillators through Compton scatterings (see Fig.~\ref{subfig:Co_bkg_1}).
-\item Through a double Compton interaction, a single Cobalt $\gamma$ particle can deposit energy in two scintillator blocks (see Fig.~\ref{subfig:Co_bkg_2}).
-As described in Sec.~\ref{subsec:Co_datacut}, the geometrical and individual energy selections have been set up to reject these background events.
-\item At the time of the data acquisition, the calorimeter was in commissioning phase, and the iron shielding was not yet installed.
-Therefore, the calorimeter was not properly protected from external particles, coming from outside the detector (radioactive isotope contamination of laboratory rock).
-Accidental events where two decorrelated $\gamma$ particles, can be detected in two scintillator blocks (see Fig.~\ref{subfig:Co_bkg_3}).
-\end{itemize}
+\subsubsection*{Types of background}
 
+Mainly three different types of background can be harmful for this analysis, all pictured in Fig.~\ref{fig:Co_bkg}.
 \begin{figure}[h]
   \centering
   \begin{subfigure}[t]{0.30\textwidth}
@@ -425,43 +420,59 @@ Accidental events where two decorrelated $\gamma$ particles, can be detected in 
     (c) Interactions of two uncorrelated photons, coming from the demonstrator outside (natural radioactivity of laboratory rock...), in two scintillator blocks
     \label{fig:Co_bkg}}
 \end{figure}
+\begin{itemize}
+\item Through a double Compton interaction, a single Cobalt $\gamma$ particle can deposit energy in two scintillator blocks (see Fig.~\ref{subfig:Co_bkg_2}).
+As described in Sec.~\ref{subsec:Co_datacut}, the geometrical and individual energy selections have been set up to reject these background events.
+\item Photons coming from the natural radioactive decay chains of $^{238}$U, $^{232}$Th and $^{40}$K isotopes.
+Typically, the $2.61$ MeV-$\gamma$, from \Tl\ decay, can interact successively in two scintillators through Compton scatterings and produce high energy events (see Fig.~\ref{subfig:Co_bkg_1}).
+These disintegration can occur in the source foils or in the detector's components (mainly PM glass).
+\item At the time of the data acquisition, the calorimeter was in commissioning phase, and the iron shielding was not yet installed.
+Therefore, the calorimeter was not properly protected from external particles, coming from outside the detector (radioactive isotope contamination of laboratory rock).
+Accidental events where two decorrelated $\gamma$ particles, can be detected in two scintillator blocks (see Fig.~\ref{subfig:Co_bkg_3}).
+The coincidence time window should avoid these accidental to be selected.
+\end{itemize}
 All these three topologies can mimic the Cobalt two-$\gamma$'s signal.
-A background acquisition, without the Cobalt calibration source, has been taken (see Sec.\ref{subsec:Co_setup}).
-Unfortunately, be owing to energy calibration issues, these data are not usable.
-However, estimating the amount of background received by optical blocks during the acquisition is essential to assess our results.
 
-We aim to provide an estimation background events, considering events detected by optical modules far from the Cobalt source.
-Needless to say, the data may contain signal events coming from Cobalt source, as well as background events, whose different origins are decribed above.
+Estimating the amount of background received by optical blocks during the acquisition is essential to assess our results.
+In order to characterise the two last types of background (decorrelated from the Cobalt source), an acquisition without the Cobalt calibration source has been performed (see Sec.\ref{subsec:Co_setup}).
+Unfortunately, be owing to optical modules gain issues, these data are not usable.
+Therefore, we use the data acquisition taken with the Cobalt source set behind the wall to estimate this background.
+
+\subsubsection*{Background characterisation}
+
+When the Cobalt source is set behind the wall, collected data may contain signal events coming from it as well as background events.
+Let us assume these background events are dominated by radiocative decays and external $\gamma$'s, by considering the background coming from double Compton intercations of Cobalt $\gamma$'s have been efficiently removed by application of the individual energy cut.
 We choose to modelise the Cobalt data as a linear combination of signal events $s$ and background events $b$
 \begin{equation}
   \hat{d}=s+b\,,
   \label{eq:estimation_data}
 \end{equation}
-where $s$ and $b$ are considered as uncorrelated.
-The question is how to extract informations about background, using the Cobalt data acquisitions.
+where $s$ and $b$ are thus considered as uncorrelated.
+The question is how to extract informations about background, using the Cobalt data acquisitions?
 We remind the Cobalt source was placed at different positions behind the calorimeter wall (Fig.~\ref{subfig:Co_setup_wall}, Sec.~\ref{subsec:Co_setup}).
 We aim to take advantage of those different configurations to reach our goal.
 In the following, we make use of the positions $2$ and $8$ for the Cobalt source.
 Therefore, depending on whether the source is in one of the two positions, some optical modules are \emph{close} to it, others are \emph{far}.
 More precisely, we consider as \emph{close}, the optical modules that are separated from the source by less than 10 OMs (i.e. less than half the wall-lenght), the others being \emph{far} from it\footnote{For example, an optical module located on the left (right) of the calorimeter wall, is considered as far from (close to) the source, if the source is in position $8$.}.
-Considering that, we distinguish two categories of data, $\hat{d}^{\,\text{close}}$ and $\hat{d}^{\,\text{far}}$, defined as the estimations of data events detected by an optical module when the source is close, or far to it, respectively.
+Considering that, we distinguish two categories of data, $\hat{d}^{\,\text{close}}$ and $\hat{d}^{\,\text{far}}$, defined as the estimations of data events detected by an optical module when the source is close to, or far from it, respectively.
 Then, we precise our data modelisation with
 \begin{equation}
   \hat{d}^{\,\text{close}} = b + s^{\,\text{close}}\,,
   \label{eq:estimation_data_close}
 \end{equation}
-where $s^{\,\text{close}}$ is the number of signal events detected by a given optical module for which $D_{\,\text{source}}<10$.
+where $s^{\,\text{close}}$ is naturally the number of signal Cobalt events detected by a given optical module for which the distance from the source, $D_{\,\text{source}}$, is lower than $10$.
 In the same way, considering $s^{\,\text{far}}$ as signal events detected by an optical module from which the source is far, we have
 \begin{equation}
   \hat{d}^{\,\text{far}} = b + s^{\,\text{far}}\,.
   \label{eq:estimation_data_far}
 \end{equation}
-We use \Co\ simulations to gather informations on $s^{\,\text{close}}$ and $s^{\,\text{far}}$ estimations.
-For this purpose, we define the coefficient $\alpha$ as
+Estimations of $s^{\,\text{close}}$ and $s^{\,\text{far}}$ (respectively noted $\tilde{s}^{\,\text{close}}$ and $\tilde{s}^{\,\text{far}}$) are provided using simulations of \Co\ events in positions $2$ or $8$.
+Indeed, as we consider the double Compton interaction background as negligible, the amount of signal events received for optical modules far or close from the source can be established with Cobalt simulations.
+Then, the coefficient $\alpha$ defined as
 \begin{equation}
-  \alpha = \tilde{s}^{\,\text{far}}/\tilde{s}^{\,\text{close}}\,,
+  \alpha = \tilde{s}^{\,\text{far}}/\tilde{s}^{\,\text{close}}\,.
 \end{equation}
-which depends on the distance $D_{\,\text{source}}$, and we find $0.05 \% < \alpha < 5 \%$ for \Co\ simulated events, meaning that the number of signal events detected by optical modules distant from the source is greatly lower than for close optical modules, for a given source position.
+It depends on the distance $D_{\,\text{source}}$ and is found to be $0.05 \% < \alpha < 5 \%$, meaning that the number of simulated signal events detected by optical modules distant from the source is greatly lower than for close optical modules, for a given source position.
 
 In order to provide a non-biased estimation of $b$, given the data model in Eq.~\eqref{eq:estimation_data_far}, we would remove $\tilde{s}^{\,\text{far}}$ (estimated through simulations) from $\hat{d}^{\,\text{far}}$ (estimated with Cobalt data acquisition).
 However, qualitatively comparing data and simulations is not straightforward, especially due to detector efficiency considerations, discussed in Sec.~\ref{subsec:detector_efficiency}.
@@ -715,6 +726,7 @@ We now generalise this method to all possible combinations of OM pairs for which
 
 \subsection{Conclusion}
 \begin{itemize}
+\item il fauddrait au moins tenir compte du bdf qui est les decays de la source
 \item il nous faut des simus bkg
 \item il nous faut un run bkg
 \item ça marche bien
@@ -739,24 +751,6 @@ Primary/secondary
 Each LED lights
 Group LEDs/area
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_1d_counts.pdf}
-  \caption{The number of counts is displayed for each optical module, labelled by the \emph{OM index}.
-    Each coloured marker represents counting rates for one area of the detector, that is to say one group of optical modules lighted by the same LED.
-    The area $1$ (dark red dots) is not receiving light from its corresponding LED.
-    \label{fig:LI_counts}}
-\end{figure}
-
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_mean_ampl.pdf}
-  \caption{The mean signal amplitude distribution for each optical module is presented.
-    One colour stands for one area of the half detector.
-    In Grey is the total mean amplitude distribution.
-    \label{fig:LI_ampl}}
-\end{figure}
 
 
 \subsection{Time resolution of optical modules}

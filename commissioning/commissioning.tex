@@ -1,4 +1,4 @@
-\chapter{Detector commissioning}
+\chapter{Calorimeter commissioning}
 \label{ch:commissioning}
 
 The commissioning of the SuperNEMO demonstrator has begun in $2019$ and data were taken with the whole calorimeter
@@ -11,8 +11,147 @@ We refer to the cables running from detector to patch panel as \emph{internal} c
 Consequently, regarding only the calorimeter part, 2848 cables were cut, assembled, connector-mounted, transported and installed at LSM.
 Then the check of every cable condition is mandatory to control and eventually fix them.
 
-\section{Reflectometry analysis}
+The first two sections describe the start-up of the calorimeter, with the first data acquisitions and the various calibration operations that have been carried out by the collaboration.
+The rest of the chapter deals with the work done within the framework of this PhD in order to verify the operating state of the calorimeter and its cables, after integration.
+
+
+\section{Optical modules calibration}
+
+It is necessary to check the correct operation of the whole calorimeter as well as each individual optical module, in order to repair and correct it if necessary.
+
+\subsection{Pulse shape studies}
+
+It is interesting to study the shape of the pulses sampled by the electronic boards, as it allows the identification of the presence of pre- or post-pulses that may be caused by undesired interactions, such as contamination of photomultipliers' vacuum by Helium, or the interaction of photons from the laboratory lighting, due to defects in the detector's light tightness.
+A study performed by William Queen, a PhD student at UCL, allowed to determine a reference model for the expected shape of calorimeter waveforms.
+An example of an awaited waveform is given in fig.~\ref{fig:waveform}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/waveform.pdf}
+  \caption{Calorimeter waveform visualisation with the SNFee software.
+    \label{fig:waveform}}
+\end{figure}
+The pulses received by the calorimeter can then be compared with this standard waveform, allowing any issues to be detected and resolved.
+
+
+
+\subsection{Baseline studies}
+
+The baseline is the part of the signal that is before the signal pulse.
+Slight signal fluctuations can be observed in this area due to electronic noise, for example.
+By averaging the amplitude value in this area, a reference can be defined to calculate the pulse amplitude.
+This average is calculated by default directly by the calorimeter front-end boards, over the first $6.25$ nanoseconds of the signal.
+In order to minimise the impact of statistical fluctuations on the baseline calculation, a more efficient analysis has been developed by Hichem Tedjditi, a PhD student at the CPPM, allowing to calculate it over an extended time.
+The calculation of this average starts at the opening of the acquisition window, up to the rising edge of the signal pulse, which is detected automatically.
+The presence of pre-pulses is also automatically characterised.
+This analysis is done off-line and participates in the verification of the optical modules condition, after the installation of the calorimeter, and throughout the data acquisition of the demonstrator.
+
+\subsection{Gain studies}
+
+
+When a particle deposits energy as it interacts in the scintillator, the detection chain that follows enables a quantity of charge to be recovered at the PM voltage divider, that is proportional to the first energy deposited and depends on the high voltage applied to the photomultipliers.
+In the SuperNEMO detector, these voltages can be adjusted individually for each block.
+Charge and amplitude spectra can be obtained for each optical module and therefore depend on the high voltage applied.
+As the optical modules are triggered from a signal amplitude threshold, it is necessary that the gains of all the optical modules of the calorimeter are equalised, in order to have comparable threshold values.
+For the SuperNEMO calorimeter, this value has been set at an amplitude of $200$~mV for $1$~MeV deposited, corresponding to a $612$~mV gain.
+Each optical module has then to be calibrated after installation, in order to reach this standard value and equalise all the PM responses.
+The current study has been led by Axel Pin, a PhD student from CENBG.
+
+This calibration consist in the optical module gains alignment, by obtaining a new high voltage value to be applied from the amplitude spectrum.
+To determine the current gain of an optical module, one must first obtain its amplitude (or charge) spectrum and then locate a particular point on this spectrum.
+To obtain these spectra, long runs (few hours) have been taken with the demonstrator, without the $^{207}$Bi calibration sources.
+For this study, the chosen point is located at the end of the spectrum, where the only contribution of Thallium is expected in the $2e$ channel.
+Once this gain is obtained, a reference gain is computed using simulations of \Tl\ decays inside the source foils.
+The same particular point is determined, which corresponds to a given energy (as simulations allow to construct energy spectra).
+Therefore, two gains are obtained one for real data and the other for simulations, allowing to determine the optimal high voltage value to apply for each photomultiplier.
+The gains distributions before and after equalisation are presented in Fig.~\ref{fig:gain}.
+\\...\\
+The gain adjustment method have been effective as the distribution mean stands at $606.5\pm1.4$~mV at $3$~MeV, $8$~\% FWHM.
+
+Now the optimal high voltages have been determined for each optical module, the collaboration will have to monitor the their gain, in order to insure the stability of the SuperNEMO calorimeter.
+
+%% Depending on the value of this voltage, the gain $G_{OM}$ expected for a given optical module vary as:
+%% \begin{equation}
+%% G_{OM}=KV^{N\alpha}\,,
+%% \end{equation}
+%% where $K$ is a proportionality constant, $V$ is the high voltage applied to the photomultiplier, $N$ the number of dynodes and $\alpha$ is a coefficient depending on the PM characteristics.
+
+
+\subsection{Energy calibration}
+\label{sec:comm_energy_calibration}
+
+As described in Sec.~\ref{subsec:OMtimeResponse}, the collected charge at photomultiplier voltage divider is proportional to the amount of incident photoelectrons, thus to the initially deposited energy inside the scintillator.
+Once optical modules were assembled (optical coupling, packing, shielding integration), they were individually tested at Bordeaux laboratory, CENBG, with an electron spectrometer~\cite{HuberThesis}.
+Their energy resolutions for $1$ MeV-electrons at the centre of scintillator front face were determined.
+For optical modules assembled with $8$'' photomultipliers, it is in average of $8.19$\%.
+
+Supply high voltages were characterised and set individually for each optical module to their to optimal values.
+However, after the calorimeter integration, due to possible modifications of optical module characteristics, amplitude spectra of each optical block have to be re-aligned.
+This work was also performed by Axel Pin, PhD student at CENBG.
+We give in this section a summary of this energy calibration study.
+
+The energy calibration method consists to find a particular point of a charge or amplitude spectrum, the Compton edge of \Tl\ for this study.
+Looking for the same location on simulated \Tl\ energy spectra, a charge-energy or amplitude-energy correspondence can be made and applied to calibrate each optical module in energy.
+In Fig.~\ref{fig:} are displayed the charge spectrum for $8$'' optical modules before energy calibration, as well as the energy spectrum after the calibration factor have been applied.
+\\...\\
+The distribution width is greatly improved by the energy calibration, going from $22.5$\%~FWHM to $3.9$\%~FWHM.
+
+I also performed another energy calibration using the data acquisition and simulations with a Cobalt source, using the Cobalt peak at $1$~MeV.
+This is discussed in Chapter~\ref{ch:Cobalt_study}.
+
+
+\section{Light Injection System}
+\label{sec:LI}
+
+The LIS is a calibration method sending light pulses in optical modules for energy calibration purposes.
+It has been detailed in Chapter~\ref{ch:detector}.
+
+In the framework of this PhD, I took part in the analysis of the first commissioning data taken with this system.
+All results presented in this sub-section are currently being improved by the collaboration.
+In Fig.~\ref{fig:LI_counts} is displayed the simulated light intensity received by each optical module of the French main wall, for a data acquisition of $\sim20$~minutes with all LEDs.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_1d_counts.pdf}
+  \caption{Quantity of light received by each OM (labelled with OM index) of the French main wall.
+    Each coloured marker represents counting rates for one area of the detector, that is to say one group of optical modules lighted by the same LED.
+    The area $1$ (dark red dots) is not receiving light from its corresponding LED.
+    \label{fig:LI_counts}}
+\end{figure}
+A total of $20$ LEDs allow to calibrate all optical modules of the two main walls, the X-Walls and $\gamma$-vetos.
+Optical modules on the same main wall are divided into $5$ distinct groups, each illuminated via optical fibers by the light of one LED.
+In the figure each of the $5$ area is represented.
+Optical modules from area $1$ do not receive light from their associated LED, denoting a possible connection problem at the bundle (all fibers coming from one LED are grouped together in one bundle before being distributed on the calorimeter wall), or an issue with the LED itself.
+It has been determined that this issue is intermittent, and sometimes affect other areas, possibly showing a more general problem related to the power supply of the LEDs.
+This issue does not seem to be serious and is currently under investigation.
+
+After checking the LED operation and quantity of light received, the amplitude spectra for each area have been studied and are presented in Fig.~\ref{fig:LI_ampl}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_mean_ampl.pdf}
+  \caption{The mean signal amplitude distribution for each optical module is presented.
+    One colour stands for one area of the half detector.
+    In Grey is the total mean amplitude distribution.
+    \label{fig:LI_ampl}}
+\end{figure}
+These spectra are very discontinuous and above all very spread out in amplitude.
+The fact that the distributions are wide is not surprising, as the amount of light received by an optical module depends on many parameters, such as the location of the optical fibre in the bundle, which determines how close the fibre is to the LED.
+The angle at which the optical fibre enters the scintillator can also greatly influence this quantity.
+But the potentially worrying thing is that the amplitudes can go up to very high values.
+In practice, the acquisition does not record signal amplitudes above a few hundred mV.
+When the amplitude is too large, the signal is just truncated.
+It is then the SNFee off-line analysis code which, when trying to determine the location of the waveform peak, performs an extrapolation and gives such large amplitudes.
+So even if these values do not correspond to the actual amount of light received by the optical modules, the amplitude is still too high compared to what is expected.
+Calibration operations are underway to harmonise this quantity.
+
+In the following, the work I achieve on the calorimeter commissioning is discuss in detail.
+
+
+\section{Calorimeter cabling network}
 \label{sec:reflecto}
+
+In this section is presented an analysis performed in order to check the status of calorimeter signal cables.
+I was involved in most of the stages of the detector cabling, from cutting the calorimeter signal cables at LAL, to their installation in Modane on the various walls of the calorimeter, via their welding to the PM voltage dividers and their organisation on the patch panel.
+Although not covered in this analysis, I was also involved in the connection (under the detector) of the tracker cables and their routing from the detector to the electronics.
+These steps were crucial and gave me a good knowledge of the detector I am working on.
 
 \subsection{Goal of the reflectometry analysis}
 
@@ -275,42 +414,18 @@ In Fig.~\ref{fig:CFD} is displayed an example of \emph{normal} pulse, which corr
 In this case, the pulse sent in the cable travels to the PMT, and goes back to the acquisition after reflection on the divider.
 
 
-\subsection{Comparison with $^{60}$Co}
+%% \subsection{Comparison with $^{60}$Co}
 
 \subsection{Conclusion}
 A faire : regarder le rising time en fonction de la longueur du cable
 Regarder la différence de temps de montée du signal sur deux PMs très éloignés
 
-\section{Calibrating the electronic boards}
-\label{sec:TimeSynchroFEB}
+%% \section{Calibrating the electronic boards}
+%% \label{sec:TimeSynchroFEB}
 
-\subsection{Principle}
-\subsection{Measuring the time offset of front end boards}
-\subsection{Results}
-
-
-\section{Energy calibration of optical modules}
-\label{sec:comm_energy_calibration}
+%% \subsection{Principle}
+%% \subsection{Measuring the time offset of front end boards}
+%% \subsection{Results}
 
 
-*thèse Arnaud page 103*
-
-As described in Sec.~\ref{subsec:OMtimeResponse}, the collected charge at PM voltage divider is proportional to the amount of incident photoelectrons, and then to the initially deposited energy inside the scintillator.
-Once optical modules were assembled (optical coupling, packing, shielding integration), they were individually tested at Bordeaux laboratory, CENBG, with an electron spectrometer [ref].
-Their energy resolutions for $1$ MeV-electrons at the centre of scintillator front face were determined.
-High voltages were set to optimal values, to obtain an amplitude of $300$ mV for $1$ MeV electrons.
-However, after calorimeter integration, due to different environment, amplitude spectra of each optical block have to be re-aligned.
-This work was performed by Axel Pin, PhD student at CENBG.
-We give in this section a summary of this energy calibration study.
-
-\begin{itemize}
-\item Axel s'est servi de mes simus et prises de donnée Cobalt
-\end{itemize}
-
-
-
-\section{Baseline studies}
-\label{sec:comm_baseline}
-
-\section{Light Injection System}
-\label{sec:LI}
+\section{Conclusion}
