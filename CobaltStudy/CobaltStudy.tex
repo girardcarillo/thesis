@@ -379,6 +379,87 @@ We address this question in Sec.~\ref{subsec:Co_energy_calib}.
 %% before = 1000001 side = 917239 main = 907700 mult = 35061 event_deltat = 35061
 
 
+\subsection{Energy calibration}
+\label{subsec:Co_energy_calib}
+
+The charge collected at each PM divider is correlated to an energy initially deposited inside the scintillator.
+It is important to provide a robust calibration, allowing to provide a relation between these two observables, for any analysis to be valid.
+At the time of the data acquisition with the Cobalt source, a complete energy calibration was only provided for data acquisitions taken after the current Cobalt one.
+Indeed, as the calorimeter was at the beginning of the commissioning phase, several tests were performed, in particular manipulations that required changing the values of the high voltages.
+The equalisation of gains was therefore not yet implemented, which had an impact on the resolution in terms of energy.
+In this context, I developped a temporary energy calibration using the data taken with the Cobalt source.
+
+In Fig.~\ref{subfig:Co_calib_charge} is displayed charge spectra for two optical modules located in front of the Cobalt calibration source.
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[t]{0.8\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{CobaltStudy/fig_CobaltStudy/ex_charge_distrib.pdf}
+    \captionsetup{justification=justified}
+    \caption{Data acquisition.
+      \label{subfig:Co_calib_charge}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.8\textwidth}
+  \centering
+  \includegraphics[width=1\textwidth]{CobaltStudy/fig_CobaltStudy/ex_energy_distrib.pdf}
+    \captionsetup{justification=justified}
+  \caption{Simulated data.
+    \label{subfig:Co_calib_energy}}
+  \end{subfigure}
+  \caption{Data acuqisition charge (a) and simulated energy (b) spectra.
+    If two peaks are detected, the second one is fitted with a Gaussian.
+    When the OM gain is two low, the first peak is less likely to be detected an the OM is not calibrated.
+    \label{fig:Co_calib}}
+\end{figure}
+In order to have a sufficient statistic, only trigger selection have been applied on data, allowing to select events for which exactly two optical modules triggered (at least one must have triggered the high amplitude threshold).
+The first peak is mainly populated by double Compton interactions inside the scintillator, and the second by simple Compton interaction of the two Cobalt $\gamma$'s of interest.
+For this energy calibration, the second peak is used as the particular point of the distribution.
+An automatic research of the two peaks is performed and, if exactly two peaks are detected, the second one it fitted with a Gaussian function.
+This point has been chosen because it is less statistics-dependent than the end point of the distribution.
+In the figure, an example of an optical module with an appropriate gain is given, and the fit is well-performed.
+An example of an optical module with a too low gain (because it was under a too low high voltage) is also displayed, and shows only one peak.
+These kind of distributions were thus no fitted and no energy calibration was provided for them.
+
+The same work is performed on simulated energy distributions for all optical modules.
+The fits provide an average of the energy location point corresponding to the second peak, of $0.927\pm0.009$~MeV.
+Application of this calibration factor allowed to calibrate $78$ optical modules in total on the French wall.
+An energy spectrum of a successfully calibrated optical module is given in Fig.~\ref{fig:calib_energy_OM} after event selection has been applied.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{CobaltStudy/fig_CobaltStudy/calib_energy_done.pdf}
+  \caption{Energy spectrum for a calibrated optical module of the French wall, using Cobalt data acquisition.
+    The simulations have been normalised to the source activity and data acquisition time.
+    \label{fig:calib_energy_OM}}
+\end{figure}
+We find the results obtained in the previous sub-section concerning the difference in efficiency between simulations and real data.
+This will be improved by new data acquisitions that will be taken during the month of November, because all optical modukes are now equalised in gain.
+We also notice that the data spectrum extends at higher energies than simulations, corresponding to the \Tl\ background as well as external $\gamma$'s.
+
+Selection efficiencies for each cut-off, after the energy calibration, are given in Tab.~\ref{tab:Co_cut_eff_calib}.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & Simulations & Data \\
+    \hline\hline
+    High thresold & $35.7$\% & $94.0$\% \\
+    Individual energy & $17.0$\% & $58.0$\% \\
+    Geometrical & $16.5$\% & $51.9$\% \\
+    \hline
+  \end{tabular}
+  \caption{Selection efficiencies for simulations and real data.
+    Energy calibration with Cobalt data have been applied.
+    \label{tab:Co_cut_eff_calib}}
+\end{table}
+We notice an improvement at the level of individual energy cut, where the selection efficiency is reduced compared with the previous case using the energy calibration provided by the collaboration.
+
+This is a temporary calibration, only use in the framework of this analysis, and does not replace the more complete one accomplished for later data acquisitions.
+An amelioration could be brougth with a double gaussian fit on the two peaks.
+Nervertheless, this improvement is not necessary since the gains were not yet aligned.
+But it will be interesting to try this method again with the new Cobalt data.
+
+
 \subsection{Background estimation}
 \label{subsec:bkg_estimation}
 
@@ -474,17 +555,15 @@ Then, the coefficient $\alpha$ defined as
 \end{equation}
 It depends on the distance $D_{\,\text{source}}$ and is found to be $0.05 \% < \alpha < 5 \%$, meaning that the number of simulated signal events detected by optical modules distant from the source is greatly lower than for close optical modules, for a given source position.
 
-In order to provide a non-biased estimation of $b$, given the data model in Eq.~\eqref{eq:estimation_data_far}, we would remove $\tilde{s}^{\,\text{far}}$ (estimated through simulations) from $\hat{d}^{\,\text{far}}$ (estimated with Cobalt data acquisition).
-However, qualitatively comparing data and simulations is not straightforward, especially due to detector efficiency considerations, discussed in Sec.~\ref{subsec:detector_efficiency}.
+In order to provide a non-biased estimation of $b$ given the data model in Eq.~\eqref{eq:estimation_data_far}, we would remove $\tilde{s}^{\,\text{far}}$, estimated through simulations, from $\hat{d}^{\,\text{far}}$, which can be estimated with Cobalt data acquisition.
 %%on voudrait avoir b=dfar, mais c'est biaisé pcq il reste signal. On pourrait enlever sfar, mais
 %%c'est la merde de faire ça avec les simus
-Nevertheless, we can give an order of magnitude of the amount of background events detected.
-To do so, we display in Fig.~\ref{fig:Co_data_bkg} the number of calorimeter hits, after data selection, counted by each optical module, as a function of the distance to the Cobalt source.
+To do so, we display in Fig.~\ref{fig:Co_data_bkg} the number of calorimeter hits, after event selection, counted by each optical module, as a function of the distance to the Cobalt source.
 \begin{figure}[h]
   \centering
   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/Co_data_bkg.eps}
-  \caption{Number of events for pairs of OMs on the source side and on the opposite source side, for real data (green) and simulated data (red), as a function the distance to the source (in units of number of OM).
-    The vertical dotted line materialises the distance limit of $10$ OMs from the source.
+  \caption{Number of events for pairs of OMs close and far from the source, for real data (orange) and simulated data (blue), as a function the distance to the source (in units of number of OM).
+    The vertical dashed line materialises the distance limit of $10$ OMs from the source.
     \label{fig:Co_data_bkg}}
 \end{figure}
 The $10$ OMs limit is materialised by a vertical dashed line.
@@ -496,16 +575,14 @@ We first focus on simulation results.
 Calorimeter hits for which $D_{\,\text{source}}<10$, represent the estimation of the amount of signal events detected close to the source, $\tilde{s}^{\,\text{close}}$.
 Similarly, hits for which $D_{\,\text{source}}>10$ embed for $\tilde{s}^{\,\text{far}}$, the amount of signal events remaining for optical modules far from the calibration source site.
 As expected, the number of signal Cobalt events decreases with the distance to the source.
+Moreover, this decrease is linear, showing the same slope beyond and above the $10$ OMs limit.
 
-We then compare data events with simulations.
-Calorimeter hits for which $D_{\,\text{source}}<10$ materialise the number of data events estimation $\hat{d}^{\,\text{close}}$.
-Apart from slight differences, discussed in Sec.~\ref{subsec:detector_efficiency}, these data events follow the same evolution as signal events with the distance to the source.
+Regarding real data acquisition, calorimeter hits for which $D_{\,\text{source}}<10$ materialise the number of data events estimation $\hat{d}^{\,\text{close}}$.
+Apart from slight differences due to the detector efficiency, these data events follow the same linear evolution as signal events with the distance to the source.
 This leads us to conclude that optical modules close to the source are dominated by Cobalt signal events.
 Similarly, $D_{\,\text{source}}>10$ events stand for $\hat{d}^{\,\text{far}}$.
 We observe that $\tilde{s}^{\,\text{far}}/\hat{d}^{\,\text{far}} \ll 1$, which is compatible with the $\alpha$ coefficient values, being $5\%$ in the worse case, explaining the few amount of $\tilde{s}^{\,\text{far}}$ events remaining for optical modules far from the source.
-Moreover, we find that the amount of $\hat{d}^{\,\text{far}}$ events is globally stable with the distance to the source.
-Therefore, we assume that optical modules away from the \Co\ source by more than $10$ OMs are background dominated.
-As this amount of background is comparable for all optical modules, regardless of their distance to the source, we conclude that these events are decorrelated from the Cobalt source, and come from other sources (as external $\gamma$'s).
+Moreover, we find that the amount of $\hat{d}^{\,\text{far}}$ events is globally stable with the distance to the source, which confirms the assumption made that, at such distances from the source, radioactive contaminant decays and external $\gamma$'s interactions dominate the background contribution and are decorrelated from the Cobalt source.
 %% donc bkg qui ne vient pas de la source
 Therefore, for a $25$ minutes run, each optical module detects around $10^{2}$ external background events.
 %% différence data/simus dans close : gain equalization ptetre pas dégueu sinon on verrait une diff
@@ -522,6 +599,7 @@ Therefore, we can compute the signal to background ratio, as a function of the d
     \label{fig:Co_ratioSB}}
 \end{figure}
 The number of signal events in each optical module depends on the distance to the source, which is not the case for the number of background events, explaining the decreasing of $S/B$ with $D_{\,\text{source}}$.
+For this reason, the distribution stabilises at high $D_{source}$ ($\sim8$ OM units) as these optical modules are more sensitive to the flat background contribution than those right in front of the source.
 %% on mesure alpha et il est petit donc on peut négliger sfar dans la modélisation
 
 To summarise, in this subsection, we gave informations on background events for the whole French wall, using data taken with the Cobalt source set at different positions.
@@ -544,51 +622,48 @@ In the following, in order to properly compare simulated and real data, we give 
 
 
 
-\subsection{Detector efficiency}
-\label{subsec:detector_efficiency}
+%% \subsection{Detector efficiency}
+%% \label{subsec:detector_efficiency}
 
-%% parler de la baisse d'eff du à la saturation de l'acqu
-%% *A mettre quelque part:
-%% the energy calibration discussed in Sec.~\ref{sec:comm_energy_calibration} was not completed, and optical modules' gains were not all aligned.*
-
-The last step before going into detail in optical modules' timing resolution study is to determine the detector efficiency of the SuperNEMO demonstrator, during the Cobalt acquisition week.
-
-Standing as an example, we compare real and simulated energy spectra for a given pair of optical modules detecting events in coincidence.
-We provide these spectra in Fig.~\ref{fig:detector_efficiency}, where events satisfy to the four criteria described in Sec.~\ref{subsec:Co_datacut}, for the Cobalt source in position $5$.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_efficiency_detector.pdf}
-  \caption{Top pad: energy spectra for simulated data (orange solid line) and real data (purple solid line) in logarithmic scale.
-    Bottom pad: ratio of real data over simulated data for each bin in logarithmic scale.
-    \label{fig:detector_efficiency}}
-\end{figure}
-The simulated data are normalised to the source activity and acquisition time.
+%% %% parler de la baisse d'eff du à la saturation de l'acqu
+%% %% *A mettre quelque part:
+%% %% the energy calibration discussed in Sec.~\ref{sec:comm_energy_calibration} was not completed, and optical modules' gains were not all aligned.*
 
 
-Firstly, the energy resolution of the calorimeter blocks.
-Secondly, at the time of the data taking, optical modules where not equalised in gain.
-The real data energy spectrum is also characterised by a high energy part.
-This may be due to external background events, which are not taken into account in the simulated data.
-In Sec.~\ref{subsec:bkg_estimation} is presented a background analysis to investigate the high energy part of the energy spectrum, and better understand the data.
+%% Standing as an example, we compare real and simulated energy spectra for a given pair of optical modules detecting events in coincidence.
+%% We provide these spectra in Fig.~\ref{fig:detector_efficiency}, where events satisfy to the four criteria described in Sec.~\ref{subsec:Co_datacut}, for the Cobalt source in position $5$.
+%% \begin{figure}[h]
+%%   \centering
+%%   \includegraphics[width=17cm]{commissioning/fig_commissioning/Co_efficiency_detector.pdf}
+%%   \caption{Top pad: energy spectra for simulated data (orange solid line) and real data (purple solid line) in logarithmic scale.
+%%     Bottom pad: ratio of real data over simulated data for each bin in logarithmic scale.
+%%     \label{fig:detector_efficiency}}
+%% \end{figure}
+%% The simulated data are normalised to the source activity and acquisition time.
 
 
-%% Given the amount of real and simulated events, we conclude that the detection efficiency is $29$\%.
-%% Numerous parameters can affect the detection efficiency.
-%% \begin{itemize}
-%% \item Read out efficiency is mainly driven by
-%% \end{itemize}
+%% Firstly, the energy resolution of the calorimeter blocks.
+%% Secondly, at the time of the data taking, optical modules where not equalised in gain.
+%% The real data energy spectrum is also characterised by a high energy part.
+%% This may be due to external background events, which are not taken into account in the simulated data.
+%% In Sec.~\ref{subsec:bkg_estimation} is presented a background analysis to investigate the high energy part of the energy spectrum, and better understand the data.
+
+
+%% %% Given the amount of real and simulated events, we conclude that the detection efficiency is $29$\%.
+%% %% Numerous parameters can affect the detection efficiency.
+%% %% \begin{itemize}
+%% %% \item Read out efficiency is mainly driven by
+%% %% \end{itemize}
 
 
 
-%% Efficiency is going to be improved.
+%% %% Efficiency is going to be improved.
 
 
-* a finir *
-
-\subsection{Energy calibration}
-\label{subsec:Co_energy_calib}
+%% * a finir *
 
 
+%% The last step before going into detail in optical modules' timing resolution study is to determine the detector efficiency of the SuperNEMO demonstrator, during the Cobalt acquisition week.
 
 \subsection{Determination of the individual timing resolution of each optical module}
 
@@ -598,26 +673,22 @@ In Sec.~\ref{subsec:bkg_estimation} is presented a background analysis to invest
 \subsubsection*{Time difference distributions}
 
 The final goal of this analysis is to determine the time resolution of optical modules, due to the scintillator time dispersion.
-As displayed in Fig.~\ref{fig:Co_decay_scheme}, the two photons of Cobalt $60$ are emitted in coincidence.
-The selections described in Sec.~\ref{subsec:detector_efficiency} aim to maximise the signal to background ratio, the signal being the detection of two $\gamma$'s interacting in two different optical modules.
-The two $\gamma$'s, travelling at speed of light in air, reach the two optical modules at two different times.
-The time of a calorimeter hit $t^{\gamma}_{i}$, describes in Fig.~\ref{fig:CFD} in Chapter~\ref{ch:commissioning}, is defined from the collected charge sampling at PM anode and received by the electronic readout.
-%% We are interested in event topologies where the two $\gamma$'s of Cobalt $60$ hit two different calorimeter blocks.
-We then look for topologies where two calorimeter hits occurred in a given time window of $62.5$ ns.
-This coincidence time window where chosen to select the two Cobalt $\gamma$'s coincidence events, avoiding accidentals.
-A first event occur in one of the scintillator of the wall, meaning the amount of charge is high enough to pass the high amplitude threshold.
-In the considered coincidence time window, a second particle interacts in another scintillator.
-This topologies are likely to happen for all combinations of pairs of PMs (given the distance between the two optical modules).
+As displayed in Fig.~\ref{fig:Co_decay_scheme}, the two photons of Cobalt $60$ are emitted in coincidence compared with the time resolution expected for SuperNEMO.
+The selections described in Sec.~\ref{subsec:Co_datacut} aim to maximise the signal to background ratio, the signal being the detection of two $\gamma$'s interacting in two different optical modules.
+
+The two $\gamma$'s, travelling at speed of light in air, reach the two optical modules at two different times $t^{\gamma}_{i}$.
+This time-of-flight is defined from the collected charge sampling at PM anode and received by the electronic readout (using the CFD method described in Chapter~\ref{ch:commissioning}).
+These topologies are likely to happen for all combinations of pairs of optical modules.
 Therefore, we can construct a $\Delta t^{\text{pair}}$ distribution for each pair of OM, defined as the time difference between two calorimeter hits $\Delta t^{\text{pair}} = t^{\gamma}_{A} - t^{\gamma}_{B}$.
 Here, one of the two optical modules, namely the $A$, is chosen as reference.
 
-In Fig.~\ref{fig:Co_deltat} is presented an example of a $\Delta t^{\text{pair}}$ distribution, for a given pair of optical modules, both for the simulated and real data, with the Cobalt source placed at the central position behind the calorimeter wall.
+In Fig.~\ref{fig:Co_deltat} is presented an example of a $\Delta t^{\text{pair}}$ distribution, for a given pair of optical modules, both for the simulated and real data, with the Cobalt source set in position $5$.
 %% on ne regarde des coincidences que pour paires OM sur un même mur
 \begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/Co_deltat_distrib_ex.eps}
   \caption{$\Delta t^{\text{pair}}$ distributions for real data (green solid line) and simulated data (dark red solid line).
-    Two Gaussian fits (orange and blue dotted line) are displayed and fit parameters are given in the legend.
+    Two Gaussian fits (dotted line) are displayed and fit parameters are given in the legend box.
     The two distributions do not have the same mean because optical modules are not aligned in time.
     However, this does not disturb the time resolution measurements.
     \label{fig:Co_deltat}}
