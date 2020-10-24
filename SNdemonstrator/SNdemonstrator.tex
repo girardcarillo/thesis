@@ -92,6 +92,8 @@ Then, the higher the half-life of this process, the less $\twonu$ events are exp
 \item Ease of enrichment: although it is not a measurable quantity as previous requirements, known purification techniques must be applicable to the isotope considered to reach high quantities of $\beta\beta$ emitter.
 \end{itemize}
 In Tab.~\ref{tab:bb_isotopes} are given these characteristics for some of the $\beta\beta$ emitters used for current $\zeronu$ searches.
+\Se\ was chosen for SuperNEMO because of its high transition energy, and preferred to \Mo\ because of its higher $\twonu$ half-life (by a factor $\sim13$).
+Its nuclear phase space factor and natural abundance are satisfying and its enrichment is feasible using classical technique (centrifugation).
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -114,13 +116,14 @@ $^{150}$Nd & $3.367$ & $63.03$ & $9.11\times 10^{18}$ & $5.6$ \\
 $\Qbb$, phase space factors, $\twonu$ half-lives and natural abundances are given.
 \label{tab:bb_isotopes}}
 \end{table}
-\Se\ was chosen for SuperNEMO because of its high transition energy, and preferred to \Mo\ because of its higher $\twonu$ half-life (by a factor $\sim13$).
-Its nuclear phase space factor and natural abundance are satisfying and its enrichment is feasible using classical technique (centrifugation).
 
 \subsubsection*{Source foils production}
 
 The \Se\ isotope is enriched and purified by the ITEP laboratory in Russia.
 Two purification techniques have been employed, given in Tab.~\ref{tab:Se_purification}.
+Approximate isotope quantities are given for each technique.
+About $6.5$~kg of \Se\ powder have been produced and purified.
+The \Se\ is then ground to a fine powder ($50~\mu$m grains) and mixed with a radio-pure glue.
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|c|}
@@ -136,9 +139,6 @@ Reverse chromatography & $\sim3$ & $\sim15$\\
 Two batches of \Se\ have been produced through double distillation.
 \label{tab:Se_purification}}
 \end{table}
-Approximate isotope quantities are given for each technique.
-About $6.5$~kg of \Se\ powder have been produced and purified.
-The \Se\ is then ground to a fine powder ($50~\mu$m grains) and mixed with a radio-pure glue.
 
 To shape the \Se\ powder into the final SuperNEMO source foils, two distinct designs have been tested, one by ITEP and the other by the LAPP laboratory in Annecy (Fig.~\ref{fig:foils_design}).
 \begin{itemize}
@@ -425,7 +425,7 @@ Finally, the calorimeter was assembled in its entirety at LSM during the summer 
   \centering
   \includegraphics[width=0.9\textwidth]{SNdemonstrator/fig_SNdemonstrator/main_wall_back_view.pdf}
   \captionsetup{justification=justified}
-  \caption{Back view.
+  \caption{Back view of one calorimeter.
     \label{subfig:cont_Pint_ROI}}
 \end{subfigure}
 \vskip\baselineskip
@@ -433,7 +433,7 @@ Finally, the calorimeter was assembled in its entirety at LSM during the summer 
   \centering
   \includegraphics[width=0.9\textwidth]{SNdemonstrator/fig_SNdemonstrator/main_wall_front_view.pdf}
   \captionsetup{justification=justified}
-  \caption{Front view.
+  \caption{Front view of one calorimeter wall.
     \label{subfig:}}
 \end{subfigure}
 \caption{Installation at LSM of one of the two main walls of the SuperNEMO calorimeter (summer $2016$).
@@ -497,7 +497,7 @@ The copper coil was planned to be installed by March $2020$ but was delayed due 
 
 \subsubsection*{Magnetic shieldings}
 
-Unfortunately, the PMTs are highly sensitive to the presence of a magnetic field inside the detector and their performances could be greatly impacted~\cite{CalvezThesis}\cite{internal:magnetic_field}.
+Unfortunately, the PMTs are highly sensitive to the presence of a magnetic field inside the detector and their performances could be greatly impacted~\cite{CalvezThesis,internal:magnetic_field}.
 Indeed, even a magnetic field as low as $1$~Gauss can prevent the low energy photoelectrons from reaching the first dynode and thus impact the PMT energy resolution.
 Therefore, $3$~mm thick pure iron shieldings have been designed to surround the optical modules and protect them from the magnetic field (Fig.~\ref{fig:magnetic_shields}).
 \begin{figure}[h!]
@@ -578,6 +578,10 @@ During the R\&D program, special attention has been paid to the total number of 
 Indeed, this number must remain reasonable in order to control the total cost of the experiment, but must be high enough so that the granularity of the detector is sufficient to search for the $\zeronu$ decay.
 Indeed, a good background events rejection where two electrons and a gamma particle are emitted can be ensured if they are detected in different optical modules.
 
+Ultimately the detector will be enclosed in an anti-radon tent, which is described in Sec.~\ref{subsec:background_reduc}.
+In order to ensure that this envelope is leaktight, a patch panel has been designed to allow cables to pass through, from the inside to the outside of the tent.
+The cables coming from the detector, called \emph{internal cables}, are connected to a specific location on the patch panel.
+So-called \emph{external cables} are connected on the other side and allow signal transmission to the electronics.
 
 \subsubsection*{Calorimeter cabling}
 
@@ -588,15 +592,16 @@ Therefore, each PMT divider is connected to a so-called \emph{high voltage} cabl
 The voltage applied depends on the individual optical module characteristics and is about $\sim1500$~V for the $8$~inches and $\sim1100$~V for the $5$~inches.
 After the electrons have been collected on the last dynode, the charge is collected by \emph{signal cables} sending the charge to the electronics.
 Finally, each PMT divider is connected to two cables, one providing the high voltage and the other ensuring the signal received by the optical module is transmitted to the electronics.
-A back view of one of the main calorimeter wall is given in Fig.~\ref{fig:}
+A back view of one of the main calorimeter wall is given in Fig.~\ref{fig:calo_cabling_pic}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth]{SNdemonstrator/fig_SNdemonstrator/cable_calo_pic.pdf}
   \caption{Back view of one main calorimeter wall.
     Signal cables are white and thin, HV cables are grey and thick.
-    \label{fig:calo_cabling}}
+    \label{fig:calo_cabling_pic}}
 \end{figure}
 
+A global sketch of the calorimeter cabling is given in Fig.~\ref{fig:calo_cabling}, picturing all internal, external, high voltage and signal cables.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\textwidth]{SNdemonstrator/fig_SNdemonstrator/calo_cabling.pdf}
@@ -605,19 +610,16 @@ A back view of one of the main calorimeter wall is given in Fig.~\ref{fig:}
     External cables link the patch-panel to the electronic racks.
     \label{fig:calo_cabling}}
 \end{figure}
-
-\begin{itemize}
-\item photo cablage, si possible cul d'un PMT
-\item connecteurs, dire qu'on a coupé les cables, et soudés au PMT (signal)
-\end{itemize}
+External HV cables are grouped in $26$ bundles, and each HV channel corresponds to a given pin on the bundle connector.
+External signal cables are independantly routed from patch panell to electronics.
+The same applies to all internal HV and signal cables and we can distinguish them in Fig.~\ref{fig:calo_cabling_pic}.
 
 \subsubsection*{Tracker cabling}
 
-\begin{itemize}
-\item dire participé install tous les cables
-\item routage cables
-\end{itemize}
+The same internal and external pattern applies to the tracker cables.
+Geiger cells are connected via cables to the patch panel, where external cables, several tens of metres long, are linked to the electronics.
 
+The routing of tracker and calorimeter lasted several months and required an enormous amount of work and involvement from the whole of the collaboration.
 
 \subsection{Electronics}
 
@@ -925,6 +927,7 @@ The gas from the vessel is then sent to a Radon trap in order to measure the con
 
 
 \subsection{Background reduction}
+\label{subsec:background_reduc}
 
 \subsubsection*{The underground laboratory}
 
@@ -934,13 +937,8 @@ At this depth, the flow of cosmic muons is reduced by a $10^{6}$ compared to the
 
 \subsubsection*{External shield}
 
-The anti-radon tent has already been presented in Sec.~\ref{}
 In order to reduce the contribution of external gamma background, ultra-pure iron plates $20$~cm thick form a shield surrounding the anti-radon tent.
 In addition,the detector will be protected from neutrons by a final shield consisting of water tanks (on the sides of the detector) and borated Polyethylene plates (top and bottom) will surround the detector.
-
-\begin{itemize}
-\item quand est-ce que ça va être installé ?
-\end{itemize}
 
 \subsubsection*{Radon background reduction}
 
@@ -951,7 +949,7 @@ A wide variety of means are employed by the collaboration to combat this contami
 \item The emanations of the tracker materials were measured in Manchester with the concentration line before the installation of the chambers.
 \item The gas flow can be reasonably increased to have a sufficiently low Radon level.
 \item The huge effort deployed for the detector gas tightness (Sec.~\ref{subsec:sealing}) is one of the means to reduce radon contamination.
-\item The detector will be encapsulated in its entirety in a Radon Tent made of High Density PolyEthylene (HDPE) panels (Fig.~\ref{fig:ART}) preventing radon from the laboratory from entering the detector by possible tiny gaps.
+\item The detector will be encapsulated in its entirety in a Radon Tent made of High Density PolyEthylene (HDPE) panels preventing radon from the laboratory from entering the detector by possible tiny gaps.
 \end{itemize}
 
 
@@ -1061,7 +1059,7 @@ $\text{N}_\text{PE}$ is the number of photo-electrons emitted after a particle h
   \text{N}_\text{PE} = E\times \left(\frac{2\sqrt{2\ln 2}}{\text{FWHM}_{\text{E}}}\right)^{2}\,,
 \end{equation}
 where $\text{FWHM}_{\text{E}}$ is the energy resolution of the PM, $8~\%$ at $1$~MeV for the SuperNEMO calorimeter.
-Therefore, for a particle of $1$~MeV depositing all its energy inside a scintillator, $\text{N}_\text{PE}\sim 866$ photo-electrons are emitted, an improvement of ?~\% compared with NEMO-$3$.
+Therefore, for a particle of $1$~MeV depositing all its energy inside a scintillator, $\text{N}_\text{PE}\sim 866$ photo-electrons are emitted...
 Finally, the uncertainty $\sigma_{t}$ on the time measurement can be estimated thanks to a relative calibration of the PMs, and depends on the incoming particle nature (photon or electron).
 Preliminary studies gave a first estimation of this parameter~\cite{HuberThesis} and found $\sigma_{t}=342\pm 10$~ps for $1$~MeV gammas entering the front face of the scintillator, and $\sigma_{t}=248\pm 6$~ps for $1$~MeV electrons.
 On the occasion of the SuperNEMO detector commissioning, we finalise this study and characterise the calorimeter time resolution in Chapter~\ref{ch:Cobalt_study}.
@@ -1119,7 +1117,3 @@ The external $\chi^{2}$ is translated into the so-called \emph{external probabil
 SuperNEMO demonstrator features have been exposed, and often compared with the ones of its predecessor, NEMO-$3$.
 This detector aims at demonstrating that the NEMO unique technology is scalable in order to explore previously unattained reaches in the search for the $\zeronu$ decay.
 This goal is not far from being fulfilled as the calibration of the detector has started and should be completed this year thanks to the involvement of all the collaboration.
-
-\begin{itemize}
-\item Annexe position des sources
-\end{itemize}

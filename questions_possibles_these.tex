@@ -74,6 +74,9 @@
                \begin{itemize}
                \item est-ce qu'avec la digitisation du pulse on pourrait distinguer un signal électron d'un signal gamma, voire pour un gamma avoir une indication même grossière de la profondeur dans le scintillateur où il a interagi?
                \item Corrélation angulaire des deux gammas de 1.17 et 1.33 MeV1+1/8*cos**2+1.24*cos**4
+               \item est-ce que la valeur fittée pour la calib en énergie avec le Cobalt (0.92) dépend de la géométrie (distance de l'OM à la source, angle du photon...)
+               \item si le 208Tl est la cause de la queue à haute énergie, tu pourrais (pour les blocs bien calibrés) faire le biplot (Emin, Emax) pour les événements d'énergie supérieure à 1,5 MeV (que tu n'as pas dans les simulations.)
+               \item à faire : regarder la différence des moyennes des distrib delta t pour savoir d'où ça vient.
                \end{itemize}
 
 
@@ -125,4 +128,11 @@
                \item La granularité di calo peut jouer si on empile un gamma et un électron.
                  Cela avait été discuté quand on avait réfléchi à un calorimètre en barre : moins coûteux mais à priori moins performant.
                  \item Remarque pour tag du bdf Tl dans le canal 1eng: dans la très grande majorité des cas, c'est au moins 2 gammas mais on peut louper la détection de 1 gamma, ce qui donne des événements à 1 électron et 1 gamma.
+               \end{itemize}
+
+
+               \chapter{Commissioning}
+               \begin{itemize}
+               \item Une remarque (à réfléchir pour plus tard).
+                 On pourrait te dire que le sigma obtenu est dans tous les cas négligeable devant la précision de la mesure du temps 100, 200 ou 400 ps, donc que cette optimisation n'est pas très utile.
                \end{itemize}

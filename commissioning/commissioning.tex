@@ -3,15 +3,14 @@
 
 %% a refaire
 
-The commissioning of the SuperNEMO demonstrator has begun in $2019$ and data were taken with the whole calorimeter
+The commissioning of the SuperNEMO demonstrator has begun in $2019$ and calibration acquisitions were taken and analyse by the collaborations.
 
-By the end of the year $2020$, the SuperNEMO demonstrator will be encapsulated in an anti radon tent.
-The patch panel will insure passage of cables from the inside, to the outside of the anti radon tent, therefore doubling the amount of cables needed for the calorimeter.
-The check of every cable condition is mandatory to control and eventually fix them.
-
-The first two sections describe the start-up of the calorimeter, with the first data acquisitions and the various calibration operations that have been carried out by the collaboration.
-The rest of the chapter deals with the work done within the framework of this PhD in order to verify the operating state of the calorimeter and its cables, after integration.
-
+The first two sections describe the start-up of the calorimeter, with the first data acquisitions and the various calibration operations that carried out by the collaboration.
+Studies led to characterise the waveform baseline and pusle shape are presented.
+Optical modules have are aligned in gain and a general procedure for their energy calibration is given.
+The rest of the chapter deals with the work done within the framework of this PhD in order to verify the operating state of the calorimeter and its signal cables, after integration.
+All cable lengths are measured by an innovative technique, and the corresponding time offset of each electronic channel is characterised.
+An additional time offset brought by the electronic boards is also measured.
 
 \section{Optical modules calibration}
 
@@ -51,20 +50,25 @@ When a particle deposits energy as it interacts in the scintillator, the detecti
 In the SuperNEMO detector, these voltages can be adjusted individually for each block.
 Charge and amplitude spectra can be obtained for each optical module and therefore depend on the high voltage applied.
 As the optical modules are triggered from a signal amplitude threshold, it is necessary that the gains of all the optical modules of the calorimeter are equalised, in order to have comparable threshold values.
-For the SuperNEMO calorimeter, this value has been set at an amplitude of $200$~mV for $1$~MeV deposited, corresponding to a $612$~mV gain.
+For the SuperNEMO calorimeter, this value has been set at an amplitude of $200$~mV for $1$~MeV deposited.
 Each optical module has then to be calibrated after installation, in order to reach this standard value and equalise all the PM responses.
 The current study has been led by Axel Pin, a PhD student from CENBG.
 
-This calibration consist in the optical module gains alignment, by obtaining a new high voltage value to be applied from the amplitude spectrum.
+This calibration consists in the optical module gains alignment, by obtaining a new high voltage value to be applied from the amplitude spectrum.
 To determine the current gain of an optical module, one must first obtain its amplitude (or charge) spectrum and then locate a particular point on this spectrum.
 To obtain these spectra, long runs (few hours) have been taken with the demonstrator, without the $^{207}$Bi calibration sources.
-For this study, the chosen point is located at the end of the spectrum, where the only contribution of Thallium is expected in the $2e$ channel.
-Once this gain is obtained, a reference gain is computed using simulations of \Tl\ decays inside the source foils.
+For this study, the chosen point is located at the end of the spectrum, where the only contribution of \Tl\ is expected.
+Once this gain is obtained, a reference gain is computed using simulations of \Tl\ decays.
 The same particular point is determined, which corresponds to a given energy (as simulations allow to construct energy spectra).
 Therefore, two gains are obtained one for real data and the other for simulations, allowing to determine the optimal high voltage value to apply for each photomultiplier.
-The gains distributions before and after equalisation are presented in Fig.~\ref{fig:gain}.
-\\...\\
-The gain adjustment method have been effective as the distribution mean stands at $606.5\pm1.4$~mV at $3$~MeV, $8$~\% FWHM.
+The gains distributions before and after equalisation are presented in Fig.~\ref{fig:Axel_gain}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{commissioning/fig_commissioning/equal_gains_Axel.pdf}
+  \caption{Amplitude spectra for French and Italian main wall after gain equalisation.
+    \label{fig:Axel_gain}}
+\end{figure}
+The gain adjustment method have been effective as the distribution mean stands at $606.5\pm1.4$~mV at $3$~MeV, considering a $8$~\% FWHM at $1$~MeV, for the $440$ $8$~inches photomultipliers.
 
 Now the optimal high voltages have been determined for each optical module, the collaboration will have to monitor the their gain, in order to insure the stability of the SuperNEMO calorimeter.
 
@@ -81,7 +85,7 @@ Now the optimal high voltages have been determined for each optical module, the 
 As described in Sec.~\ref{subsec:OMtimeResponse}, the collected charge at photomultiplier voltage divider is proportional to the amount of incident photoelectrons, thus to the initially deposited energy inside the scintillator.
 Once optical modules were assembled (optical coupling, packing, shielding integration), they were individually tested at Bordeaux laboratory, CENBG, with an electron spectrometer~\cite{HuberThesis}.
 Their energy resolutions for $1$ MeV-electrons at the centre of scintillator front face were determined.
-For optical modules assembled with $8$'' photomultipliers, it is in average of $8.19$\%.
+For optical modules assembled with $8$'' photomultipliers, it is on average of $8.19$\%.
 
 Supply high voltages were characterised and set individually for each optical module to their to optimal values.
 However, after the calorimeter integration, due to possible modifications of optical module characteristics, amplitude spectra of each optical block have to be re-aligned.
@@ -90,10 +94,6 @@ We give in this section a summary of this energy calibration study.
 
 The energy calibration method consists to find a particular point of a charge or amplitude spectrum, the Compton edge of \Tl\ for this study.
 Looking for the same location on simulated \Tl\ energy spectra, a charge-energy or amplitude-energy correspondence can be made and applied to calibrate each optical module in energy.
-In Fig.~\ref{fig:} are displayed the charge spectrum for $8$'' optical modules before energy calibration, as well as the energy spectrum after the calibration factor have been applied.
-\\...\\
-The distribution width is greatly improved by the energy calibration, going from $22.5$\%~FWHM to $3.9$\%~FWHM.
-
 I also performed another energy calibration using the data acquisition and simulations with a Cobalt source, using the Cobalt peak at $1$~MeV.
 This is discussed in Chapter~\ref{ch:Cobalt_study}.
 
@@ -158,7 +158,7 @@ The cabling network of SuperNEMO is described in detail in Chapter~\ref{ch:detec
 In particular, the calorimeter is segmented in $712$ optical modules, each connected to the electronics by the photomultiplier divider through $2$ cables.
 The first one provides the high voltage (HV) necessary for its operation.
 The other one, the so-called signal cable, is a coaxial cable collecting and transporting the charge corresponding to the optical module signal.
-Regarding only the last category, $1424$ coaxial cables were cut, assembled, connector-mounted, transported and installed at LSM\footnote{$712$ optical modules are connected to the electronics through two signal cables, one internal and one external, linked at patch panel.}.
+Regarding only the last category, $1424$ coaxial cables were cut, assembled, connector-mounted, transported and installed at LSM\footnote{$712$ optical modules are connected to the electronics through two signal cables, one internal and one external, linked at the patch panel.}.
 
 Each coaxial cable length was determined by taking into account the demonstrator design.
 All external coaxial cables were designed to be $7$ meters-long -- the distance between electronic boards and patch panel being the same for all channels -- and internal cable lengths have been adapted to fit the distance from the patch panel to each optical module.
@@ -201,7 +201,7 @@ The Fig.~\ref{fig:reflecto_scheme} summarises the three most probable scenarios 
     \centering
     \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/scheme_reflecto_2.pdf}
     \captionsetup{justification=centering}
-    \caption{Cable not connected at patch panel.
+    \caption{Cable not connected at the patch panel.
       \label{subfig:reflecto_pp}}
   \end{subfigure}
   \caption{Three possible scenarios occurring when a signal is sent in the SuperNEMO coaxial cables.
@@ -209,13 +209,14 @@ The Fig.~\ref{fig:reflecto_scheme} summarises the three most probable scenarios 
     The coaxial cable, pictured by horizontal lines, connects the electronics to the PM divider.
     (a) The cable is well connected at the patch panel and at the PM. The signal reflects at the PM divider.
     (b) The cable is not connected (or badly connected) at the PM divider. The signal is reflected at the end of the internal cable.
-    (c) The cable is not connected (or badly connected) at patch panel. The signal is reflected at the end of the external cable.
+    (c) The cable is not connected (or badly connected) at the patch panel. The signal is reflected at the end of the external cable.
     \label{fig:reflecto_scheme}}
 \end{figure}
 \begin{itemize}
 \item Fig.~\ref{subfig:reflecto_normal}: under normal cable operating conditions, the pulse travels along the coaxial cable until it reaches the photomultiplier.
 \item Fig.~\ref{subfig:reflecto_pmt}: it may happen a cable is not (or badly) connected to the PM divider.
   In that case the signal reflects at the end of the internal cable.
+  In this scenario, the delay of the reflected pulse will be the same as in the first case, but since the impedance will be different, the amplitude and shape of the reflected pulse will be different.
   This scenario is addressed in Sec.~\ref{subsec:pulse_shape}.
 \item Fig.~\ref{subfig:reflecto_pp}: if the cable is not connected, or disconnected, at the patch panel level, the signal undergoes a reflection at the end of the external cable.
   This scenario is addressed in Sec.~\ref{subsec:timing}.
@@ -281,20 +282,20 @@ These are obtained by averaging all pulses sent in a given electronic channel.
 The first one corresponds to a normal recorded pulse for a signal reflected on a $5$ inches PM divider.
 The shape is modified compared with the one of $8$ inches, probably because the impedances at $8$ and $5$ inches dividers are not the same.
 The second one is observed when the coaxial cable is misconnected (typically when signal and ground connectors are inverted at PM divider).
-The last one stands for a disconnected cable, at patch panel of photomultiplier, as the signal is being reflected at the end of the coaxial cable.
+The last one stands for a disconnected cable, at the patch panel of photomultiplier, as the signal is being reflected at the end of the coaxial cable.
 A reflection at the patch panel level can also be tagged by using pulse timing: the secondary pulse would be detected highly earlier than expected.
 This very short time, giving information about the location of the reflection, is used to tag a patch-panel disconnection.
 Then, a simple check onsite can confirm this observation, and the external part of the cable can be connected to the patch panel.
 
 In order to identify potential cable problems, secondary pulses are averaged for each channel and visually analysed.
 If an averaged pulse is identified as abnormal, then the problem affecting the cable can be characterised by comparing it with the references presented.
-Thanks to this analysis, some cable de- or misconnections at patch panel and PM divider have been identified and fixed.
+Thanks to this analysis, some cable de- or misconnections at the patch panel and PM divider have been identified and fixed.
 
 A last issue, which is not pictured in the previous figure, would be if a coaxial cable is damaged in the middle of its length.
-In that case, we expect to see pre-pulses between the primary and secondary pulses, stating that a part of the signal is reflected on a cable defect.
+In that case, we expect to see pre-pulses between the primary and secondary pulses, stating that a part of the signal is reflected on a cable defect, and the time difference between the initial pulse and the pre-pulse would make it possible to locate the defect.
 Such signal have not be observed, leading to the conclusion that no cables have been damaged during transport.
 
-For a future study, it would be interesting to automate this process, as was done for the analysis presented in Sec.~\ref{subsec:SN_pulse_shape}, to be able to repeat these tests.
+For a future study, it would be interesting to automate this process, as it was done for the analysis presented in Sec.~\ref{subsec:SN_pulse_shape}, to be able to repeat these tests.
 Indeed, many manipulations still take place at Modane, some of them close to the calorimeter, which is not yet protected.
 It is therefore important to do again these tests before encapsulating the detector.
 
@@ -331,19 +332,19 @@ Nevertheless, as we analyse real data in this chapter, it is an opportunity to d
 The SNFee software, developed by the team in LPC Caen, provide a timing measurement called Constant Fraction Discriminator (CFD), furnishing an amplitude-independent definition of waveform timing.
 This algorithm aims at tracking a signal and defining its time at a given fraction $f_{CFD}$ of its maximal amplitude.
 The two main advantages of this technique is that it provides an efficient rejection of the noise in the acquisition window, and gives a good resolution on the measured time.
-A graphic representation of the CFD method is given in fig.~\ref{fig:CFD} for $f=40$\%, applied on a secondary pulse.
+A graphic representation of the CFD method is given in fig.~\ref{fig:CFD} for $f_{CFD}=40$\%, applied on a secondary pulse.
 \begin{figure}[h!]
   \centering
   \includegraphics[trim={1.2cm 1.5cm 1.7cm 3.1cm},clip,width=0.7\textwidth]{commissioning/fig_commissioning/CFD_example_zoom.pdf}
   \caption{Graphical representation Constant Fraction Discriminator (CFD) method.
-    The pulse maximal amplitude (red dotted line) and the fraction $\text{f}=40\%$ (green dotted line) are displayed.
+    The pulse maximal amplitude (red dotted line) and the fraction $f_{CFD}=40\%$ (green dotted line) are displayed.
     The time $\text{T}_{\text{pulse}}$ (orange dotted line) represents the time defined with this technique.
     \label{fig:CFD}}
 \end{figure}
 
 In order to have the best precision on the time measurement, it is important to investigate the possible influence of the $f_{CFD}$ parameter.
-An easy operation has been set up at Modane: the coaxial cable connected at a given PM has been splitted in two parts, connected to two different channels, and electronic pulses were sent through one of the two connected channels.
-Therefore, the electronic signal sent in that channel travels through the splitted cable to the PM and come back to the front-end board.
+An easy operation has been set up at Modane: the coaxial cable connected at a given PM has been split in two parts, connected to two different channels, and electronic pulses were sent through one of the two connected channels.
+Therefore, the electronic signal sent in that channel travels through the split cable to the PM and come back to the front-end board.
 The signal then slits up to trigger both the two connected channels.
 As the signal takes two paths of slightly different lengths, the time difference $\Delta t$ between the two channels can be defined as
 \begin{equation}
@@ -366,9 +367,9 @@ In Fig.~\ref{fig:CFD_study} is displayed the distribution width with the value o
   \caption{$\Delta t$ distribution width as a function of $f_{CFD}$.
     \label{fig:CFD_study}}
 \end{figure}
-It arises the value giving the best precision on timing measurement is $f = 50\%$ with $\sigma\sim70$~ps, and we adopt this value for the following analysis.
+It arises the value giving the best precision on timing measurement is $f_{CFD} = 50\%$ with $\sigma\sim70$~ps, and we adopt this value for the following analysis.
 The signal travels the same path from the PM to the point of cable separation.
-The phase shift that occurs between the two paths is caused by the length difference between the two strands of the splitted cable, as well as the signal path difference within the FEBs calo.
+The phase shift that occurs between the two paths is caused by the length difference between the two strands of the split cable, as well as the signal path difference within the FEBs calo.
 The measurement of the shift for each calorimeter FEB is addressed in Sec.~\ref{sec:timing_FEB}.
 
 \subsubsection*{Signal velocity in coaxial cables}
@@ -391,6 +392,8 @@ In Fig.~\ref{fig:celerity} is displayed the lengths $l_{j}$ as a function of the
 \end{figure}
 This procedure allows to have three independent measurements for the signal velocity by fitting these points.
 The value of $v_{p}/c = 0.697\pm 0.0011$ is found, showing a compatibility up to $7\sigma$ with the data sheet.
+Certain conditions during data acquisition may explain this difference, such as the frequency of the signal.
+This velocity is kept for the current analysis.
 
 \subsubsection*{Cable lengths}
 
@@ -417,7 +420,7 @@ In that case, the $\Delta L$ distribution would be a Dirac peak at zero.
 However, in real conditions, the measured lengths are different from the designed one, leading an enlargement of the distribution.
 This width gives access to the cutting device precision, measured at $\sigma=5.0\pm0.3$~cm, which is an acceptable value for the cable length accuracy required.
 A few cables have been cut too short by mistake, the worse of them being $80$ centimetres shorter than expected.
-A verification has been made on site to check a possible disconnection at patch panel, but it turned out that this cable had indeed been cut too short.
+A verification has been made on site to check a possible disconnection at the patch panel, but it turned out that this cable had indeed been cut too short.
 Fortunately, this cable  was successfully connected to PM despite this deficit.
 On the contrary, few cables have a large extra length.
 This probably is due to human punctual mistakes, but without any strong consequences for the calorimeter operation.
@@ -455,7 +458,7 @@ This document is available on the Lyon computing platform.
 
 \subsection{Signal attenuation}
 \label{subsec:attenuation}
-The attenuation of an electric signal is a problem common to all electronic fields, and comes from the charge loss of an electromagnetic wave travelling in a medium.
+The attenuation of an electric signal is a problem common to all electronic fields, and comes from the charge absorption of an electromagnetic wave travelling in a medium.
 %% Then, another test for controlling the cable condition is to check if this attenuation matches
 %% the expectations (i.e. the attenuation per metre of cable given by constructor).
 %% The signal attenuation car be define in two different ways:
@@ -521,25 +524,58 @@ It would then be interesting to conduct a study investigating the influence of t
 
 \subsection{Conclusion}
 
-A faire : regarder le rising time en fonction de la longueur du cable
-Regarder la différence de temps de montée du signal sur deux PMs très éloignés
+Analysis of reflectometry data allowed to control the coaxial cable status after the calorimeter cabling operations.
+All possible misconnections are damaged connectors have been fixed.
+All cable lengths were checked and revealed the cutting device is biaised, producing cables longer than designed.
+The corresponding time delay induced by the signal time travel are stored in a database made available for the collaboration.
+This study was the occasion to understand some properties of the cables, as velocity and attenuation of a signal travelling in coaxial cables.
+The time measurement, using the CFD method, was optimised in order to have a better timing precision.
 
+
+Apart from the coaxial cables, the calorimeter FEBs themselves can have an impact on the signal timing delay, which is addressed in the next section.
 
 \section{Synchronisation of calorimeter FEBs}
 \label{sec:timing_FEB}
 
-One of the parameters that can also delay and de-synchronise the signal collected from optical modules is the path difference of the electronic signal iside the calorimeter FEBs.
-
+One of the parameters that can also delay and desynchronise the signal collected from optical modules is the path difference of the electronic signal inside the calorimeter FEBs, which is pictured in Fig.~\ref{fig:FEB_scheme}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{commissioning/fig_commissioning/clock_distribution_back_plain.pdf}
   \caption{Sketch of the electronic paths from the central CB to each FEB.
-    \label{fig:attenuation}}
+    \label{fig:FEB_scheme}}
 \end{figure}
+Indeed, the CB manages the distribution of the clock in all calorimeter FEBs.
+The further away the CB is from an FEB on the crate, the longer it will take for this information to be transmitted.
+The scheme given, is highlty simplified and in practice even each electronic channels of a given board has a delay.
+This desynchronisation has to be characterise in order to calibrate each electronic channel of each FEB, which is primordial for analysis of coincidence events with the calorimeter.
 
+The set up used to measure this desynchronisation was provided by the electronics team at LAL.
+A wavecatcher is set up to produce an electronic impulse (of same shape as the one used for reflectometry) and split it.
+By connecting this device on pairs of electronic channels, one can measure the time offset existing between them.
+The general principle consists then in choosing a channel taken as a reference by connecting one cable of the device to it.
+Then data acquisitions are taken by connecting successively the other cable to all other channels from the same crate, allowing to measure the offset existing between them and the reference channel.
+Three examples of $\Delta t$ distributions are given in Fig.~\ref{fig:FEB_offset}, for three different channels belonging to the same FEB, in coincidence with the reference channel.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{commissioning/fig_commissioning/time_offset.pdf}
+  \caption{$\Delta t$ distributions between the reference channel and three channels on the same FEB.
+    \label{fig:FEB_offset}}
+\end{figure}
+The distributions $\sigma$ stand around $\sim20-30$~ps and represent the resolution on time measurements brought by the calorimeter FEBs.
+The distributions mean represents the time offset of each of the three channels with the channel taken as a reference.
 
+The goal of this analysis is to characterise the time offset of each channel of each FEB.
+In Fig.~\ref{fig:mean_distance} is given the mean of the $\Delta t$ distributions as a function of the distance between the corresponding FEB and the central CB.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{commissioning/fig_commissioning/mean_distance.pdf}
+  \caption{$\Delta t$ distribution mean as a function of the distance of the corresponding FEB with CB.
+    \label{fig:mean_distance}}
+\end{figure}
+The more distant an FEB is from CB, the greater its time offset will be in relation to the reference taken, confirming the description given in Fig.~\ref{fig:FEB_scheme}.
 
-
+More than $800$ channels were calibrated: $3$ crates, $20$ FEBs for the two firsts and $12$ for the last one, each having $16$ electronic channels.
+All time offsets have been stored in a database and made available for the collaboration.
 
 %% \subsection{Comparison with $^{60}$Co}
 
@@ -550,9 +586,15 @@ One of the parameters that can also delay and de-synchronise the signal collecte
 %% \subsection{Results}
 
 
-This study allowed us to control and record the lengths of all coaxial cables installed on the SuperNEMO demonstrator at LSM, and gave information on the status of cable connections at patch panel.
-We also have understood the main results on measured cable lengths and the functioning and biases of the cutting device that we used.
-Autres murs à faire.
-
-
 \section{Conclusion}
+
+The calorimeter commissioning is almost complete, and a huge effort have been provided by the whole collaboration to calibrate it.
+Automated codes have been developed to monitor changes in calorimeter characteristics over time (pulse shape, baseline, optical modules gain...).
+The reflectomery analysis allowed us to control and record the lengths of all coaxial cables installed on the SuperNEMO demonstrator at LSM, and gave information on the status of cable connections at the patch panel.
+We also have understood the main results on measured cable lengths and the functioning and biases of the cutting device that we used.
+The signal time delay induced by coaxial cables and front-end boards have been characterised and made avalaible in databases.
+In a subsequent analysis, the entire calibration chain will have to be calibrated in time, from the optical modules to the FEBs, using for example the LIS sytem sending light pulses in each scintillator.
+
+All the work done to calibrate the calorimeter, and especially its time calibration, opens the door to the first physical data acquisition with the calorimeter.
+Measurements of the coincidence of the particle time-of-flight are therefore possible.
+In the following chapter, we describe an experiment carried out with a Cobalt source to determine the time resolution of the optical modules, which follows the work presented in Chapter~\ref{ch:timediff}.
