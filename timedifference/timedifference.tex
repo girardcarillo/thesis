@@ -41,7 +41,7 @@ To overcome this effect, it is interesting to set a specific method designed to 
     \label{tab:Nbkg_wBi}}
 \end{table}
 
-In the next section, we describe the specific features of the Thallium internal background.
+In the next section, we describe the specific features of the \Tl\ internal background.
 We develop a new technique of rejection, especially designed to identify internal \Tl\ events, based on several Time-of-flight computations.
 
 \section{The internal \Tl\ background}
@@ -148,11 +148,8 @@ After a brief presentation of the simulations carried out as part of this analys
 The background model used in the framework of this study has already been described in detail in the previous chapter.
 Nevertheless, calorimeter performances implemented in the Falaise software have been modified in this study.
 Indeed, one of the main goal is to evaluate the influence of the calorimeter timing performances on the \Tl\ background rejection.
-This study was led before the commissioning phase of the calorimeter when timing performances were characterised only for few optical modules, and before their installation at Modane~\cite{HuberThesis}.
+This study was led before the commissioning phase of the calorimeter when timing performances had been characterised before their installation at Modane~\cite{HuberThesis}.
 An encouraging value for the uncertainty on the calorimeter time measurement of $248.3$~ps for incoming electrons and $341.8$~ps for photons were provided for the best optical module tested (Fig.~\ref{fig:Arnaud_RMS_PM}).
-In this context, before the full calorimeter calibration in Modane, we would give an overview of the influence of these performances on the \Tl\ background rejection.
-To do so, signal and background simulations were performed supposing the optical modules measure perfectly the particle time-of-flights, by setting to zero the time uncertainty at the level of the calibration module in the Falaise pipeline.
-I wrote a Root code allowing to degrade the precision on time measurements for it to be set by the user to the desired accuracy.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/Arnaud_RMS_PM.pdf}
@@ -161,6 +158,10 @@ I wrote a Root code allowing to degrade the precision on time measurements for i
     Adapted from~\cite{HuberThesis}.
   \label{fig:Arnaud_RMS_PM}}
 \end{figure}
+
+In this context, before the full calorimeter calibration in Modane, we would give an overview of the influence of these performances on the \Tl\ background rejection.
+To do so, signal and background simulations were performed supposing the optical modules measure perfectly the particle time-of-flights, by setting to zero the time uncertainty at the level of the calibration module in the Falaise pipeline.
+I wrote a Root code allowing to degrade the precision on time measurements for it to be set by the user to the desired accuracy.
 
 All of the simulations produced for this analysis were generated using the official Falaise pipeline, and are made available to the collaboration in the common SuperNEMO repository at the IN$2$P$3$ computing centre platform.
 The same code described in the previous chapter has been used for this study, including the Particle Identification module, the module I wrote and the Root code pipeline.
@@ -191,7 +192,7 @@ We present it in detail in Chapter~\ref{ch:detector} and examine an example of i
 Nevertheless, in the framework of this analysis we need to perform our own calculation of internal probability, after the reconstruction pipeline, because the simulations are performed for an ideal value of the optical module performances.
 That is an opportunity to come back to this tool and to clarify certain points.
 
-The calculation of the internal $\chi^{2}$ is reminded in Eq.~\eqref{eq:int_chi2_electrons}, for two detected electrons, as a function of the expected time-of-flights, $t^{\text{exp}}$, the experimentally measured time-of-flights, $t^{\text{meas}}$, as well as the total uncertainty on the time-of-flight measurement:
+The expression of the internal $\chi^{2}$ is reminded in Eq.~\eqref{eq:int_chi2_electrons}, for two detected electrons, a depends of the expected time-of-flights, $t^{\text{exp}}$, the experimentally measured time-of-flights, $t^{\text{meas}}$, as well as the total uncertainty on the time-of-flight measurement written on the denominator:
 \begin{equation}
   \chi^{2}_{int}=\frac{((t^{\text{meas}}_{1} - t^{\text{exp}}_{1}) - (t^{\text{meas}}_{2} - t^{\text{exp}}_{2}))^{2}}{\sigma_{t_{1}}^{2}+\sigma_{t_{2}}^{2}+\sigma_{\beta_{2}}^{2}+\sigma_{\beta_{1}}^{2}+\sigma_{l_{1}}^{2}+\sigma_{l_{2}}^{2}}\,.
   \label{eq:int_chi2_electrons}
@@ -201,7 +202,7 @@ $\sigma_{\beta_{i}}$ and $\sigma_{l_{i}}$ are the uncertainties on the expected 
 The denominator square root corresponds to the total uncertainty, whose measured time-of-flight uncertainty is simulated as zero and degraded afterwards.
 
 In the official SuperNEMO reconstruction pipeline, ${\sigma_{l}=\sigma_{l_{1}}=\sigma_{l_{2}}=70}$~ps for electron particles.
-As we simulated perfect calorimeters, we check that this parameter is correctly evaluated in order to implement it in our own off-line Root code pipeline.
+As we simulated perfect calorimeters, we check that this parameter is correctly evaluated in order to implement it in the off-line Root code pipeline.
 
 \subsubsection*{Optimisation of $\sigma_{l}$}
 
@@ -209,7 +210,7 @@ One way to examine if $\sigma_{l}$ is well-evaluated is to look at the flatness 
 Indeed, the slope of this distribution provides pertinent information to check the estimation of uncertainties.
 The flatter the distribution, the more correctly uncertainties are estimated.
 
-Therefore, for this optimisation, we use $2e$ topologies of signal simulations inside the source foils.
+For this optimisation, we use $2e$ topologies of signal simulations inside the source foils.
 Discrete values of $\sigma_{l}$ running from $0.01$ to $0.1$~ns are used to compute the internal probability distributions of these events.
 For each distribution, a linear fit is performed on the reduced range \Pint$~\in[0.1;1]$ in order to avoid the peak at low internal probabilities.
 The \emph{flatness parameter} $a_{F}$ is defined as the slope parameter of the linear fit.
@@ -222,9 +223,9 @@ In Fig.~\ref{fig:Pint_comparison} is displayed the internal probability distribu
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/flatness.pdf}
-  \caption{Flatness paramater $a_{F}$ as a function of the time uncertainty due to the reconstructed track length $\sigma_{l}$.
+  \caption{Flatness parameter $a_{F}$ as a function of the time uncertainty due to the reconstructed track length $\sigma_{l}$.
     Data points (blue markers) are interpolated (black solid line).
-    The former value used in the SuperNEMO reconstruction pipeline is pointed out pink dashed lines, as well as the optimised value $\sigma_{l}~=~27.8~\pm~0.8$~ps.
+    The former value used in the SuperNEMO reconstruction pipeline is pointed out by pink dashed lines, as well as the optimised value $\sigma_{l}~=~27.8~\pm~0.8$~ps.
     \Pint\ is calculated for $\zeronu$ decays simulated inside the source foil, with first order cut-offs applied.
     \label{fig:flatness}}
 \end{figure}
@@ -253,7 +254,7 @@ According to the disintegration scheme of the \Tl\ isotope (Fig.~\ref{fig:Tl_sch
 After that, to reach the ground state of \Pb, the excited nucleus has $100\%$ of probability to decay through the $2.615$ MeV energy level.
 At this occasion, in $0.246\%$ of cases (Tab.~\ref{tab:IC_prob}), one of the orbital electrons is ejected from the atom following the internal conversion process.
 To summarise, for $0.20$~\% of the total \Tl\ decays, a $\beta$ particle is emitted, and a delayed orbital electron is ejected through internal conversion of the $2.6$ MeV-$\gamma$.
-Furthermore, $X$\% of the events with an energy sum greater than $2.7$~MeV (the ROI low bound) are from delayed internal conversion decays and could be harmful for the $\zeronu$ search.
+Furthermore, $75$\% of these events have an energy sum greater than $2.7$~MeV (the ROI low bound), and could be harmful for the $\zeronu$ search.
 We aim to use this delayed electron to discriminate \Tl\ internal background from the $\zeronu$ signal.
 
 %% \begin{itemize}
@@ -267,13 +268,13 @@ For a given detected $2e$ topology, we define the $\Delta t^{meas}$ parameter as
   \Delta t^{meas} = t_{1}^{meas}-t_{2}^{meas}\,,
   \label{eq:time_diff}
 \end{equation}
-where $t^{meas}_1$ and $t^{meas}_2$ are the two measured time-of-flights, respectively for the electron with the lowest energy, and the one with the highest energy.
-If this $2e$ topology corresponds to a delayed \Tl\ event, then the electron of lowest energy is supposed to be a $\beta$ particle and the one of highest energy an electron coming from an internal conversion, delayed on average of $294$~ps.
+where $t^{meas}_1$ and $t^{meas}_2$ are the two measured time-of-flights, respectively for the electron with the highest energy, and the one with the lowest energy.
+If this $2e$ topology corresponds to a delayed \Tl\ event, then the electron of lowest energy is a $\beta$ particle and the one of highest energy an electron coming from an internal conversion, delayed on average of $294$~ps.
 Assuming an ideal calorimeter perfectly measuring time-of-flights and energies, the $\Delta t$ distribution for such delayed events would be a decreasing exponential, with the decay parameter ${\tau=294}$~ps.
 However, in actual conditions, this exponential is degraded by the uncertainties on time-of-flight measurements detailed in Eq.~\eqref{eq:int_chi2_electrons}.
 These are embedded by a Gaussian distribution centred around ${\mu=0}$~ps with a given width $\sigma$.
 Therefore, to each $2e$ topology is associated a probability density function which is the convolution between an exponential and a Gaussian distribution, written down as ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$.
-The corresponding value of $\Delta t^{meas}$ is then found somewhere on this distribution, and will serve us to define the so-called \emph{exponential probability}, $P_{exp}(\Delta t^{meas})$, which is the probability that this event comes from a $\beta$+IC delayed decay.
+The corresponding value of $\Delta t^{meas}$ is then found somewhere on this distribution, and will serve us to define the so-called \emph{exponential probability}, $P_{exp}(\Delta t^{meas})$, which represents the probability that this event comes from a $\beta$+IC delayed decay.
 
 %% \begin{itemize}
 %% \item Du coup mettre une distribution de ces ev sur l'exponentielle quand les simus seront finies
@@ -297,17 +298,18 @@ As explained, each probability density function is defined for a single $2$-elec
 In the given example, we considered two particles interacting inside the calorimeter with an energy of $1$~MeV each.
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=13cm]{timedifference/fig_timediff/proba_expo_test.pdf}
+  \includegraphics[width=0.95\textwidth]{timedifference/fig_timediff/proba_expo_test.pdf}
   \caption{Normalised convolution distribution ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$.
     The parameters are $\tau=294$~ps, $\mu=0$~ps and $\sigma=\sigma_{tot}$, computed with $\sigma_{l}=27.8$~ps and $\sigma_{t}=200$~ps.
     \label{fig:Pexp}}
 \end{figure}
 
 In fig.~\ref{fig:Pexp_Tl} are presented exponential probability distributions for $2e$ topologies selected of \Tl\ and $\zeronu$ simulations inside the source foils.
-As expected, the distribution is flat, since this probability was defined in the same way as the internal probability.
+As expected, the distribution for \Tl\ is flat.
+However, we would have expected a non-flat distribution for $\zeronu$ events, but the time resolution is too degraded for such variations to be observable.
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=13cm]{timedifference/fig_timediff/proba_expo_400.pdf}
+  \includegraphics[width=0.95\textwidth]{timedifference/fig_timediff/proba_expo_400.pdf}
   \caption{Exponential probability distribution for \Tl\ (orange) and $\zeronu$ simulations (blue), for $2e$ topologies with an electron energy sum greater than $2.7$~MeV (discussed in Sec.~\ref{sec:ev_selection}).
     $\sigma_{t}=200$~ps, $\sigma_{l}=27.8$~ps.
     \label{fig:Pexp_Tl}}
@@ -320,15 +322,15 @@ Now analysis tools are defined, the following sections focus on the event select
 \label{sec:ev_selection}
 
 
-Now the exponential probability tool has been defined, the aim of this analysis is to set up events selections focusing on delayed \Tl\ events rejection.
-Basic cut-offs are described, and compared with a more elaborated selection using these two probabilities.
+Now the exponential probability tool has been defined, the aim of this analysis is to set up event selections focusing on delayed \Tl\ events rejection.
+Simple time-of-flight cut-offs are described, and compared with a more elaborated selection using these two probabilities.
 The influence of the uncertainty $\sigma_{t}$ on time measurement is discussed at the end of the section.
 
 \subsection{Energy selection}
 \label{subsec:energy_seletion}
 
 Based on the conclusions given in the previous chapter, the lower bound of the region of interest optimising the search of $\zeronu$ decay stands at the electron energy sum of $2.7$~MeV for the demonstrator.
-From this energy, $2e$ topologies for \Tl\ are mainly populated by $\beta$ decays followed by the internal conversion of the $2.615$~MeV $\gamma$-ray.
+Beyond this energy, $2e$ topologies for \Tl\ are populated at $75$\% by $\beta$ decays followed by the internal conversion of the $2.615$~MeV $\gamma$-ray.
 In the following, we therefore focus only on events with a sum in energy of the two detected electrons greater than $2.7$~MeV.
 
 \subsection{Time-of-flight cut-off}
@@ -343,7 +345,7 @@ In order to remove from $\Delta t^{meas}$ the dependency on travel time in the t
   \Delta t^{\text{corr}} & = t^{\text{corr}}_{1} - t^{\text{corr}}_{2}\\
   & = (t^{\text{meas}}_{1} - t^{\text{exp}}_{1}) - (t^{\text{meas}}_{2} - t^{\text{exp}}_{2})\,,
 \end{align}
-where $t^{\text{corr}}_{i}$ are the corrected time-of-flights and $t^{\text{exp}}_{i}$ the expected ones calculated with the particle energy and track length (Eq.~\ref{eq:th_time}).
+where $t^{\text{corr}}_{i}$ are the corrected time-of-flights and $t^{\text{exp}}_{i}$ the expected ones calculated with the particle energy and track length.
 
 The two distributions $\Delta t^{meas}$ and $\Delta t^{\text{corr}}$ are presented in Fig.~\ref{fig:delta_t}, for $\zeronu$ and \Tl\ simulations inside the source foils.
 For $\zeronu$ simulations, the $\Delta t^{corr}$ distribution is centred around zero, as the two electrons are emitted simultaneously inside the source.
@@ -380,21 +382,23 @@ Therefore, a simple way of rejecting the \Tl\ delayed events is to consider the 
 \end{figure}
 
 By applying this selection on $2e$ topologies of $\zeronu$ and \Tl\ simulations for which $E~>~2.7$~MeV, we are able to reject $76$~\% of \Tl\, while selecting $49$~\% of the $\zeronu$ ($\sigma_{t}~=~200$~ps).
-The $49$\% of selected signal events is expected as the corresponding $\Delta t^{corr}$ distribution is symmetrical, unlike the one for \Tl\ events.
-Although we manage to reject a significant fraction of Thallium events, the impact of this cut is too high on $\zeronu$ events.
+The selection of half of the signal events was expected as the corresponding $\Delta t^{corr}$ distribution is symmetrical, unlike the one for \Tl\ events.
+Although we manage to reject a significant fraction of \Tl\ events, the impact of this cut is too high on $\zeronu$ events.
 Moreover, the uncertainties on time-of-flights are not taken into account in the rejection criterion.
 Later in this chapter we consider different levels for this selection and optimise them according to the $\sigma_{t}$ value set up.
 %%We study in Sec.~\ref{subsec:selection_optimisation} an optimization of this cut-off, including the influence of the temporal performance of the calorimeter $\sigma_{t}$.
 
 \subsection{Probability cut-off}
 
-At this level it is interesting to consider the internal and exponential probabilities to describe $2e$ topologies and attempt to obtain a higher background rejection.
+At this level it is interesting to consider the internal and exponential probabilities to describe $2e$ topologies and attempt to obtain a higher \Tl\ background rejection.
 They seem to be better tools notably because, unlike the $\Delta t^{\text{corr}}$ rejection criterion, they do take into account the time-of-flight uncertainties.
 The first one was already used in Chapter~\ref{ch:sensitivity}, and is a widely-used tool to reject non-internal events.
 The second was designed specifically for this analysis to identify delayed \Tl\ events, and also depends on the time of flight resolution through the convolution with a Gaussian function.
 
 The idea is this section is to reject \Tl\ events taking into account their two values of internal and exponential probabilities.
 Then it is interesting to represent them with a two-dimensional binned histogram of $P_{exp}$ as a function of \Pint, as done is Fig.~\ref{fig:biplot_Pexp_Pint}.
+In this particular example, we picture the variations of \Pint\ and $P_{exp}$ applying ${\sigma_{t}=200}$~ps.
+In order to better understand these variations, we give in Fig.~\ref{fig:proba_cut_ex} three examples of ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ distributions, each of them illustrating one of the three zones observed on the two-dimensional histogram.
 \begin{enumerate}
 \item \Pint$\in[0;1]$ and $P_{exp}\in[0;0.65]$, with \Pint$>P_{exp}$ (Fig.~\ref{subfig:Proba_cut_1}):\\
   This region corresponds to events for which $\Delta t^{\text{corr}}<0$.
@@ -423,9 +427,6 @@ Then it is interesting to represent them with a two-dimensional binned histogram
     $\sigma_{t}=200$~ps and $\sigma_{l}=27.8$~ps.
     \label{fig:biplot_Pexp_Pint}}
 \end{figure}
-In this particular example, we picture the variations of \Pint\ and $P_{exp}$ applying ${\sigma_{t}=200}$~ps.
-We clearly distinguish three event populations in this histogram.
-In order to better understand these variations, we give in Fig.~\ref{fig:proba_cut_ex} three examples of ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ distributions, each of them illustrating one of the three zones.
 \begin{figure}[!h]
 \centering
 \begin{subfigure}[t]{0.95\textwidth}
@@ -460,14 +461,12 @@ In order to better understand these variations, we give in Fig.~\ref{fig:proba_c
 
 As discussed, the exponential probability quantifies the likelihood that two particles were emitted with a delay corresponding to the radioactive exponential decay with ${\tau=294}$~ps, taking into account the time of flight resolution.
 Therefore, we are interested in rejecting events for which values of $P_{exp}$ are high compared with the \Pint\ values.
-In that case, a simple selection allowing to discriminate signal $\zeronu$ from delayed \Tl\ event consists in rejecting $2e$ topologies for which $P_{exp}~>~$\Pint\ (this cut-off is pictured in Fig.~\ref{fig:biplot_Pexp_Pint} by a plain black line).
-With the previous explanation, we understand that such a cut is strongly linked to the cut on $\Delta t^{\text{corr}}$ presented in the previous sub-section.
+%% In that case, a simple selection allowing to discriminate signal $\zeronu$ from delayed \Tl\ event consists in rejecting $2e$ topologies for which $P_{exp}~>~$\Pint.
+%% With the previous explanation, we understand that such a cut is strongly linked to the cut on $\Delta t^{\text{corr}}$ presented in the previous sub-section.
 %% For $\sigma_{t}=200$~ps, we are able to reject $41$\% of \Tl, while selecting $60$\% of $\zeronu$ $2e$ topologies for which $E>2.7$~MeV.
 %% Although we are able to keep more $\zeronu$ events with this probability cut-off than for the one on time-of-flight difference, it is less efficient in rejecting \Tl\ events.
-
-We would like to refine the selection made on the events using the two probabilities.
 Regarding the biplot presented in Fig.~\ref{fig:biplot_Pexp_Pint}, the goal is to reject events located in the area $3$ and a part of the events located in area $2$.
-Therefore, a more adapted cut-off is to reject events for which ${P_{exp}>0.65}$.
+Therefore, an adapted cut-off is to reject events for which ${P_{exp}>0.65}$ and \Pint$\in[0.4,0.7]$.
 For this selection and ${\sigma_{t}=200}$~ps, we reject $20$\% of \Tl\ and keep $84$\% of $\zeronu$ events.
 The proportion of signal events kept with this selection is satisfying.
 Nevertheless the efficiency of \Tl\ rejection is almost $4$ times lower than for the time-of-flight selection presented in Sec.~\ref{subsec:tof_cutoff}.
@@ -484,10 +483,11 @@ In Sec.~\ref{subsec:tof_cutoff} we presented rejection efficiencies for a ${\Del
 In Fig.~\ref{fig:eff_cut_delta_t_sigma} is presented the $\zeronu$ selection efficiency with the rejection efficiency of \Tl, for values of $\sigma_{t}$ running from the ideal $0$~ps, to $400$~ps.
 Each point corresponds to a $\Delta t^{corr}$ level applied on the selected $2e$ topologies, from ${\Delta t^{corr}>0}$ to ${\Delta t^{corr}>650}$~ps.
 For ${\Delta t^{corr}>0}$ and $\sigma_{t}=200$~ps, we get back to the result given previously.
-Nevertheless, for this time uncertainty, an optimised value for the $\Delta t^{corr}$ cut level, called \emph{maximum efficiency point}, is found at ${\Delta t^{corr}>250}$~ps as it optimises the signal selection and \Tl\ background rejection efficiencies.
-Such a point can be found for each of the five $\sigma_{t}$ values presented.
+For this time uncertainty, a better value for the $\Delta t^{corr}$ cut level, allowing to reject more \Tl\ while keeping a great proportion of $\zeronu$ events, is found at ${\Delta t^{corr}>250}$~ps.
+
+Such an optimal selection/rejection point can be found for each of the five $\sigma_{t}$ values presented.
 The more precisely the time-of-flight is measured in the calorimeter, the better this point is determined.
-Indeed, the worse this resolution is, the more linear the distribution tends to be, and therefore the more difficult it is to discriminate delayed events from those emitted simultaneously such as those of $\zeronu$.
+Indeed, the poorer the resolution in time, the more linearly the distribution evolves, and therefore the more difficult it is to discriminate delayed events from those emitted simultaneously such as those of $\zeronu$.
 Especially, for an ideal calorimeter where the timing measurement would be perfect, we could reach $80$\% of \Tl\ rejection, while keeping $90$\% of signal events.
 \begin{figure}[!h]
   \centering
@@ -495,7 +495,7 @@ Especially, for an ideal calorimeter where the timing measurement would be perfe
   \caption{$\zeronu$ selection efficiency as a function of \Tl\ rejection.
     Each curve corresponds to a given value of $\sigma_{t}$ from $0$ to $400$~ps.
     Each data point corresponds to a minimum value for $\Delta t^{corr}$ applied on selected $2$ topologies from $0$ to $650$~ps.
-    the optimised value of $\sigma_{l}=27.8$~ps is applied.
+    The optimised value of $\sigma_{l}=27.8$~ps is applied.
     \label{fig:eff_cut_delta_t_sigma}}
 \end{figure}
 
@@ -573,6 +573,14 @@ Eight \Pint$/P_{exp}$ biplots are given in Fig.~\ref{fig:biplot_Pexp_Pint_sigma}
 %%\end{changemargin}
 Depending on $\sigma_{t}$, the area to be rejected moves towards higher values of \Pint.
 Taking this into consideration, optimised values for \Pint\ have been set up, summarised in Tab.~\ref{tab:Pint_cutoff_sigma}.
+To find an optimal value of $P_{exp}$ to be applied, several cut-offs are set up from $P_{exp}>0$ to $0.95$, and associated with the \Pint\ cut-offs presented in the previous table, in order to reject the required area.
+
+Following the work done for the $\Delta t^{corr}$ cut-off, results are presented in Fig.~\ref{fig:eff_cut_proba_sigma} on an efficiency selection diagram.
+The calorimeter timing measurement has a great influence, especially on \Tl\ events rejection.
+Evolution of selection efficiencies for ${\sigma_{t}<200}$~ps are very similar, reaching a plateau for ${\sim P_{exp}>0.25}$ allowing to reject $20$\% of \Tl\ while keeping $85$\% of $\zeronu$.
+
+For calorimeter time uncertainty better than $100$~ps the background rejection is improved despite a loss in signal selection efficiency, up to reaching $\sim45$\% of \Tl\ rejection and $\sim80$\% signal selection for an ideal calorimeter.
+The plateau is reached at $P_{exp}>0.2$ for $\sigma_{t}=100$~ps and $P_{exp}>0.15$ for $\sigma_{t}=0$~ps.
 \begin{table}[!h]
   \centering
   \begin{tabular}{|c|c|c|c|c|c|}
@@ -586,8 +594,6 @@ Taking this into consideration, optimised values for \Pint\ have been set up, su
     An additional cut-off with \Pint$<0.01$ and $P_{exp}<0.01$ is also applied.
     \label{tab:Pint_cutoff_sigma}}
 \end{table}
-To find an optimal value of $P_{exp}$ to be applied, several cut-offs are set up from $P_{exp}>0$ to $0.95$, and associated with the \Pint\ cut-offs presented in the previous table, in order to reject the required area.
-Following the work done for the $\Delta t^{corr}$ cut-off, results are presented in Fig.~\ref{fig:eff_cut_proba_sigma} on an efficiency selection diagram.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/compare_sigma_cut_proba.pdf}
@@ -597,12 +603,8 @@ Following the work done for the $\Delta t^{corr}$ cut-off, results are presented
     $\sigma_{l}=27.8$~ps.
     \label{fig:eff_cut_proba_sigma}}
 \end{figure}
-The calorimeter timing measurement has a great influence, especially on \Tl\ events rejection.
-Evolution of selection efficiencies for ${\sigma_{t}<200}$~ps are very similar, reaching a plateau for ${\sim P_{exp}>0.25}$ allowing to reject $20$\% of \Tl\ while keeping $85$\% of $\zeronu$.
-Below $\sigma=100$~ps the background rejection is improved despite a loss in signal selection efficiency, up to reaching $\sim45$\% of \Tl\ rejection and $\sim80$\% signal selection for an ideal calorimeter.
-The plateau is reached at $P_{exp}>0.2$ for $\sigma_{t}=100$~ps and $P_{exp}>0.15$ for $\sigma_{t}=0$~ps.
 
-A better Thallium rejection can be obtained with the simple selection on time-of-flights, but the probability one has the main advantage to be more accurate as it takes into account the calorimeter time measurement uncertainties.
+A better \Tl\ rejection can be obtained with the simple selection on time-of-flights, but the probability one has the main advantage to be more accurate as it takes into account the calorimeter time measurement uncertainties.
 Moreover, even if variations of selection/rejection of this diagram are not as pronounced as for the $\Delta t^{corr}$ cut-off, a strong assumption can be made: the more we are precise on time-of-flight measurements, the more we are able to reject \Tl\ events while keeping a satisfying part of signal.
 During the calorimeter R\&D, a great effort has been made to improve the optical modules energy resolution compared to NEMO-$3$, notably because it allows to have a better background rejection, and thus to decrease its contribution to the $\zeronu$ search.
 Finally, in view of these results, a good timing precision in calorimeter blocks is also important when it concerns background rejection, and especially the identification of $\beta$+IC delayed \Tl\ decays.
@@ -622,13 +624,15 @@ Nevertheless, to give a final conclusion on the usefulness of the $\Delta t^{cor
 \section{Impact of \Tl\ rejection on the experiment's sensitivity}
 \label{sec:Tl_sensitivity}
 
-In the previous sub-section were presented results for $\Delta t^{corr}$ and optimised probability cut-offs, and the influence of the calorimeter time resolution on these rejection techniques was reviewed.
+In the previous section were presented results for $\Delta t^{corr}$ and optimised probability cut-offs, and the influence of the calorimeter time resolution on these rejection techniques was reviewed.
 Nevertheless, to properly quantify the effectiveness of these cut-off, one have to study their impact on the final detector sensitivity ($500$~kg.y exposure).
 To do so, the procedure described in Chapter~\ref{ch:sensitivity} is applied to the $2e$ topologies selected (after the application of $\Delta t^{corr}$ or probability cut-offs), for signal and backgrounds considered ($\twonu$, \Bi, \Tl\ and \Rn).
 
 \subsection{Sensitivity results}
 
-The variations of the sensitivity are presented in Fig.~\ref{fig:T12_cut} for three values of $\sigma_{t}$ at $1$~MeV, as a function of the cut-off levels applied.
+The variations of the sensitivity are presented in Fig.~\ref{fig:T12_cut} for three values of $\sigma_{t}$ at $1$~MeV, as a function of the $\Delta t^{corr}$ and probability cut-off levels applied.
+For these two figures, the more the $x$-values increase, the more the applied cut is released.
+In both cases sensitivity results converge towards $\sim2.4\times10^{25}$~years, for very loose values of the selection.
 \begin{figure}[!h]
 \centering
 \begin{subfigure}[t]{1\textwidth}
@@ -649,28 +653,32 @@ The variations of the sensitivity are presented in Fig.~\ref{fig:T12_cut} for th
     Results are given for $\sigma_{t}=0$, $200$ and $400$~ps at $1$~MeV, and $\sigma_{l}=27.8$~ps.
   \label{fig:T12_cut}}
 \end{figure}
-For these two figures, the more the $x$-values increase, the more the applied cut is released.
-In both cases sensitivity results converge towards $\sim2.4\times10^{25}$~years, for very loose values of the selection.
-%% This value is slightly different than the final results given in Chapter~\ref{ch:sensitivity}, due to the energy cut-off which is firstly applied on $2e$ topologies in the current study (Sec.~\ref{subsec:energy_seletion}).
 
 Regarding the influence of $\Delta t^{corr}$ selection, a sensitivity improvement can eventually be obtained by applying this selection, depending on the value of $\sigma_{t}$ considered for the calorimeter (Fig.~\ref{subfig:T12_cut_deltat}).
 \begin{itemize}
 \item $\sigma_{t}=0$~ps at $1$~MeV: an improvement of $12$\% on the sensitivity is observed for events rejected if $\Delta t^{corr}>200$~ps.
   This is consistent with the \Pb\ metastable level of $294$~ps to which we are very sensitive with such ideal value of the calorimeter resolution.
 \item $\sigma_{t}=200$~ps at $1$~MeV: a slighter improvement of $6$\% is reached for $\Delta t^{corr}>550$~ps.
-  As the calorimeter time resolution is reduced, compared with the first ideal case, a smaller improvement can be obtained, for a loose value of the applied cut.
 \item $\sigma_{t}=400$~ps at $1$~MeV: the resolution is too degraded for an improvement to be obtained with such a time-of-flight cut-off.
 \end{itemize}
+In conclusion, we can expect to see an improvement in sensitivity by rejecting delayed \Tl\ events with the $\Delta t^{corr}$ criterion only if the time resolution is good enough, above $200$~ps.
 
-Concerning the influence of probability selection, values of $\Tbeta$ also converge towards a unique value, attained for $P_{exp}>1$, meaning all the events are selected for such a level.
+Concerning the influence of \Pint/$P_{exp}$ selection, values of $\Tbeta$ also converge towards a unique value, attained for $P_{exp}>1$, meaning all the events are selected for such a level.
 In other words, the more restrictive this cut is, the more the sensitivity is reduced.
 The least unfavourable case is obtained for the ideal calorimeter resolution case, with stagnation of the values on a plateau, for most of the applied cut-off levels.
 Even if it is less wide, a plateau is also reached for $\sigma_{t}=200$~ps.
-
+Finally, this selection is not adapted to reject \Tl\ events, but the same conclusion as above can be made: the better the time resolution, the higher the sensitivity increases.
+A future study could investigate other selection levels to reject a more favourable area on the \Pint/$P_{exp}$ biplot.
 
 \subsection{Expected number of background}
 
 The influence of the $\Delta t^{corr}$ selection on the number of expected background events in the optimised ROI is presented in Tab.~\ref{tab:Nbkg_deltat_cut}.
+Three values of $\sigma_{t}$ are considered, and for each of them the best level for this cut, determined in the previous sub-section, is applied.
+The best rejection of \Tl\ is reached for the ideal calorimeter time resolution, as the two electrons time-of-flights are measured precisely.
+For $\sigma_{t}=200$~ps, a smaller amount of \Tl\ background is rejected, but the $\zeronu$ selection efficiency remains stable.
+This selection efficiency is affected for $\sigma_{t}=400$~ps, because the delayed events are badly discriminated compared with the simultaneous ones.
+As expected, other background events ($\twonu$, \Bi\ and \Rn) are not significantly affected by this selection.
+We understand the final sensitivity is degraded because the $\zeronu$ selection efficiency is reduced.
 \begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|c|}
@@ -694,14 +702,10 @@ The influence of the $\Delta t^{corr}$ selection on the number of expected backg
     Three values of $\sigma_{t}$ are considered for which the best $\Delta t^{corr}$ is applied.
     \label{tab:Nbkg_deltat_cut}}
 \end{table}
-Three values of $\sigma_{t}$ are considered, and for each of them the best level for this cut, determined in the previous sub-section, is applied.
-The best rejection of Thallium is reached for the ideal calorimeter time resolution, as the two electrons time-of-flights are measured precisely.
-For $\sigma_{t}=200$~ps, a smaller amount of Thallium background is rejected, but the $\zeronu$ selection efficiency remains stable.
-This selection efficiency is affected when the time resolution is degraded to $\sigma_{t}$, thus when the delayed events are badly discriminated compared with the simultaneous ones.
-As expected, other background events ($\twonu$, \Bi\ and \Rn) are not significantly affected by this selection.
 
-As discussed, the probability cut-offs applied on $2e$ topologies only degrade the final sensitivity to the $\zeronu$ process.
+As discussed, the \Pint/$P_{exp}$ cut-off applied on $2e$ topologies highly degrades the final sensitivity to the $\zeronu$ process.
 To quantify its impact on the background rejection, we present in Tab.~\ref{tab:Nbkg_proba_cut} the expected number of background in the optimised ROI, for two different levels for the $P_{exp}$ selection, one at $0.5$ and the other one very loose.
+Even if it affect the $\zeronu$ selection efficiency, this selection allows to reject $5$ events of \Tl\ inside the ROI for the SuperNEMO final detector.
 \begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|}
@@ -725,9 +729,9 @@ To quantify its impact on the background rejection, we present in Tab.~\ref{tab:
     Two levels of $P_{exp}$ cut are compared, $0.5$ and $0.95$.
     \label{tab:Nbkg_proba_cut}}
 \end{table}
-Even if it affect the $\zeronu$ selection efficiency, this selection allows to reject $5$ events of \Tl\ inside the ROI for the SuperNEMO final detector.
 
 These two selections were implemented in order to reject \Tl\ events and they have fulfilled this role.
+However the probability selection degrades too strongly the $\zeronu$ efficiency to improve the final sensitivity.
 The $\Delta t^{corr}$ selection allowed to improve the sensitivity by $12$\% for a perfect calorimeter time resolution.
 Finally, the final detector sensitivity is greatly affected by this timing measurement precision.
 
@@ -735,13 +739,13 @@ Finally, the final detector sensitivity is greatly affected by this timing measu
 
 \section{Conclusion}
 
-During this chapter we have defined or specified analysis tools adapted to the rejection of background.
-In particular, a so-called exponential probability law has been defined to describe the internal events of delayed Thallium.
+During this chapter we have defined or specified analysis tools adapted to the rejection of the delayed \Tl\ background.
+In particular, a so-called exponential probability law has been set up to match the $294$~ps decay time.
 Although the cut-off based on the electron time-of-flight is very satisfactory for rejecting this last background, the associated cut-off in internal and exponential probability makes it possible to be more precise since it takes into account the errors made on the time-of-flight measurements in the calorimeter.
-These rejection could be tested on site using a $^{232}$U calibration source, a parent of \Tl\ nucleus, inside the calorimeter to check the \Tl\ rejection using time-of-flight.
+These two rejection techniques could be tested on site using a $^{232}$U calibration source, a parent of \Tl\ nucleus, set inside the calorimeter to check the \Tl\ rejection using time-of-flight.
 
-We have determined the influence the time resolution has on the various defined cut-off efficiencies.
-The worse this resolution is, the more difficult it is to discriminate thallium events from signal events.
+We have determined the influence that the time resolution has on the various defined cut-off efficiencies.
+The worse this resolution is, the more difficult it is to discriminate \Tl\ events from signal events.
 Improving the time resolution of the calorimeter was not a direct purpose of the R\&D programme, however it has benefited from the high light output achieved to meet the energy resolution goals.
 The time resolution of the optical modules has been monitored at every stage of the R\&D programme but remains to be precisely determined.
-This is precisely the purpose of the next chapter, which describes how we determined the time resolution of the optical modules of the demonstrator calorimeter with a \Co\ source.
+This is precisely the purpose of the next chapter, which describes how the time resolution of the optical modules of the demonstrator calorimeter can be determined with a \Co\ calibration source.
