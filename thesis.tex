@@ -42,6 +42,19 @@
 \tolerance=1000
 \emergencystretch=10pt
 
+%% to change margin
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+%%%%
+
 \captionsetup[figure]{font=footnotesize}
 \captionsetup[subfigure]{font=footnotesize}
 \captionsetup[table]{font=footnotesize}
@@ -58,6 +71,8 @@
 
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
+
+
 
 \newcommand{\zeronu}{0\nu\beta\beta}
 \newcommand{\twonu}{2\nu\beta\beta}
@@ -78,6 +93,7 @@
 \newcommand{\Ttwonu}{T_{1/2}^{2\nu}}
 \newcommand{\mbb}{m_{\beta\beta}}
 \newcommand{\Pint}{P$_{int}$}
+\newcommand{\Var}{\mathrm{Var}}
 
 \newcommand\myshade{85}
 \colorlet{mylinkcolor}{violet}
@@ -102,17 +118,21 @@
                %\title{}
 
                %% \includeonly{CobaltStudy/CobaltStudy}
-               %%\includeonly{Sensitivity/Sensitivity}
-               %% \includeonly{commissioning/commissioning}
+               %% \includeonly{Sensitivity/Sensitivity}
+               %%\includeonly{commissioning/commissioning}
                %% \includeonly{timedifference/timedifference}
-               %%\includeonly{SNdemonstrator/SNdemonstrator}
+               %% \includeonly{timedifference/timedifference,Sensitivity/Sensitivity}
+               %% \includeonly{SNdemonstrator/SNdemonstrator,CobaltStudy/CobaltStudy}
                %% \includeonly{introduction/introduction}
-               %%\includeonly{conclusion/conclusion}
+               %% \includeonly{conclusion/conclusion}
+
+               \includeonly{remerciements/remerciements,introduction/introduction,SNdemonstrator/SNdemonstrator,Sensitivity/Sensitivity,timedifference/timedifference,commissioning/commissioning,CobaltStudy/CobaltStudy,conclusion/conclusion,resume/resume}
+
 
                \begin{document}
                %\maketitle
                \includepdf{1couverture}
-               \cleardoublepage
+               \clearpage
                \include{remerciements/remerciements}
                \cleardoublepage
                \tableofcontents
@@ -124,11 +144,16 @@
                \endgroup
 
                \include{neutrinophysics/neutrinophysics}
+
+               \begingroup
+               \setlength{\beforechapskip}{-0.1pt} % or any other dimension
                \include{SNdemonstrator/SNdemonstrator}
+               \endgroup
+
                \include{Sensitivity/Sensitivity}
                \include{timedifference/timedifference}
-               \include{CobaltStudy/CobaltStudy}
                \include{commissioning/commissioning}
+               \include{CobaltStudy/CobaltStudy}
 
                \begingroup
                \setlength{\beforechapskip}{-35pt} % or any other dimension
