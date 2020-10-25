@@ -2,9 +2,8 @@
 \label{ch:timediff}
 
 At the end of September $2018$, the $34$ enriched-Selenium source foils were installed on the demonstrator.
-At this time, the internal \Tl\ and \Bi\ activities of these sources had already been measured by the BiPo detector.
-Also, the Radon concentration in the chamber was extrapolated from Radon emission measurements of the tracker components with a concentration line for an incoming gas flow of $2$~m$^{3}$/h.
-We described in the previous chapter the impact of these activities on the final detector sensitivity to the $\zeronu$ decay, and set up optimised topological selections adjusted to reject the Radon background.
+At this time, the internal \Tl\ and \Bi\ activities of these sources had already been measured by the BiPo detector, as well as \Rn\ contamination inside the tracker.
+We described in the previous chapter the impact of these activities on the final detector sensitivity to the $\zeronu$ decay, and set up optimised topological selections adjusted to reject the \Rn\ background.
 
 However, \Tl\ disintegrations in the sources also remains a troublesome background, even for $\beta\beta$ emitters with a high $\Qbb$.
 Indeed, it contributes at high energies (up to $4$~MeV on the two electrons energy sum spectrum), because of the internal conversion of the $2.615$~MeV $\gamma$-ray.
@@ -16,9 +15,11 @@ Impact of the calorimeter timing performances on these techniques are also addre
 
 In Chapters~\ref{ch:detector} and \ref{ch:sensitivity}, we presented the specifications set on the background activities, in order to reach the target limit on the $\zeronu$ process half-life of the \Se\ in $5$ years, with $100$~kg of isotope.
 The Tab.~\ref{tab:real_target_act} given in Chapter~\ref{ch:detector} summarises the target \Tl, \Bi\ and \Rn\ activities, and provides a comparison with those measured by the collaboration.
-The BiPo detector was capable of giving an upper limit on the \Bi\ level of ${\mathcal{A}^{\text{Bi}}<290~\mu}$Bq/kg at $90$\% CL, and future more precise measurements with SuperNEMO demonstrator will constraint this value.
-The BiPo measurements also showed that the \Tl\ contamination is about $30$ times greater than expected on average.
+The BiPo measurements showed that the \Tl\ contamination is about $30$ times greater than expected on average.
 We give in Tab.~\ref{tab:Nbkg_wBi} the number of expected background events for the measured activities (taking the upper limit for \Bi\ contamination), for the demonstrator and final detector.
+With an activity fixed to the measured one, the \Tl\ background does not affect significantly the sensitivity of the demonstrator ($17.5$~kg.y exposure) as only one event is expected in the optimised [$2.7$;$3.3$]~MeV energy region, after first-order and topological cut-offs were applied.
+On the other hand, this background could be harmful for the final detector ($500$~kg.y exposure), with $21$ events expected in the region of interest [$2.6$,$2.95$]~MeV.
+To overcome this effect, it is interesting to set a specific method designed to reject \Tl\ events.
 \begin{table}[!h]
   \centering
   \begin{tabular}{|c|c|c|}
@@ -39,9 +40,6 @@ We give in Tab.~\ref{tab:Nbkg_wBi} the number of expected background events for 
     ROI are optimised to maximise the $\Tbeta$ limit at $90$\% (see Chapter~\ref{ch:sensitivity}).
     \label{tab:Nbkg_wBi}}
 \end{table}
-With an activity fixed to the measured one, the \Tl\ background does not affect significantly the sensitivity of the demonstrator ($17.5$~kg.y exposure) as only one event is expected in the optimised [$2.7$;$3.3$]~MeV energy region, after first-order and topological cut-offs were applied.
-On the other hand, this background could be harmful for the final detector ($500$~kg.y exposure), with $21$ events expected in the region of interest [$2.6$,$2.95$]~MeV.
-To overcome this effect, it is interesting to set a specific method designed to reject \Tl\ events.
 
 In the next section, we describe the specific features of the Thallium internal background.
 We develop a new technique of rejection, especially designed to identify internal \Tl\ events, based on several Time-of-flight computations.
@@ -50,9 +48,13 @@ We develop a new technique of rejection, especially designed to identify interna
 
 As described in Chapter~\ref{ch:detector}, radioactive isotope disintegrations inside the source foils can occasionally produce two-electron events, and thus can mimic $\beta\beta$-decay events.
 The \Tl, a progeny of \Th, is one of the largest contribution to the internal background.
-Two electrons can be produced via a $\beta$-decay followed by a M\o{}ller scattering, $\beta$-decay to an excited state with the subsequent internal conversion, or due to Compton scattering of the de-excitation photon.
+Two electrons can be emitted from the source via a $\beta$-decay followed by a M\o{}ller scattering, $\beta$-decay to an excited state with the subsequent internal conversion, or due to Compton scattering of the de-excitation photon.
 
 The disintegration scheme of \Tl\ isotope is presented in Fig.~\ref{fig:Tl_scheme}.
+This shows that \Tl\ always $\beta$-decays to an excited state of the \Pb\ daughter nuclei.
+In more than $99$~\% of the decays, at least 2 $\gamma$'s are expected after the $\beta$ emission.
+For $\zeronu$ detection of isotopes with high $\Qbb$, the most dangerous mode of $\beta\beta$-like events production comes from the internal conversion of the $2.615$ MeV-$\gamma$, resulting in one electron with an energy of $2.5$ MeV approximately and a beta-electron with a continuous spectrum between $0$ and $\sim~1.5$~MeV.
+Thus \Tl\ events with a total energy greater than $2.7$~MeV can populate the region of interest.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/Tl_decay_scheme.pdf}
@@ -61,10 +63,6 @@ The disintegration scheme of \Tl\ isotope is presented in Fig.~\ref{fig:Tl_schem
     All disintegration go through the $2.615$~MeV energy level (green), where an orbital electron is ejected in $0.246$~\% of the cases through the internal conversion process.
   \label{fig:Tl_scheme}}
 \end{figure}
-This shows that \Tl\ always $\beta$-decays to an excited state of the \Pb\ daughter nuclei.
-In more than $99$~\% of the decays, at least 2 $\gamma$'s are expected after the $\beta$ emission.
-For $\zeronu$ detection of isotopes with high $\Qbb$, the most dangerous mode of $\beta\beta$-like events production comes from the internal conversion of the $2.615$ MeV-$\gamma$, resulting in one electron with an energy of $2.5$ MeV approximately and a beta-electron with a continuous spectrum between $0$ and $\sim~1.5$~MeV.
-Thus \Tl\ events with a total energy greater than $2.7$~MeV can populate the region of interest.
 
 \subsection{The internal conversion process}
 
@@ -95,6 +93,7 @@ The total coefficient is
   \alpha_{T}=\sum_{j=K,L,M\cdots}\alpha_{j}\,.
 \end{equation}
 These coefficients are given in Tab.~\ref{tab:IC_prob} for the $2.615$~MeV energy level of \Tl\ isotope.
+Therefore, in $0.246$~\% of the cases, the \Pb\ excited nucleus will undergone an internal conversion corresponding to the $2.615$~MeV energy level.
 \begin{table}[!h]
   \centering
   \begin{tabular}{|c|c|c|c|c|}
@@ -107,7 +106,6 @@ These coefficients are given in Tab.~\ref{tab:IC_prob} for the $2.615$~MeV energ
   \caption{Internal conversion coefficients for the $2.615$~MeV $\gamma$-ray of the \Tl\ decay scheme.
     \label{tab:IC_prob}}
 \end{table}
-Therefore, in $0.246$~\% of the cases, the \Pb\ excited nucleus will undergone an internal conversion corresponding to the $2.615$~MeV energy level.
 
 
 \subsection{\Tl\ disintegrations in the 2e channel}
@@ -152,6 +150,9 @@ Nevertheless, calorimeter performances implemented in the Falaise software have 
 Indeed, one of the main goal is to evaluate the influence of the calorimeter timing performances on the \Tl\ background rejection.
 This study was led before the commissioning phase of the calorimeter when timing performances were characterised only for few optical modules, and before their installation at Modane~\cite{HuberThesis}.
 An encouraging value for the uncertainty on the calorimeter time measurement of $248.3$~ps for incoming electrons and $341.8$~ps for photons were provided for the best optical module tested (Fig.~\ref{fig:Arnaud_RMS_PM}).
+In this context, before the full calorimeter calibration in Modane, we would give an overview of the influence of these performances on the \Tl\ background rejection.
+To do so, signal and background simulations were performed supposing the optical modules measure perfectly the particle time-of-flights, by setting to zero the time uncertainty at the level of the calibration module in the Falaise pipeline.
+I wrote a Root code allowing to degrade the precision on time measurements for it to be set by the user to the desired accuracy.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/Arnaud_RMS_PM.pdf}
@@ -160,9 +161,6 @@ An encouraging value for the uncertainty on the calorimeter time measurement of 
     Adapted from~\cite{HuberThesis}.
   \label{fig:Arnaud_RMS_PM}}
 \end{figure}
-In this context, before the full calorimeter calibration in Modane, we would give an overview of the influence of these performances on the \Tl\ background rejection.
-To do so, signal and background simulations were performed supposing the optical modules measure perfectly the particle time-of-flights, by setting to zero the time uncertainty at the level of the calibration module in the Falaise pipeline.
-I wrote a Root code allowing to degrade the precision on time measurements for it to be set by the user to the desired accuracy.
 
 All of the simulations produced for this analysis were generated using the official Falaise pipeline, and are made available to the collaboration in the common SuperNEMO repository at the IN$2$P$3$ computing centre platform.
 The same code described in the previous chapter has been used for this study, including the Particle Identification module, the module I wrote and the Root code pipeline.
@@ -218,6 +216,9 @@ The \emph{flatness parameter} $a_{F}$ is defined as the slope parameter of the l
 The optimisation then consists in finding the value of $\sigma_{l}$ for which the parameter $a_{F}$ is cancelled, which corresponds to the best estimate for $\sigma_{l}$.
 
 In Fig.~\ref{fig:flatness} is given the slope $a_{F}$ as a function of $\sigma_{l}$.
+For $\sigma_{l}=70$~ps, $a_{F}>0$, revealing an overestimation of uncertainties in the computation of the internal $\chi^{2}$ in the SuperNEMO reconstruction pipeline, at the Particle Identification module level.
+The optimised value, kept for the further analysis, is $\sigma_{l}~=~27.8~\pm~0.8$~ps.
+In Fig.~\ref{fig:Pint_comparison} is displayed the internal probability distributions for these two values of the $\sigma_{l}$ parameter, $\sigma_{l}=70$~ps and $\sigma_{l}=27.8$~ps.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/flatness.pdf}
@@ -227,9 +228,6 @@ In Fig.~\ref{fig:flatness} is given the slope $a_{F}$ as a function of $\sigma_{
     \Pint\ is calculated for $\zeronu$ decays simulated inside the source foil, with first order cut-offs applied.
     \label{fig:flatness}}
 \end{figure}
-For $\sigma_{l}=70$~ps, $a_{F}>0$, revealing an overestimation of uncertainties in the computation of the internal $\chi^{2}$ in the SuperNEMO reconstruction pipeline, at the Particle Identification module level.
-The optimised value, kept for the further analysis, is $\sigma_{l}~=~27.8~\pm~0.8$~ps.
-In Fig.~\ref{fig:Pint_comparison} is displayed the internal probability distributions for these two values of the $\sigma_{l}$ parameter, $\sigma_{l}=70$~ps and $\sigma_{l}=27.8$~ps.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/Pint_comparison.pdf}
@@ -293,6 +291,10 @@ To do so, the ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ distribution is norm
 \end{equation}
 where $\Delta t^{meas}_{sym}$ is defined such that ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t^{meas}_{sym})} = {(E \otimes G)_{\tau,\mu,\sigma}(\Delta t^{meas})}$.
 A graphical representation is given in Fig.~\ref{fig:Pexp}.
+In this example the distribution corresponds to ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ with ${\tau=294}$~ps and ${\mu=0}$~ps and the total time uncertainty is calculated taking $\sigma_{l}=27.8$~ps and $\sigma_{t}=200$~ps for $1$~MeV electrons.
+The two integrals whose sum is given in the Eq.~\eqref{eq:Pexp} are represented by two red-coloured areas.
+As explained, each probability density function is defined for a single $2$-electrons event, because the time-of-flight uncertainty depends on the electron measured energy and on the track length.
+In the given example, we considered two particles interacting inside the calorimeter with an energy of $1$~MeV each.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/proba_expo_test.pdf}
@@ -300,12 +302,9 @@ A graphical representation is given in Fig.~\ref{fig:Pexp}.
     The parameters are $\tau=294$~ps, $\mu=0$~ps and $\sigma=\sigma_{tot}$, computed with $\sigma_{l}=27.8$~ps and $\sigma_{t}=200$~ps.
     \label{fig:Pexp}}
 \end{figure}
-In this example the distribution corresponds to ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ with ${\tau=294}$~ps and ${\mu=0}$~ps and the total time uncertainty is calculated taking $\sigma_{l}=27.8$~ps and $\sigma_{t}=200$~ps for $1$~MeV electrons.
-The two integrals whose sum is given in the Eq.~\eqref{eq:Pexp} are represented by two red-coloured areas.
-As explained, each probability density function is defined for a single $2$-electrons event, because the time-of-flight uncertainty depends on the electron measured energy and on the track length.
-In the given example, we considered two particles interacting inside the calorimeter with an energy of $1$~MeV each.
 
 In fig.~\ref{fig:Pexp_Tl} are presented exponential probability distributions for $2e$ topologies selected of \Tl\ and $\zeronu$ simulations inside the source foils.
+As expected, the distribution is flat, since this probability was defined in the same way as the internal probability.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/proba_expo_400.pdf}
@@ -313,7 +312,6 @@ In fig.~\ref{fig:Pexp_Tl} are presented exponential probability distributions fo
     $\sigma_{t}=200$~ps, $\sigma_{l}=27.8$~ps.
     \label{fig:Pexp_Tl}}
 \end{figure}
-As expected, the distribution is flat, since this probability was defined in the same way as the internal probability.
 %%The distortion at low $P_{exp}$ comes from the proportion of events where the second electron doesn't come from the internal conversion of the $2.615$~MeV $\gamma$-ray.
 
 Now analysis tools are defined, the following sections focus on the event selections using them, the way to optimise them and their influence on the final detector sensitivity.
@@ -397,6 +395,27 @@ The second was designed specifically for this analysis to identify delayed \Tl\ 
 
 The idea is this section is to reject \Tl\ events taking into account their two values of internal and exponential probabilities.
 Then it is interesting to represent them with a two-dimensional binned histogram of $P_{exp}$ as a function of \Pint, as done is Fig.~\ref{fig:biplot_Pexp_Pint}.
+\begin{enumerate}
+\item \Pint$\in[0;1]$ and $P_{exp}\in[0;0.65]$, with \Pint$>P_{exp}$ (Fig.~\ref{subfig:Proba_cut_1}):\\
+  This region corresponds to events for which $\Delta t^{\text{corr}}<0$.
+  As the internal $\chi^{2}_{int}$ distribution is symmetrical, such events can have a value of \Pint\ varying from $0$ to $1$.
+  Small values of \Pint\ correspond to events with a large negative $\Delta t^{\text{corr}}$ value.
+  Conversely, the exponential distribution is not centred in zero.
+  Therefore, if we limit to events for which the time difference is negative, we reach an upper bound for the value of the integral ($0.65$ in that case).
+  This bound directly depends on the variations of the exponential distribution, therefore on the $\sigma_{t}$ value applied.
+\item \Pint$\in[0;0.65]$ and $P_{exp}\in[0;1]$, with $P_{exp}>$\Pint (Fig.~\ref{subfig:Proba_cut_2}):\\
+  These events have positive values for $\Delta t^{\text{corr}}$, beyond the ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ distribution maximum.
+  The smaller the value of \Pint, the lower the probability that both particles were emitted at the same time into the source.
+  Besides, for values of $\Delta t^{\text{corr}}$ highly positives, the value of the exponential probability can reach high values, up to $1$.
+  The larger the value of $\Delta t^{\text{corr}}$ in positives, the smaller the value of $P_{exp}$.
+\item \Pint$\in[0.65;1]$ and $P_{exp}\in[0.65,1]$ (Fig.~\ref{subfig:Proba_cut_3}):\\
+  This region is also populated by events for which $\Delta t^{\text{corr}}>0$.
+  Unlike the previous case, these events have small $\Delta t^{\text{corr}}$ values, meaning below the maximum of the exponential distribution.
+  Also, these events have high internal probability values, as the probability that these two particles were emitted simultaneously is high.
+  In the same way as the first bullet, the value of $P_{exp}$ is bounded: the lower bound corresponds to the value of the integral when $\Delta t^{\text{corr}}=0$ (here $0.65$).
+  Once again, this bound is deeply related to the value considered for $\sigma_{t}$.
+  The exponential probability can be equal to $1$ when $\Delta t^{\text{corr}}$ reaches the maximum of the exponential distribution.
+\end{enumerate}
 \begin{figure}[!h]
   \centering
   \includegraphics[width=15cm]{timedifference/fig_timediff/PintVSPexp_208Tl_200.eps}
@@ -438,27 +457,6 @@ In order to better understand these variations, we give in Fig.~\ref{fig:proba_c
   (c) $\Delta t^{\text{corr}} \in~]0;\Delta t_{max}]$.
   \label{fig:proba_cut_ex}}
 \end{figure}
-\begin{enumerate}
-\item \Pint$\in[0;1]$ and $P_{exp}\in[0;0.65]$, with \Pint$>P_{exp}$ (Fig.~\ref{subfig:Proba_cut_1}):\\
-  This region corresponds to events for which $\Delta t^{\text{corr}}<0$.
-  As the internal $\chi^{2}_{int}$ distribution is symmetrical, such events can have a value of \Pint\ varying from $0$ to $1$.
-  Small values of \Pint\ correspond to events with a large negative $\Delta t^{\text{corr}}$ value.
-  Conversely, the exponential distribution is not centred in zero.
-  Therefore, if we limit to events for which the time difference is negative, we reach an upper bound for the value of the integral ($0.65$ in that case).
-  This bound directly depends on the variations of the exponential distribution, therefore on the $\sigma_{t}$ value applied.
-\item \Pint$\in[0;0.65]$ and $P_{exp}\in[0;1]$, with $P_{exp}>$\Pint (Fig.~\ref{subfig:Proba_cut_2}):\\
-  These events have positive values for $\Delta t^{\text{corr}}$, beyond the ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ distribution maximum.
-  The smaller the value of \Pint, the lower the probability that both particles were emitted at the same time into the source.
-  Besides, for values of $\Delta t^{\text{corr}}$ highly positives, the value of the exponential probability can reach high values, up to $1$.
-  The larger the value of $\Delta t^{\text{corr}}$ in positives, the smaller the value of $P_{exp}$.
-\item \Pint$\in[0.65;1]$ and $P_{exp}\in[0.65,1]$ (Fig.~\ref{subfig:Proba_cut_3}):\\
-  This region is also populated by events for which $\Delta t^{\text{corr}}>0$.
-  Unlike the previous case, these events have small $\Delta t^{\text{corr}}$ values, meaning below the maximum of the exponential distribution.
-  Also, these events have high internal probability values, as the probability that these two particles were emitted simultaneously is high.
-  In the same way as the first bullet, the value of $P_{exp}$ is bounded: the lower bound corresponds to the value of the integral when $\Delta t^{\text{corr}}=0$ (here $0.65$).
-  Once again, this bound is deeply related to the value considered for $\sigma_{t}$.
-  The exponential probability can be equal to $1$ when $\Delta t^{\text{corr}}$ reaches the maximum of the exponential distribution.
-\end{enumerate}
 
 As discussed, the exponential probability quantifies the likelihood that two particles were emitted with a delay corresponding to the radioactive exponential decay with ${\tau=294}$~ps, taking into account the time of flight resolution.
 Therefore, we are interested in rejecting events for which values of $P_{exp}$ are high compared with the \Pint\ values.
@@ -484,6 +482,13 @@ We consider values for $\sigma_{t}$ in the [$0$ - $400$]~ps range.
 
 In Sec.~\ref{subsec:tof_cutoff} we presented rejection efficiencies for a ${\Delta t^{corr}>0}$~ps selection, with ${\sigma_{t}=200}$~ps.
 In Fig.~\ref{fig:eff_cut_delta_t_sigma} is presented the $\zeronu$ selection efficiency with the rejection efficiency of \Tl, for values of $\sigma_{t}$ running from the ideal $0$~ps, to $400$~ps.
+Each point corresponds to a $\Delta t^{corr}$ level applied on the selected $2e$ topologies, from ${\Delta t^{corr}>0}$ to ${\Delta t^{corr}>650}$~ps.
+For ${\Delta t^{corr}>0}$ and $\sigma_{t}=200$~ps, we get back to the result given previously.
+Nevertheless, for this time uncertainty, an optimised value for the $\Delta t^{corr}$ cut level, called \emph{maximum efficiency point}, is found at ${\Delta t^{corr}>250}$~ps as it optimises the signal selection and \Tl\ background rejection efficiencies.
+Such a point can be found for each of the five $\sigma_{t}$ values presented.
+The more precisely the time-of-flight is measured in the calorimeter, the better this point is determined.
+Indeed, the worse this resolution is, the more linear the distribution tends to be, and therefore the more difficult it is to discriminate delayed events from those emitted simultaneously such as those of $\zeronu$.
+Especially, for an ideal calorimeter where the timing measurement would be perfect, we could reach $80$\% of \Tl\ rejection, while keeping $90$\% of signal events.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/compare_sigma_cut_delta_t.pdf}
@@ -493,13 +498,6 @@ In Fig.~\ref{fig:eff_cut_delta_t_sigma} is presented the $\zeronu$ selection eff
     the optimised value of $\sigma_{l}=27.8$~ps is applied.
     \label{fig:eff_cut_delta_t_sigma}}
 \end{figure}
-Each point corresponds to a $\Delta t^{corr}$ level applied on the selected $2e$ topologies, from ${\Delta t^{corr}>0}$ to ${\Delta t^{corr}>650}$~ps.
-For ${\Delta t^{corr}>0}$ and $\sigma_{t}=200$~ps, we get back to the result given previously.
-Nevertheless, for this time uncertainty, an optimised value for the $\Delta t^{corr}$ cut level, called \emph{maximum efficiency point}, is found at ${\Delta t^{corr}>250}$~ps as it optimises the signal selection and \Tl\ background rejection efficiencies.
-Such a point can be found for each of the five $\sigma_{t}$ values presented.
-The more precisely the time-of-flight is measured in the calorimeter, the better this point is determined.
-Indeed, the worse this resolution is, the more linear the distribution tends to be, and therefore the more difficult it is to discriminate delayed events from those emitted simultaneously such as those of $\zeronu$.
-Especially, for an ideal calorimeter where the timing measurement would be perfect, we could reach $80$\% of \Tl\ rejection, while keeping $90$\% of signal events.
 
 As discussed, the variations of \Pint\ and $P_{exp}$ are bound to the value of $\sigma_{t}$, thus the levels applied on \Pint\ and $P_{exp}$ must be adapted to match these variations.
 Eight \Pint$/P_{exp}$ biplots are given in Fig.~\ref{fig:biplot_Pexp_Pint_sigma}, for $\sigma_{t}=0$, $100$, $300$ and $400$~ps both for $\zeronu$ and \Tl\ $2e$ selected topologies (the ${\sigma_{t}=200}$~ps case is already given in Fig.~\ref{fig:biplot_Pexp_Pint}).

@@ -804,11 +804,11 @@ Therefore one can measure BiPo events in the $1e1\alpha(\gamma)$ channel.
 
 \subsubsection*{Internal activities}
 
+The collaboration established recommendations for maximum levels of the internal backgrounds, expressed in number of disintegrations per second, for a unit mass of $\beta\beta$ isotope, or for a unit volume of gas.
+These \emph{specified activities} have been calculated in order to achieve the expected sensitivity of the final detector of $\sim 1\times 10^{26}$~years.
 
-Specified contamination levels have been established in order to achieve the $\zeronu$ half-life target of $\sim 1\times 10^{26}$~years for the final detector.
 The \Se\ demonstrator source is segmented in $34$ foils, whose production was the responsibility of different laboratories (Dubna, LAPP and Tomsk).
 The sources have undergone different purification treatments, in order to investigate new techniques, and to compare them with those of NEMO-$3$.
-
 After the sources production and purification, preliminary measurements have been performed with the BiPo-$3$ detector to determine the actual \Tl\ and \Bi\ contamination levels inside the foils~\cite{internal:bipo}.
 BiPo-$3$ is a detector installed in the Canfranc underground laboratory in Spain, dedicated to the measurement of the radiopurity in \Tl\ and \Bi\ of NEMO sources before their installation.
 It measures the Bismuth-Polonium cascade (electron emission followed by a delayed $\alpha$).
@@ -840,30 +840,14 @@ Precise additional measurements are expected from the demonstrator calibration.
 \subsection{External background}
 \label{subsec:SNexternal_bkg}
 
+\subsubsection*{External background sources}
+
 Different processes originating from outside the detector can mimic $\beta\beta$ decays.
 \begin{itemize}
 \item External high energy $\gamma$'s emitted after the disintegration of natural radioactive isotopes (mostly \Tl, \Bi\ and \K) occurring outside the detector (typically the lab rocks).
 \item Neutrons resulting from the spallation of nuclei by cosmic muons.
 \item Contamination of detector materials by natural radioactive nuclei (mostly in PM glass).
 \end{itemize}
-
-The last bullet is an important aspect in reducing the total radioactive isotope budget for the experiment.
-A huge work has been done by Hamamatsu to reduce this contamination compared with NEMO-$3$.
-In Tab.~\ref{tab:meas_ext_cont} is presented the total activities measured for $8$ and $5$ inches PMs.
-The radiopurity is smaller than for NEMO-$3$ for \K\ and $^{226}$Ra (leading to \Bi\ contamination) by $\sim35$\% but is worse for $^{232}$Th (\Tl) by $\sim150$\%.
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-    Experiment & \K & $^{226}$Ra & $^{232}$Th \\
-    \hline\hline
-    SuperNEMO demonstrator~\cite{docdb:perrot2017} & $540$ & $197$ & $124$ \\
-    NEMO-$3$~\cite{art:NEMO3_2005} & $832$ & $302$ & $50$ \\
-    \hline
-  \end{tabular}
-  \caption{Total activity in Bq of SuperNEMO and NEMO-$3$ PMs in \K, $^{226}$Ra and $^{232}$Th isotopes.
-    \label{tab:meas_ext_cont}}
-\end{table}
 
 The three types of processes listed above can be the cause of a photon interaction inside the source and lead to a $\beta\beta$ topology, though different possible processes (Fig.~\ref{fig:external_contamination}).
 \begin{itemize}
@@ -872,7 +856,6 @@ The three types of processes listed above can be the cause of a photon interacti
 \item Two successive Compton scattering can occur, the last gamma escaping detection.
 \item After a first Compton scattering, the emitted electron can make a M\o{}ller diffusion on another electron in the source, the gamma being not detected.
 \end{itemize}
-
 \begin{figure}[!h]
 \centering
 \begin{subfigure}[t]{0.32\textwidth}
@@ -903,6 +886,31 @@ The three types of processes listed above can be the cause of a photon interacti
   (c) Compton scattering followed by a M\o{}ller scattering.
   \label{fig:external_contamination}}
 \end{figure}
+
+\subsubsection*{Radiopurity}
+
+A huge work has been done by Hamamatsu to control the photomultipliers contamination compared with NEMO-$3$, in order to reduce the total radioactive isotope budget for the experiment.
+In Tab.~\ref{tab:meas_ext_cont} is presented the total activities measured for $8$ and $5$ inches PMs~\cite{docdb:perrot2017}.
+The radiopurity is smaller than for NEMO-$3$ for \K\ and $^{226}$Ra (leading to \Bi\ contamination) by $\sim35$\% but is worse for $^{232}$Th (\Tl) by $\sim150$\%.
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Experiment & \K & $^{226}$Ra & $^{232}$Th \\
+    \hline\hline
+    SuperNEMO demonstrator~\cite{docdb:perrot2017} & $540$ & $197$ & $124$ \\
+    NEMO-$3$~\cite{art:NEMO3_2005} & $832$ & $302$ & $50$ \\
+    \hline
+  \end{tabular}
+  \caption{Total activity in Bq of SuperNEMO and NEMO-$3$ PMs in \K, $^{226}$Ra and $^{232}$Th isotopes.
+    \label{tab:meas_ext_cont}}
+\end{table}
+
+The NEMO-$3$ experiment set a limit on the external background number of counts, of $<0.2$ events in the $2e$ topology, for the energy range [$2.8$;$3.2$]~MeV (two electrons energy sum), for an exposure of $34.3$ kg·y, with $^{100}$Mo sources~\cite{art:NEMO2015}.
+This could lead us to think that the external background contribution for SuperNEMO could be higher than that of NEMO-$3$ because of the higher level of \Tl\ measured.
+Hopefully, on that level, the most notorious difference between the two detectors is the fact that the SuperNEMO scintillator blocks are thicker than those of NEMO-$3$.
+Therefore, a gamma emitted from a PMT glass is more likely to be detected before crossing the source foils, such that it would be rejected and would not contribute to the background in the $2e$ channel.
+Even if the regions of interest are slightly different between these two experiments, it produces a negligible increase on the external background contribution\footnote{A study conducted by the SuperNEMO collaboration showed that at most $0.73$ additional external background events would have been expected for the NEMO-$3$ detector, if instead of taking the [$2.8$;$3.2$]~MeV energy range, we would have considered the [$2.7$;$3.15$]~MeV region of interest.}.%%%%this limit is given by the stat simulated and could be ameliorated by more simulations by CPU
 
 
 \subsection{Radon background}
@@ -1005,6 +1013,7 @@ One of the $\gamma$ scatters in a first scintillator and deposits energy in a se
 
 
 \subsection{Analysis tools}
+\label{subsec:analysis_tools}
 
 Internal and external probabilities are extremely useful tools, widely employed in particular by the gamma clustering algorithm and particle identification module.
 They are also used for analysis purposes, to determine whether or not an event does come from inside or outside the source foils.
