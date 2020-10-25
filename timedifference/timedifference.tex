@@ -1,4 +1,4 @@
-\chapter{Improvement of the internal Thallium-$208$ background rejection}
+\chapter{Improvement of the internal \Tl\ background rejection}
 \label{ch:timediff}
 
 At the end of September $2018$, the $34$ enriched-Selenium source foils were installed on the demonstrator.
@@ -172,9 +172,8 @@ In the first instance we set the reasonable value of $200$~ps for the measuremen
 In Sec.~\ref{subsec:calo_sigma} the influence of this parameter on the \Tl\ rejection is provided, and we give final sensitivity results according to it in Sec.~\ref{sec:Tl_sensitivity}.
 
 
-\section{Rejection of \Tl\ with a time-of-flight criterion}
+\section{Analysis tools to describe the \Tl\ internal background}
 \label{sec:Tl_TOF}
-
 
 The internal probability, based on time-of-flight computation, quantifies the likelihood that two particles were emitted inside the source foils, from the same vertex.
 Unless it is a useful tool, we would implement a new one, also based on time-of-flight, taking into account the possible delay between the two incoming electrons due to the \Pb\ metastable state.
@@ -222,9 +221,9 @@ In Fig.~\ref{fig:flatness} is given the slope $a_{F}$ as a function of $\sigma_{
 \begin{figure}[!h]
   \centering
   \includegraphics[width=13cm]{timedifference/fig_timediff/flatness.pdf}
-  \caption{Slope $a_{F}$ as a function of the time uncertainty due to the reconstructed track length $\sigma_{l}$.
-    The former value used in the SuperNEMO reconstruction pipeline is pointed out by blue dashed lines.
-    The value kept for $\sigma_{l}$ is the one for which $a_{F}=0$, $\sigma_{l}~=~27.8~\pm~0.8$~ps, showed by purple dashed lines.
+  \caption{Flatness paramater $a_{F}$ as a function of the time uncertainty due to the reconstructed track length $\sigma_{l}$.
+    Data points (blue markers) are interpolated (black solid line).
+    The former value used in the SuperNEMO reconstruction pipeline is pointed out pink dashed lines, as well as the optimised value $\sigma_{l}~=~27.8~\pm~0.8$~ps.
     \Pint\ is calculated for $\zeronu$ decays simulated inside the source foil, with first order cut-offs applied.
     \label{fig:flatness}}
 \end{figure}
@@ -250,7 +249,7 @@ Even if it is less, this criterion is also effective in rejecting \Tl\ events, d
 Therefore the emission of the $2.615$~MeV-$\gamma$ is in most of the cases delayed.
 But to describe even better these internal conversion events we would set up a new probability law expressing the hypothesis that a given event is from a $\beta$+IC delayed \Tl\ disintegration.
 
-\subsection{The exponential probability for \Tl\ events}
+\subsection{The exponential probability}
 
 According to the disintegration scheme of the \Tl\ isotope (Fig.~\ref{fig:Tl_scheme}), there is an $81~\%$ probability of passing through the $294~$ps metastable level.
 After that, to reach the ground state of \Pb, the excited nucleus has $100\%$ of probability to decay through the $2.615$ MeV energy level.
@@ -270,8 +269,8 @@ For a given detected $2e$ topology, we define the $\Delta t^{meas}$ parameter as
   \Delta t^{meas} = t_{1}^{meas}-t_{2}^{meas}\,,
   \label{eq:time_diff}
 \end{equation}
-where $t_{1}^{meas}$ and $t_{2}^{meas}$ are the two measured time-of-flights, where $t_{2}$ stands for the electron of lowest energy, and $t_{1}$ for the one of highest energy.
-If this $2e$ topology corresponds to a delayed \Tl\ event, then the electron of lowest energy is supposed to be a $\beta$ particle and the one of highest energy an electron coming from an internal conversion, delayed in average of $294$~ps.
+where $t^{meas}_1$ and $t^{meas}_2$ are the two measured time-of-flights, respectively for the electron with the lowest energy, and the one with the highest energy.
+If this $2e$ topology corresponds to a delayed \Tl\ event, then the electron of lowest energy is supposed to be a $\beta$ particle and the one of highest energy an electron coming from an internal conversion, delayed on average of $294$~ps.
 Assuming an ideal calorimeter perfectly measuring time-of-flights and energies, the $\Delta t$ distribution for such delayed events would be a decreasing exponential, with the decay parameter ${\tau=294}$~ps.
 However, in actual conditions, this exponential is degraded by the uncertainties on time-of-flight measurements detailed in Eq.~\eqref{eq:int_chi2_electrons}.
 These are embedded by a Gaussian distribution centred around ${\mu=0}$~ps with a given width $\sigma$.
@@ -289,7 +288,7 @@ Therefore, we would obtain the maximal value ${P_{exp}=1}$ when the value of $\D
 On the other hand, minimal values for $P_{exp}$ would be reached for less probable values of $\Delta t$, so ${P_{exp} \xrightarrow[|\Delta t| \rightarrow +\infty]{} 0}$.
 To do so, the ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t)}$ distribution is normalised and the exponential probability is defined as
 \begin{equation}
-  P_{exp}(\Delta t^{meas}) = \int_{-\infty}^{\Delta t^{meas}} (E \otimes G)_{\tau,\mu,\sigma}(t)\, dt + \int_{\Delta t_{sym}^{meas}}^{-\infty} (E \otimes G)_{\tau,\mu,\sigma}(t)\, dt\,,
+  P_{exp}(\Delta t^{meas}) = \int_{-\infty}^{\Delta t^{meas}} (E \otimes G)_{\tau,\mu,\sigma}(t)\, dt + \int_{\Delta t_{sym}^{meas}}^{+\infty} (E \otimes G)_{\tau,\mu,\sigma}(t)\, dt\,,
   \label{eq:Pexp}
 \end{equation}
 where $\Delta t^{meas}_{sym}$ is defined such that ${(E \otimes G)_{\tau,\mu,\sigma}(\Delta t^{meas}_{sym})} = {(E \otimes G)_{\tau,\mu,\sigma}(\Delta t^{meas})}$.
@@ -349,11 +348,18 @@ In order to remove from $\Delta t^{meas}$ the dependency on travel time in the t
 where $t^{\text{corr}}_{i}$ are the corrected time-of-flights and $t^{\text{exp}}_{i}$ the expected ones calculated with the particle energy and track length (Eq.~\ref{eq:th_time}).
 
 The two distributions $\Delta t^{meas}$ and $\Delta t^{\text{corr}}$ are presented in Fig.~\ref{fig:delta_t}, for $\zeronu$ and \Tl\ simulations inside the source foils.
+For $\zeronu$ simulations, the $\Delta t^{corr}$ distribution is centred around zero, as the two electrons are emitted simultaneously inside the source.
+Then, the correction on time difference only lowers the standard deviation of the distribution.
+For \Tl\ simulations, the mean of the distribution is slightly shifted towards positive values.
+Once corrected by the expected times, the mean difference between the two electrons time-of-flights stands at $296~\pm~18$~ps.
+This is a direct consequence of the existence of $\beta$+IC delayed events, for which the particle of highest energy is expected to hit a calorimeter block at a time $t^{\text{corr}}_{1}~>~t^{\text{corr}}_{2}$.
+The set up calorimeter time uncertainty at $200$~ps allows to be sensitive to this decay as the mean of the distribution is near $294$~ps.
+Therefore, a simple way of rejecting the \Tl\ delayed events is to consider the sign of $\Delta t^{\text{corr}}$ and to reject events for which $\Delta t^{\text{corr}}~>~0$.
 \begin{figure}[!h]
 \centering
 \begin{subfigure}[t]{1.\textwidth}
   \centering
-  \includegraphics[width=0.7\textwidth]{timedifference/fig_timediff/0nubb_delta_t.eps}
+  \includegraphics[width=0.65\textwidth]{timedifference/fig_timediff/0nubb_delta_t.eps}
   \captionsetup{justification=justified}
   \caption{$\zeronu$ simulations.
     \label{subfig:0nubb_delta_t}}
@@ -361,7 +367,7 @@ The two distributions $\Delta t^{meas}$ and $\Delta t^{\text{corr}}$ are present
 \hfill
 \begin{subfigure}[t]{1.\textwidth}
   \centering
-  \includegraphics[width=0.7\textwidth]{timedifference/fig_timediff/208Tl_delta_t.eps}
+  \includegraphics[width=0.65\textwidth]{timedifference/fig_timediff/208Tl_delta_t.eps}
   \captionsetup{justification=justified}
   \caption{\Tl\ simulations.
     \label{subfig:208Tl_delta_t}}
@@ -374,13 +380,6 @@ The two distributions $\Delta t^{meas}$ and $\Delta t^{\text{corr}}$ are present
   $\sigma_{t}=200$~ps and $\sigma_{l}=27.8$~ps.
   \label{fig:delta_t}}
 \end{figure}
-For $\zeronu$ simulations, the $\Delta t^{corr}$ distribution is centred around zero, as the two electrons are emitted simultaneously inside the source.
-Then, the correction on time difference only lowers the standard deviation of the distribution.
-For \Tl\ simulations, the mean of the distribution is slightly shifted towards positive values.
-Once corrected by the expected times, the mean difference between the two electrons time-of-flights stands at $296~\pm~18$~ps.
-This is a direct consequence of the existence of $\beta$+IC delayed events, for which the particle of highest energy is expected to hit a calorimeter block at a time $t^{\text{corr}}_{1}~>~t^{\text{corr}}_{2}$.
-The set up calorimeter time uncertainty at $200$~ps allows to be sensitive to this decay as the mean of the distribution is near $294$~ps.
-Therefore, a simple way of rejecting the \Tl\ delayed events is to consider the sign of $\Delta t^{\text{corr}}$ and to reject events for which $\Delta t^{\text{corr}}~>~0$.
 
 By applying this selection on $2e$ topologies of $\zeronu$ and \Tl\ simulations for which $E~>~2.7$~MeV, we are able to reject $76$~\% of \Tl\, while selecting $49$~\% of the $\zeronu$ ($\sigma_{t}~=~200$~ps).
 The $49$\% of selected signal events is expected as the corresponding $\Delta t^{corr}$ distribution is symmetrical, unlike the one for \Tl\ events.

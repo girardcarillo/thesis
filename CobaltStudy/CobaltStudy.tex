@@ -7,14 +7,11 @@ For example, the study of electron time-of-flight allows us to distinguish inter
 During the commissioning phase, a lot of work, presented in the previous chapter, was achieved to calibrate the detector.
 Following on from this task and completing it, a great part of my PhD was allocated to determine the time resolution of the SuperNEMO calorimeter, and to provide tools to the collaboration to purchase this analysis.
 
-In this chapter we present different studies conducted in order to characterise the time response of the SuperNEMO optical modules.
-Although the goal of the presented studies is to characterise the time resolution of the SuperNEMO calorimeter, some detector adjustments were still ongoing at the time of the acquisition, that could influence the presented results.
-Especially, the energy calibration described in Sec.~\ref{sec:comm_energy_calibration} was not complete, and the Light Injection System presented in Sec.~\ref{sec:LIS} was not yet fully operational.
+In this chapter a study conducted in order to characterise the time response of the SuperNEMO optical modules with a \Co\ source is presented.
+Some detector adjustments were still ongoing at the time of the acquisition and could influence the results discussed.
 However, all the work presented here is necessary in the framework of the first calorimeter calibration.
 Moreover, I provide all the analysis tools for the collaboration, with a view to doing a possible update, once the whole demonstrator calibration will be achieved.
 
-The first study presented in this chapter focuses on the characterisation of the time resolution of the SuperNEMO calorimeter, using a calibration source made of \Co.
-In the second part of this chapter, we study the possibility to gather informations on the calorimeter time resolution using the Light Injection System, a set-up initially designed to calibrate in energy the calorimeter.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Interaction of particles in the SuperNEMO scintillators}
@@ -22,7 +19,7 @@ In the second part of this chapter, we study the possibility to gather informati
 
 Understanding how particles interact in the SuperNEMO scintillators is essential.
 The calorimeter part of the demonstrator mainly aims to detect electrons and photons.
-In this section, we review ***.
+In this section, we review how these two particles interact inside the polystyrene scintillators.
 
 
 \subsection{Interaction of electrons}
@@ -136,7 +133,7 @@ In Fig~\ref{fig:photon_scintilator} are schemed the interactions of a photon and
     Both particles enter in the scintillator through the front face.
     Examples of interaction points inside the scintillator are represented by the black dots.
     The photons of scintillation emitted isotropically after the interaction are materialised by the bright green dotted lines.
-    Due to different interaction probabilities in matter, the two particles intercat at different depths inside the scintillator.
+    Due to different interaction probabilities in matter, the two particles interact at different depths inside the scintillator.
     The photon can interact deeply inside the volume, while the electron has a high probability to stop within the first few millimetres.
     \label{fig:photon_scintilator}}
 \end{figure}
@@ -205,7 +202,7 @@ The \Co\ is a man-made isotope, with a $5.27$ years half-life, of which we provi
   \includegraphics[width=9cm]{commissioning/fig_commissioning/Co_decay_scheme.pdf}
   \caption{A simplified decay scheme for \Co~\cite{web:nucleide}.
     The Cobalt decays, through $\beta^{-}$, predominantly to the $2.50$ MeV state.
-    Then, two succesive $\gamma$'s (whose energy levels are represented in green) are emitted in $99.83$\% of the cases.
+    Then, two successive $\gamma$'s (whose energy levels are represented in green) are emitted in $99.83$\% of the cases.
     The two photons have an energy of $1.17$ MeV and $1.33$ MeV, respectively.
     As the life-time of the $1.33$ MeV energy level is short ($<1$ ps) with respect to the timing precision of the calorimeter, the two photons can be considered as emitted in coincidence.
     We use this property to calibrate in time the demonstrator optical modules.
@@ -346,7 +343,7 @@ In order to maximise the signal to background ratio, some selections have been a
   with a detector well calibrated in energy, the previous selection is sufficient to prevent double Compton interactions to be selected.
   But, at the time of the data-taking, the detector was not fully calibrated.
   The energy of some reconstructed particle hits then might be badly estimated and some background events could pass this energy selection.
-  As such intercations occur predominantly in two close scintillators, we reject topologies where two neighbouring optical modules detect signal in the coincidence window.
+  As such interactions occur predominantly in two close scintillators, we reject topologies where two neighbouring optical modules detect signal in the coincidence window.
   The detector energy calibration is discussed in Sec.~\ref{subsec:Co_energy_calib}.
 \end{itemize}
 These four selections are intended to improve the Cobalt signal to background ratio.
@@ -366,7 +363,7 @@ Selection efficiencies are presented in table~\ref{tab:Co_cut_eff}.
     \hline
     Successive cut-offs & Simulations & Data \\
     \hline\hline
-    High thresold & $35.7$\% & $98.0$\% \\
+    High threshold & $35.7$\% & $98.0$\% \\
     Individual energy & $17.0$\% & $70.2$\% \\
     Geometrical & $16.5$\% & $61.0$\% \\
     \hline
@@ -391,7 +388,7 @@ It is important to provide a robust calibration, allowing to provide a relation 
 At the time of the data acquisition with the Cobalt source, a complete energy calibration was only provided for data acquisitions taken after the current Cobalt one.
 Indeed, as the calorimeter was at the beginning of the commissioning phase, several tests were performed, in particular manipulations that required changing the values of the high voltages.
 The equalisation of gains was therefore not yet implemented, which had an impact on the resolution in terms of energy.
-In this context, I developped a temporary energy calibration using the data taken with the Cobalt source.
+In this context, I developed a temporary energy calibration using the data taken with the Cobalt source.
 
 In Fig.~\ref{subfig:Co_calib_charge} is displayed charge spectra for two optical modules located in front of the Cobalt calibration source.
 \begin{figure}[h]
@@ -447,7 +444,7 @@ Selection efficiencies for each cut-off, after the energy calibration, are given
     \hline
     & Simulations & Data \\
     \hline\hline
-    High thresold & $35.7$\% & $94.0$\% \\
+    High threshold & $35.7$\% & $94.0$\% \\
     Individual energy & $17.0$\% & $58.0$\% \\
     Geometrical & $16.5$\% & $51.9$\% \\
     \hline
@@ -459,8 +456,8 @@ Selection efficiencies for each cut-off, after the energy calibration, are given
 We notice an improvement at the level of individual energy cut, where the selection efficiency is reduced compared with the previous case using the energy calibration provided by the collaboration.
 
 This is a temporary calibration, only use in the framework of this analysis, and does not replace the more complete one accomplished for later data acquisitions.
-An amelioration could be brougth with a double fit of the two peaks.
-Nervertheless, this improvement is not necessary since the gains were not yet aligned.
+An amelioration could be brought with a double fit of the two peaks.
+Nevertheless, this improvement is not necessary since the gains were not yet aligned.
 But it will be interesting to try this method again with the new Cobalt data.
 
 
@@ -526,8 +523,8 @@ Therefore, we use the data acquisition taken with the Cobalt source set behind t
 \subsubsection*{Background characterisation}
 
 When the Cobalt source is set behind the wall, collected data may contain signal events coming from it as well as background events.
-Let us assume these background events are dominated by radiocative decays and external $\gamma$'s, by considering the background coming from double Compton intercations of Cobalt $\gamma$'s have been efficiently removed by application of the individual energy cut.
-We choose to modelise the Cobalt data as a linear combination of signal events $s$ and background events $b$
+Let us assume these background events are dominated by radioactive decays and external $\gamma$'s, by considering the background coming from double Compton interactions of Cobalt $\gamma$'s have been efficiently removed by application of the individual energy cut.
+We choose to model the Cobalt data as a linear combination of signal events $s$ and background events $b$
 \begin{equation}
   \hat{d}=s+b\,,
   \label{eq:estimation_data}
@@ -538,9 +535,9 @@ We remind the Cobalt source was placed at different positions behind the calorim
 We aim to take advantage of those different configurations to reach our goal.
 In the following, we make use of the positions $2$ and $8$ for the Cobalt source.
 Therefore, depending on whether the source is in one of the two positions, some optical modules are \emph{close} to it, others are \emph{far}.
-More precisely, we consider as \emph{close}, the optical modules that are separated from the source by less than 10 optical modules (i.e. less than half the wall-lenght), the others being \emph{far} from it\footnote{For example, an optical module located on the left (right) of the calorimeter wall, is considered as far from (close to) the source, if the source is in position $8$.}.
+More precisely, we consider as \emph{close}, the optical modules that are separated from the source by less than 10 optical modules (i.e. less than half the wall-length), the others being \emph{far} from it\footnote{For example, an optical module located on the left (right) of the calorimeter wall, is considered as far from (close to) the source, if the source is in position $8$.}.
 Considering that, we distinguish two categories of data, $\hat{d}^{\,\text{close}}$ and $\hat{d}^{\,\text{far}}$, defined as the estimations of data events detected by an optical module when the source is close to, or far from it, respectively.
-Then, we precise our data modelisation with
+Then, we precise our data model with
 \begin{equation}
   \hat{d}^{\,\text{close}} = b + s^{\,\text{close}}\,,
   \label{eq:estimation_data_close}
@@ -668,7 +665,7 @@ We confirmed our assumption that the more one optical block is far from the sour
 
 %% The last step before going into detail in optical modules' timing resolution study is to determine the detector efficiency of the SuperNEMO demonstrator, during the Cobalt acquisition week.
 
-\subsection{Determination of the individual timing resolution of each optical module}
+\subsection{Determination of the optical modules timing resolution}
 
 
 The final goal of this analysis is to determine $\sigma_{t}$, the time resolution of optical modules.
@@ -714,7 +711,13 @@ The least square method is used to fit the distributions, which minimises the di
 A mean and a standard deviation is then defined for each pair of optical module whose fitted data has $\chi^{2}/\text{dof}<4$.
 Therefore, due to a lack of statistics, some distributions cannot be fitted properly, and are rejected by the algorithm.
 At the end, each pair of optical module whose $\Delta t^{\text{pair}}$ distribution fit is selected is characterised by the mean and standard deviation of its corresponding $\Delta t^{\text{pair}}$ distribution.
-The standard deviation, noted as $\Sigma_{t}$, is called \emph{coupled time uncertainty} and corresponds to the uncertainty on time measurement for this peculiar pair of optical module.
+The distribution standard deviation, noted $\Sigma_{t}$, is called \emph{coupled time uncertainty} and corresponds to the uncertainty on time measurement for this peculiar pair of optical module.
+Its variance, noted $\Var[\Sigma_{t}^{2}\,]$, is defined as
+\begin{equation}
+  \Var[\Sigma_{t}^{2}] = \frac{2\,\Sigma_{t}^{\,4}}{N-1}\,,
+  \label{eq:var_sigma_pair}
+\end{equation}
+where $N$ is the number of events detected in coincidence for this pair of optical module.
 
 \subsubsection*{Coupled time uncertainties}
 
@@ -769,7 +772,7 @@ Therefore, in the following, we present the algorithm we used to provide individ
 \subsubsection*{Decoupling the $\Sigma_{t}$ uncertainties}
 
 The $\Sigma_{t}$ values that have been determined are defined for pairs of optical modules and can therefore be expressed in terms of the individual time resolutions for each module.
-In order to explain the different steps of the algorithm used to decorrelate these $\Sigma_{t}$, let's take an example of three optical modules having detected, two by two, coincidental events.
+In order to explain the different steps of the algorithm used to decorrelate these $\Sigma_{t}$, let's take an example of a trio of optical modules having detected, two by two, coincidental events.
 For each of these optical modules, a $\Sigma_{t}$ value can be determined, which is a linear combination of the other two as :
 \begin{align}
   (\Sigma_{t}^{0,1})^{2} &= \frac{(\sigma_{t}^{0})^{2}}{\bar{E_{0}}} + \frac{(\sigma_{t}^{1})^{2}}{\bar{E_{1}}}\nonumber \\
@@ -778,7 +781,7 @@ For each of these optical modules, a $\Sigma_{t}$ value can be determined, which
   \label{eq:Co_sigma}
 \end{align}
 where $\bar{E}_{i}$ is the averaged energy measured by the optical module $i$, and $\sigma_{t}^{i}$ is its individual time uncertainty, so-called \emph{decorrelated time uncertainty}, the quantity we are seeking to determine.
-Consequently, determining the three individual time resolutions is equivalent to solving this set of equations, and thus diagonalizing the matrix S such that:
+Consequently, determining the three individual time resolutions is equivalent to solving this set of equations, and thus invert the matrix $S$ defined as
 \begin{equation}
   S =
   \begin{pmatrix}
@@ -788,89 +791,131 @@ Consequently, determining the three individual time resolutions is equivalent to
   \end{pmatrix}
   .
 \end{equation}
-Once this diagonalisation is carried out, each decorrelated $\sigma_{t}$ can be expressed in terms of the three $\Sigma_{t}$.
+As the determinant $\text{det}(S)\neq0$, we can compute $S^{-1}$ and we obtain
+\begin{equation}
+  S^{-1} = \frac{1}{2}
+  \begin{pmatrix}
+    \bar{E}_{0}^{-1} & \bar{E}_{0}^{-1} & -\bar{E}_{0}^{-1} \\
+    \bar{E}_{1}^{-1} & -\bar{E}_{1}^{-1} & \bar{E}_{1}^{-1} \\
+    -\bar{E}_{2}^{-1} & \bar{E}_{2}^{-1} & \bar{E}_{2}^{-1}
+  \end{pmatrix}
+  .
+\end{equation}
+Therefore each decorrelated $\sigma_{t}$ can be expressed in terms of the three $\Sigma_{t}$ of the trio.
 
 In practice, this has to be done for all the optical modules for which the $\Delta {t}^{pair}$ distribution fit has provided a $\Sigma_{t}$ value.
 With this in mind, the $\Sigma_{t}$ values are sorted by order of the number of coincidental events.
 The work presented above is therefore applied to the first trio of this list.
 Then the next trio is selected, etc...
+Therefore $\sigma_{t}$ is computed for each optical module.
+
+The variance of a given $\sigma_{t}$ value, noted $\Var[\sigma_{t}^{2}]$, depends on the variance of the three $\Sigma_{t}$ defined in Eq.~\eqref{eq:var_sigma_pair}.
+For instance, for a trio a optical modules we have
+\begin{align}
+  \Var[(\sigma_{t}^{0})^{2}\,] &= \Var \left[ \frac{1}{2\bar{E}_{0}} (\Sigma_{t}^{0,1}+\Sigma_{t}^{0,2}-\Sigma_{t}^{1,2}) \right] \\
+  &= \frac{1}{4\bar{E_{0}}^{2}}\, (\,\Var[(\Sigma_{t}^{0,1})^{2}\,]+\Var[(\Sigma_{t}^{0,2})^{2}\,]+\Var[(\Sigma_{t}^{1,2})^{2}\,]\,)
+\end{align}
+
+
 It is obvious that, when an optical module has detected events in coincidence with more than two other optical modules, then it belongs to more than one trio.
 Thus it is selected several times to participate in the decorrelation process of several trios.
 Each optical module can then have many decorrelated $\sigma_{t}$ values.
-The mean of these values, for a given optical module, then represents the final value of $\sigma_{t}$ which will be associated to it.
-The variance of the $\sigma_{t}$ is an aspect which is discussed later.
+The mean of these values, $\bar{\sigma_{t}}$, then stands as the final time uncertainty which is associated to this optical module.
+It is defined as the weighted average:
+\begin{equation}
+  \displaystyle
+\bar{\sigma_{t}} = \sum_{i}^{N} \dfrac{(\sigma_{t}^{i})^{\,2}}{\Var[\sigma_{t}^{i}\,]} \left(\sum_{i}^{N} \Var[\sigma_{t}^{i}\,] \right)^{-1}\,,
+\end{equation}
+where $N$ is here the number of $\sigma_{t}$ values provided for the optical module considered.
+The distribution of $\bar{\sigma_{t}}$ for $8$~inches optical modules of the French wall is given in Fig.~\ref{fig:final_sigmas}.
+On average, the time uncertainty stands at $570\pm130$~ps while few optical modules show large values, beyond $900$~ps.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{CobaltStudy/fig_CobaltStudy/final_sigmas.pdf}
+  \caption{Time uncertainties $\bar{\sigma_{t}}$ given for $208$ optical modules of the French main wall.
+    \label{fig:final_sigmas}}
+\end{figure}
 
+Although these values are higher than expected, it should be borne in mind that they have been characterised under rather complicated conditions, where the detector was not yet fully calibrated.
+In particular, the double Compton background, possibly poorly rejected due to imperfect energy calibration, can widen the distributions and degrade the final results.
+The results provided are nevertheless encouraging for the future, and opens the door to a full calorimeter timing characterisation, since it has made it possible to develop and provide the necessary tools.
 
-
-\subsection{Improvement of the method}
-
-\begin{itemize}
-\item plus de stat (format de fichiers)
-\item implémenter les corrections en temps
-\item estimer la variance
-\end{itemize}
 
 \subsection{Conclusion}
-\begin{itemize}
-\item il fauddrait au moins tenir compte du bdf qui est les decays de la source
-\item il nous faut des simus bkg
-\item il nous faut un run bkg
-\item ça marche bien
-  \item 5 inches
-\item il faudrait refaire une manip avec PMs alignés
-\item On aurait pu décorréler les sigmas en utilisant toutes les combinaisons possibles, mais il aurait fallu faire masse de simus pour déterminer les covariances
-\item si on a mal rejeté le bdf 1gamma à cause de la mauvaise calib en énergie, alors on peut avoir une distribution non centrée en zéro qui élargi la distribution delta t et dégrade les résultats finaux.
-\end{itemize}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{The Light Injection System}
-\label{sec:LIS}
+This study provided the first analysis of the resolution of the SuperNEMO demonstrator's calorimeter since its installation at Modane, where $30$\% of the demonstrator's optical modules could be characterised.
+It is an end to end work, from the experimental set up design, to the creation of the code and the analysis algorithm, through the acquisition of the calibration source and all the necessary administrative and security procedures, as well as the data acquisition at Modane.
+An estimation of the background detected was also given.
+It was also the opportunity to perform a quick energy calibration of the French main wall using the %%\Co\ source.
+
+Improvements can be made to this method.
+Typically, the algorithm that has been developed allows the selection of trios of optical modules.
+A more advanced method would consider the $n$ pairs of optical modules that have detected coincident events and then construct a correlation matrix of size $(n)\times(n^{2}-n)$.
 
 
-
-\subsection{Light injection system commissioning}
-
-
-In the LI system design, the SuperNEMO demonstrator has been segmented in $10$ areas.
-Each area receives light from one given LED
-
-Primary/secondary
-Each LED lights
-Group LEDs/area
-
-
-
-\subsection{Time resolution of optical modules}
+%% %% \begin{itemize}
+%% %% \item plus de stat (format de fichiers)
+%% %% \item il fauddrait au moins tenir compte du bdf qui est les decays de la source
+%% %% \item il nous faut des simus bkg
+%% %% \item il nous faut un run bkg
+%% %% \item ça marche bien
+%% %%   \item 5 inches
+%% %% \item il faudrait refaire une manip avec PMs alignés
+%% %% \item On aurait pu décorréler les sigmas en utilisant toutes les combinaisons possibles, mais il aurait fallu faire masse de simus pour déterminer les covariances
+%% %% \item si on a mal rejeté le bdf 1gamma à cause de la mauvaise calib en énergie, alors on peut avoir une distribution non centrée en zéro qui élargi la distribution delta t et dégrade les résultats finaux.
+%% %% \item LIS
+%% %% \end{itemize}
 
 
-
-%% \begin{figure}[h]
-%%   \centering
-%%   \includegraphics[width=10cm]{commissioning/fig_commissioning/}
-%%   \caption{
-%% \label{fig:}}
-%% \end{figure}
+%% %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% \section{The Light Injection System}
+%% %% \label{sec:LIS}
 
 
 
-%% \begin{figure}[h]
-%% \centering
-%% \begin{subfigure}[t]{0.48\textwidth}
-%%   \centering
-%%   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/}
-%%   \captionsetup{justification=centering}
-%%   \caption{
-%%     \label{subfig:}}
-%% \end{subfigure}
-%% \hfill
-%% \begin{subfigure}[t]{0.48\textwidth}
-%%   \centering
-%%   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/}
-%%   \captionsetup{justification=centering}
-%%   \caption{
-%%     \label{subfig:}}
-%% \end{subfigure}
-%% \caption{
-%%   \label{fig:}}
-%% \end{figure}
+%% %% \subsection{Light injection system commissioning}
+
+
+%% %% In the LI system design, the SuperNEMO demonstrator has been segmented in $10$ areas.
+%% %% Each area receives light from one given LED
+
+%% %% Primary/secondary
+%% %% Each LED lights
+%% %% Group LEDs/area
+
+
+
+%% %% \subsection{Time resolution of optical modules}
+
+
+
+%% %% \begin{figure}[h]
+%% %%   \centering
+%% %%   \includegraphics[width=10cm]{commissioning/fig_commissioning/}
+%% %%   \caption{
+%% %% \label{fig:}}
+%% %% \end{figure}
+
+
+
+%% %% \begin{figure}[h]
+%% %% \centering
+%% %% \begin{subfigure}[t]{0.48\textwidth}
+%% %%   \centering
+%% %%   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/}
+%% %%   \captionsetup{justification=centering}
+%% %%   \caption{
+%% %%     \label{subfig:}}
+%% %% \end{subfigure}
+%% %% \hfill
+%% %% \begin{subfigure}[t]{0.48\textwidth}
+%% %%   \centering
+%% %%   \includegraphics[width=1.1\textwidth]{commissioning/fig_commissioning/}
+%% %%   \captionsetup{justification=centering}
+%% %%   \caption{
+%% %%     \label{subfig:}}
+%% %% \end{subfigure}
+%% %% \caption{
+%% %%   \label{fig:}}
+%% %% \end{figure}
