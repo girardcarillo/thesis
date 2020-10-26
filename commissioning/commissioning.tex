@@ -125,7 +125,7 @@ The fact that the distributions are wide is not surprising, as the amount of lig
 The angle at which the optical fibre enters the scintillator can also greatly influence this quantity.
 But the potentially worrying thing is that the amplitudes can go up to very high values.
 In practice, the acquisition does not record signal amplitudes above a few hundred mV.
-When the amplitude is even sligthly too high, the signal is simply truncated.
+When the amplitude is even slightly too high, the signal is simply truncated.
 It is then the SNFee off-line analysis software which, when trying to determine the location of the waveform peak, performs an extrapolation and gives such saturated amplitudes.
 So even if these values do not correspond to the actual amount of light received by the optical modules, the amplitude is still too high compared to what is expected.
 Calibration operations are underway to harmonise this quantity.
@@ -133,19 +133,19 @@ Calibration operations are underway to harmonise this quantity.
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/LI_mean_ampl.pdf}
   \caption{The mean signal amplitude distribution for each optical module is presented.
-    One colour stands for one area of the half detector.
+    One colour represents one area of the French main wall.
     In Grey is the total mean amplitude distribution.
     \label{fig:LI_ampl}}
 \end{figure}
 
-In the following, the work I achieve on the calorimeter commissioning is discuss in detail.
+In the following, the work achieved on the calorimeter commissioning, especially on timing performances, is discussed.
 
 
 \section{Calorimeter cabling network}
 \label{sec:reflecto}
 
-In this section is presented an analysis performed in order to check the status of calorimeter signal cables.
-I was involved in most of the stages of the detector cabling, from cutting the calorimeter signal cables at LAL, to their installation in Modane on the various walls of the calorimeter, via their welding to the PM voltage dividers and their organisation on the patch panel.
+In this section is presented an analysis performed in order to check the status of the calorimeter signal cables installed at Modane.
+I was involved in most of the stages of the detector cabling, from cutting the calorimeter HV and signal cables at LAL, to their installation in Modane on the various walls of the calorimeter, via their welding to the PM voltage dividers and their organisation on the patch panel.
 Although not covered in this analysis, I was also involved in the connection (under the detector) of the tracker cables and their routing from the detector to the electronics.
 These steps were crucial and gave me a good knowledge of the detector I am working on.
 
@@ -155,39 +155,37 @@ The cabling network of SuperNEMO is described in detail in Chapter~\ref{ch:detec
 In particular, the calorimeter is segmented in $712$ optical modules, each connected to the electronics by the photomultiplier divider through $2$ cables.
 The first one provides the high voltage (HV) necessary for its operation.
 The other one, the so-called signal cable, is a coaxial cable collecting and transporting the charge corresponding to the optical module signal.
-Regarding only the last category, $1424$ coaxial cables were cut, assembled, connector-mounted, transported and installed at LSM\footnote{$712$ optical modules are connected to the electronics through two signal cables, one internal and one external, linked at the patch panel.}.
+Regarding only the last category, $1424$ coaxial cables were cut, assembled, connector-mounted, transported and installed at LSM.
 
 Each coaxial cable length was determined by taking into account the demonstrator design.
 All external coaxial cables were designed to be $7$ meters-long -- the distance between electronic boards and patch panel being the same for all channels -- and internal cable lengths have been adapted to fit the distance from the patch panel to each optical module.
 Cutting and labelling all cables lasted several weeks.
 After all cables were transported and installed at LSM, we have to check each coaxial cable condition, for several reasons:
 \begin{itemize*}
-\item make sure that cables have not been damaged during the transport and the installation,
-\item control if no swap between internal cables has been made during cable labelling or calorimeter cabling,
-\item check if the coaxial cables were cut at right lengths,
-\item estimate time delays induced by the signal transit time inside the coaxial cables.
+\item making sure that cables have not been damaged during the transport and the installation,
+\item controlling if no swap between signal channels has been made during cable labelling or calorimeter cabling,
+\item checking if the coaxial cables were cut at right lengths,
+\item estimating time delays induced by the signal transit time inside the coaxial cables.
 \end{itemize*}
 The last point is essential: knowing that the  electron velocity in a coaxial cable is a determined constant value, the longer the cable, the longer it takes for the signal to reach the electronics.
-As coaxial cables have different lengths, this transit time could delay the signal transmission and therefore bias the calorimeter time-of-flight measurements.
-Therefore, each coaxial cable length has to be characterised, and the transit time has to be stored in a database made available to the collaboration.
-This last aspect is of major importance, especially for time coincidences studies using particle time-of-flights.
+As coaxial cables have different lengths, each calorimeter signal channel is characterised by a delay degrading the calorimeter time-of-flight resolution.
+Therefore, each coaxial cable length has to be precisely characterised, and the transit time has to be stored in a database made available to the collaboration.
 
 \subsection{Experimental setup}
 
-In order to control each cable status, we used a feature provided by the SuperNEMO's electronics, where an electrical signal, called \emph{primary} pulse, is generated by the calorimeter front-end boards and sent to each channel.
+In order to control each cable status, we used a feature provided by the SuperNEMO's electronics, where an electrical signal, called \emph{primary} pulse, is generated by the calorimeter front-end boards and sent independently to each channel.
+The electric signal reflects when it encounters a high impedance, and travels back to the electronics where it is recorded, after a more or less long cable distance.
+This back signal is naturally called \emph{secondary} pulse.
 The Fig.~\ref{fig:reflecto_scheme} summarises the three most probable scenarios when such a pulse is sent in the SuperNEMO calorimeter cables.
 \begin{itemize}
-\item Fig.~\ref{subfig:reflecto_normal}: under normal cable operating conditions, the pulse travels along the coaxial cable until it reaches the photomultiplier.
+\item Fig.~\ref{subfig:reflecto_normal}: under normal cable operating conditions, the pulse travels along the coaxial cable until it reaches the photomultiplier and reflects on the divider.
 \item Fig.~\ref{subfig:reflecto_pmt}: it may happen a cable is not (or badly) connected to the PM divider.
   In that case the signal reflects at the end of the internal cable.
-  In this scenario, the delay of the reflected pulse will be the same as in the first case, but since the impedance will be different, the amplitude and shape of the reflected pulse will be different.
+  In this scenario, the time it took for the signal to travel this distance is the same as in the first case, but since the impedance is different, the amplitude and shape of the reflected pulse are also different.
   This scenario is addressed in Sec.~\ref{subsec:pulse_shape}.
-\item Fig.~\ref{subfig:reflecto_pp}: if the cable is not connected, or disconnected, at the patch panel level, the signal undergoes a reflection at the end of the external cable.
+\item Fig.~\ref{subfig:reflecto_pp}: if the cable is not connected at the patch panel level, the signal undergoes a reflection at the end of the external cable.
   This scenario is addressed in Sec.~\ref{subsec:timing}.
 \end{itemize}
-This reflection is made possible because the electric impulse encounters high impedance either at the end of the cable or at the voltage divider.
-In all cases, the signal comes back to the electronics where it is recorded, after a more or less long cable distance.
-This back signal is naturally called \emph{secondary} pulse.
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.3\textwidth}
@@ -235,7 +233,7 @@ Secondary pulses are deformed by their passage through the cable, which acts as 
 \end{figure}
 
 In order to accumulate enough statistics, we send thousands of pulses in each coaxial cable.
-The analyses of the shape and arrival times of those secondary pulses for each electronic channel is called \emph{reflectometry}, and allow us to check the coaxial cable conditions and to control their lengths.
+The analyses of the shape and arrival times of those secondary pulses for each electronic channel is called \emph{reflectometry}, and allow to check the coaxial cable conditions and to control their lengths.
 Mathieu Bongrand (LAL) and me took care of the data acquisition at Modane.
 
 %% Comment les pulses vont être affectés: mettre pulse shape analysis avant.
@@ -251,12 +249,11 @@ This analysis was conducted jointly with Mathieu Bongrand.
 In Fig.~\ref{fig:} is displayed three examples of expected secondary pulse shapes, taken as reference in order to compare them with other reflected signals.
 These are obtained by averaging all pulses sent in a given electronic channel.
 The first one corresponds to a normal recorded pulse for a signal reflected on a $5$ inches PM divider.
-The shape is modified compared with the one of $8$ inches, probably because the impedances at $8$ and $5$ inches dividers are not the same.
+The shape is modified compared with the one of $8$ inches, because the impedances at $8$ and $5$ inches dividers are not the same.
 The second one is observed when the coaxial cable is misconnected (typically when signal and ground connectors are inverted at PM divider).
-The last one stands for a disconnected cable, at the patch panel of photomultiplier, as the signal is being reflected at the end of the coaxial cable.
+The last one stands for a disconnected cable, at the patch panel or photomultiplier, as the signal is being reflected at the end of the coaxial cable.
 A reflection at the patch panel level can also be tagged by using pulse timing: the secondary pulse would be detected highly earlier than expected.
-This very short time, giving information about the location of the reflection, is used to tag a patch-panel disconnection.
-Then, a simple check onsite can confirm this observation, and the external part of the cable can be connected to the patch panel.
+Then, a simple check onsite can confirm this observation, and the coaxial cable can be connected again.
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{1\textwidth}
@@ -284,25 +281,26 @@ Then, a simple check onsite can confirm this observation, and the external part 
     \label{fig:}}
 \end{figure}
 
-In order to identify potential cable problems, secondary pulses are averaged for each channel and visually analysed.
-If an averaged pulse is identified as abnormal, then the problem affecting the cable can be characterised by comparing it with the references presented.
+In order to identify cabling issues, secondary pulses are averaged for each channel and visually analysed.
+If an averaged pulse is identified as abnormal, then the problem affecting the cable can be characterised by comparing the averaged waveform with the references presented.
 Thanks to this analysis, some cable de- or misconnections at the patch panel and PM divider have been identified and fixed.
 
 A last issue, which is not pictured in the previous figure, would be if a coaxial cable is damaged in the middle of its length.
-In that case, we expect to see pre-pulses between the primary and secondary pulses, stating that a part of the signal is reflected on a cable defect, and the time difference between the initial pulse and the pre-pulse would make it possible to locate the defect.
-Such signal have not be observed, leading to the conclusion that no cables have been damaged during transport.
+In that case, we expect to see pre-pulses between the primary and secondary pulses, stating that a part of the signal is reflected on a cable defect.
+The time difference between the initial pulse and the pre-pulse would make it possible to locate the defect.
+Such signal has not been observed, leading to the conclusion that no cables have been damaged during transport.
 
-For a future study, it would be interesting to automate this process, as it was done for the analysis presented in Sec.~\ref{subsec:SN_pulse_shape}, to be able to repeat these tests.
-Indeed, many manipulations still take place at Modane, some of them close to the calorimeter, which is not yet protected.
+For a future study, it would be interesting to automate this process, as it was done for the analysis presented in Sec.~\ref{subsec:SN_pulse_shape}.
+Many manipulations still take place at Modane, some of them close to the calorimeter, which is not yet protected.
 It is therefore important to do again these tests before encapsulating the detector.
 
 \subsection{Pulse timing}
 \label{subsec:timing}
 
 Coaxial cable lengths have been designed to match the cable routing plan from the electronics to optical modules.
-Using the reflectometry tests performed at Modane, we are able to measure precisely each cable length and to compare it with the designed one, by sending thousands electronic pulses in each cable.
+Using the reflectometry tests performed at Modane, we are able to measure precisely each cable length and to compare it with the designed one.
 
-The length $l_{j}^{m}$ of a cable $j$ can be defined as
+The measured length $l_{j}^{m}$ of a cable $j$ can be defined as
 \begin{equation}
   l_{j}^{m}= 0.5\,t_{j}\,v_{p}\, ,
 \end{equation}
@@ -323,17 +321,17 @@ For coaxial cables chosen for SuperNEMO, the manufacturer supplies ${v_{p}=0.69\
 \subsubsection*{Definition of the pulse timing}
 
 Both analyses of chapters~\ref{ch:sensitivity} and~\ref{ch:timediff} have been performed on simulated data.
-The reconstruction software of SuperNEMO does not offer the possibility to reconstruct signal waveforms, and only observables such as the measured energy ant time are available.
+The reconstruction software of SuperNEMO does not offer the possibility to reconstruct signal waveforms, and only observables such as the measured energy and time are available.
 Nevertheless, as we analyse real data in this chapter, it is an opportunity to describe how the time of an event is defined from the waveform sampling.
 
 The SNFee software, developed by the team in LPC Caen, provide a timing measurement called Constant Fraction Discriminator (CFD), furnishing an amplitude-independent definition of waveform timing.
 This algorithm aims at tracking a signal and defining its time at a given fraction $f_{CFD}$ of its maximal amplitude.
-The two main advantages of this technique is that it provides an efficient rejection of the noise in the acquisition window, and gives a good resolution on the measured time.
+The main advantage of this technique is that it provides a good resolution on the measured time.
 A graphic representation of the CFD method is given in fig.~\ref{fig:CFD} for $f_{CFD}=40$\%, applied on a secondary pulse.
 \begin{figure}[h!]
   \centering
   \includegraphics[trim={1.2cm 1.5cm 1.7cm 3.1cm},clip,width=0.7\textwidth]{commissioning/fig_commissioning/CFD_example_zoom.pdf}
-  \caption{Graphical representation Constant Fraction Discriminator (CFD) method.
+  \caption{Graphical representation of the Constant Fraction Discriminator (CFD) method.
     The pulse maximal amplitude (red dotted line) and the fraction $f_{CFD}=40\%$ (green dotted line) are displayed.
     The time $\text{T}_{\text{pulse}}$ (orange dotted line) represents the time defined with this technique.
     \label{fig:CFD}}
@@ -349,25 +347,26 @@ As the signal takes two paths of slightly different lengths, the time difference
 \end{equation}
 where $t_{j}$ are defined with Eq.\eqref{eq:t_j} and depends on the $f_{CFD}$ fraction.
 In Fig.~\ref{fig:deltat_CFD} is displayed such distributions: three different values of the $f_{CFD}$ parameter are used to compute the $t_{j}$ times, thus giving three different $\Delta t$ distributions.
+The means and widths of these distributions depend on $f_{CFD}$.
+The distribution width expresses the precision with which time is measured, so this parameter has to be minimised.
+In Fig.~\ref{fig:CFD_study} is displayed the distribution width with the value of $f_{CFD}$.
 It arises the value giving the best precision on timing measurement is $f_{CFD} = 50\%$ with $\sigma\sim70$~ps, and we adopt this value for the following analysis.
-The signal travels the same path from the PM to the point of cable separation.
-The phase shift that occurs between the two paths is caused by the length difference between the two strands of the split cable, as well as the signal path difference within the FEBs calo.
-The measurement of the shift for each calorimeter FEB is addressed in Sec.~\ref{sec:timing_FEB}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7\textwidth]{commissioning/fig_commissioning/deltat.pdf}
   \caption{$\Delta t$ distributions for three different $f_{CFD}$ parameter value.
     \label{fig:deltat_CFD}}
 \end{figure}
-The mean and width of the distribution depends on this parameter.
-The distribution width expresses the precision with which time is measured, so this parameter has to be minimised.
-In Fig.~\ref{fig:CFD_study} is displayed the distribution width with the value of $f_{CFD}$.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7\textwidth]{commissioning/fig_commissioning/CFD_study.pdf}
   \caption{$\Delta t$ distribution width as a function of $f_{CFD}$.
     \label{fig:CFD_study}}
 \end{figure}
+
+The signal travels the same path from the PM to the point of cable separation.
+The phase shift that occurs between the two paths is caused by the length difference between the two strands of the split cable, as well as the signal path difference within the FEBs calo.
+The measurement of the shift for each calorimeter FEB is addressed in Sec.~\ref{sec:timing_FEB}.
 
 \subsubsection*{Signal velocity in coaxial cables}
 
@@ -394,7 +393,7 @@ This velocity is kept for the current analysis.
 
 \subsubsection*{Cable lengths}
 
-One of the principal goal of this study is to measure the lengths of cables $l^{m}_{j}$ using reflectometry data, in order to check if they were cut at expected lengths $l^{d}_{j}$.
+One of the principal goal of this study is to measure the cable lengths $l^{m}_{j}$ using reflectometry data, in order to check if they were cut at designed lengths $l^{d}_{j}$.
 Results are presented for main wall cables.
 
 Coaxial cables are tested by sending pulses in front-end boards electronic channels, and by measuring the secondary pulse times.
@@ -430,14 +429,14 @@ Therefore, the probability for the device to provide extra length should increas
 To verify this assumption, Fig.~\ref{fig:CutBias} displays the length difference $\Delta L$ as a function of the initial design length $l^{d}$.
 A linear fit, parameterised as $y = \alpha x + \beta$, reveals that the cutting device presents two different biases.
 The value of $\beta$ shows that it systematically takes away $3.4$ cm of each cable.
-As it was planned in the design to add a few tens of centimetres per cable, for safety reasons, this bias is absorbed and is not a cause for concern.
+As it was planned in the design to add a few tens of centimetres per cable, for safety reasons, this bias is absorbed and is not a cause of concern.
 Besides, the slope $\alpha = 0.010\pm 0.002$ of the linear fit reveals that one extra centimetre is added for every meter of cable, being compatible with the hypothesis on the cutting device sliding.
 Hopefully this bias is not problematic as it makes most of the actual cable lengths longer than the design, while shorter lengths could have led to systematic connection issues to PMs.
 In conclusion, no important mistakes have been made when cutting cables, and we had no issue for connecting the only problematic cable.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/cut_biais.eps}
-  \caption{$\Delta L$ values as a function of $l^{d}$ (cyan), where $l^{d}$ is averaged on all lengths designed to have the same value.
+  \caption{$\Delta L$ values as a function of $l^{d}$ (cyan), where $l^{d}$ are averaged in each bin.
     Data points are fitted by $\alpha x + \beta$, with $\alpha > 0$ and $\beta < 0$, revealing the two biases of the cutting device.
     \label{fig:CutBias}}
 \end{figure}
@@ -447,8 +446,8 @@ Measuring the real cable lengths give also access to the time taken by the signa
 
 \subsubsection*{Signal time delay}
 
-Measuring cable lengths signal velocity, the time needed for the signal to travel from one given PM divider to the electronic boards can be deduced.
-This time travel induce a signal delay, specific to each electronic channel.
+Once the signal velocity is measured, the time needed for the signal to travel from one given PM divider to the electronic boards can be deduced.
+This time travel induces a signal delay, specific to each electronic channel.
 Therefore, one of the greatest implication of this study was to provide for the collaboration a database containing time delays for each electronic channel of the two main walls.
 This document is available on the Lyon computing platform.
 
@@ -521,12 +520,12 @@ It would then be interesting to conduct a study investigating the influence of t
 
 \subsection{Conclusion}
 
-Analysis of reflectometry data allowed to control the coaxial cable status after the calorimeter cabling operations.
-All possible misconnections are damaged connectors have been fixed.
+Analysis of reflectometry data allowed to control the coaxial cables status after the calorimeter cabling operations.
+All possible misconnections and damaged connectors have been fixed.
+The time measurement, using the CFD method, was optimised in order to have a better timing precision.
 All cable lengths were checked and revealed the cutting device is biased, producing cables longer than designed.
 The corresponding time delay induced by the signal time travel are stored in a database made available for the collaboration.
 This study was the occasion to understand some properties of the cables, as velocity and attenuation of a signal travelling in coaxial cables.
-The time measurement, using the CFD method, was optimised in order to have a better timing precision.
 
 
 Apart from the coaxial cables, the calorimeter FEBs themselves can have an impact on the signal timing delay, which is addressed in the next section.
@@ -537,8 +536,8 @@ Apart from the coaxial cables, the calorimeter FEBs themselves can have an impac
 One of the parameters that can also delay and de-synchronise the signal collected from optical modules is the path difference of the electronic signal inside the calorimeter FEBs, which is pictured in Fig.~\ref{fig:FEB_scheme}.
 Indeed, the CB manages the distribution of the clock in all calorimeter FEBs.
 The further away the CB is from an FEB on the crate, the longer it will take for this information to be transmitted.
-The scheme given, is highly simplified and in practice even each electronic channels of a given board has a delay.
-This de-synchronisation has to be characterise in order to calibrate each electronic channel of each FEB, which is primordial for analysis of coincidence events with the calorimeter.
+The scheme given is highly simplified and in practice even each electronic channels of a given board has an individual delay.
+This de-synchronisation has to be characterised in order to calibrate each electronic channel of each FEB, which is primordial for analysis of coincidence events with the calorimeter.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{commissioning/fig_commissioning/clock_distribution_back_plain.pdf}
@@ -547,8 +546,8 @@ This de-synchronisation has to be characterise in order to calibrate each electr
 \end{figure}
 
 The set up used to measure this de-synchronisation was provided by the electronics team at LAL.
-A wave-catcher is set up to produce an electronic impulse (of same shape as the one used for reflectometry) and split it.
-By connecting this device on pairs of electronic channels, one can measure the time offset existing between them.
+A wave-catcher is set up to produce an electronic impulse (of same shape as the one used for reflectometry) and split it in two channels.
+By connecting this device on pairs of FEB channels, one can measure the time offset existing between them.
 The general principle consists then in choosing a channel taken as a reference by connecting one cable of the device to it.
 Then data acquisitions are taken by connecting successively the other cable to all other channels from the same crate, allowing to measure the offset existing between them and the reference channel.
 Three examples of $\Delta t$ distributions are given in Fig.~\ref{fig:FEB_offset}, for three different channels belonging to the same FEB, in coincidence with the reference channel.
@@ -588,10 +587,10 @@ All time offsets have been stored in a database and made available for the colla
 The calorimeter commissioning is almost complete, and a huge effort have been provided by the whole collaboration to calibrate it.
 Automated codes have been developed to monitor changes in calorimeter characteristics over time (pulse shape, baseline, optical modules gain...).
 The reflectometry analysis allowed us to control and record the lengths of all coaxial cables installed on the SuperNEMO demonstrator at LSM, and gave information on the status of cable connections at the patch panel.
-We also have understood the main results on measured cable lengths and the functioning and biases of the cutting device that we used.
+We also have understood the main results on measured cable lengths.
 The signal time delay induced by coaxial cables and front-end boards have been characterised and made available in databases.
 In a subsequent analysis, the entire calibration chain will have to be calibrated in time, from the optical modules to the FEBs, using for example the LIS system sending light pulses in each scintillator.
 
 All the work done to calibrate the calorimeter, and especially its time calibration, opens the door to the first physical data acquisition with the calorimeter.
-Measurements of the coincidence of the particle time-of-flight are therefore possible.
+Coincidence measurements of particle time-of-flights are therefore made possible by the characterisation of the time delay specific to each channel.
 In the following chapter, we describe an experiment carried out with a \Co\ source to determine the time resolution of the optical modules, which follows the work presented in Chapter~\ref{ch:timediff}.
