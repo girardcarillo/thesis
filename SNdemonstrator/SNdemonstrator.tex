@@ -462,6 +462,82 @@ The commissioning of the SuperNEMO calorimeter started in $2018$ and is almost f
 During my PhD, I actively participated in this crucial phase for the detector development.
 
 
+\subsection{Interaction of particles in the SuperNEMO scintillators}
+\label{sec:scintillator_interactions}
+
+Understanding how particles interact in the SuperNEMO scintillators is essential.
+The calorimeter part of the demonstrator mainly aims to detect electrons and photons.
+In the following we review how these two particles interact inside the polystyrene scintillators.
+
+\subsubsection*{Interaction of electrons}
+
+Electrons interact with matter through one of two processes: elastic scattering on a nucleus, or inelastic scattering on an atomic electron.
+Inelastic scatterings are dominant for polystyrene scintillators and occur through two different forms: coherent scattering with the electron cloud, and radiative energy losses (the so-called bremsstrahlung effect).
+In Fig.~\ref{subfig:electron_attenuation} is displayed the stopping power of electrons in polystyrene for these two processes.
+Electrons detected in the SuperNEMO calorimeter should deposit a minimal energy of $50$ keV (the acquisition low energy threshold) and a maximal energy of few MeV (depending on the $\twonu$ isotope).
+In this energy range, collisions with the electron cloud are preponderant compared with radiative energy losses.
+In Fig.~\ref{subfig:electron_free_path}, we give informations about the mean free path of an electron in polystyrene.
+In particular, we observe that an electron of $1$ MeV penetrates, on average, several millimetres into a polystyrene scintillator.
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/electron_energy_loss.pdf}
+    \captionsetup{justification=centering}
+    \caption{
+      \label{subfig:electron_attenuation}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/free_path_electrons.pdf}
+    \captionsetup{justification=centering}
+    \caption{\label{subfig:electron_free_path}}
+  \end{subfigure}
+  \caption{Stopping power (a) and mean free path (b) for electrons in polystyrene.
+    (a) Energy losses through radiative effect (orange dashed line) and coherent scattering (red dashed line), which is the dominant process for the considered energy range~\cite{web:nist_estar}.
+    %  operate mainly through coherent scattering.
+    (b) At $1$ MeV, the mean free path of an electron is about $3$ mm.
+    Adapted from~\cite{HuberThesis}.
+  }
+\end{figure}
+
+
+\subsubsection*{Interaction of photons}
+
+Photons travelling in  matter can interact with the electronic cloud, through three main processes, whose contributions are presented in fig.~\ref{subfig:photon_energy_loss}, depending on their energies.
+Low-energy photons mainly interact with the electron cloud, either through photoelectric effect ($\gamma$ radiation is fully absorbed by an electron of the cloud), or through coherent (so-called Rayleigh) scattering.
+But the dominant effect, for energies between $10$ keV and $10$ MeV, is the Compton inelastic scattering of a $\gamma$ with an atomic electron.
+In Fig.~\ref{subfig:attenuation_length_photons}, we display the mean attenuation length of a $\gamma$ radiation in polystyrene scintillators, with energy.
+Thus, most of $1$ MeV $\gamma$ radiations will interact around $10$ cm inside the scintillating material.
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/photon_energy_loss.pdf}
+    \captionsetup{justification=centering}
+    \caption{\label{subfig:photon_energy_loss}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{commissioning/fig_commissioning/attenuation_length_photons.pdf}
+    \captionsetup{justification=centering}
+    \caption{\label{subfig:attenuation_length_photons}}
+  \end{subfigure}
+  \caption{Linear attenuation coefficient (a) and attenuation length (b) for $\gamma$ radiations in a plastic scintillator made of polystyrene.
+    (a) In the considered energy range of $10$ keV $ -\; 10$ MeV, $\gamma$ radiations interact with matter mainly through Compton diffusion~\cite{web:nist_Xcom}.
+    (b) The attenuation length of a $\gamma$ radiation is about $10$ cm at $1$ MeV.
+    Adapted from~\cite{HuberThesis}.
+  }
+\end{figure}
+
+At the considered energy range ($10$ keV $ -\; 10$ MeV), the interaction of photons with matter is dominated by Compton effect, while the electrons interact mainly through coherent scattering.
+The SuperNEMO scintillators are designed to detect such particles.
+Photons have a high probability to interact inside the volume of the scintillator, while electrons are stopped in the first few millimetres.
+
+
+
 \subsection{The magnetic coil and the shieldings}
 \label{subsec:magnetic_field}
 
@@ -828,8 +904,8 @@ Precise additional measurements are expected from the demonstrator calibration.
     \hline
     & Specified activities & Measured activities \\
     \hline\hline
-    \Tl  & $2\,\mu$Bq/kg$^{1}$ & $54\,\mu$Bq/kg$^{1}$ [$26$~-~$102$] \\
-    \Bi  & $10\,\mu$Bq/kg$^{1}$ & $<290\,\mu$Bq/kg$^{1}$ \\
+    \Tl  & $2\,\mu$Bq/kg & $54\,\mu$Bq/kg [$26$~-~$102$] \\
+    \Bi  & $10\,\mu$Bq/kg & $<290\,\mu$Bq/kg \\
     \hline
   \end{tabular}
   \caption{Measured and specified activities for the SuperNEMO demonstrator.
