@@ -1,39 +1,244 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{art:GERDA2019}
-M.~et~al. Agostini.
-\newblock Probing majorana neutrinos with double-$\beta$ decay.
-\newblock {\em Science 365}, 1445, 2019.
+\bibitem{art:fermi_1933}
+Fermi E.
+\newblock Tentativo di una teoria dei raggi ?
+\newblock {\em La Ricerca Scientifica}, 1933.
+
+\bibitem{art:pontecorvo_1958}
+Pontecorvo B.
+\newblock Mesonium and antimesonium.
+\newblock {\em Soviet Phys. JETP}, 1958.
+
+\bibitem{art:kamiokande_1998}
+Fukuda~Y. et~al.
+\newblock Evidence for oscillation of atmospheric neutrinos.
+\newblock {\em Phys.Rev.Lett.}, 81:1562--1567.
+
+\bibitem{art:Capozzi_2017}
+F.~Capozzi et~al.
+\newblock Status and prospects of global analyses of neutrino mass-mixing
+  parameters.
+\newblock {\em Journal of Physics: Conference Series}, 888:012037, sep 2017.
+
+\bibitem{book:giunti}
+Giunti C. and Kim~C. W.
+\newblock {\em Fundamentals of neutrino physics and astrophysics}.
+\newblock Oxford, 2007.
+
+\bibitem{Minkowski_1977}
+Minkowski P.
+\newblock $\ensuremath{\mu} \ensuremath{\rightarrow} e\ensuremath{\gamma}$ at a
+  rate of one out of $109$ muon decays?
+\newblock {\em Physics Letters B}, 67:421--428, 1977.
+
+\bibitem{Ernest_1998}
+Ernest M.
+\newblock Pathways to naturally small neutrino masses.
+\newblock {\em Physical Review Letters}, 81:1171, 1998.
+
+\bibitem{Marshak_1980}
+Marshak R. and Mohapatra R.
+\newblock Invited talk given at orbis scientiae, 14-17 Jan 1980.
+
+\bibitem{art:Drewes_2013}
+Drewes M.
+\newblock The phenomenology of right handed neutrinos.
+\newblock {\em International Journal of Modern Physics E}, 22, 2013.
+
+\bibitem{art:goeppert_1935}
+Goeppert-Mayer M.
+\newblock Double beta-disintegration.
+\newblock {\em Physical Review}, 48:512, 1935.
+
+\bibitem{art:delloro_2015}
+Dell’Oro~S. et~al.
+\newblock Neutrinoless double beta decay: 2015 review.
+\newblock {\em Advances in High Energy Physics}, 2016:37, 2015.
+
+\bibitem{art:furry_1939}
+Furry W.H.
+\newblock On transition probabilities in double beta-disintegration.
+\newblock {\em Physical Review}, 56:1184, 1939.
 
 \bibitem{art:majorana2019}
-S.I. et~al Alvis.
+S.I. Alvis et~al.
 \newblock Search for neutrinoless double-beta decay in $^{76}$ge with $26$
   kg-yr of exposure from the majorana demonstrator.
 \newblock {\em Phys. Rev. C}, 100, 2019.
 
+\bibitem{art:EXO200_2019}
+G.~et~al Anton.
+\newblock Search for neutrinoless double-$\ensuremath{\beta}$ decay with the
+  complete exo-200 dataset.
+\newblock {\em Phys. Rev. Lett.}, 123:161802, Oct 2019.
+
+\bibitem{art:NEXT_2016}
+J.J. et~al Gomez-Cadenas.
+\newblock The next experiment.
+\newblock {\em Phys. Rev. Lett.}, pages 1732--1739, Apr-Jun 2016.
+
+\bibitem{art:KamLAND2016}
+A.~Gando et~al.
+\newblock Search for majorana neutrinos near the inverted mass hierarchy region
+  with kamland-zen.
+\newblock {\em Phys. Rev. Lett.}, 117:082503, Aug 2016.
+
+\bibitem{art:GERDA2019}
+M.~Agostini et~al.
+\newblock Probing majorana neutrinos with double-$\beta$ decay.
+\newblock {\em Science 365}, 1445, 2019.
+
 \bibitem{art:CUPID2018}
-O.~et~al. Azzolini.
+O.~Azzolini et~al.
 \newblock First result on the neutrinoless double-$\ensuremath{\beta}$ decay of
   $^{82}\mathrm{Se}$ with cupid-0.
 \newblock {\em Phys. Rev. Lett.}, 120:232502, Jun 2018.
 
 \bibitem{art:CUORE2018}
-C.~et~al. Alduino.
+C.~Alduino et~al.
 \newblock First results from cuore: A search for lepton number violation via
   $0\ensuremath{\nu}\ensuremath{\beta}\ensuremath{\beta}$ decay of
   $^{130}\mathrm{Te}$.
 \newblock {\em Phys. Rev. Lett.}, 120:132501, Mar 2018.
 
 \bibitem{art:EXO2018}
-J.~B. et~al. Albert.
+J.~B. Albert et~al.
 \newblock Search for neutrinoless double-beta decay with the upgraded exo-200
   detector.
 \newblock {\em Phys. Rev. Lett.}, 120:072701, Feb 2018.
 
-\bibitem{art:KamLAND2016}
-A.~et~al. Gando.
-\newblock Search for majorana neutrinos near the inverted mass hierarchy region
-  with kamland-zen.
-\newblock {\em Phys. Rev. Lett.}, 117:082503, Aug 2016.
+\bibitem{docdb:ashwin2015}
+Chopra A.
+\newblock C0 commissioning results.
+\newblock Internal presentation, 2015.
+
+\bibitem{docdb:tracker_review2014}
+Cerna C.
+\newblock Tracker review conclusions.
+\newblock Internal presentation, 2014.
+
+\bibitem{web:nist_estar}
+Estar database (nist).
+\newblock \url{http://physics.nist.gov/PhysRefData/Star/Text/ESTAR.html}.
+
+\bibitem{HuberThesis}
+A.~Huber.
+\newblock {\em Recherche de la nature du neutrino avec le détecteur SuperNEMO
+  : Simulations optiques pour l'optimisation du calorimètre et performances
+  attendues pour le $^{82}$Se}.
+\newblock PhD thesis, Université Bordeaux, 2017.
+
+\bibitem{web:nist_Xcom}
+Xcom database (nist).
+\newblock \url{http://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html}.
+
+\bibitem{CalvezThesis}
+S.~Clavez.
+\newblock {\em Development of reconstruction tools and sensitivity of the
+  SuperNEMO demonstrator}.
+\newblock PhD thesis, Université Paris Sud, 2017.
+
+\bibitem{internal:magnetic_field}
+Garrido~X. Bongrand~M.
+\newblock Hamamatsu $8$'' pmt test in magnetic shield.
+\newblock Internal presentation, 2014.
+
+\bibitem{internal:bipo}
+Loaiza P.
+\newblock Source foils measurement with bipo.
+\newblock Internal presentation, 2017.
+
+\bibitem{docdb:perrot2017}
+Perrot F.
+\newblock Radiopurity measurements for $8$'' pmts and preliminary budget for
+  the sn demonstrator.
+\newblock Internal presentation, 2017.
+
+\bibitem{art:NEMO3_2005}
+Arnold~R. et~al.
+\newblock Technical design and performance of the nemo3 detector.
+\newblock {\em Nucl. Instrum. Meth. A}, pages 79--122, 2005.
+
+\bibitem{art:NEMO2015}
+R.~Arnold et~al.
+\newblock Results of the search for neutrinoless double-$\beta$ decay in
+  $^{100}$mo with the nemo-$3$ experiment.
+\newblock {\em Phys. Rev. D}, 2015.
+
+\bibitem{conf:radon2017}
+Xin~Ran Liu.
+\newblock Radon mitigation strategy and results for the supernemo experiment.
+\newblock IoP APP / HEPP Conference, 2018.
+
+\bibitem{art:SuperNEMO2010}
+R.~Arnold et~al.
+\newblock Probing new physics models of neutrinoless double beta decay with
+  supernemo.
+\newblock {\em Eur. Phys. J. C}, 2010.
+
+\bibitem{art:NEMO2018}
+R.~Arnold et~al.
+\newblock Final results on $^{82}$se double beta decay to the ground state of
+  $^{82}$kr from the nemo-$3$ experiment.
+\newblock {\em Eur. Phys. J. C}, 2018.
+
+\bibitem{art:feld-cous}
+Cousins~D. Feldman~G.
+\newblock A unified approach to the classical statistical analysis of small
+  signals.
+\newblock {\em Phys.Rev.}, pages 3873--3889, 1999.
+
+\bibitem{PhysRevC.85.034316}
+J.~Kotila and F.~Iachello.
+\newblock Phase-space factors for double-$\ensuremath{\beta}$ decay.
+\newblock {\em Phys. Rev. C}, 85:034316, Mar 2012.
+
+\bibitem{PhysRevC.83.034320}
+Dong-Liang Fang, Amand Faessler, Vadim Rodin, and Fedor \ifmmode~\check{S}\else
+  \v{S}\fi{}imkovic.
+\newblock Neutrinoless double-$\ensuremath{\beta}$ decay of deformed nuclei
+  within quasiparticle random-phase approximation with a realistic interaction.
+\newblock {\em Phys. Rev. C}, 83:034320, Mar 2011.
+
+\bibitem{ChaponThesis}
+A.~Chapon.
+\newblock {\em Mesure des processus de double désintégration bêta du Mo vers
+  l'état excité $0_{1}^{+}$ du Ru dans l'expérience Nemo3, Programme de R\&D
+  SuperNEMO : mise au point d'un détecteur BiPo pour la mesure de très
+  faibles contaminations de feuilles sources}.
+\newblock PhD thesis, Université Caen Basse-Normandie, 2011.
+
+\bibitem{docdb:map_magnetic_field2015}
+Snow S.
+\newblock A magnetic field map for the tracker.
+\newblock Internal presentation, 2015.
+
+\bibitem{AxelThesis}
+A.~Pin.
+\newblock {\em Recherche de la nature du neutrino via la décroissance double
+  bêta sans émission de neutrinos. Caractérisation et optimisation du
+  calorimètre SuperNEMO et impact sur la recherche de la décroissance du 82Se
+  Développement du premier prototype LiquidO.}
+\newblock PhD thesis, Université Bordeaux-Gradignan, 2020.
+
+\bibitem{art:atomic_mass}
+A.~H.~Wapstra G.~Audi.
+\newblock The 1995 update to the atomic mass evaluation.
+\newblock {\em Nucl. Phys. A}, 595:409--480, feb 1995.
+
+\bibitem{art:NEMO3_Nd}
+R.~Arnold et~al.
+\newblock Measurement of the $2\nu\beta\beta$ decay half-life of $^{150}nd$ and
+  a search for $0\nu\beta\beta$ decay processes with the full exposure from the
+  nemo-$3$ detector.
+\newblock {\em Phys. Rev. D}, 94, oct 2016.
+
+\bibitem{web:nucleide}
+Nucleid database.
+
+\bibitem{myGit}
+My github page.
+\newblock \url{https://github.com/girardcarillo}.
 
 \end{thebibliography}

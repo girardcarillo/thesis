@@ -1,79 +1,164 @@
 \babel@toc {english}{}
-\contentsline {chapter}{Contents}{3}{section*.1}
-\contentsline {chapter}{Introduction}{7}{chapter*.2}
-\contentsline {chapter}{\chapternumberline {1}Phenomenology of particle physics}{9}{chapter.1}
-\contentsline {section}{\numberline {1.1}The Standard Model of particle physics}{9}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Bosons}{9}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Fermions}{9}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}$2\nu \beta \beta $ decay}{9}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Where the Standard Model ends}{9}{subsection.1.1.4}
-\contentsline {section}{\numberline {1.2}Going beyond the Standard Model with neutrinos}{9}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Neutrino flavors and oscillations}{9}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Neutrino masses and nature}{9}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Other searches beyond the Standard Model with neutrinos}{9}{subsection.1.2.3}
-\contentsline {chapter}{\chapternumberline {2}$0\nu \beta \beta $ experiment status}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Experimental design criteria}{11}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Aspects of the nuclear matrix elements}{12}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Quenching}{12}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}$0\nu \beta \beta $ direct search experiments}{12}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Semiconductors}{12}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Bolometers}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Time projection chambers}{14}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Scintillators}{16}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Tracking calorimeters}{16}{subsection.2.2.5}
-\contentsline {chapter}{\chapternumberline {3}The SuperNemo demonstrator}{17}{chapter.3}
-\contentsline {section}{\numberline {3.1}The SuperNemo demonstrator}{17}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Comparison with Nemo$3$ experiment}{17}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Expermimental design}{17}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Sources}{17}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Tracker}{17}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Calorimeter}{17}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Calibration systems}{17}{subsection.3.1.6}
-\contentsline {subsection}{\numberline {3.1.7}Control Monitoring system}{17}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}Electronics}{17}{subsection.3.1.8}
-\contentsline {section}{\numberline {3.2}The backgroung of SuperNEMO}{17}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Internal background}{17}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}External background}{17}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Background specifications}{17}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}The SuperNemo software}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Simulation}{17}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Reconstruction}{17}{subsection.3.3.2}
-\contentsline {chapter}{\chapternumberline {4}Analysis tools}{19}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Internal probability}{19}{subsection.4.0.1}
-\contentsline {section}{\numberline {4.1}Simulations}{20}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Modifications of simulation software}{20}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Internal background simulations}{20}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}$0\nu \beta \beta $ simulations}{20}{subsection.4.1.3}
-\contentsline {chapter}{\chapternumberline {5}Time difference}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Principle and goal}{21}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Internal conversion}{21}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Analysis}{22}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Topological cuts}{22}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Exponentially modified Gaussian}{22}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Results}{22}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Conclusion}{22}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}Detector commissioning}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Reflectometry analysis}{25}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Goal of the reflectometry analysis}{25}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Pulse timing: controlling cable lengths}{26}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Signal attenuation}{30}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Pulse shape analysis}{32}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Comparison with $^{60}$Co}{33}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Calibrating the electronic boards}{33}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Principle}{33}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Measuring the time offset of front end boards}{33}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Results}{33}{subsection.6.2.3}
-\contentsline {chapter}{\chapternumberline {7}Characterisation of the calorimeter time resolution}{35}{chapter.7}
-\contentsline {section}{\numberline {7.1}Time calibration with a Cobalt source}{35}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Time response of optical modules}{35}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Energy calibration of optical modules}{39}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Experimental setup}{39}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Background estimation}{39}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Detector efficiency}{40}{subsection.7.1.5}
-\contentsline {subsubsection}{\numberline {7.1.5.1}Cuts on data events}{41}{subsubsection.7.1.5.1}
-\contentsline {subsection}{\numberline {7.1.6}Determination of the individual timing resolution of each optical module}{42}{subsection.7.1.6}
-\contentsline {section}{\numberline {7.2}The Light Injection System}{45}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Light injection system commissioning}{47}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Time resolution of optical modules}{47}{subsection.7.2.2}
-\contentsline {chapter}{Conclusion}{49}{chapter*.31}
-\contentsline {chapter}{Bibliography}{51}{section*.25}
+\contentsline {chapter}{Acknowledgement}{3}{chapter*.1}
+\contentsline {chapter}{Contents}{5}{section*.1}
+\contentsline {chapter}{Introduction}{9}{chapter*.3}
+\contentsline {chapter}{\chapternumberline {1}Phenomenology of particle physics and experimental status}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Standard Model of particle physics}{11}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Particle content}{12}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Where the Standard Model ends}{13}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Going beyond the Standard Model with neutrinos}{14}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Neutrino flavors and oscillations}{14}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Neutrino masses and nature}{16}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Neutrino Dirac masses}{17}{subsubsection.1.2.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2.2}Neutrino Majorana masses}{19}{subsubsection.1.2.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.3}Neutrino mass term}{20}{subsubsection.1.2.2.3}
+\contentsline {subsection}{\numberline {1.2.3}Double beta decays}{23}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}$0\nu \beta \beta $ experimental status}{26}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Experimental design criteria}{26}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}$0\nu \beta \beta $ direct search experiments}{27}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Semiconductors}{27}{subsubsection.1.3.2.1}
+\contentsline {paragraph}{GERDA}{27}{section*.29}
+\contentsline {paragraph}{MAJORANA demonstrator}{28}{section*.31}
+\contentsline {paragraph}{LEGEND}{28}{section*.32}
+\contentsline {subsection}{\numberline {1.3.3}Bolometers}{29}{subsection.1.3.3}
+\contentsline {paragraph}{CUORE}{29}{section*.33}
+\contentsline {paragraph}{CUPID}{29}{section*.34}
+\contentsline {subsection}{\numberline {1.3.4}Time projection chambers}{30}{subsection.1.3.4}
+\contentsline {paragraph}{EXO-$200$}{31}{section*.37}
+\contentsline {paragraph}{nEXO}{31}{section*.39}
+\contentsline {paragraph}{NEXT}{31}{section*.40}
+\contentsline {paragraph}{PandaX-III}{32}{section*.41}
+\contentsline {subsection}{\numberline {1.3.5}Liquid scintillators}{32}{subsection.1.3.5}
+\contentsline {paragraph}{KamLAND-ZEN}{32}{section*.42}
+\contentsline {paragraph}{SNO+}{33}{section*.44}
+\contentsline {paragraph}{ZICOS}{33}{section*.45}
+\contentsline {paragraph}{CANDLES}{33}{section*.46}
+\contentsline {subsection}{\numberline {1.3.6}Tracking calorimeters}{34}{subsection.1.3.6}
+\contentsline {paragraph}{NEMO}{34}{section*.48}
+\contentsline {paragraph}{SuperNEMO}{34}{section*.49}
+\contentsline {subsection}{\numberline {1.3.7}Summary}{35}{subsection.1.3.7}
+\contentsline {section}{\numberline {1.4}Conclusion}{35}{section.1.4}
+\contentsline {chapter}{\chapternumberline {2}The SuperNEMO demonstrator}{37}{chapter.2}
+\contentsline {section}{\numberline {2.1}The SuperNEMO technology}{38}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Detection principle}{38}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}The source foils}{40}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}The tracker}{43}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}The calorimeter}{47}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Interaction of particles in the SuperNEMO scintillators}{52}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}The magnetic coil and the shieldings}{53}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Calibration strategy}{56}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.8}Detector cabling}{58}{subsection.2.1.8}
+\contentsline {subsection}{\numberline {2.1.9}Electronics}{58}{subsection.2.1.9}
+\contentsline {subsection}{\numberline {2.1.10}Detector gas tightness}{61}{subsection.2.1.10}
+\contentsline {section}{\numberline {2.2}Backgrounds}{63}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Internal background}{63}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}External background}{66}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Radon background}{67}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Background reduction}{68}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}The SuperNEMO software}{69}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Simulation}{69}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Reconstruction pipeline}{69}{subsection.2.3.2}
+\contentsline {paragraph}{}{69}{section*.111}
+\contentsline {paragraph}{}{69}{section*.112}
+\contentsline {paragraph}{}{69}{section*.113}
+\contentsline {paragraph}{}{70}{section*.114}
+\contentsline {paragraph}{}{70}{section*.115}
+\contentsline {subsection}{\numberline {2.3.3}Analysis tools}{70}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Internal probability}{70}{subsubsection.2.3.3.1}
+\contentsline {paragraph}{The uncertainty $\sigma _{t}$ on the measured time-of-fight}{71}{section*.117}
+\contentsline {paragraph}{The uncertainty $\sigma _{\beta }$ on the expected time-of-flight induced by the uncertainty on the particle energy}{72}{section*.118}
+\contentsline {paragraph}{The uncertainty $\sigma _{l}$ on the expected time induced by the uncertainty on the reconstructed track length}{72}{section*.119}
+\contentsline {paragraph}{}{72}{section*.120}
+\contentsline {subsubsection}{\numberline {2.3.3.2}External probability}{73}{subsubsection.2.3.3.2}
+\contentsline {section}{\numberline {2.4}Summary}{73}{section.2.4}
+\contentsline {chapter}{\chapternumberline {3}Sensitivity of the SuperNEMO experiment to the $0\nu \beta \beta $}{75}{chapter.3}
+\contentsline {section}{\numberline {3.1}The $0\nu \beta \beta $ signal and background model}{75}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}The $0\nu \beta \beta $ signal}{76}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Inside detector backgrounds}{76}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Internal backgrounds}{76}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Tracker contamination by natural isotopes}{77}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}External backgrounds}{77}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Expected number of decays}{77}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Event selection}{78}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Electron definition}{78}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Total energy spectrum}{79}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Demonstrator sensitivity to the $0\nu \beta \beta $ decay of $^{82}$Se}{81}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Sensitivity to the $0\nu \beta \beta $ half-life}{81}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Limit on the effective neutrino mass}{82}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Impact of sources contamination levels on the sensitivity}{84}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Contamination levels}{84}{subsection.3.4.1}
+\contentsline {paragraph}{Clarifications on Feldman-Cousins statistics}{85}{section*.127}
+\contentsline {paragraph}{}{85}{section*.128}
+\contentsline {subsection}{\numberline {3.4.2}Optimisation of event selection}{87}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}The internal probability}{87}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Specified activities}{87}{section*.133}
+\contentsline {paragraph}{Measured activities}{88}{section*.134}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Vertices distance}{90}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{}{91}{section*.137}
+\contentsline {section}{\numberline {3.5}Impact of the magnetic field on the sensitivity}{93}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Simulations of the magnetic field}{93}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Impact of the magnetic field on signal and background selections}{93}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Influence of the magnetic field on optical modules and reconstruction efficiency}{95}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Simulations with a non-uniform magnetic field}{97}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Searching for the $^{150}$Nd\ $0\nu \beta \beta $ decay}{98}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Searching for the $0\nu \beta \beta $ of other isotopes}{99}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Sensitivity to the $0\nu \beta \beta $ of $^{150}$Nd}{99}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}The final detector sensitivity}{101}{section.3.7}
+\contentsline {section}{\numberline {3.8}Conclusion}{102}{section.3.8}
+\contentsline {chapter}{\chapternumberline {4}Improvement of the internal $^{208}$Tl\ background rejection}{105}{chapter.4}
+\contentsline {section}{\numberline {4.1}Motivations}{105}{section.4.1}
+\contentsline {section}{\numberline {4.2}The internal $^{208}$Tl\ background}{106}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The internal conversion process}{106}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}$^{208}$Tl\ disintegrations in the 2e channel}{108}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Simulated demonstrator performances}{108}{section.4.3}
+\contentsline {section}{\numberline {4.4}Analysis tools to describe the $^{208}$Tl\ internal background}{110}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}The internal probability}{110}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}The exponential probability}{112}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Probability density function}{112}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Exponential probability}{113}{subsubsection.4.4.2.2}
+\contentsline {section}{\numberline {4.5}Event selection}{115}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Energy selection}{115}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Time-of-flight cut-off}{115}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Probability cut-off}{117}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Influence of the calorimeter time resolution}{120}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Impact of $^{208}$Tl\ rejection on the experiment's sensitivity}{121}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Sensitivity results}{123}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Expected number of background}{125}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Conclusion}{126}{section.4.7}
+\contentsline {chapter}{\chapternumberline {5}Calorimeter commissioning}{129}{chapter.5}
+\contentsline {section}{\numberline {5.1}Optical modules calibration}{129}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Pulse shape studies}{129}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Baseline studies}{130}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Gain studies}{130}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Energy calibration}{131}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Light Injection System}{132}{section.5.2}
+\contentsline {section}{\numberline {5.3}Calorimeter cabling network}{134}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Motivations}{134}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Experimental setup}{135}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Pulse shape analysis}{136}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Pulse timing}{137}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Signal attenuation}{143}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.6}Summary}{144}{subsection.5.3.6}
+\contentsline {section}{\numberline {5.4}Synchronisation of calorimeter FEBs}{145}{section.5.4}
+\contentsline {section}{\numberline {5.5}Conclusion}{147}{section.5.5}
+\contentsline {chapter}{\chapternumberline {6}Characterisation of the calorimeter time resolution}{149}{chapter.6}
+\contentsline {section}{\numberline {6.1}Time response of optical modules}{149}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Scintillator time dispersion}{150}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Photomultiplier time dispersion}{152}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Description of $^{60}$Co\ nucleus}{152}{section.6.2}
+\contentsline {section}{\numberline {6.3}Experimental design}{153}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Setting up the experimental design}{153}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Simulations and analysis pipelines}{154}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Signal events selection}{155}{section.6.4}
+\contentsline {section}{\numberline {6.5}Energy calibration}{157}{section.6.5}
+\contentsline {section}{\numberline {6.6}Background estimation}{158}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Types of background}{159}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Background characterisation}{160}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Determination of the optical modules timing resolution}{163}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Time difference distributions}{164}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Coupled time uncertainties}{165}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Decoupling the $\Sigma _{t}$ uncertainties}{166}{subsection.6.7.3}
+\contentsline {section}{\numberline {6.8}Conclusion}{168}{section.6.8}
+\contentsline {chapter}{Conclusion}{169}{chapter*.206}
+\contentsline {chapter}{R\IeC {\'e}sum\IeC {\'e}}{171}{chapter*.207}
+\contentsline {chapter}{Bibliography}{173}{section*.3}

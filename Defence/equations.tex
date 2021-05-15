@@ -1,0 +1,129 @@
+\documentclass[a4paper,17pt, twoside]{memoir}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+%% \geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+\geometry{vmargin=3cm}%% hmargin=2cm
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{footnote}
+\usepackage{enumerate}
+\usepackage{eucal}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\usepackage[margin=2cm]{caption}
+\usepackage{float}
+\usepackage{arydshln}
+\usepackage{slashed}
+
+
+\newcommand{\zeronu}{0\nu\beta\beta}
+\newcommand{\twonu}{2\nu\beta\beta}
+\newcommand{\Se}{$^{82}$Se}
+\newcommand{\Nd}{$^{150}$Nd}
+\newcommand{\Mo}{$^{100}$Mo}
+\newcommand{\U}{$^{238}$U}
+\newcommand{\Th}{$^{232}$Th}
+\newcommand{\K}{$^{40}$K}
+\newcommand{\Tl}{$^{208}$Tl}
+\newcommand{\Co}{$^{60}$Co}
+\newcommand{\Pb}{$^{208}$Pb}
+\newcommand{\Bi}{$^{214}$Bi}
+\newcommand{\Rn}{$^{222}$Rn}
+\newcommand{\Qbb}{Q_{\beta\beta}}
+\newcommand{\Bckunit}{\text{counts.keV}^{-1}\text{.kg}^{-1}\text{.y}^{-1}}
+\newcommand{\Tbeta}{T_{1/2}^{0\nu}}
+\newcommand{\Ttwonu}{T_{1/2}^{2\nu}}
+\newcommand{\mbb}{m_{\beta\beta}}
+\newcommand{\Pint}{P$_{int}$}
+\newcommand{\Var}{\mathrm{Var}}
+
+
+\begin{document}
+
+\begin{equation}
+\mathcal{L}^{\text{Dirac}}_{\nu}=-\frac{v}{\sqrt{2}}\overline{\nu}_{L}Y^{\nu}{\color{blue!55!green}{\nu_{R}}} + \text{h.c.}
+\end{equation}
+
+\begin{equation}
+    \mathcal{L}^{\text{Majorana}}_{\nu}=\dfrac{1}{2}m_{\nu}\overline{\nu}^{c}_{\text{L}}\nu_{\text{L}}+\text{h.c.}
+\end{equation}
+
+\begin{equation}
+  \Tbeta > \frac{\textcolor{blue!35!green}{\mathcal{N}_{\text{A}}}\ln{2}}{\textcolor{blue!35!green}{M}}\times \frac{\textcolor{orange!45!red}{\epsilon_{0\nu}}\times \textcolor{blue!35!green}{m}\times t}{N_{0\nu}^{\text{excl.}}}
+\end{equation}
+
+\begin{equation}
+  (T_{1/2}^{0\nu})^{-1} = g_{A}^{4}G^{0\nu}|M^{0\nu}|^{2}\left\lvert\dfrac{\textcolor{blue!45!red}{\langle m_{\beta\beta}\rangle}}{m_{e}}\right\rvert^{2}
+\end{equation}
+
+\begin{equation}
+  \textcolor{blue!45!red}{\langle \mbb \rangle} = \left\vert \sum_{i}m_{i}U^{2}_{ei} \right\vert
+\end{equation}
+
+\begin{equation}
+\Tbeta > 5.35\times 10^{24}\,\text{y}\qquad (90\% \text{CL})
+\end{equation}
+
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Activity & Specified & Measured (w/o \Bi) & Measured (w/ \Bi) \\
+    ROI & [$2.7$;$3.15$]~MeV & [$2.75$;$2.95$]~MeV & [$2.7$;$2.9$]~MeV \\
+    \hline\hline
+    $\epsilon_{0\nu}$ & $14.7$\% & $11.3$\% & $14.3$\% \\
+    \hdashline
+    $\twonu$  & $0.418$ & $0.122$ & $0.418$ \\
+    \Tl  & $0.0475$ & $0.688$ & $0.699$ \\
+    \Bi  & $0.0546$ & $0$ & $1.55$ \\
+    \Rn  & $0.292$ & $0.173$ & $0.287$ \\
+    Total & $0.812$ & $0.983$ & $2.95$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Cut-off & First-order & \Pint~$>~4~$\% & $|~\Delta~Z~|~<~80$~mm  \\
+    ROI (MeV) & [$2.7$;$2.9$] & [$2.7$;$3.25$] & [$2.7$;$3.3$] \\
+    \hline\hline
+    $\epsilon_{0\nu}$ & $14.3$\% & $14.1$\% & $13.9$\% \\
+    \hdashline
+    $\twonu$ & $0.418$ & $0.392$ & $0.383$ \\
+    \Tl  & $0.699$ & $1.08$ & $1.09$ \\
+    \Bi  & $1.55$ & $1.42$ & $1.42$ \\
+    \Rn  & $0.287$ & $0.115$ & $0.0782$ \\
+    Total  & $2.95$ $3.01$ & $2.97$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+\begin{equation}
+  (\Sigma_{t}^{0,1})^{2} = \textcolor{blue!55!red}{\frac{(\sigma_{t}^{0})^{2}}{\bar{E_{0}}}} + \textcolor{green!55!black}{\frac{(\sigma_{t}^{1})^{2}}{\bar{E_{1}}}}
+\end{equation}
+
+\begin{equation}
+  (\Sigma_{t}^{0,2})^{2} = \textcolor{blue!55!red}{\frac{(\sigma_{t}^{0})^{2}}{\bar{E_{0}}'}} + \textcolor{red!65!green}{\frac{(\sigma_{t}^{2})^{2}}{\bar{E_{2}}}}
+\end{equation}
+
+\begin{equation}
+  (\Sigma_{t}^{1,2})^{2} = \textcolor{green!55!black}{\frac{(\sigma_{t}^{1})^{2}}{\bar{E_{1}}'}} + \textcolor{red!65!green}{\frac{(\sigma_{t}^{2})^{2}}{\bar{E_{2}}'}}
+\end{equation}
+
+
+
+\end{document}

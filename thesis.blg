@@ -1,62 +1,93 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: remerciements/remerciements.aux
 A level-1 auxiliary file: introduction/introduction.aux
 A level-1 auxiliary file: neutrinophysics/neutrinophysics.aux
-A level-1 auxiliary file: 0nubbexperiments/0nubbexperiments.aux
 A level-1 auxiliary file: SNdemonstrator/SNdemonstrator.aux
-A level-1 auxiliary file: AnalysisTools/AnalysisTools.aux
+A level-1 auxiliary file: Sensitivity/Sensitivity.aux
 A level-1 auxiliary file: timedifference/timedifference.aux
-A level-1 auxiliary file: CoSource/CoSource.aux
-A level-1 auxiliary file: efficiency/efficiency.aux
 A level-1 auxiliary file: commissioning/commissioning.aux
-A level-1 auxiliary file: theory/theory.aux
+A level-1 auxiliary file: CobaltStudy/CobaltStudy.aux
 A level-1 auxiliary file: conclusion/conclusion.aux
+A level-1 auxiliary file: resume/resume.aux
 The style file: unsrt.bst
 Database file #1: bibliography_thesis.bib
-I was expecting an "="---line 91 of file bibliography_thesis.bib
- : @Comment 
- :          author        = {},
+I was expecting a `,' or a `}'---line 123 of file bibliography_thesis.bib
+ :         
+ :         url = {https://indico.cern.ch/event/695164/contributions/2922964/},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 6 entries,
+I was expecting a `,' or a `}'---line 131 of file bibliography_thesis.bib
+ :         
+ :         url = {DocDB},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 140 of file bibliography_thesis.bib
+ :         
+ :         url = {DocDB},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 215 of file bibliography_thesis.bib
+ :         
+ :         url = {DocDB},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 432 of file bibliography_thesis.bib
+ :         
+ :         url = {DocDB},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 440 of file bibliography_thesis.bib
+ :         
+ :         url = {DocDB},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 491 of file bibliography_thesis.bib
+ :     
+ :     year = {1998}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in art:kamiokande_1998
+You've used 44 entries,
             1791 wiz_defined-function locations,
-            498 strings with 4805 characters,
-and the built_in function-call counts, 1074 in all, are:
-= -- 96
-> -- 24
-< -- 0
-+ -- 12
-- -- 6
-* -- 66
-:= -- 187
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 6
+            697 strings with 9675 characters,
+and the built_in function-call counts, 7245 in all, are:
+= -- 656
+> -- 229
+< -- 3
++ -- 101
+- -- 57
+* -- 326
+:= -- 1204
+add.period$ -- 126
+call.type$ -- 44
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 52
-empty$ -- 117
-format.name$ -- 6
-if$ -- 231
+cite$ -- 45
+duplicate$ -- 356
+empty$ -- 771
+format.name$ -- 57
+if$ -- 1628
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 6
-pop$ -- 6
+int.to.str$ -- 44
+missing$ -- 29
+newline$ -- 217
+num.names$ -- 41
+pop$ -- 100
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 20
+skip$ -- 189
 stack$ -- 0
-substring$ -- 72
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 351
+swap$ -- 68
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 10
-width$ -- 7
-write$ -- 68
-(There was 1 error message)
+warning$ -- 1
+while$ -- 63
+width$ -- 46
+write$ -- 451
+(There were 7 error messages)

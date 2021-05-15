@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  11 MAY 2020 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  15 MAY 2021 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,53 +1010,520 @@ Package caption Info: hyperref package is loaded.
 \c@subfigure=\count171
 \c@subtable=\count172
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 32.
-Package hyperref Info: Option `colorlinks' set `true' on input line 58.
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count173
+\float@exts=\toks34
+\float@box=\box34
+\@float@everytoks=\toks35
+\@floatcapt=\box35
+)
+(/usr/share/texlive/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2016/04/28 v1.73 
+\dashlinedash=\dimen183
+\dashlinegap=\dimen184
+\adl@box=\box36
+\adl@height=\dimen185
+\adl@heightsave=\dimen186
+\adl@depth=\dimen187
+\adl@depthsave=\dimen188
+\adl@finaldepth=\dimen189
+\adl@columns=\count174
+\adl@ncol=\count175
+\adl@currentcolumn=\count176
+\adl@currentcolumnsave=\count177
+\adl@totalheight=\count178
+\adl@totalheightsave=\count179
+\adl@dash=\count180
+\adl@gap=\count181
+\adl@cla=\count182
+\adl@clb=\count183
+\adl@everyvbox=\toks36
+\adl@LTpagetotal=\dimen190
+)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/slashed.sty
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/02/21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count184
+\l_tmpa_int=\count185
+\l_tmpb_int=\count186
+\g_tmpa_int=\count187
+\g_tmpb_int=\count188
+\g__intarray_font_int=\count189
+\g__prg_map_int=\count190
+\c_log_iow=\count191
+\l_iow_line_count_int=\count192
+\l__iow_line_target_int=\count193
+\l__iow_one_indent_int=\count194
+\l__iow_indent_int=\count266
+\c_zero_dim=\dimen191
+\c_max_dim=\dimen192
+\l_tmpa_dim=\dimen193
+\l_tmpb_dim=\dimen194
+\g_tmpa_dim=\dimen256
+\g_tmpb_dim=\dimen257
+\c_zero_skip=\skip192
+\c_max_skip=\skip193
+\l_tmpa_skip=\skip194
+\l_tmpb_skip=\skip256
+\g_tmpa_skip=\skip257
+\g_tmpb_skip=\skip258
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count267
+\c__fp_leading_shift_int=\count268
+\c__fp_middle_shift_int=\count269
+\c__fp_trailing_shift_int=\count270
+\c__fp_big_leading_shift_int=\count271
+\c__fp_big_middle_shift_int=\count272
+\c__fp_big_trailing_shift_int=\count273
+\c__fp_Bigg_leading_shift_int=\count274
+\c__fp_Bigg_middle_shift_int=\count275
+\c__fp_Bigg_trailing_shift_int=\count276
+\c__fp_rand_size_int=\count277
+\c__fp_rand_four_int=\count278
+\c__fp_rand_eight_int=\count279
+\l__sort_length_int=\count280
+\l__sort_min_int=\count281
+\l__sort_top_int=\count282
+\l__sort_max_int=\count283
+\l__sort_true_max_int=\count284
+\l__sort_block_int=\count285
+\l__sort_begin_int=\count286
+\l__sort_end_int=\count287
+\l__sort_A_int=\count288
+\l__sort_B_int=\count289
+\l__sort_C_int=\count290
+\l__tl_build_start_index_int=\count291
+\l__tl_build_index_int=\count292
+\l__tl_analysis_normal_int=\count293
+\l__tl_analysis_index_int=\count294
+\l__tl_analysis_nesting_int=\count295
+\l__tl_analysis_type_int=\count296
+\l__regex_internal_a_int=\count297
+\l__regex_internal_b_int=\count298
+\l__regex_internal_c_int=\count299
+\l__regex_balance_int=\count300
+\l__regex_group_level_int=\count301
+\l__regex_mode_int=\count302
+\c__regex_cs_in_class_mode_int=\count303
+\c__regex_cs_mode_int=\count304
+\l__regex_catcodes_int=\count305
+\l__regex_default_catcodes_int=\count306
+\c__regex_catcode_D_int=\count307
+\c__regex_catcode_S_int=\count308
+\c__regex_catcode_L_int=\count309
+\c__regex_catcode_O_int=\count310
+\c__regex_catcode_A_int=\count311
+\c__regex_all_catcodes_int=\count312
+\l__regex_show_lines_int=\count313
+\l__regex_min_state_int=\count314
+\l__regex_max_state_int=\count315
+\l__regex_left_state_int=\count316
+\l__regex_right_state_int=\count317
+\l__regex_capturing_group_int=\count318
+\l__regex_min_pos_int=\count319
+\l__regex_max_pos_int=\count320
+\l__regex_curr_pos_int=\count321
+\l__regex_start_pos_int=\count322
+\l__regex_success_pos_int=\count323
+\l__regex_curr_char_int=\count324
+\l__regex_curr_catcode_int=\count325
+\l__regex_last_char_int=\count326
+\l__regex_case_changed_char_int=\count327
+\l__regex_curr_state_int=\count328
+\l__regex_step_int=\count329
+\l__regex_min_active_int=\count330
+\l__regex_max_active_int=\count331
+\l__regex_replacement_csnames_int=\count332
+\l__regex_match_count_int=\count333
+\l__regex_min_submatch_int=\count334
+\l__regex_submatch_int=\count335
+\l__regex_zeroth_submatch_int=\count336
+\g__regex_trace_regex_int=\count337
+\c_empty_box=\box37
+\l_tmpa_box=\box38
+\l_tmpb_box=\box39
+\g_tmpa_box=\box40
+\g_tmpb_box=\box41
+\l__box_top_dim=\dimen258
+\l__box_bottom_dim=\dimen259
+\l__box_left_dim=\dimen260
+\l__box_right_dim=\dimen261
+\l__box_top_new_dim=\dimen262
+\l__box_bottom_new_dim=\dimen263
+\l__box_left_new_dim=\dimen264
+\l__box_right_new_dim=\dimen265
+\l__box_internal_box=\box42
+\l__coffin_internal_box=\box43
+\l__coffin_internal_dim=\dimen266
+\l__coffin_offset_x_dim=\dimen267
+\l__coffin_offset_y_dim=\dimen268
+\l__coffin_x_dim=\dimen269
+\l__coffin_y_dim=\dimen270
+\l__coffin_x_prime_dim=\dimen271
+\l__coffin_y_prime_dim=\dimen272
+\c_empty_coffin=\box44
+\l__coffin_aligned_coffin=\box45
+\l__coffin_aligned_internal_coffin=\box46
+\l_tmpa_coffin=\box47
+\l_tmpb_coffin=\box48
+\l__coffin_display_coffin=\box49
+\l__coffin_display_coord_coffin=\box50
+\l__coffin_display_pole_coffin=\box51
+\l__coffin_display_offset_dim=\dimen273
+\l__coffin_display_x_dim=\dimen274
+\l__coffin_display_y_dim=\dimen275
+\l__coffin_bounding_shift_dim=\dimen276
+\l__coffin_left_corner_dim=\dimen277
+\l__coffin_right_corner_dim=\dimen278
+\l__coffin_bottom_corner_dim=\dimen279
+\l__coffin_top_corner_dim=\dimen280
+\l__coffin_scaled_total_height_dim=\dimen281
+\l__coffin_scaled_width_dim=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count338
+\l__driver_tmp_box=\box52
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count339
+\g__xparse_grabber_int=\count340
+\l__xparse_m_args_int=\count341
+\l__xparse_mandatory_args_int=\count342
+\l__xparse_v_nesting_int=\count343
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count344
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count345
+Package zref Info: New property: abspage on input line 62.
+)
+\mdf@templength=\skip259
+\c@mdf@globalstyle@cnt=\count346
+\mdf@skipabove@length=\skip260
+\mdf@skipbelow@length=\skip261
+\mdf@leftmargin@length=\skip262
+\mdf@rightmargin@length=\skip263
+\mdf@innerleftmargin@length=\skip264
+\mdf@innerrightmargin@length=\skip265
+\mdf@innertopmargin@length=\skip266
+\mdf@innerbottommargin@length=\skip267
+\mdf@splittopskip@length=\skip268
+\mdf@splitbottomskip@length=\skip269
+\mdf@outermargin@length=\skip270
+\mdf@innermargin@length=\skip271
+\mdf@linewidth@length=\skip272
+\mdf@innerlinewidth@length=\skip273
+\mdf@middlelinewidth@length=\skip274
+\mdf@outerlinewidth@length=\skip275
+\mdf@roundcorner@length=\skip276
+\mdf@footenotedistance@length=\skip277
+\mdf@userdefinedwidth@length=\skip278
+\mdf@needspace@length=\skip279
+\mdf@frametitleaboveskip@length=\skip280
+\mdf@frametitlebelowskip@length=\skip281
+\mdf@frametitlerulewidth@length=\skip282
+\mdf@frametitleleftmargin@length=\skip283
+\mdf@frametitlerightmargin@length=\skip284
+\mdf@shadowsize@length=\skip285
+\mdf@extratopheight@length=\skip286
+\mdf@subtitleabovelinewidth@length=\skip287
+\mdf@subtitlebelowlinewidth@length=\skip288
+\mdf@subtitleaboveskip@length=\skip289
+\mdf@subtitlebelowskip@length=\skip290
+\mdf@subtitleinneraboveskip@length=\skip291
+\mdf@subtitleinnerbelowskip@length=\skip292
+\mdf@subsubtitleabovelinewidth@length=\skip293
+\mdf@subsubtitlebelowlinewidth@length=\skip294
+\mdf@subsubtitleaboveskip@length=\skip295
+\mdf@subsubtitlebelowskip@length=\skip296
+\mdf@subsubtitleinneraboveskip@length=\skip297
+\mdf@subsubtitleinnerbelowskip@length=\skip298
+
+(/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box53
+\mdf@footnotebox=\box54
+\mdf@splitbox@one=\box55
+\mdf@splitbox@two=\box56
+\mdf@splitbox@save=\box57
+\mdfsplitboxwidth=\skip299
+\mdfsplitboxtotalwidth=\skip300
+\mdfsplitboxheight=\skip301
+\mdfsplitboxdepth=\skip302
+\mdfsplitboxtotalheight=\skip303
+\mdfframetitleboxwidth=\skip304
+\mdfframetitleboxtotalwidth=\skip305
+\mdfframetitleboxheight=\skip306
+\mdfframetitleboxdepth=\skip307
+\mdfframetitleboxtotalheight=\skip308
+\mdffootnoteboxwidth=\skip309
+\mdffootnoteboxtotalwidth=\skip310
+\mdffootnoteboxheight=\skip311
+\mdffootnoteboxdepth=\skip312
+\mdffootnoteboxtotalheight=\skip313
+\mdftotallinewidth=\skip314
+\mdfboundingboxwidth=\skip315
+\mdfboundingboxtotalwidth=\skip316
+\mdfboundingboxheight=\skip317
+\mdfboundingboxdepth=\skip318
+\mdfboundingboxtotalheight=\skip319
+\mdf@freevspace@length=\skip320
+\mdf@horizontalwidthofbox@length=\skip321
+\mdf@verticalmarginwhole@length=\skip322
+\mdf@horizontalspaceofbox=\skip323
+\mdfsubtitleheight=\skip324
+\mdfsubsubtitleheight=\skip325
+\c@mdfcountframes=\count347
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newmdtheoremenv with sig. 'O{} m o m o ' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
+.................................................
+\mdf@envdepth=\count348
+\c@mdf@env@i=\count349
+\c@mdf@env@ii=\count350
+\c@mdf@zref@counter=\count351
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip326
+\multirow@cntb=\count352
+\multirow@dima=\skip327
+\bigstrutjot=\dimen283
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count353
+\mult@box=\box58
+\multicol@leftmargin=\dimen284
+\c@unbalance=\count354
+\c@collectmore=\count355
+\doublecol@number=\count356
+\multicoltolerance=\count357
+\multicolpretolerance=\count358
+\full@width=\dimen285
+\page@free=\dimen286
+\premulticols=\dimen287
+\postmulticols=\dimen288
+\multicolsep=\skip328
+\multicolbaselineskip=\skip329
+\partial@page=\box59
+\last@line=\box60
+\maxbalancingoverflow=\dimen289
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@gfirstbox=\box63
+\mult@firstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\c@columnbadness=\count359
+\c@finalcolumnbadness=\count360
+\last@try=\dimen290
+\multicolovershoot=\dimen291
+\multicolundershoot=\dimen292
+\mult@nat@firstbox=\box82
+\colbreak@box=\box83
+\mc@col@check@num=\count361
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 76.
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
  (./thesis.aux
-(./introduction/introduction.aux) (./neutrinophysics/neutrinophysics.aux)
-(./0nubbexperiments/0nubbexperiments.aux) (./SNdemonstrator/SNdemonstrator.aux)
-(./AnalysisTools/AnalysisTools.aux) (./timedifference/timedifference.aux)
-(./efficiency/efficiency.aux) (./commissioning/commissioning.aux)
-(./theory/theory.aux) (./conclusion/conclusion.aux))
+(./remerciements/remerciements.aux) (./introduction/introduction.aux)
+(./neutrinophysics/neutrinophysics.aux
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+) (./SNdemonstrator/SNdemonstrator.aux
+
+LaTeX Warning: Label `subfig:square_shape' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:square_shape' multiply defined.
+
+
+LaTeX Warning: Label `subfig:square_shape' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:square_shape' multiply defined.
+
+
+LaTeX Warning: Label `subfig:square_shape' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:square_shape' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+) (./Sensitivity/Sensitivity.aux
+
+LaTeX Warning: Label `subfig:cont_Pint_ROI' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:cont_Pint_ROI' multiply defined.
+
+) (./timedifference/timedifference.aux
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+) (./commissioning/commissioning.aux
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+
+LaTeX Warning: Label `subfig:' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:' multiply defined.
+
+) (./CobaltStudy/CobaltStudy.aux) (./conclusion/conclusion.aux)
+(./resume/resume.aux) (./Abstract/Abstract.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(73.71613pt, 430.00462pt, 110.57425pt)
-* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=624.25346pt
-* \oddsidemargin=1.44614pt
-* \evensidemargin=38.30426pt
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=674.33032pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
 * \topmargin=-21.28552pt
 * \headheight=14.5pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=102.0pt
+* \marginparwidth=92.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 4.0pt
@@ -1071,17 +1538,17 @@ LaTeX Font Info:    ... okay on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
-\scratchdimen=\dimen183
-\scratchbox=\box34
-\nofMPsegments=\count174
-\nofMParguments=\count175
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count176
-\MPscratchDim=\dimen184
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count362
+\scratchdimen=\dimen293
+\scratchbox=\box84
+\nofMPsegments=\count363
+\nofMParguments=\count364
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count365
+\MPscratchDim=\dimen294
+\MPnumerator=\count366
+\makeMPintoPDFobject=\count367
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1099,8 +1566,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 72.
+\AtBeginShipoutBox=\box85
+Package hyperref Info: Link coloring ON on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1108,14 +1575,14 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count179
+\c@section@level=\count368
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 72.
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 141.
+LaTeX Info: Redefining \pageref on input line 141.
+LaTeX Info: Redefining \nameref on input line 141.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1130,594 +1597,328 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<1couverture.pdf, id=104, 597.50829pt x 845.0471pt>
+<1couverture.pdf, id=12, 597.50829pt x 845.0471pt>
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf>
-Package pdftex.def Info: 1couverture.pdf  used on input line 74.
+Package pdftex.def Info: 1couverture.pdf  used on input line 143.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf>
-Package pdftex.def Info: 1couverture.pdf  used on input line 74.
+Package pdftex.def Info: 1couverture.pdf  used on input line 143.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<1couverture.pdf, id=107, page=1, 597.50829pt x 845.0471pt>
+<1couverture.pdf, id=15, page=1, 597.50829pt x 845.0471pt>
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 74.
+Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 74.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 74.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 74.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: 1couverture.pdf Graphic file (type pdf)
 <use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 74.
-(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
- <./1couverture.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>] [2
+ <./1couverture.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>] [4
 
-] (./thesis.toc
+
+
+]
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 148.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 148.
+
+(./thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3] [4]) [5]
-\openout2 = `commissioning/commissioning.aux'.
-
-
-(./commissioning/commissioning.tex [24
-
-
-
-
-
-
-
-
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
- [25]
-<commissioning/fig_commissioning/scheme_reflecto.pdf, id=313, 738.76pt x 237.88
-875pt>
-File: commissioning/fig_commissioning/scheme_reflecto.pdf Graphic file (type pd
-f)
-<use commissioning/fig_commissioning/scheme_reflecto.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/scheme_reflecto.pdf  u
-sed on input line 36.
-(pdftex.def)             Requested size: 141.90373pt x 45.693pt.
-
-Overfull \hbox (12.90105pt too wide) in paragraph at lines 36--39
- [][] 
+) [5]
+Overfull \hbox (2.03766pt too wide) detected at line 108
+ \OT1/cmr/bx/n/12 105
  []
 
-<commissioning/fig_commissioning/scheme_reflecto_1.pdf, id=314, 738.76pt x 236.
-885pt>
-File: commissioning/fig_commissioning/scheme_reflecto_1.pdf Graphic file (type 
-pdf)
-<use commissioning/fig_commissioning/scheme_reflecto_1.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/scheme_reflecto_1.pdf 
- used on input line 45.
-(pdftex.def)             Requested size: 141.90373pt x 45.5002pt.
-
-Overfull \hbox (12.90105pt too wide) in paragraph at lines 45--48
- [][] 
- []
-
-<commissioning/fig_commissioning/scheme_reflecto_2.pdf, id=315, 738.76pt x 236.
-885pt>
-File: commissioning/fig_commissioning/scheme_reflecto_2.pdf Graphic file (type 
-pdf)
-<use commissioning/fig_commissioning/scheme_reflecto_2.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/scheme_reflecto_2.pdf 
- used on input line 54.
-(pdftex.def)             Requested size: 141.90373pt x 45.5002pt.
-
-Overfull \hbox (12.90105pt too wide) in paragraph at lines 54--57
- [][] 
- []
-
-[26 <./commissioning/fig_commissioning/scheme_reflecto.pdf> <./commissioning/fi
-g_commissioning/scheme_reflecto_1.pdf
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/scheme_reflect
-o_1.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
-> <./commissioning/fig_commissioning/scheme_reflecto_2.pdf
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/scheme_reflect
-o_2.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
->]
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/celerity.e
-ps>
-(epstopdf)                    date: 2020-03-05 14:08:13
-(epstopdf)                    size: 9218 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/celerity-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-05 14:08:23
-(epstopdf)                    size: 8985 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/celerity-eps-converted-to.pdf commissioning/fig_commissioning/celerity.ep
-s>
-(epstopdf)             \includegraphics on input line 102.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/celerity-eps-c
-onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
-1.5> allowed
-<commissioning/fig_commissioning/celerity-eps-converted-to.pdf, id=352, 569.126
-25pt x 277.035pt>
-File: commissioning/fig_commissioning/celerity-eps-converted-to.pdf Graphic fil
-e (type pdf)
-<use commissioning/fig_commissioning/celerity-eps-converted-to.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/celerity-eps-converted
--to.pdf  used on input line 102.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-LaTeX Warning: Reference `subsec:CFD' on page 27 undefined on input line 117.
-
-<commissioning/fig_commissioning/CFD_example.pdf, id=354, 845.04686pt x 597.507
-86pt>
-File: commissioning/fig_commissioning/CFD_example.pdf Graphic file (type pdf)
-<use commissioning/fig_commissioning/CFD_example.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/CFD_example.pdf  used 
-on input line 124.
-(pdftex.def)             Requested size: 301.00192pt x 161.72803pt.
-<commissioning/fig_commissioning/CFD_example_zoom.pdf, id=356, 845.04686pt x 59
-7.50786pt>
-File: commissioning/fig_commissioning/CFD_example_zoom.pdf Graphic file (type p
-df)
-<use commissioning/fig_commissioning/CFD_example_zoom.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/CFD_example_zoom.pdf  
-used on input line 132.
-(pdftex.def)             Requested size: 301.00192pt x 184.19026pt.
-[27 <./commissioning/fig_commissioning/celerity-eps-converted-to.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/length_dif
-f.eps>
-(epstopdf)                    date: 2020-03-10 15:09:46
-(epstopdf)                    size: 10979 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/length_dif
-f-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-10 15:49:14
-(epstopdf)                    size: 9183 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/length_diff-eps-converted-to.pdf commissioning/fig_commissioning/length_d
-iff.eps>
-(epstopdf)             \includegraphics on input line 151.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/length_diff-ep
-s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
-n <1.5> allowed
-<commissioning/fig_commissioning/length_diff-eps-converted-to.pdf, id=377, 569.
-12625pt x 277.035pt>
-File: commissioning/fig_commissioning/length_diff-eps-converted-to.pdf Graphic 
-file (type pdf)
-<use commissioning/fig_commissioning/length_diff-eps-converted-to.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/length_diff-eps-conver
-ted-to.pdf  used on input line 151.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/cut_biais.
-eps>
-(epstopdf)                    date: 2020-03-10 15:09:46
-(epstopdf)                    size: 14197 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/cut_biais-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-10 15:49:14
-(epstopdf)                    size: 11558 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/cut_biais-eps-converted-to.pdf commissioning/fig_commissioning/cut_biais.
-eps>
-(epstopdf)             \includegraphics on input line 172.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/cut_biais-eps-
-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
-<1.5> allowed
-<commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf, id=379, 569.12
-625pt x 277.035pt>
-File: commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf Graphic fi
-le (type pdf)
-<use commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/cut_biais-eps-converte
-d-to.pdf  used on input line 172.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./commissioning/fig_commissioning/CFD_example.pdf> <./commissioning/fig_c
-ommissioning/CFD_example_zoom.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
-
- []
-
-[30 <./commissioning/fig_commissioning/length_diff-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for U+eus on input line 223.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [31 <./commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/attenuatio
-n_length.eps>
-(epstopdf)                    date: 2020-03-11 17:59:15
-(epstopdf)                    size: 20382 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/attenuatio
-n_length-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-11 18:00:07
-(epstopdf)                    size: 15873 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/attenuation_length-eps-converted-to.pdf commissioning/fig_commissioning/a
-ttenuation_length.eps>
-(epstopdf)             \includegraphics on input line 254.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/attenuation_le
-ngth-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
- version <1.5> allowed
-<commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf, id=44
-1, 569.12625pt x 277.035pt>
-File: commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf G
-raphic file (type pdf)
-<use commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/attenuation_length-eps
--converted-to.pdf  used on input line 254.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 278.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 278.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 278.
-
-[32] [33 <./commissioning/fig_commissioning/attenuation_length-eps-converted-to
-.pdf>] [34
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
-
- []
-
-<commissioning/fig_commissioning/Co_decay_scheme.pdf, id=472, 845.04686pt x 597
-.50786pt>
-File: commissioning/fig_commissioning/Co_decay_scheme.pdf Graphic file (type pd
-f)
-<use commissioning/fig_commissioning/Co_decay_scheme.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/Co_decay_scheme.pdf  u
-sed on input line 311.
-(pdftex.def)             Requested size: 284.52756pt x 201.18066pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[35]
-
-Class memoir Warning: The material used in the headers is too large
-(28.99998pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 352.
-
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[36 <./commissioning/fig_commissioning/Co_decay_scheme.pdf>]
-<commissioning/fig_commissioning/photon_energy_loss.pdf, id=498, 569.12625pt x 
-384.43625pt>
-File: commissioning/fig_commissioning/photon_energy_loss.pdf Graphic file (type
- pdf)
-<use commissioning/fig_commissioning/photon_energy_loss.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/photon_energy_loss.pdf
-  used on input line 362.
-(pdftex.def)             Requested size: 206.40038pt x 139.4235pt.
-<commissioning/fig_commissioning/electron_energy_loss.pdf, id=499, 569.12625pt 
-x 384.43625pt>
-File: commissioning/fig_commissioning/electron_energy_loss.pdf Graphic file (ty
-pe pdf)
-<use commissioning/fig_commissioning/electron_energy_loss.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/electron_energy_loss.p
-df  used on input line 370.
-(pdftex.def)             Requested size: 206.40038pt x 139.4235pt.
-<commissioning/fig_commissioning/Co_multi_reflection.pdf, id=501, 553.06625pt x
- 467.7475pt>
-File: commissioning/fig_commissioning/Co_multi_reflection.pdf Graphic file (typ
-e pdf)
-<use commissioning/fig_commissioning/Co_multi_reflection.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/Co_multi_reflection.pd
-f  used on input line 387.
-(pdftex.def)             Requested size: 227.62204pt x 192.5057pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[37 <./commissioning/fig_commissioning/photon_energy_loss.pdf, page is rotated 
-90 degrees> <./commissioning/fig_commissioning/electron_energy_loss.pdf, page i
-s rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--422
-
+[6]
+Overfull \hbox (2.03766pt too wide) detected at line 128
+ \OT1/cmr/bx/n/12 129
  []
 
 
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+Overfull \hbox (2.03766pt too wide) detected at line 144
+ \OT1/cmr/bx/n/12 149
+ []
 
-
-[38 <./commissioning/fig_commissioning/Co_multi_reflection.pdf>]
-<commissioning/fig_commissioning/Co_setup.pdf, id=614, 660.4675pt x 409.53pt>
-File: commissioning/fig_commissioning/Co_setup.pdf Graphic file (type pdf)
-<use commissioning/fig_commissioning/Co_setup.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/Co_setup.pdf  used on 
-input line 472.
-(pdftex.def)             Requested size: 170.71652pt x 105.85664pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[39]
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[40 <./commissioning/fig_commissioning/Co_setup.pdf>]
-<commissioning/fig_commissioning/Co_efficiency_detector.pdf, id=639, 569.12625p
-t x 277.035pt>
-File: commissioning/fig_commissioning/Co_efficiency_detector.pdf Graphic file (
-type pdf)
-<use commissioning/fig_commissioning/Co_efficiency_detector.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/Co_efficiency_detector
-.pdf  used on input line 541.
-(pdftex.def)             Requested size: 483.69684pt x 235.45972pt.
-
-Overfull \hbox (53.69221pt too wide) in paragraph at lines 541--544
- [][] 
+[7]
+Overfull \hbox (2.03766pt too wide) detected at line 162
+ \OT1/cmr/bx/n/12 169
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[41]
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[42 <./commissioning/fig_commissioning/Co_efficiency_detector.pdf, page is rota
-ted 90 degrees>]
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_deltat_
-distrib_ex.eps>
-(epstopdf)                    date: 2020-05-09 19:16:29
-(epstopdf)                    size: 11038 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/Co_deltat_
-distrib_ex-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-09 19:16:46
-(epstopdf)                    size: 9543 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/Co_deltat_distrib_ex-eps-converted-to.pdf commissioning/fig_commissioning
-/Co_deltat_distrib_ex.eps>
-(epstopdf)             \includegraphics on input line 601.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_deltat_dist
-rib_ex-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
-st version <1.5> allowed
-<commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf, id=
-704, 569.12625pt x 277.035pt>
-File: commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf
- Graphic file (type pdf)
-<use commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf>
-
-Package pdftex.def Info: commissioning/fig_commissioning/Co_deltat_distrib_ex-e
-ps-converted-to.pdf  used on input line 601.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-[43 <./commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pd
-f>]
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_corr_si
-gma.eps>
-(epstopdf)                    date: 2020-05-09 20:04:12
-(epstopdf)                    size: 7664 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/Co_corr_si
-gma-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-09 20:04:16
-(epstopdf)                    size: 7679 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/Co_corr_sigma-eps-converted-to.pdf commissioning/fig_commissioning/Co_cor
-r_sigma.eps>
-(epstopdf)             \includegraphics on input line 637.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_corr_sigma-
-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
-ion <1.5> allowed
-<commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf, id=726, 56
-9.12625pt x 277.035pt>
-File: commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf Graphi
-c file (type pdf)
-<use commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/Co_corr_sigma-eps-conv
-erted-to.pdf  used on input line 637.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 648--654
-
+Overfull \hbox (2.03766pt too wide) detected at line 163
+ \OT1/cmr/bx/n/12 171
  []
 
 
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+Overfull \hbox (2.03766pt too wide) detected at line 164
+ \OT1/cmr/bx/n/12 173
+ []
+
+) [8] (./thesis.bbl [172
 
 
-[44]
-Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_sigma_d
-istance.eps>
-(epstopdf)                    date: 2020-05-11 13:02:44
-(epstopdf)                    size: 10875 bytes
-(epstopdf)             Output file: <commissioning/fig_commissioning/Co_sigma_d
-istance-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-11 13:03:21
-(epstopdf)                    size: 9134 bytes
-(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
-oning/Co_sigma_distance-eps-converted-to.pdf commissioning/fig_commissioning/Co
-_sigma_distance.eps>
-(epstopdf)             \includegraphics on input line 662.
-Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_sigma_dista
-nce-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
-version <1.5> allowed
-<commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf, id=734
-, 569.12625pt x 277.035pt>
-File: commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf Gr
-aphic file (type pdf)
-<use commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/Co_sigma_distance-eps-
-converted-to.pdf  used on input line 662.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[45 <./commissioning/fig_commissioning/Co_corr_sigma-eps-converted-to.pdf>]
-<commissioning/fig_commissioning/LIS_scheme.pdf, id=751, 631.35875pt x 395.4775
-pt>
-File: commissioning/fig_commissioning/LIS_scheme.pdf Graphic file (type pdf)
-<use commissioning/fig_commissioning/LIS_scheme.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/LIS_scheme.pdf  used o
-n input line 698.
-(pdftex.def)             Requested size: 284.52756pt x 178.22874pt.
-
-Underfull \vbox (badness 1742) has occurred while \output is active []
 
 
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[46 <./commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf> 
-<./commissioning/fig_commissioning/LIS_scheme.pdf>]
-<commissioning/fig_commissioning/LI_1d_counts.pdf, id=772, 569.12625pt x 277.03
-5pt>
-File: commissioning/fig_commissioning/LI_1d_counts.pdf Graphic file (type pdf)
-<use commissioning/fig_commissioning/LI_1d_counts.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/LI_1d_counts.pdf  used
- on input line 717.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-<commissioning/fig_commissioning/LI_mean_ampl.pdf, id=773, 569.12625pt x 277.03
-5pt>
-File: commissioning/fig_commissioning/LI_mean_ampl.pdf Graphic file (type pdf)
-<use commissioning/fig_commissioning/LI_mean_ampl.pdf>
-Package pdftex.def Info: commissioning/fig_commissioning/LI_mean_ampl.pdf  used
- on input line 727.
-(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [47 <./commissioning/fig_commissioning/LI_1d_counts.pdf, page is rotated 90 d
-egrees>]
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[48 <./commissioning/fig_commissioning/LI_mean_ampl.pdf, page is rotated 90 deg
-rees>] (./thesis.bbl [50
 
 
 
 
 ]
 bibitemlist
-)
 
-Class memoir Warning: The material used in the headers is too large
-(28.99998pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 92.
+Underfull \hbox (badness 1297) in paragraph at lines 14--17
+[]\OT1/cmr/m/n/12 Fukuda Y. et al.  Evidence for oscillation of atmospheric neu
+trinos.
+ []
 
-[51]
+[173]
+Underfull \hbox (badness 1436) in paragraph at lines 122--124
+[]\OT1/cmr/m/n/12 Estar database (nist).  [][]$\OT1/cmtt/m/n/12 http : / / phys
+ics . nist . gov / PhysRefData / Star /
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 133--135
+[]\OT1/cmr/m/n/12 Xcom database (nist).  [][]$\OT1/cmtt/m/n/12 http : / / physi
+cs . nist . gov / PhysRefData / Xcom /
+ []
+
+[174]
+Underfull \hbox (badness 2409) in paragraph at lines 218--224
+\OT1/cmr/m/it/12 SuperNEMO et impact sur la recherche de la d^^Secroissance du 
+82Se
+ []
+
+) [175]
+\openout2 = `Abstract/Abstract.aux'.
+
+ (./Abstract/Abstract.tex
+Package mdframed Info: mdframed works in twoside mode on input line 5.
+
+Underfull \hbox (badness 7777) in paragraph at lines 26--32
+[]\OT1/cmr/m/n/10 La sen-si-bilit^^Se du d^^Semonstrateur ^^Ra
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 33--36
+[]\OT1/cmr/m/n/10 Le bruit de fond in-terne le plus
+ []
+
+Package mdframed Info: Not enough space on this page on input line 49.
+Package mdframed Info: mdframed works in twoside mode on input line 51.
+
+Underfull \hbox (badness 1215) in paragraph at lines 54--55
+[]\OT1/cmr/bx/n/12 Title: \OT1/cmr/m/n/10 Study of $[]$Tl background rejection 
+influence on the neutrinoless double
+ []
+
+
+Underfull \vbox (badness 3058) has occurred while \output is active []
+
+ [176
+
+]
+Package mdframed Info: Not enough space on this page on input line 96.
+LaTeX Font Info:    Try loading font information for OT1+fvs on input line 101.
+
+LaTeX Font Info:    No file OT1fvs.fd. on input line 101.
+
+
+LaTeX Font Warning: Font shape `OT1/fvs/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 101.
+
+
+Overfull \hbox (56.9055pt too wide) in paragraph at lines 105--107
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.70972pt too wide) in paragraph at lines 102--108
+[][] 
+ []
+
+) [177]
+
+Package caption Warning: Unused \captionsetup[figure] on input line 64.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 65.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 66.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[subtable] on input line 67.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[tabular] on input line 68.
+See the caption package documentation for explanation.
+
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
- (./thesis.aux (./introduction/introduction.aux)
-(./neutrinophysics/neutrinophysics.aux)
-(./0nubbexperiments/0nubbexperiments.aux) (./SNdemonstrator/SNdemonstrator.aux)
-(./AnalysisTools/AnalysisTools.aux) (./timedifference/timedifference.aux)
-(./efficiency/efficiency.aux) (./commissioning/commissioning.aux)
-(./theory/theory.aux) (./conclusion/conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+(./thesis.aux (./remerciements/remerciements.aux)
+(./introduction/introduction.aux) (./neutrinophysics/neutrinophysics.aux)
+(./SNdemonstrator/SNdemonstrator.aux) (./Sensitivity/Sensitivity.aux)
+(./timedifference/timedifference.aux) (./commissioning/commissioning.aux)
+(./CobaltStudy/CobaltStudy.aux) (./conclusion/conclusion.aux)
+(./resume/resume.aux) (./Abstract/Abstract.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CE81C0AA294161DDD3D7BAAAFD93AD8E;1953.
+(rerunfilecheck)             Checksum: 1942C1CF47AAA17801493387A55193A3;94.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 13462 strings out of 492982
- 198686 string characters out of 6134896
- 360890 words of memory out of 5000000
- 16609 multiletter control sequences out of 15000+600000
- 16890 words of font info for 66 fonts, out of 8000000 for 9000
+ 23385 strings out of 492982
+ 395635 string characters out of 6134896
+ 624360 words of memory out of 5000000
+ 26468 multiletter control sequences out of 15000+600000
+ 540141 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,44p,1683b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.31} has been referenced but does not exi
-st, replaced by a fixed one
+ 45i,18n,43p,10463b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter*.207} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.206} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.7.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.7.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.7.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.1} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.5.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
 , replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1.2} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.5.1.1} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1728,23 +1929,98 @@ pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
 pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.1.3} has been referenced but does not 
+pdfTeX warning (dest): name{section.4.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.6.2} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.1.2} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.4.6.1} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.1.1} has been referenced but does not 
+pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.5.4} has been referenced but does not 
 exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.0.1} has been referenced but does not 
-exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
 replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1755,9 +2031,6 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -1766,18 +2039,6 @@ exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
 , replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.8} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.5} has been referenced but does not 
-exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.3.1.4} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1797,8 +2058,20 @@ pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
 pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.2.2.5} has been referenced but does not 
+pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.3} has been referenced but does not 
 exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1815,6 +2088,30 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
 , replaced by a fixed one
 
+pdfTeX warning (dest): name{subsection.2.1.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.9} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.8} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -1826,6 +2123,33 @@ pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
 
 pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
 replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.1.2.3} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1839,12 +2163,6 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.1.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{subsection.1.1.2} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -1857,35 +2175,33 @@ pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
 pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.2} has been referenced but does not exist,
+pdfTeX warning (dest): name{chapter*.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.1} has been referenced but does not exist,
  replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eu
-ler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (32 pages, 746993 bytes).
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (12 pages, 236774 bytes).
 PDF statistics:
- 989 PDF objects out of 1000 (max. 8388607)
- 730 compressed objects within 8 object streams
- 152 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 509 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

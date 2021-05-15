@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  26 FEB 2020 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  23 NOV 2020 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,42 +664,66 @@ Package babel Info: Making ? an active character on input line 414.
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 159.
+(hyperref)                removing `math shift' on input line 148.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nu' on input line 159.
+(hyperref)                removing `superscript' on input line 148.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 159.
+(hyperref)                removing `math shift' on input line 148.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 159.
+(hyperref)                removing `\\' on input line 148.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 159.
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 148.
 
 (./1couverture.aux)
 \openout1 = `1couverture.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 163.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 152.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -770,7 +794,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 163.
+Package hyperref Info: Link coloring OFF on input line 152.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -780,9 +804,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 163.
-LaTeX Info: Redefining \pageref on input line 163.
-LaTeX Info: Redefining \nameref on input line 163.
+LaTeX Info: Redefining \ref on input line 152.
+LaTeX Info: Redefining \pageref on input line 152.
+LaTeX Info: Redefining \nameref on input line 152.
 
 (./1couverture.out) (./1couverture.out)
 \@outlinefile=\write3
@@ -790,7 +814,7 @@ LaTeX Info: Redefining \nameref on input line 163.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \degres on input line 163.
+LaTeX Info: Redefining \degres on input line 152.
 
 
 Package french.ldf Warning: Figures' and tables' captions might look like
@@ -802,50 +826,50 @@ Package french.ldf Warning: Figures' and tables' captions might look like
 (french.ldf)                you can still add AFTER babel/french
 (french.ldf)                \usepackage[labelsep=period]{caption} or
 (french.ldf)                \usepackage[labelsep=endash]{caption} or
-(french.ldf)                ... live with it; reported on input line 163.
+(french.ldf)                ... live with it; reported on input line 152.
 
-LaTeX Info: Redefining \dots on input line 163.
-LaTeX Info: Redefining \up on input line 163.
+LaTeX Info: Redefining \dots on input line 152.
+LaTeX Info: Redefining \up on input line 152.
 
 Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(french.ldf)                of your document; reported on input line 163.
+(french.ldf)                of your document; reported on input line 152.
 
-<1couverture/fig_1couverture/bande.png, id=4, 185.0112pt x 845.19765pt>
+<1couverture/fig_1couverture/bande.png, id=4, 796.9775pt x 1127.21124pt>
 File: 1couverture/fig_1couverture/bande.png Graphic file (type png)
 <use 1couverture/fig_1couverture/bande.png>
 Package pdftex.def Info: 1couverture/fig_1couverture/bande.png  used on input l
-ine 172.
-(pdftex.def)             Requested size: 185.01074pt x 845.19559pt.
+ine 161.
+(pdftex.def)             Requested size: 796.97554pt x 1127.2085pt.
 
-Overfull \hbox (13.28955pt too wide) in paragraph at lines 172--174
+Overfull \hbox (625.25435pt too wide) in paragraph at lines 161--163
 [][]
  []
 
 
-Overfull \hbox (6.87709pt too wide) in paragraph at lines 178--179
+Overfull \hbox (6.87709pt too wide) in paragraph at lines 167--168
 [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 189.
+(Font)              <14.4> on input line 178.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 189.
+(Font)              <7> on input line 178.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 212.
+(Font)              <20.74> on input line 202.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 212.
+(Font)              <12> on input line 202.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 218.
+(Font)              <5> on input line 208.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 224.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 214.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 224.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 214.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 246.
+(Font)              <9> on input line 237.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 246.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+(Font)              <6> on input line 237.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
 [1
 
 
@@ -853,33 +877,34 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 pdfTeX warning: pdflatex: pop empty color page stack 0
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./1couverture/fig_1couvert
 ure/bande.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./1couverture.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `1couverture.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 8985 strings out of 492982
- 132466 string characters out of 6134896
- 342145 words of memory out of 5000000
- 12445 multiletter control sequences out of 15000+600000
+ 8980 strings out of 492982
+ 132413 string characters out of 6134896
+ 342364 words of memory out of 5000000
+ 12440 multiletter control sequences out of 15000+600000
  22743 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,10n,38p,679b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvr8a.pfb>
-Output written on 1couverture.pdf (1 page, 63518 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
+etic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
+pfb>
+Output written on 1couverture.pdf (1 page, 62989 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

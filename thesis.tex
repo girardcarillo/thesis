@@ -38,6 +38,10 @@
 \usepackage{float}
 \usepackage{arydshln}
 \usepackage{slashed}
+\usepackage{mdframed}
+\usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
+\usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
+\definecolor{Prune}{RGB}{99,0,60}
 
 %% pour empêcher la cesure des mots
 \pretolerance=10000
@@ -119,12 +123,13 @@
 
                %\title{}
 
-               \includeonly{neutrinophysics/neutrinophysics}
+               %%\includeonly{neutrinophysics/neutrinophysics}
+               \includeonly{Abstract/Abstract}
 
                %% \includeonly{CobaltStudy/CobaltStudy}
                %% \includeonly{Sensitivity/Sensitivity}
                %%\includeonly{commissioning/commissioning}
-               %% \includeonly{timedifference/timedifference}
+               %%\includeonly{timedifference/timedifference}
                %% \includeonly{timedifference/timedifference,Sensitivity/Sensitivity}
                %% \includeonly{SNdemonstrator/SNdemonstrator,CobaltStudy/CobaltStudy}
                %% \includeonly{introduction/introduction}
@@ -168,5 +173,7 @@
 
                \bibliographystyle{unsrt}
                \bibliography{bibliography_thesis}
+
+               \include{Abstract/Abstract}
 
                \end{document}

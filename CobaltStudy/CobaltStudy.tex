@@ -170,7 +170,7 @@ Each data acquisition lasted about $25$ minutes, for a total of $10$ hours of on
   \centering
   \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \includegraphics[height=0.5\textwidth]{commissioning/fig_commissioning/Co_setup.pdf}
+    \includegraphics[height=0.7\textwidth]{commissioning/fig_commissioning/Co_setup.pdf}
     \captionsetup{justification=justified}
     \caption{
       \label{subfig:Co_setup}}
@@ -178,7 +178,7 @@ Each data acquisition lasted about $25$ minutes, for a total of $10$ hours of on
   \hfill
   \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \includegraphics[height=0.5\textwidth]{commissioning/fig_commissioning/Co_setup_wall.pdf}
+    \includegraphics[height=0.7\textwidth]{commissioning/fig_commissioning/Co_setup_wall.pdf}
     \captionsetup{justification=justified}
     \caption{
       \label{subfig:Co_setup_wall}}
@@ -629,7 +629,7 @@ The least square method is used to fit the distributions, which minimises the di
 A mean and a standard deviation is then defined for each pair of optical module whose fitted data has $\chi^{2}/\text{dof}<4$.
 Therefore, due to a lack of statistics, some distributions cannot be fitted properly, and are rejected by the algorithm.
 At the end, each pair of optical module whose $\Delta t^{\text{pair}}$ distribution fit is selected is characterised by the mean and standard deviation of this fit.
-The distribution standard deviation, noted $\Sigma_{t}$, is called \emph{coupled time uncertainty} and corresponds to the uncertainty on time measurement for this peculiar pair of optical module.
+The distribution's standard deviation, noted $\Sigma_{t}$, is called \emph{coupled time uncertainty} and corresponds to the uncertainty on time measurement for this peculiar pair of optical module.
 It was checked graphically that the $\Sigma_{t}$ distributions were Gaussian, so the variance of $\Sigma_{t}^{2}$ is noted
 \begin{equation}
   \Var[\Sigma_{t}^{2}] = \frac{2\,\Sigma_{t}^{\,4}}{N-1}\,,
@@ -714,7 +714,7 @@ For instance, for a trio a optical modules we have
   \Var[(\sigma_{t}^{0})^{2}\,] &= \Var \left[ \frac{1}{2\bar{E}_{0}} (\Sigma_{t}^{0,1}+\Sigma_{t}^{0,2}-\Sigma_{t}^{1,2})^{2} \right] \\
   &= \frac{1}{4\bar{E_{0}}^{2}}\, (\,\Var[(\Sigma_{t}^{0,1})^{2}\,]+\Var[(\Sigma_{t}^{0,2})^{2}\,]+\Var[(\Sigma_{t}^{1,2})^{2}\,]\,)\,,
 \end{align}
-where we assume the $\Sigma_{t}$ values are uncorrelated
+where we assume the $\Sigma_{t}$ values are uncorrelated.
 
 In some cases, when an optical module has detected events in coincidence with more than two other optical modules, it can belongs to more than one trio.
 Thus it is selected several times to participate in the de-correlation process of several different trios.
