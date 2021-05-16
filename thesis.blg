@@ -12,6 +12,7 @@ A level-1 auxiliary file: CobaltStudy/CobaltStudy.aux
 A level-1 auxiliary file: conclusion/conclusion.aux
 A level-1 auxiliary file: resume/resume.aux
 The style file: unsrt.bst
+A level-1 auxiliary file: Abstract/Abstract.aux
 Database file #1: bibliography_thesis.bib
 I was expecting a `,' or a `}'---line 123 of file bibliography_thesis.bib
  :         
@@ -48,46 +49,52 @@ I was expecting a `,' or a `}'---line 491 of file bibliography_thesis.bib
  :     year = {1998}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "unknown:nEXO_2018" isn't style-file defined
+--line 692 of file bibliography_thesis.bib
 Warning--empty year in art:kamiokande_1998
-You've used 44 entries,
+Too many commas in name 1 of "Agostini, M., Bakalyarov, A.M. et al" for entry art:NEXT_2018
+while executing---line 944 of file unsrt.bst
+Warning--empty journal in art:CUPID_2015
+Warning--empty journal in art:PANDA_2016
+You've used 50 entries,
             1791 wiz_defined-function locations,
-            697 strings with 9675 characters,
-and the built_in function-call counts, 7245 in all, are:
-= -- 656
-> -- 229
+            724 strings with 10493 characters,
+and the built_in function-call counts, 7946 in all, are:
+= -- 714
+> -- 234
 < -- 3
-+ -- 101
-- -- 57
-* -- 326
-:= -- 1204
-add.period$ -- 126
-call.type$ -- 44
-change.case$ -- 38
++ -- 108
+- -- 58
+* -- 344
+:= -- 1315
+add.period$ -- 141
+call.type$ -- 50
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 356
-empty$ -- 771
-format.name$ -- 57
-if$ -- 1628
+cite$ -- 53
+duplicate$ -- 402
+empty$ -- 867
+format.name$ -- 58
+if$ -- 1783
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 29
-newline$ -- 217
-num.names$ -- 41
-pop$ -- 100
+int.to.str$ -- 50
+missing$ -- 33
+newline$ -- 244
+num.names$ -- 46
+pop$ -- 131
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 189
+skip$ -- 203
 stack$ -- 0
-substring$ -- 351
-swap$ -- 68
+substring$ -- 364
+swap$ -- 72
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 63
-width$ -- 46
-write$ -- 451
-(There were 7 error messages)
+warning$ -- 3
+while$ -- 69
+width$ -- 52
+write$ -- 502
+(There were 8 error messages)

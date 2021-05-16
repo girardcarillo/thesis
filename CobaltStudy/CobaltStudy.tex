@@ -107,7 +107,7 @@ The characteristic times of these two processes contribute to increase the scint
 
 A photomultiplier is a photodetector: after the light is collected and converted at the photocathode, the photoelectrons are multiplied.
 The transit time for the photoelectrons emitted at the photocathode to reach the anode after being multiplied is not constant for every photoelectron, due to a varying path for electrons emitted by the different dynodes.
-This results in a timing dispersion.
+This results in time dispersion.
 This fluctuation is called transit time spread (TTS).
 It leads to an uncertainty on the time measurement and so has an influence on the photomultiplier time dispersion $\sigma_{t,\text{PM}}$.
 
@@ -135,7 +135,7 @@ Therefore, the two photons are considered as emitted in coincidence.
     \label{fig:Co_decay_scheme}}
 \end{figure}
 
-We aim to detected these two photons and look for coincidences between pairs of optical modules to determine their time resolutions.
+We aim to detect these two photons and look for coincidences between pairs of optical modules to determine their time resolutions.
 
 
 \section{Experimental design}
@@ -192,7 +192,7 @@ Each data acquisition lasted about $25$ minutes, for a total of $10$ hours of on
 \end{figure}
 
 Currently, the demonstrator is not protected from the laboratory lights by the anti-radon tent.
-As those would damage the SuperNEMO photomultipliers under tension, two removable black curtains are deployed on top of the detector (that do not interfere with data collection), and acquisitions are taken in dark laboratory.
+As those would damage the SuperNEMO photomultipliers under tension, two removable black curtains are deployed on top of the detector (that does not interfere with data collection), and acquisitions are taken in dark laboratory.
 With this way of doing, all data acquisitions can be performed, while eventual necessary repairs remain possible during the detector commissioning.
 
 Taking acquisitions in the dark is a big constraint.
@@ -240,7 +240,7 @@ Thus, the signal we are looking for is two particles detected in coincidence in 
 In order to maximise the signal to background ratio, some selections have been applied on data.
 \begin{itemize}
 \item Trigger criteria:\\ in the two calorimeter hits channel, the trigger condition is defined so as one of the two hit has to trigger the low energy (or amplitude) threshold, of $50$~keV for the data acquisition.
-  As we look for two calorimeter hits, we set an additional off-line selection events whose two hits passed both the high amplitude threshold, corresponding to approximately $150$ keV.
+  As we look for two calorimeter hits, we set an additional off-line selection on events whose two hits passed both the high amplitude threshold, corresponding to approximately $150$ keV.
 \item Coincidence time criterion:\\ we define the coincidence time-window by events occurring in a $62.5$ ns-long time interval.
   This allows to avoid accidental coincidence events (interactions of two gammas, produced by different sources, in two optical modules), while keeping events where two $\gamma$ particles interact at both ends of the wall.
   This time-window was set for the data-taking and can be improved for eventual future acquisitions.
@@ -320,7 +320,7 @@ An automatic research of the two peaks is performed and, if exactly two are dete
 This point has been chosen because it is less statistics-dependent than the end point of the distribution.
 In the figure, an example of an optical module with an appropriate gain is given, and the fit is well-performed.
 An example of an optical module with a too low gain (because it was under a too low high voltage) is also displayed, and shows only one peak.
-These kind of distributions were thus not fitted and no energy calibration was provided for them.
+These kinds of distributions were thus not fitted and no energy calibration was provided for them.
 \begin{figure}[h]
   \centering
   \begin{subfigure}[t]{0.8\textwidth}
@@ -396,11 +396,11 @@ Mainly three different types of background can be harmful for this analysis, all
 As described in Sec.~\ref{subsec:Co_datacut}, the geometrical and individual energy selections have been set up to reject these background events.
 \item Photons coming from the natural radioactive decay chains of $^{238}$U, $^{232}$Th and $^{40}$K isotopes.
 Typically, the $2.615$ MeV-$\gamma$, from \Tl\ decay, can interact successively in two scintillators through Compton scatterings and produce high energy events (see Fig.~\ref{subfig:Co_bkg_1}).
-These disintegration can occur in the source foils or in the detector's components (mainly PM glass).
+These disintegrations can occur in the source foils or in the detector's components (mainly PM glass).
 \item At the time of the data acquisition, the calorimeter was in commissioning phase, and the iron shielding was not yet installed.
 Therefore, the calorimeter was not properly protected from external particles, coming from outside the detector (radioactive isotope contamination of laboratory rock).
 Accidental events where two decorrelated $\gamma$ particles, can be detected in two scintillator blocks (see Fig.~\ref{subfig:Co_bkg_3}).
-The coincidence time window should avoid these accidental to be selected.
+The coincidence time window should avoid these accidentals to be selected.
 \end{itemize}
 All these three topologies can mimic the \Co\ two-$\gamma$'s signal.
 \begin{figure}[h]
@@ -449,7 +449,7 @@ We choose to model the \Co\ data as a linear combination of signal events $s$ an
   \label{eq:estimation_data}
 \end{equation}
 where $s$ and $b$ are thus considered as uncorrelated.
-The question is how to extract informations about background, using the \Co\ data acquisitions?
+The question is how to extract informations about the background, using the \Co\ data acquisitions?
 We remind the \Co\ source was placed at different positions behind the calorimeter wall.
 We aim to take advantage of those different configurations to reach our goal.
 In the following, we make use of the positions $2$ and $8$ for the \Co\ source.
@@ -462,14 +462,14 @@ Then, we precise our data model with
   \hat{d}^{\,\text{close}} = b + s^{\,\text{close}}\,,
   \label{eq:estimation_data_close}
 \end{equation}
-where $s^{\,\text{close}}$ is naturally the number of signal \Co\ events detected by a given optical module for which the distance from the source, $D_{\,\text{source}}$, is lower than $10$.
+where $s^{\,\text{close}}$ is naturally the number of \Co\ signal events detected by a given optical module for which the distance from the source, $D_{\,\text{source}}$, is lower than $10$.
 In the same way, considering $s^{\,\text{far}}$ as signal events detected by an optical module from which the source is far, we have
 \begin{equation}
   \hat{d}^{\,\text{far}} = b + s^{\,\text{far}}\,.
   \label{eq:estimation_data_far}
 \end{equation}
 Estimations of $s^{\,\text{close}}$ and $s^{\,\text{far}}$ (respectively noted $\tilde{s}^{\,\text{close}}$ and $\tilde{s}^{\,\text{far}}$) are provided using simulations of \Co\ events in positions $2$ or $8$.
-Indeed, as we consider the double Compton interaction background as negligible, the amount of signal events received for optical modules far or close from the source can be established with \Co\ simulations.
+Indeed, as we consider the double Compton interaction background as negligible, the number of signal events received for optical modules far or close from the source can be established with \Co\ simulations.
 Then, the coefficient $\alpha$ defined as
 \begin{equation}
   \alpha = \tilde{s}^{\,\text{far}}/\tilde{s}^{\,\text{close}}\,.
@@ -493,9 +493,9 @@ This explains the observable gap at the $10$ optical modules limit level.
 \end{figure}
 
 We first focus on simulation results.
-Calorimeter hits for which $D_{\,\text{source}}<10$ represent the estimation of the amount of signal events detected close to the source, $\tilde{s}^{\,\text{close}}$.
-Similarly, hits for which $D_{\,\text{source}}>10$ embed for $\tilde{s}^{\,\text{far}}$, the amount of signal events remaining for optical modules far from the calibration source site.
-As expected, the number of signal \Co\ events decreases with the distance to the source.
+Calorimeter hits for which $D_{\,\text{source}}<10$ represent the estimation of the number of signal events detected close to the source, $\tilde{s}^{\,\text{close}}$.
+Similarly, hits for which $D_{\,\text{source}}>10$ embed for $\tilde{s}^{\,\text{far}}$, the number of signal events remaining for optical modules far from the calibration source site.
+As expected, the number of \Co\ signal events decreases with the distance to the source.
 Moreover, this decrease is linear, showing the same slope beyond and above the $10$ optical modules limit.
 
 Regarding real data acquisition, calorimeter hits for which $D_{\,\text{source}}<10$ materialise the number of data events estimation $\hat{d}^{\,\text{close}}$.
@@ -524,7 +524,7 @@ For this reason, the distribution stabilises at high $D_{source}$ ($\sim8$ OM un
 
 %% on mesure alpha et il est petit donc on peut négliger sfar dans la modélisation
 
-To summarise, in this subsection, we gave informations on background events for the whole French wall, using data taken with the \Co\ source set at different positions.
+To summarise, in this subsection, we gave information on background events for the whole French wall, using data taken with the \Co\ source set at different positions.
 We confirmed our assumption that the more one optical block is far from the source, the less it detects $\gamma$ particles emitted after \Co\ disintegrations, then the more the signal to background ratio decreases.
 
 %% faut dire que du coup on peut croire nos résultats quand la source est proche pour l'analyse time reso
@@ -626,16 +626,16 @@ The average time-of-flight difference for such background events is different fr
 
 Such  $\Delta t^{\text{pair}}$ distributions are defined for each pair of optical modules detecting events in coincidence.
 The least square method is used to fit the distributions, which minimises the difference between the measured value and the fitted value.
-A mean and a standard deviation is then defined for each pair of optical module whose fitted data has $\chi^{2}/\text{dof}<4$.
+A mean and a standard deviation is then defined for each pair of optical modules whose fitted data has $\chi^{2}/\text{dof}<4$.
 Therefore, due to a lack of statistics, some distributions cannot be fitted properly, and are rejected by the algorithm.
-At the end, each pair of optical module whose $\Delta t^{\text{pair}}$ distribution fit is selected is characterised by the mean and standard deviation of this fit.
-The distribution's standard deviation, noted $\Sigma_{t}$, is called \emph{coupled time uncertainty} and corresponds to the uncertainty on time measurement for this peculiar pair of optical module.
+At the end, each pair of optical modules whose $\Delta t^{\text{pair}}$ distribution fit is selected is characterised by the mean and standard deviation of this fit.
+The distribution's standard deviation, noted $\Sigma_{t}$, is called \emph{coupled time uncertainty} and corresponds to the uncertainty on time measurement for this peculiar pair of optical modules.
 It was checked graphically that the $\Sigma_{t}$ distributions were Gaussian, so the variance of $\Sigma_{t}^{2}$ is noted
 \begin{equation}
   \Var[\Sigma_{t}^{2}] = \frac{2\,\Sigma_{t}^{\,4}}{N-1}\,,
   \label{eq:var_sigma_pair}
 \end{equation}
-where $N$ is the number of events detected in coincidence for this pair of optical module.
+where $N$ is the number of events detected in coincidence for this pair of optical modules.
 
 \subsection{Coupled time uncertainties}
 
@@ -661,7 +661,7 @@ With this method, we succeed to provide $\Sigma_{t}$ values for $26$\% of pairs 
 This difference is due to a lack of statistics for real data.
 In Fig.\ref{fig:Co_sigma_distance} is displayed the number of characterised optical blocks, with the distance between the reference block and the \Co\ source, in OM units.
 The further away an optical module is from the source, the less likely the fit successes.
-Moreover, for a given distance from the source, the amount of characterised optical module is lower for the real data case than for the simulated one, explaining the lower amount of provided $\Sigma_{t}$ values for real data.
+Moreover, for a given distance from the source, the number of characterised optical modules is lower for the real data case than for the simulated one, explaining the lower amount of provided $\Sigma_{t}$ values for real data.
 \begin{figure}[h]
   \centering
   \includegraphics[width=15cm]{commissioning/fig_commissioning/Co_sigma_distance.eps}
@@ -680,7 +680,7 @@ Moreover, for a given distance from the source, the amount of characterised opti
 %% simulated.
 
 We presented results on the uncertainty on time measurement for pairs of optical modules, $\Sigma_{t}$.
-However, we are interested in providing the individual uncertainty of each optical modules, noted $\sigma_{t}$.
+However, we are interested in providing the individual uncertainty of each optical module, noted $\sigma_{t}$.
 In the following, we present the algorithm we used to compute such value.
 
 
@@ -705,11 +705,11 @@ In the end, each decorrelated $\sigma_{t}$ is expressed as a linear combination 
 In practice, this has to be done for all the optical modules for which the $\Delta {t}^{pair}$ distribution fit has provided a $\Sigma_{t}$ value.
 With this in mind, the $\Sigma_{t}$ values are sorted by order of the number of coincidental events.
 The work presented above is therefore applied to the first trio of this list.
-Then the next trio is selected, etc...
+Then the next trio is selected, etc.
 In the end $\sigma_{t}$ is computed for each optical module.
 
 The variance of a given $\sigma_{t}^{2}$ value, noted $\Var[\sigma_{t}^{2}]$, depends on the variance of the three $\Sigma_{t}$ defined in Eq.~\eqref{eq:var_sigma_pair}.
-For instance, for a trio a optical modules we have
+For instance, for a trio optical modules we have
 \begin{align}
   \Var[(\sigma_{t}^{0})^{2}\,] &= \Var \left[ \frac{1}{2\bar{E}_{0}} (\Sigma_{t}^{0,1}+\Sigma_{t}^{0,2}-\Sigma_{t}^{1,2})^{2} \right] \\
   &= \frac{1}{4\bar{E_{0}}^{2}}\, (\,\Var[(\Sigma_{t}^{0,1})^{2}\,]+\Var[(\Sigma_{t}^{0,2})^{2}\,]+\Var[(\Sigma_{t}^{1,2})^{2}\,]\,)\,,
@@ -717,7 +717,7 @@ For instance, for a trio a optical modules we have
 where we assume the $\Sigma_{t}$ values are uncorrelated.
 
 In some cases, when an optical module has detected events in coincidence with more than two other optical modules, it can belongs to more than one trio.
-Thus it is selected several times to participate in the de-correlation process of several different trios.
+Thus, it is selected several times to participate in the de-correlation process of several different trios.
 Each optical module can then have many decorrelated $\sigma_{t}$ values associated to it.
 The mean of these values, $\bar{\sigma_{t}}$, then stands as the final time uncertainty for each optical module.
 It is defined as the weighted average:
@@ -729,7 +729,7 @@ It is defined as the weighted average:
 with $i$ the optical module index and $n$ The $n$th estimate made of $\sigma_{t}$.
 
 The work presented in the current section can be applied to real and simulated data.
-For each optical module, the simulated time uncertainty is subtracted in quadrature from the real time uncertainty, allowing to bring out the optical module time uncertainty defined in Eq.~\eqref{eq:Co_sigma_t}.
+For each optical module, the simulated time uncertainty is subtracted in quadrature from the real-time uncertainty, allowing to bring out the optical module time uncertainty defined in Eq.~\eqref{eq:Co_sigma_t}.
 The distribution of $\bar{\sigma_{t}}$ for $8$~inches optical modules of the French wall is given in Fig.~\ref{fig:final_sigmas}.
 On average, the time uncertainty stands at $570\pm130$~ps while few optical modules show large values, beyond $900$~ps.
 Although these values are higher than expected, it should be borne in mind that they have been characterised under rather complicated conditions, where the detector was not yet fully calibrated.
@@ -744,16 +744,16 @@ In particular, the double Compton background, possibly poorly rejected due to im
 However, it is important to keep in mind that we made strong assumptions about the properties of the system.
 Thus, while the mean of this distribution should be well-estimated, the standard deviation may not be.
 Indeed, we provided a very rough and naive estimate of the optical module time uncertainty $\sigma_{t}$, assuming Gaussian statistics, and uncorrelated estimate of the coupled time uncertainties $\Sigma_{t}$, as well as uncorrelated individual estimate of $\sigma_{t,n}$.
-This is of course not the case.
+This is, of course, not the case.
 In practice, we can do much better, by solving an over-determined system of equations that include all the $\Sigma_{t}$ and $\sigma_{t}$ at once.
 Nevertheless, our naive estimate is sufficient for this preliminary analysis, and provides encouraging results, opening the door to a full calorimeter timing characterisation.
 
 \section{Conclusion}
 
 
-This study provided the first analysis of the resolution of the SuperNEMO demonstrator's calorimeter since its installation at Modane, where $26$\% of the demonstrator's optical modules could be characterised, representing more than $40$\% of the $8$~inches PMs.
+This study has provided the first analysis of the resolution of the SuperNEMO demonstrator's calorimeter since its installation at Modane, where $26$\% of the demonstrator's optical modules could be characterised, representing more than $40$\% of the $8$~inches PMs.
 It is an end to end work, from the experimental set up design, to the creation of the code and the analysis algorithm, through the acquisition of the calibration source and all the necessary administrative and security procedures, as well as the data acquisition at Modane.
-An estimation of the background detected was also given and it was the opportunity to perform a quick energy calibration of the French main wall using the \Co\ source.
+An estimation of the background detected was also given, and it was the opportunity to perform a quick energy calibration of the French main wall using the \Co\ source.
 This preliminary study aims to be improved, and new data, taken in Modane at the end of October $2020$, will allow to purchase this work.
 
 %% %% \begin{itemize}

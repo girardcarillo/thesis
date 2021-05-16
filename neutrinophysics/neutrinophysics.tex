@@ -175,7 +175,7 @@ The study of neutrino mixing allows us to have access to precise values of squar
 
 Thanks to matter effects in the Sun, we know that $\Delta m^2_{sol}>0$.
 Since $\Delta m^2_{atm}$ is essentially measured via neutrino oscillations in vacuum, which exclusively depend on its absolute value, its sign is unknown at the moment.
-Therefore, the neutrino masses can be ordered in two ways: normal ordering (NO) if $\Delta m^2_{atm}>0$ and inverted ordering (IO) if $\Delta m^2_{atm}>0$.
+Therefore, the neutrino masses can be ordered in two ways: normal ordering (NO) if $\Delta m^2_{atm}>0$ and inverted ordering (IO) if $\Delta m^2_{atm}<0$.
 Both orderings are presented in Fig.~\ref{fig:IO_NO}.
 Indirect constraints may come from the observation of the neutrinoless double beta decay or from cosmological bounds on the sum of the neutrino masses.
 \begin{figure}[h!]
@@ -225,7 +225,7 @@ Tab.~\ref{tab:best_fit} sums up the latest best fit values of $U_{PMNS}$ paramet
     \hline
   \end{tabular}
   \caption{Best fit values of neutrino oscillation parameters, for inverted and normal orderings (IO and NO, respectively)~\cite{art:Capozzi_2017}.
-    ${\Delta m^{2}=m_3^2-(m_1^2+m_2^2)/2}$ with $+\Delta m$ for IO.
+    ${\Delta m^{2}=m_3^2-(m_1^2+m_2^2)/2}$ with $+\Delta m$ for NO.
     The CP violating phase is taken in the interval $0\leq\delta_{CP}/\pi\leq2$.
     \label{tab:best_fit}}
 \end{table}
@@ -708,16 +708,16 @@ $^{76}$Ge-enriched high purity Germanium detectors (HPGe) offer both high energy
 These characteristics allow, once external background contribution is minimised, to reach high sensitivity on $\zeronu$ decay, which makes this category of detectors one of the most promising for ton-scale experiments.
 Since the last generation (IGEX and Heidelberg-Moscow), HPGe detectors had been improved to reach an ultra low background rate, making way for the current generation of $\zeronu$ detectors -- GERDA, MAJORANA demonstrator and LEGEND.
 
-\paragraph{GERDA} experiment (GERmanium Detector Array) is located at the Laboratori Nazionali del Gran Sasso (LNGS), Italy.
+\paragraph{GERDA} experiment~\cite{art:NEXT_2018} (GERmanium Detector Array) is located at the Laboratori Nazionali del Gran Sasso (LNGS), Italy.
 GERDA phase I was running from $2011$ to $2013$ with $17.8$ kg of enriched active source detectors from the HEIDELBERG-MOSCOW and IGEX experiments.
 Its first aim was to put to the test the controversial result of HEIDELBERG-MOSCOW experiment given in $2001$, announcing the first evidence for $\zeronu$ signal at a $4.2\sigma$ confidence level.
 With an exposure of $21.6$ kg.y, the absence of signal in the GERDA-I experiment refuted the previous result, setting a limit $\Tbeta>2.1\, 10^{25}$ y.
 Since $2015$, the GERDA experiment is in the second phase (see Fig.~\ref{fig:GERDA}), with a total of $35.8$ kg enriched detectors, $20$ kg of which is Broad Energy Germanium (BEGe) detectors that have been deployed for GERDA-II, providing a better energy resolution and pulse shape discrimination.
 The active source is deployed inside a liquid Argon (LAr) augmented with light sensors, acting as an active external shield as well as a cooling down system.
 The total is surrounded by a water tank.
-The aim is to reach a $10^{26}$ y sensitivity with $100$ kg.y exposure, and a background rate less than $10^{-3}$ $\Bckunit$.
 The underground laboratory provides $3500$ m water equivalent to reduce the external cosmic background.
-In $2019$, a combined analysis for GERDA phases I and II has resulted in a half-life limit of $\Tbeta>9\times 10^{25}$~years ($90$\% C.L.), corresponding to an effective neutrino mass of $\mbb<0.07\text{-}0.16$ eV ($90$\% C.L.).
+The aim is to reach a $10^{26}$ y sensitivity with $100$ kg.y exposure, and a background rate less than $10^{-3}$ $\Bckunit$.
+In $2020$, a combined analysis for GERDA phases I and II has resulted in a half-life limit of $\Tbeta>1.8\times 10^{26}$~years ($90$\% C.L.) under the no signal hypothesis, with a total exposure of $127.2$~kg.y~\cite{art:GERDA_2020}.
 
 \begin{figure}
   \centering
@@ -727,7 +727,7 @@ In $2019$, a combined analysis for GERDA phases I and II has resulted in a half-
 \end{figure}
 
 
-\paragraph{MAJORANA demonstrator} is an array of enriched germanium detectors searching for the $\zeronu$ decay of the $^{76}$Ge isotope, using High Purity Germanium (HPGe) detectors.
+\paragraph{MAJORANA demonstrator}~\cite{art:MAJORANA_2014} is an array of enriched germanium detectors searching for the $\zeronu$ decay of the $^{76}$Ge isotope, using High Purity Germanium (HPGe) detectors.
 The Majorana Demonstrator is located at the Sanford Underground Research Facility (SURF) in Lead, USA.
 It is composed of $58$ HPGe detectors divided into $2$ cryostats with $7$ strings each.
 Each string is an assembly of $3$, $4$ or $5$ detectors.
@@ -735,7 +735,7 @@ The total mass of HPGe crystals is $44.1$~kg, $29.7$~kg of which is enriched to 
 The observed lower limit is $\Tbeta>2.7\times 10^{25}$~years at $90$\% CL~\cite{art:majorana2019}.
 A combined limit from the two Ge-based experiments GERDA and MAJORANA would exceed $10^{26}$~years.
 
-\paragraph{LEGEND} for Large Enriched Germanium Experiment for Neutrinoless Double-Beta Decay.
+\paragraph{LEGEND} stands for Large Enriched Germanium Experiment for Neutrinoless Double-Beta Decay~\cite{proc:LEGEND_2019}.
 After the encouraging results of the MAJORANA Demonstrator and GERDA, the LEGEND collaboration has been formed to pursue a tonne-scale $^{76}$Ge experiment, with discovery potential at a half-life beyond $10^{28}$~years.
 The collaboration aim to use existing material from GERDA, especially the cryostat, and perform additional R\&D to build the detector.
 
@@ -746,17 +746,17 @@ Bolometers are high energy resolution (few keV) and high detection efficiency ca
 The crystals are both the source and the detector, which is particularly suitable for $\zeronu$ searches, and provides the possibility to build large-scale experiments.
 As the two electrons topology is not available, analyses of the pulse shapes can be performed in order to discriminate the signal from the electronics noise and the natural radioactivity events.
 
-\paragraph{CUORE} for Cryogenic Underground Observatory for Rare Events, is an experiment based at Laboratori Nazionali del Gran Sasso in Italy.
+\paragraph{CUORE} for Cryogenic Underground Observatory for Rare Events~\cite{art:CUORE_2019}, is an experiment based at Laboratori Nazionali del Gran Sasso in Italy.
 The feasibility of the project has been proved by Cuoricino, the pilot experiment taking data from $2003$ to $2008$ with $62$ TeO$2$ cryogenic detectors, for a total of $19.75$~kg.y exposure, achieving a lower limit of $\Tbeta>2.8\times 10^{24}$~years at $90$\% CL.
 The next step towards the final experiment CUORE is CUORE-$0$ which aims at improving the background reduction.
 The data took place from $2013$ to summer $2015$, showing the $\alpha$ background were reduced by a factor $6$.
 The final CUORE detector consists of an array of $988$ TeO$2$ crystals arranged in a cylindrical structure of $19$ towers.
 The first results of the CUORE experiment had been published in $2018$, where no evidence for $\zeronu$ were found.
 Combining their results with the earlier experiments Cuoricino and CUORE-$0$, a lower limit of $\Tbeta>1.5\times 10^{25}$~years at $90$\% CL were achieved.
+Latest results of the CUORE collaboration in $2020$ reported a sensitivity of $\Tbeta>1.7\times 10^{25}$~years~\cite{art:CUORE_2020}.
 
 
-
-\paragraph{CUPID} for CUORE Upgrade with Particle IDentification, uses the expertise acquired with the CUORE facility, with a background level improved by a factor $100$ as the particle identification is a powerful tool for background rejection.
+\paragraph{CUPID} for CUORE Upgrade with Particle IDentification~\cite{art:CUPID_2015}, uses the expertise acquired with the CUORE facility, with a background level improved by a factor $100$ as the particle identification is a powerful tool for background rejection.
 This technology uses scintillating bolometers, and is based on the principle that different particles produce different amount of light, providing a good discrimination between $\gamma$ and $\alpha$ background events.
 The first CUPID-$0$ detector uses $24$ crystals enriched at $95$\% with \Se, for a total mass of $5.17$~kg, coupled with $31$ Germanium light detectors.
 It is hosted in the CUORE-$0$ cryostat at LNGS.
@@ -782,21 +782,21 @@ Scintillation photons, travelling at speed of light in the medium, are detected 
 The crossing particle ionises the medium all along its way, creating electrons drifting to a collection system (an electric field is applied between cathode and anode), allowing the precise measurement of the electron production location in a 2D plane.
 The drift time measurement gives access to the third coordinate of the interaction point.
 Therefore, combining the two consecutive signals allows precise position and energy reconstructions.
-A discriminating observable is the ionisation-to-scintillation ratio (see Fig.~\ref{fig:ratio_EXO-200}) as it provides particle discrimination between $\alpha$ particles (low ratio) and $\gamma$ radiations and $\beta$ particles (high ratio).
+%% A discriminating observable is the ionisation-to-scintillation ratio (see Fig.~\ref{fig:ratio_EXO-200}) as it provides particle discrimination between $\alpha$ particles (low ratio) and $\gamma$ radiations and $\beta$ particles (high ratio).
 For $\zeronu$ searches, $^{136}$Xe-enriched isotope in liquid phase is often used, offering a maximal source density (more compact detectors) and a good position resolution.
 Unfortunately, the energy resolution is worse than that of the gas-phase TPCs detectors\footnote{Two-phase liquid-Xenon detectors are developed for Dark Matter searches and could be exploited for $\zeronu$ direct searches with the DARWIN project.}.
 Noble elements are natural radiation detectors, avoiding the need for excess materials that could generate extra radioactive backgrounds.
 $^{136}$Xe-enriched is the only noble element capable to $\twonu$ decay, with $\Qbb=2457.8$ keV.
 This isotope has a relatively high natural abundance ($9$\%) and can be enriched to highly pure concentrations, making it interesting for large-scale TPCs $\zeronu$ experiments.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=8cm]{neutrinophysics/fig_neutrinophysics/ionisation-to-scintillation_EXO-200.png}
-  \caption{Scintillation light energy as a function of ionisation energy.
-    \label{fig:ratio_EXO-200}}
-\end{figure}
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[width=8cm]{neutrinophysics/fig_neutrinophysics/ionisation-to-scintillation_EXO-200.png}
+%%   \caption{Scintillation light energy as a function of ionisation energy.
+%%     \label{fig:ratio_EXO-200}}
+%% \end{figure}
 
-\paragraph{EXO-$200$} experiment is a prototype of the Enriched Xenon Observatory (EXO) project, currently operating in a room under an overburden of $1624$ m.w.e, at the Waste Isolation Pilot Plant (WIPP), USA.
+\paragraph{EXO-$200$} experiment~\cite{art:EXO200_2012} is a prototype of the Enriched Xenon Observatory (EXO) project, currently operating in a room under an overburden of $1624$ m.w.e, at the Waste Isolation Pilot Plant (WIPP), USA.
 The detector is shaped as a cylinder, with two back-to-back cylindrical TPCs.
 A high negative voltage grid cathode holds at the mid plane of the detector ($40$ cm diameter), and two anodes are located on both sides, at ground potential.
 A cross-section of the detector is displayed in Fig.~\ref{fig:EXO-200}.
@@ -814,7 +814,7 @@ The final analysis allowed to reach $5.0\times 10^{25}$~years at $90$\% CL with 
     \label{fig:EXO-200}}
 \end{figure}
 
-\paragraph{nEXO} is the successor of EXO-$200$ searching for the $\zeronu$ decay of $^{136}$Xe with a target half-life sensitivity of $\sim 10^{28}$~years using $5\times 10^3$~kg of enriched liquid-xenon in a time projection chamber.
+\paragraph{nEXO}~\cite{unknown:nEXO_2018} is the successor of EXO-$200$ searching for the $\zeronu$ decay of $^{136}$Xe with a target half-life sensitivity of $\sim 10^{28}$~years using $5\times 10^3$~kg of enriched liquid-xenon in a time projection chamber.
 This limit would be reached by using an increased mass of enriched $^{136}$Xe, and an active R\&D program, aimed primarily at improving the active medium homogeneity.
 
 \paragraph{NEXT} for Neutrino Experiment with a Xenon TPC is searching for the $\zeronu$ decay of $^{136}$Xe isotope at the Canfranc underground laboratory in Spain~\cite{art:NEXT_2016}.
@@ -823,7 +823,7 @@ The gas medium allows to obtain longer particle tracks than with liquid Xenon an
 The NEXT-$100$ project, which deploys $100$~kg of enriched Xenon, aims to demonstrate the feasibility of such an experiment and its usefulness for the $\zeronu$ searches.
 
 
-\paragraph{PandaX-III} also searches for the $\zeronu$ of $^{136}$Xe with a high pressure gas TPC ($10$~bar).
+\paragraph{PandaX-III} also searches for the $\zeronu$ of $^{136}$Xe with a high $10$~bar pressure gas TPC~\cite{art:PANDA_2016}.
 It is installed at the China Jin Ping underground Laboratory (CJPL) and contains $200$~kg of $90$\% enriched $^{136}$Xe.
 The previous PandaX-II detector is a dark matter direct detection experiment.
 

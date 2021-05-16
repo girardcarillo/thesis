@@ -42,6 +42,15 @@
 \usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
 \usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
 \definecolor{Prune}{RGB}{99,0,60}
+\usepackage{scrextend} %Forcer la 4eme  de couverture en page pair
+\usepackage{fancyhdr}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[absolute]{textpos}
+\usepackage{colortbl}
+\usepackage{array}
+
+
 
 %% pour empêcher la cesure des mots
 \pretolerance=10000
@@ -124,7 +133,6 @@
                %\title{}
 
                %%\includeonly{neutrinophysics/neutrinophysics}
-               \includeonly{Abstract/Abstract}
 
                %% \includeonly{CobaltStudy/CobaltStudy}
                %% \includeonly{Sensitivity/Sensitivity}
@@ -134,13 +142,14 @@
                %% \includeonly{SNdemonstrator/SNdemonstrator,CobaltStudy/CobaltStudy}
                %% \includeonly{introduction/introduction}
                %% \includeonly{conclusion/conclusion}
+               %%\includeonly{Abstract/Abstract}
 
                %% \includeonly{remerciements/remerciements,introduction/introduction,SNdemonstrator/SNdemonstrator,Sensitivity/Sensitivity,timedifference/timedifference,commissioning/commissioning,CobaltStudy/CobaltStudy,conclusion/conclusion,resume/resume}
 
 
                \begin{document}
                %\maketitle
-               \includepdf{1couverture}
+               \includepdf{1couverture/1couverture}
                \clearpage
                \include{remerciements/remerciements}
                \cleardoublepage

@@ -1,2 +1,122 @@
-\BOOKMARK [0][-]{section*.1}{Contents}{}% 2
-\BOOKMARK [0][-]{section*.3}{Bibliography}{}% 122
+\BOOKMARK [0][-]{chapter*.1}{Acknowledgement}{}% 1
+\BOOKMARK [0][-]{section*.2}{Contents}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Introduction}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Phenomenology of particle physics and experimental status}{}% 4
+\BOOKMARK [1][-]{section.1.1}{The Standard Model of particle physics}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.1}{Particle content}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.2}{Where the Standard Model ends}{section.1.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Going beyond the Standard Model with neutrinos}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.2.1}{Neutrino flavors and oscillations}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{Neutrino masses and nature}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.3}{Double beta decays}{section.1.2}% 11
+\BOOKMARK [1][-]{section.1.3}{0 experimental status}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Experimental design criteria}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{0 direct search experiments}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.3}{Bolometers}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.4}{Time projection chambers}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.5}{Liquid scintillators}{section.1.3}% 17
+\BOOKMARK [2][-]{subsection.1.3.6}{Tracking calorimeters}{section.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.3.7}{Summary}{section.1.3}% 19
+\BOOKMARK [1][-]{section.1.4}{Conclusion}{chapter.1}% 20
+\BOOKMARK [0][-]{chapter.2}{The SuperNEMO demonstrator}{}% 21
+\BOOKMARK [1][-]{section.2.1}{The SuperNEMO technology}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.1.1}{Detection principle}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.2}{The source foils}{section.2.1}% 24
+\BOOKMARK [2][-]{subsection.2.1.3}{The tracker}{section.2.1}% 25
+\BOOKMARK [2][-]{subsection.2.1.4}{The calorimeter}{section.2.1}% 26
+\BOOKMARK [2][-]{subsection.2.1.5}{Interaction of particles in the SuperNEMO scintillators}{section.2.1}% 27
+\BOOKMARK [2][-]{subsection.2.1.6}{The magnetic coil and the shieldings}{section.2.1}% 28
+\BOOKMARK [2][-]{subsection.2.1.7}{Calibration strategy}{section.2.1}% 29
+\BOOKMARK [2][-]{subsection.2.1.8}{Detector cabling}{section.2.1}% 30
+\BOOKMARK [2][-]{subsection.2.1.9}{Electronics}{section.2.1}% 31
+\BOOKMARK [2][-]{subsection.2.1.10}{Detector gas tightness}{section.2.1}% 32
+\BOOKMARK [1][-]{section.2.2}{Backgrounds}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.1}{Internal background}{section.2.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.2}{External background}{section.2.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.3}{Radon background}{section.2.2}% 36
+\BOOKMARK [2][-]{subsection.2.2.4}{Background reduction}{section.2.2}% 37
+\BOOKMARK [1][-]{section.2.3}{The SuperNEMO software}{chapter.2}% 38
+\BOOKMARK [2][-]{subsection.2.3.1}{Simulation}{section.2.3}% 39
+\BOOKMARK [2][-]{subsection.2.3.2}{Reconstruction pipeline}{section.2.3}% 40
+\BOOKMARK [2][-]{subsection.2.3.3}{Analysis tools}{section.2.3}% 41
+\BOOKMARK [1][-]{section.2.4}{Summary}{chapter.2}% 42
+\BOOKMARK [0][-]{chapter.3}{Sensitivity of the SuperNEMO experiment to the 0}{}% 43
+\BOOKMARK [1][-]{section.3.1}{The 0 signal and background model}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.1.1}{The 0 signal}{section.3.1}% 45
+\BOOKMARK [2][-]{subsection.3.1.2}{Inside detector backgrounds}{section.3.1}% 46
+\BOOKMARK [2][-]{subsection.3.1.3}{External backgrounds}{section.3.1}% 47
+\BOOKMARK [2][-]{subsection.3.1.4}{Expected number of decays}{section.3.1}% 48
+\BOOKMARK [1][-]{section.3.2}{Event selection}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.2.1}{Electron definition}{section.3.2}% 50
+\BOOKMARK [2][-]{subsection.3.2.2}{Total energy spectrum}{section.3.2}% 51
+\BOOKMARK [1][-]{section.3.3}{Demonstrator sensitivity to the 0 decay of 82Se}{chapter.3}% 52
+\BOOKMARK [2][-]{subsection.3.3.1}{Sensitivity to the 0 half-life}{section.3.3}% 53
+\BOOKMARK [2][-]{subsection.3.3.2}{Limit on the effective neutrino mass}{section.3.3}% 54
+\BOOKMARK [1][-]{section.3.4}{Impact of sources contamination levels on the sensitivity}{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.4.1}{Contamination levels}{section.3.4}% 56
+\BOOKMARK [2][-]{subsection.3.4.2}{Optimisation of event selection}{section.3.4}% 57
+\BOOKMARK [1][-]{section.3.5}{Impact of the magnetic field on the sensitivity}{chapter.3}% 58
+\BOOKMARK [2][-]{subsection.3.5.1}{Simulations of the magnetic field}{section.3.5}% 59
+\BOOKMARK [2][-]{subsection.3.5.2}{Impact of the magnetic field on signal and background selections}{section.3.5}% 60
+\BOOKMARK [2][-]{subsection.3.5.3}{Influence of the magnetic field on optical modules and reconstruction efficiency}{section.3.5}% 61
+\BOOKMARK [2][-]{subsection.3.5.4}{Simulations with a non-uniform magnetic field}{section.3.5}% 62
+\BOOKMARK [1][-]{section.3.6}{Searching for the 150Nd 0 decay}{chapter.3}% 63
+\BOOKMARK [2][-]{subsection.3.6.1}{Searching for the 0 of other isotopes}{section.3.6}% 64
+\BOOKMARK [2][-]{subsection.3.6.2}{Sensitivity to the 0 of 150Nd}{section.3.6}% 65
+\BOOKMARK [1][-]{section.3.7}{The final detector sensitivity}{chapter.3}% 66
+\BOOKMARK [1][-]{section.3.8}{Conclusion}{chapter.3}% 67
+\BOOKMARK [0][-]{chapter.4}{Improvement of the internal 208Tl background rejection}{}% 68
+\BOOKMARK [1][-]{section.4.1}{Motivations}{chapter.4}% 69
+\BOOKMARK [1][-]{section.4.2}{The internal 208Tl background}{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.2.1}{The internal conversion process}{section.4.2}% 71
+\BOOKMARK [2][-]{subsection.4.2.2}{208Tl disintegrations in the 2e channel}{section.4.2}% 72
+\BOOKMARK [1][-]{section.4.3}{Simulated demonstrator performances}{chapter.4}% 73
+\BOOKMARK [1][-]{section.4.4}{Analysis tools to describe the 208Tl internal background}{chapter.4}% 74
+\BOOKMARK [2][-]{subsection.4.4.1}{The internal probability}{section.4.4}% 75
+\BOOKMARK [2][-]{subsection.4.4.2}{The exponential probability}{section.4.4}% 76
+\BOOKMARK [1][-]{section.4.5}{Event selection}{chapter.4}% 77
+\BOOKMARK [2][-]{subsection.4.5.1}{Energy selection}{section.4.5}% 78
+\BOOKMARK [2][-]{subsection.4.5.2}{Time-of-flight cut-off}{section.4.5}% 79
+\BOOKMARK [2][-]{subsection.4.5.3}{Probability cut-off}{section.4.5}% 80
+\BOOKMARK [2][-]{subsection.4.5.4}{Influence of the calorimeter time resolution}{section.4.5}% 81
+\BOOKMARK [1][-]{section.4.6}{Impact of 208Tl rejection on the experiment's sensitivity}{chapter.4}% 82
+\BOOKMARK [2][-]{subsection.4.6.1}{Sensitivity results}{section.4.6}% 83
+\BOOKMARK [2][-]{subsection.4.6.2}{Expected number of background}{section.4.6}% 84
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 85
+\BOOKMARK [0][-]{chapter.5}{Calorimeter commissioning}{}% 86
+\BOOKMARK [1][-]{section.5.1}{Optical modules calibration}{chapter.5}% 87
+\BOOKMARK [2][-]{subsection.5.1.1}{Pulse shape studies}{section.5.1}% 88
+\BOOKMARK [2][-]{subsection.5.1.2}{Baseline studies}{section.5.1}% 89
+\BOOKMARK [2][-]{subsection.5.1.3}{Gain studies}{section.5.1}% 90
+\BOOKMARK [2][-]{subsection.5.1.4}{Energy calibration}{section.5.1}% 91
+\BOOKMARK [1][-]{section.5.2}{Light Injection System}{chapter.5}% 92
+\BOOKMARK [1][-]{section.5.3}{Calorimeter cabling network}{chapter.5}% 93
+\BOOKMARK [2][-]{subsection.5.3.1}{Motivations}{section.5.3}% 94
+\BOOKMARK [2][-]{subsection.5.3.2}{Experimental setup}{section.5.3}% 95
+\BOOKMARK [2][-]{subsection.5.3.3}{Pulse shape analysis}{section.5.3}% 96
+\BOOKMARK [2][-]{subsection.5.3.4}{Pulse timing}{section.5.3}% 97
+\BOOKMARK [2][-]{subsection.5.3.5}{Signal attenuation}{section.5.3}% 98
+\BOOKMARK [2][-]{subsection.5.3.6}{Summary}{section.5.3}% 99
+\BOOKMARK [1][-]{section.5.4}{Synchronisation of calorimeter FEBs}{chapter.5}% 100
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 101
+\BOOKMARK [0][-]{chapter.6}{Characterisation of the calorimeter time resolution}{}% 102
+\BOOKMARK [1][-]{section.6.1}{Time response of optical modules}{chapter.6}% 103
+\BOOKMARK [2][-]{subsection.6.1.1}{Scintillator time dispersion}{section.6.1}% 104
+\BOOKMARK [2][-]{subsection.6.1.2}{Photomultiplier time dispersion}{section.6.1}% 105
+\BOOKMARK [1][-]{section.6.2}{Description of 60Co nucleus}{chapter.6}% 106
+\BOOKMARK [1][-]{section.6.3}{Experimental design}{chapter.6}% 107
+\BOOKMARK [2][-]{subsection.6.3.1}{Setting up the experimental design}{section.6.3}% 108
+\BOOKMARK [2][-]{subsection.6.3.2}{Simulations and analysis pipelines}{section.6.3}% 109
+\BOOKMARK [1][-]{section.6.4}{Signal events selection}{chapter.6}% 110
+\BOOKMARK [1][-]{section.6.5}{Energy calibration}{chapter.6}% 111
+\BOOKMARK [1][-]{section.6.6}{Background estimation}{chapter.6}% 112
+\BOOKMARK [2][-]{subsection.6.6.1}{Types of background}{section.6.6}% 113
+\BOOKMARK [2][-]{subsection.6.6.2}{Background characterisation}{section.6.6}% 114
+\BOOKMARK [1][-]{section.6.7}{Determination of the optical modules timing resolution}{chapter.6}% 115
+\BOOKMARK [2][-]{subsection.6.7.1}{Time difference distributions}{section.6.7}% 116
+\BOOKMARK [2][-]{subsection.6.7.2}{Coupled time uncertainties}{section.6.7}% 117
+\BOOKMARK [2][-]{subsection.6.7.3}{Decoupling the t uncertainties}{section.6.7}% 118
+\BOOKMARK [1][-]{section.6.8}{Conclusion}{chapter.6}% 119
+\BOOKMARK [0][-]{chapter*.205}{Conclusion}{}% 120
+\BOOKMARK [0][-]{chapter*.206}{R\351sum\351}{}% 121
+\BOOKMARK [0][-]{section*.208}{Bibliography}{}% 122

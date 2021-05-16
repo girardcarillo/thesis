@@ -1,252 +1,134 @@
+%%%% Modèle proposé par frederic.mazaleyrat@ens-paris-saclay.fr %%%%
+%%%% 31/01/2017 %%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Modèle pour la 1ère de couverture des thèses préparées à l'Université Paris-Saclay, basé sur le modèle produit par Guillaume BRIGOT / Template for back cover of thesis made at Université Paris-Saclay, based on the template made by Guillaume BRIGOT
-%%% Mis à jour par Aurélien ARNOUX (École polytechnique)/ Updated by Aurélien ARNOUX (École polytechnique)
-%%% Les instructions concernant chaque donnée à remplir sont données en bloc de commentaire / Rules to fill this file are given in comment blocks
-%%% ATTENTION Ces informations doivent tenir sur une seule page une fois compilées / WARNING These informations must contain in no more than one page once compiled
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Version du 23 mai 2019 (Merci à Thibault CHEVALÉRIAS (CEA) pour ses suggestions et corrections)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\documentclass[a4paper]{article}
+\documentclass[12pt,a4paper]{book}
 \usepackage[utf8]{inputenc}
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{geometry}
-\geometry{
-	left=16mm,
-	top=30mm,
-	right=16mm,
-	bottom=30mm
-}
-\usepackage{xcolor}
-% \definecolor{bordeau}{rgb}{0.3515625,0,0.234375}
-\definecolor{bordeau}{rgb}{0.3515625,0,0.234375}
-\usepackage[absolute,overlay]{textpos}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{color} % où xcolor selon l'installation
+\definecolor{Prune}{RGB}{99,0,60}
+\usepackage{mdframed}
+\usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
+\usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
+\usepackage{scrextend} %Forcer la 4eme  de couverture en page pair
+\usepackage{tikz}
 \usepackage{graphicx}
-\usepackage{lipsum}
-\usepackage{hyperref}
+\usepackage[absolute]{textpos}
+\usepackage{colortbl}
 \usepackage{array}
-\usepackage{caption}
-\usepackage{multicol}
-\setlength{\columnseprule}{0pt}
-\setlength\columnsep{10pt}
-\usepackage[french]{babel}
-
-
-
-
-
-
-
-\label{form}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Formulaire / Form
-%%% Remplacer les paramètres des \newcommand par les informations demandées / Replace \newcommand parameters by asked informations
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\newcommand{\PhDTitle}{Study of $^{208}$Tl background rejection influence \\on the $0\nu\beta\beta$ decay sensitivity\\
-  Characterisation of SuperNEMO demonstrator\\ calorimeter timing performance
-  %% Commissioning and sensitivity study of SN demonstrator for seach of 0nubb
-}
-\newcommand{\PhDname}{Cloé Girard-Carillo} 															%% Civilité, nom et prénom /  Civility, first name and name
-\newcommand{\NNT}{***}
-\newcommand{\nLAL}{***}
-%% Numéro National de Thèse (donnée par la bibliothèque à la suite du 1er dépôt)/ National Thesis Number (given by the Library after the first deposit)
-
-
-\newcommand{\ecodoctitle}{Particles, Hadrons, Energy, Nuclei,\\ Instrumentation, Imaging, Cosmos et Simulation } 													%% Nom de l'ED. Voir site de l'Université Paris-Saclay / Full name of Doctoral School. See Université Paris-Saclay website
-\newcommand{\ecodocacro}{PHENIICS}																%% Sigle de l'ED. Voir site de l'Université Paris-Saclay / Acronym of the Doctoral School. See Université Paris-Saclay website
-\newcommand{\ecodocnum}{576} 																%% Numéro de l'école doctorale / Doctoral School number
-\newcommand{\PhDspeciality}{Physique des particules} 										%% Spécialité de doctorat / Speciality
-\newcommand{\PhDworkingplace}{l'Université Paris Saclay au sein du Laboratoire Irène-Joliot Curie\\
-	(anciennement Laboratoire de l'Accélérateur Linéaire)} 										%% Établissement de préparation / PhD working place : l'Université Paris-Sud, l'Université de Versailles-Saint-Quentin-en-Yvelines, l'Université d'Evry-Val-d'Essonne, l'Institut des sciences et industries du vivant et de l'environnement (AgroParisTech), CentraleSupélec,l'Ecole normale supérieure de Cachan, l'Ecole Polytechnique, l'Ecole nationale supérieure de techniques avancées, l'Ecole nationale de la statistique et de l’administration économique, HEC Paris, l'Institut d'optique théorique et appliquée, Télécom ParisTech, Télécom SudParis
-\newcommand{\defenseplace}{Orsay} 											%% Ville de soutenance / Place of defense
-\newcommand{\defensedate}{11 décembre 2020} 															%% Date de soutenance / Date of defense
-
-%%% Établissement / Institution
-%%% Si la thèse a été produite dans le cadre d'une co-tutelle, commenter la partie "Pas de co-tutelle" et décommenter la partie "Co-tutelle" / If the thesis has been prepared in guardianship, comment the part "Pas de co-tutelle" and uncomment the part "Co-tutelle"
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%% Pas de co-tutelle %%%
-	%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\logoEtt}{blank}																%% NE PAS MODIFIER / DO NOT MODIFY
-\newcommand{\vpostt}{0.1} 																	%% NE PAS MODIFIER / DO NOT MODIFY
-\newcommand{\hpostt}{6}																		%% NE PAS MODIFIER / DO NOT MODIFY
-\newcommand{\logoEt}{UPSUD} 																	%% Logo de l'établissement de soutenance. Indiquer le sigle / Institution logo. Indicate the acronym : AGRO, CENTSUP, ENS, ENSAE, ENSTA, HEC, IOGS, TPT, TSP, UEVE, UPSUD, UVSQ, X
-\newcommand{\vpos}{0.1}																		%% À modifier au besoin pour aligner le logo verticalement / If needed, modify to align logo vertilcally
-\newcommand{\hpos}{11}																		%% À modifier au besoin pour aligner le logo horizontalement / If needed, modify to align logo horizontaly
-
-		%%%%%%%%%%%%%%%%%%
-		%%% Co-tutelle %%%
-		%%%%%%%%%%%%%%%%%%
-
-%\newcommand{\logoEt}{etab} 																%% Logo de l'université partenaire. Placer le fichier .png dans le répertoire '/media/etab' et indiquer le nom du fichier sans l'extension / Logo of partner university. Place the .png file in the directory '/media/etab' and point the file name without the extension
-%\newcommand{\vpos}{0.1}																	%% À modifier au besoin pour aligner les logos verticalement / If needed, modify to align logos vertilcally
-%\newcommand{\hpos}{11}																		%% À modifier au besoin pour aligner les logos horizontalement / If needed, modify to align logos horizontaly
-%\newcommand{\logoEtt}{etab2}  																%% Logo de l'établissement de soutenance. Le nom du fichier correspond au sigle de l'établissement /  Institution logo. Filename correspond to institution acronym : AGRO, CENTSUP, ENS, ENSAE, ENSTA, HEC, IOGS, TPT, TSP, UEVE, UPSUD, UVSQ, X
-%\newcommand{\vpostt}{0.1} 																	%% À modifier au besoin pour aligner les logos verticalement / If needed, modify to align logos vertilcally
-%\newcommand{\hpostt}{6}																	%% À modifier au besoin pour aligner les logos horizontalement / If needed, modify to align logos horizontaly
-
-
-%%% JURY
-
-% Lors du premier dépôt de la thèse le nom du président nest pas connu, le choix du président se fait par les membres du Jury juste avant la soutenance. La précision est apportée sur la couverture lors du second dépôt / Choice of the jury's president is made during the defense. Thus, it must be specified only for the second file deposition in ADUM.
-% Tous les membres du juty listés doivent avoir été présents lors de la soutenance / All the jury members listed here must have been present during the defense.
-
-%%% Membre n°1 (Président) / Member n°1 (President)
-\newcommand{\jurynameA}{Achille Stocchi}
-\newcommand{\juryadressA}{IJCLab - Orsay}
-%%\newcommand{\juryroleA}{Président}
-\newcommand{\juryroleA}{Examinateur}
-
-%%% Membre n°2 (Rapporteur) / Member n°2 (Reviewer)
-\newcommand{\jurynameB}{Alessandra Tonazzo}
-\newcommand{\juryadressB}{APC - Paris}
-\newcommand{\juryroleB}{Rapporteure}
-
-%%% Membre n°4 (Examinateur) / Member n°4 (Examiner)
-\newcommand{\jurynameD}{Mark C. Chen}
-\newcommand{\juryadressD}{Queen's University}
-\newcommand{\juryroleD}{Rapporteur}
-
-%%% Membre n°5 (Directeur de thèse) / Member n°5 (Thesis supervisor)
-\newcommand{\jurynameE}{Christine Marquet}
-\newcommand{\juryadressE}{CENBG - Bordeaux-Gradignan}
-\newcommand{\juryroleE}{Examinatrice}
-
-%%% Membre n°5 (Directeur de thèse) / Member n°5 (Thesis supervisor)
-\newcommand{\jurynameH}{Laurent Simard}
-\newcommand{\juryadressH}{IJCLab - Orsay}
-\newcommand{\juryroleH}{Directeur de thèse}
-
-%%% Membre n°6 (Co-directeur de thèse) / Member n°6 (Thesis co-supervisor)
-\newcommand{\jurynameI}{Mathieu Bongrand}
-\newcommand{\juryadressI}{IJCLab - Orsay}
-\newcommand{\juryroleI}{Co-directeur de thèse}
-
-%% Il est possible d'ajouter des membres supplémentaires selon le même modèle / More jury members can be added according to the same model
-
-\label{layout}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Mise en page / Page layout
-%%% NE RIEN MODIFIER EXCEPTÉ LA PARTIE CONCERNANT LE JURY (voir \label{jury}) SI BESOIN / DO NOT MODIFY EXCEPT SECTION CONCERNING JURY (see \label{jury}) IF NEEDED
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Méta-données du PDF / PDF meta-datas
-\hypersetup{
-	pdfauthor={\PhDname},
-	pdfsubject={Manuscrit de thèse de doctorat},
-	pdftitle={\PhDTitle},
-}
-
-
-
+%\RequirePackage{geometry}% That nicely create a one-page template
+%\geometry{textheight=100ex,textwidth=40em,top=30pt,headheight=30pt,headsep=30pt,inner=80pt}
+\usepackage{geometry}
 \begin{document}
 
-
-\thispagestyle{empty}
-
-%%  \color{bordeau} \hfill \vfill \tiny \ecodocnum
-\begin{textblock}{5}(0,0)
-	\textblockcolour{}
-	%\vspace{10mm}
-	\includegraphics [scale=1]{1couverture/fig_1couverture/bande.png}
-	\vspace{300mm}
-\end{textblock}
-
-\begin{textblock}{1}(1.0,9.5)
-	\textblockcolour{}
-	\Huge{\rotatebox{90}{\color{white}{\fontsize{38}{54}\selectfont Thèse de doctorat}}}
-\end{textblock}
+\begin{titlepage}
 
 
-\begin{textblock}{1}(1.0,3)
-	\textblockcolour{}
-	\Large{\rotatebox{90}{\color{white}{NNT : \NNT}}}
-\end{textblock}
+%\thispagestyle{empty}
 
-\begin{textblock}{1}(2.0,3)
-	\textblockcolour{}
-	\Large{\rotatebox{90}{\color{white}{n$^\circ$LAL : \nLAL}}}
-\end{textblock}
+\newgeometry{left=7.5cm,bottom=2cm, top=1cm, right=1cm}
 
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (-28mm,-135mm){\includegraphics{fig_1couverture/Bandeau_UPaS.pdf}};
+
+% fonte sans empattement pour la page de titre
+\fontfamily{fvs}\fontseries{m}\selectfont
 
 
+%*****************************************************
+%******** NUMÉRO D'ORDRE DE LA THÈSE À COMPLÉTER *****
+%******** POUR LE SECOND DÉPOT                   *****
+%*****************************************************
+
+\color{white}
+
+\begin{picture}(0,0)
+
+\put(-150,-735){\rotatebox{90}{NNT: 2020UPASP097}}
+\end{picture}
+
+%*****************************************************
+%**  LOGO  ÉTABLISSEMENT PARTENAIRE SI COTUTELLE
+%**  CHANGER L'IMAGE PAR DÉFAUT **
+%*****************************************************
+%% \vspace{-10mm} % à ajuster en fonction de la hauteur du logo
+%% \flushright \includegraphics[scale=1]{logo2.png}
 
 
 
-% \begin{textblock}{1}(\hpos,\vpos)
-\begin{textblock}{1}(5.5,0.7)
-	% \textblockcolour{white}
-		% \includegraphics[scale=1]{media/etab/\logoEt.png}
-		%\includegraphics[height=0.05\textheight]{{Figures/1024px-CNRS.svg}.png}~~~~~~~~\includegraphics[height=0.05\textheight]{{Figures/l-coul-500}.jpg}~~~~~~~~\includegraphics[height=0.05\textheight]{{Figures/Logo-CNES-horizontal}.png}~~~~~~~~\includegraphics[height=0.05\textheight]{{Figures/logo_edpheniics_l1024coul}.jpg}~~~~~~~~\includegraphics[height=0.05\textheight]{media/etab/\logoEt.png}
-\end{textblock}
 
-%\vspace{6cm}
-%% Texte
-%%\begin{textblock}{9.5}(5.7,3)
-\begin{textblock}{12}(3.5,3)
-	\textblockcolour{white}
+%*****************************************************
+%******************** TITRE **************************
+%*****************************************************
+\flushright
+\vspace{22mm} % à régler éventuellement
+\color{Prune}
+\fontfamily{fvs}\fontseries{m}\fontsize{16}{26}\selectfont
+  {Study of $^{208}$Tl background rejection influence on the $0\nu\beta\beta$ decay sensitivity}\\
+  \mbox{Characterisation of SuperNEMO demonstrator} calorimeter timing performance
 
-	\color{bordeau}
-	%%\begin{center}
-	\begin{flushright}
-		\huge{\PhDTitle} \bigskip %% Titre de la thèse
-		\vfill
-		\color{black} %% Couleur noire du reste du texte
-		\normalsize {Thèse de doctorat de l'Université Paris-Saclay} \\
-		préparée à \PhDworkingplace \\ \bigskip
-		\vfill
-		École doctorale n$^{\circ}$\ecodocnum ~\ecodoctitle ~(\ecodocacro)  \\
+%*****************************************************
 
-		\small{Spécialité de doctorat: \PhDspeciality} \bigskip %% Spécialité
-		\vfill
-		\footnotesize{Thèse présentée et soutenue à \defenseplace, le \defensedate, par} \bigskip
-		\vfill
-		\textcolor{bordeau}{\Large{\textbf{\textsc{\PhDname}}}} %% Nom du docteur
-		\vfill
-		%\bigskip
-	\end{flushright}
+\fontfamily{fvs}\fontseries{m}\fontsize{11}{15}\selectfont
+%\normalsize
+\vspace{2cm}
 
-	%%\end{center}
-	\color{black}
-	%% Jury
-	\vspace{3cm}
-	\begin{center}
+\color{black}
+\textbf{Thèse de doctorat de l'Université Paris-Saclay}
 
-		\small Composition du Jury :
-	\end{center}
-	%% Members of the jury
+\vspace{15mm}
 
-	\small
-	%\begin{center}
-	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}lm{#1}}
+École doctorale n$^{\circ}$ 576 Particules, Hadrons, Énergie et Noyau :\\Instrumentation, Imagerie, Cosmos et Simulation (PHENIICS)\\
+\fontfamily{fvs}\fontseries{m}\fontsize{10}{15}\selectfont
+%% \small
+Spécialité de doctorat : astroparticules et cosmologie\\
+\fontfamily{fvs}\fontseries{m}\fontsize{9}{15}\selectfont
+%% \footnotesize
+Unité de recherche : Université Paris-Saclay, CNRS, IJCLab, \\91405, Orsay, France.\\
+%% \footnotesize
+Référent: : faculté des sciences d’Orsay
+\vspace{15mm}
 
-	\label{jury} 																				%% Mettre à jour si des membres ont été ajoutés ou retirés / Update if members have been added or removed
-	%%\begin{flushleft}
-        \begin{center}
-	\begin{tabular}{@{} L{8.5cm} R{2.5cm}}
-		%%\jurynameA  \\ \juryadressA & \juryroleA \\[7pt]
-		\jurynameB  \\ \juryadressB & \juryroleB \\[7pt]
-		% \jurynameC  \\ \juryadressC & \juryroleC \\[7pt]
-		\jurynameD  \\ \juryadressD & \juryroleD \\[7pt]
-		\jurynameE  \\ \juryadressE & \juryroleE \\[7pt]
-                \jurynameA  \\ \juryadressA & \juryroleA \\[7pt]
-		\jurynameH  \\ \juryadressH & \juryroleH \\[7pt]
-		\jurynameI  \\ \juryadressI & \juryroleI \\[7pt]
+\textbf{Thèse présentée et soutenue à Orsay, le 11 décembre 2020, par}\\
+\bigskip
+\Large {\color{Prune} \textbf{Cloé Girard-Carillo}}
 
-	\end{tabular}
-	\end{center}
-	%\end{center}
-\end{textblock}
+
+%************************************
+\vspace{\fill} % ALIGNER LE TABLEAU EN BAS DE PAGE
+%************************************
+
+\flushleft \small \textbf{Composition du jury:}
+\bigskip
+
+
+\scriptsize
+\begin{tabular}{|p{8cm}l}
+\arrayrulecolor{Prune}
+\textbf{Achille Stocchi} &   Président\\
+Professeur, Université Paris-Saclay & \\
+\textbf{Alessandra Tonazzo} &  Rapportrice \\
+Professeure, Université Paris-Diderot   &   \\
+\textbf{Mark C. Chen} &  Rapporteur \\
+Professeur, Queen's University  &   \\
+\textbf{Christine Marquet} &  Examinatrice \\
+Chargée de recherche, CENBG   &   \\
+
+\end{tabular}
+
+\medskip
+\begin{tabular}{|p{8cm}l}\arrayrulecolor{white}
+\textbf{Laurent Simard} &   Directeur\\
+Maître de conférence, Université Paris-Saclay & \\
+\textbf{Mathieu Bongrand} &   Codirecteur\\
+Chargé de recherche, Subatech  &   \\
+
+
+\end{tabular}
+
+
+\end{titlepage}
 
 \end{document}

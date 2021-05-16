@@ -61,11 +61,53 @@ Furry W.H.
 \newblock On transition probabilities in double beta-disintegration.
 \newblock {\em Physical Review}, 56:1184, 1939.
 
+\bibitem{art:NEXT_2018}
+Bakalyarov A.M. et~al Agostini, M.
+\newblock Upgrade for phase ii of the gerda experiment.
+\newblock {\em Eur. Phys. J. C}, 2018.
+
+\bibitem{art:GERDA_2020}
+M.~et~al Agostini.
+\newblock Final results of gerda on the search for neutrinoless
+  double-$\ensuremath{\beta}$ decay.
+\newblock {\em Phys. Rev. Lett.}, 125:252502, Dec 2020.
+
+\bibitem{art:MAJORANA_2014}
+N.~et~al Abgrall.
+\newblock The majorana demonstrator neutrinoless double-beta decay experiment.
+\newblock {\em Advances in High Energy Physics}, 2014.
+
 \bibitem{art:majorana2019}
 S.I. Alvis et~al.
 \newblock Search for neutrinoless double-beta decay in $^{76}$ge with $26$
   kg-yr of exposure from the majorana demonstrator.
 \newblock {\em Phys. Rev. C}, 100, 2019.
+
+\bibitem{proc:LEGEND_2019}
+{\em LEGEND: The Large Enriched Germanium Experiment forNeutrinoless
+  Double-Beta Decay}, 2018.
+
+\bibitem{art:CUORE_2019}
+C.~et~al Brofferio.
+\newblock Neutrinoless double beta decay experiments with teo2 low-temperature
+  detectors.
+\newblock {\em Frontiers in Physics}, 7:86, 2019.
+
+\bibitem{art:CUORE_2020}
+D.Q. et~al Adams.
+\newblock Improved limit on neutrinoless double-beta decay in 130te with cuore.
+\newblock {\em Phys. Rev. Lett.}, 2020.
+
+\bibitem{art:CUPID_2015}
+CUPID~Interest Group.
+\newblock Cupid: Cuore (cryogenic underground observatory for rare events)
+  upgrade with particle identification.
+\newblock 2015.
+
+\bibitem{art:EXO200_2012}
+M.~et~al Auger.
+\newblock The {EXO}-200 detector, part i: detector design and construction.
+\newblock {\em Journal of Instrumentation}, 7(05):P05010--P05010, may 2012.
 
 \bibitem{art:EXO200_2019}
 G.~et~al Anton.
@@ -73,40 +115,26 @@ G.~et~al Anton.
   complete exo-200 dataset.
 \newblock {\em Phys. Rev. Lett.}, 123:161802, Oct 2019.
 
+\bibitem{unknown:nEXO_2018}
+nEXO Collaboration.
+\newblock nexo pre-conceptual design report, 05 2018.
+
 \bibitem{art:NEXT_2016}
 J.J. et~al Gomez-Cadenas.
 \newblock The next experiment.
 \newblock {\em Phys. Rev. Lett.}, pages 1732--1739, Apr-Jun 2016.
+
+\bibitem{art:PANDA_2016}
+X.~et~al Chen.
+\newblock Pandax-iii: Searching for neutrinoless double beta decay with high
+  pressure 136xe gas time projection chambers.
+\newblock 2016.
 
 \bibitem{art:KamLAND2016}
 A.~Gando et~al.
 \newblock Search for majorana neutrinos near the inverted mass hierarchy region
   with kamland-zen.
 \newblock {\em Phys. Rev. Lett.}, 117:082503, Aug 2016.
-
-\bibitem{art:GERDA2019}
-M.~Agostini et~al.
-\newblock Probing majorana neutrinos with double-$\beta$ decay.
-\newblock {\em Science 365}, 1445, 2019.
-
-\bibitem{art:CUPID2018}
-O.~Azzolini et~al.
-\newblock First result on the neutrinoless double-$\ensuremath{\beta}$ decay of
-  $^{82}\mathrm{Se}$ with cupid-0.
-\newblock {\em Phys. Rev. Lett.}, 120:232502, Jun 2018.
-
-\bibitem{art:CUORE2018}
-C.~Alduino et~al.
-\newblock First results from cuore: A search for lepton number violation via
-  $0\ensuremath{\nu}\ensuremath{\beta}\ensuremath{\beta}$ decay of
-  $^{130}\mathrm{Te}$.
-\newblock {\em Phys. Rev. Lett.}, 120:132501, Mar 2018.
-
-\bibitem{art:EXO2018}
-J.~B. Albert et~al.
-\newblock Search for neutrinoless double-beta decay with the upgraded exo-200
-  detector.
-\newblock {\em Phys. Rev. Lett.}, 120:072701, Feb 2018.
 
 \bibitem{docdb:ashwin2015}
 Chopra A.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  15 MAY 2021 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.14)  16 MAY 2021 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1378,10 +1378,331 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box83
 \mc@col@check@num=\count361
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 76.
-Package hyperref Info: Option `colorlinks' set `true' on input line 114.
- (./thesis.aux
-(./remerciements/remerciements.aux) (./introduction/introduction.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2017/09/07 v3.24 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
+
+
+LaTeX Warning: Command \InputIfFileExists  has changed.
+               Check if current package is valid.
+
+)))
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+LaTeX Info: Redefining \textsubscript on input line 1318.
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip330
+\f@nch@O@elh=\skip331
+\f@nch@O@erh=\skip332
+\f@nch@O@olh=\skip333
+\f@nch@O@orh=\skip334
+\f@nch@O@elf=\skip335
+\f@nch@O@erf=\skip336
+\f@nch@O@olf=\skip337
+\f@nch@O@orf=\skip338
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen293
+\pgfutil@tempdimb=\dimen294
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box84
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks40
+))
+\pgf@x=\dimen295
+\pgf@y=\dimen296
+\pgf@xa=\dimen297
+\pgf@ya=\dimen298
+\pgf@xb=\dimen299
+\pgf@yb=\dimen300
+\pgf@xc=\dimen301
+\pgf@yc=\dimen302
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count362
+\c@pgf@countb=\count363
+\c@pgf@countc=\count364
+\c@pgf@countd=\count365
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count366
+\pgfsyssoftpath@bigbuffer@items=\count367
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen303
+\pgfmath@count=\count368
+\pgfmath@box=\box85
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count369
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen304
+\pgf@picmaxx=\dimen305
+\pgf@picminy=\dimen306
+\pgf@picmaxy=\dimen307
+\pgf@pathminx=\dimen308
+\pgf@pathmaxx=\dimen309
+\pgf@pathminy=\dimen310
+\pgf@pathmaxy=\dimen311
+\pgf@xx=\dimen312
+\pgf@xy=\dimen313
+\pgf@yx=\dimen314
+\pgf@yy=\dimen315
+\pgf@zx=\dimen316
+\pgf@zy=\dimen317
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen318
+\pgf@path@lasty=\dimen319
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen320
+\pgf@shorten@start@additional=\dimen321
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box86
+\pgf@hbox=\box87
+\pgf@layerbox@main=\box88
+\pgf@picture@serial@count=\count370
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen322
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen323
+\pgf@pt@y=\dimen324
+\pgf@pt@temp=\dimen325
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen326
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen327
+\pgf@sys@shading@range@num=\count371
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box89
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box90
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen328
+\pgf@nodesepend=\dimen329
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen330
+\pgffor@skip=\dimen331
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count372
+\pgfplotmarksize=\dimen332
+)
+\tikz@lastx=\dimen333
+\tikz@lasty=\dimen334
+\tikz@lastxsaved=\dimen335
+\tikz@lastysaved=\dimen336
+\tikzleveldistance=\dimen337
+\tikzsiblingdistance=\dimen338
+\tikz@figbox=\box91
+\tikz@figbox@bg=\box92
+\tikz@tempbox=\box93
+\tikz@tempbox@bg=\box94
+\tikztreelevel=\count373
+\tikznumberofchildren=\count374
+\tikznumberofcurrentchild=\count375
+\tikz@fig@count=\count376
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count377
+\pgfmatrixcurrentcolumn=\count378
+\pgf@matrix@numberofcolumns=\count379
+)
+\tikz@expandcount=\count380
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2016/06/07 v1.8
+
+Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
+\TP@textbox=\box95
+\TP@holdbox=\box96
+\TPHorizModule=\dimen339
+\TPVertModule=\dimen340
+\TP@margin=\dimen341
+\TP@absmargin=\dimen342
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen343
+\TP@ox=\dimen344
+\TP@oy=\dimen345
+\TP@tbargs=\toks49
+\TP@prevdepth=\dimen346
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks50
+\minrowclearance=\skip339
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 85.
+Package hyperref Info: Option `colorlinks' set `true' on input line 123.
+ (./thesis.aux (./remerciements/remerciements.aux) (./introduction/introduction
+.aux)
 (./neutrinophysics/neutrinophysics.aux
 
 LaTeX Warning: Label `subfig:' multiply defined.
@@ -1487,20 +1808,20 @@ LaTeX Warning: Label `sub@subfig:' multiply defined.
 (./resume/resume.aux) (./Abstract/Abstract.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1538,17 +1859,17 @@ LaTeX Font Info:    ... okay on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
-\scratchdimen=\dimen293
-\scratchbox=\box84
-\nofMPsegments=\count363
-\nofMParguments=\count364
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count365
-\MPscratchDim=\dimen294
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count381
+\scratchdimen=\dimen347
+\scratchbox=\box97
+\nofMPsegments=\count382
+\nofMParguments=\count383
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen348
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
+\everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1566,8 +1887,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box85
-Package hyperref Info: Link coloring ON on input line 141.
+\AtBeginShipoutBox=\box98
+Package hyperref Info: Link coloring ON on input line 150.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1575,17 +1896,15 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count368
+\c@section@level=\count387
 )
-Redoing nameref's sectioning
-Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 141.
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
+
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write4
-\openout4 = `thesis.out'.
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -1599,54 +1918,71 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<1couverture.pdf, id=12, 597.50829pt x 845.0471pt>
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf>
-Package pdftex.def Info: 1couverture.pdf  used on input line 143.
+
+ABD: EveryShipout initializing macros
+<1couverture/1couverture.pdf, id=497, 597.50829pt x 845.0471pt>
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf>
+Package pdftex.def Info: 1couverture/1couverture.pdf  used on input line 152.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf>
-Package pdftex.def Info: 1couverture.pdf  used on input line 143.
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf>
+Package pdftex.def Info: 1couverture/1couverture.pdf  used on input line 152.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<1couverture.pdf, id=15, page=1, 597.50829pt x 845.0471pt>
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+<1couverture/1couverture.pdf, id=500, page=1, 597.50829pt x 845.0471pt>
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf, page 1>
+Package pdftex.def Info: 1couverture/1couverture.pdf , page1 used on input line
+ 152.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf, page 1>
+Package pdftex.def Info: 1couverture/1couverture.pdf , page1 used on input line
+ 152.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf, page 1>
+Package pdftex.def Info: 1couverture/1couverture.pdf , page1 used on input line
+ 152.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf, page 1>
+Package pdftex.def Info: 1couverture/1couverture.pdf , page1 used on input line
+ 152.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: 1couverture.pdf Graphic file (type pdf)
-<use 1couverture.pdf, page 1>
-Package pdftex.def Info: 1couverture.pdf , page1 used on input line 143.
+File: 1couverture/1couverture.pdf Graphic file (type pdf)
+<use 1couverture/1couverture.pdf, page 1>
+Package pdftex.def Info: 1couverture/1couverture.pdf , page1 used on input line
+ 152.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
- <./1couverture.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>] [4
+ <./1couverture/1couverture.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.m
+ap}>]
+\openout2 = `remerciements/remerciements.aux'.
+
+
+(./remerciements/remerciements.tex [2
 
 
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 148.
+(Font)              using `OT1/cmr/bx/n' instead on input line 1.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 148.
+(Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-(./thesis.toc
+) [3] [4
+
+
+
+] (./thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
@@ -1655,43 +1991,2806 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5]
 Overfull \hbox (2.03766pt too wide) detected at line 108
- \OT1/cmr/bx/n/12 105
+ \OT1/cmr/bx/n/12 103
  []
 
 [6]
 Overfull \hbox (2.03766pt too wide) detected at line 128
- \OT1/cmr/bx/n/12 129
+ \OT1/cmr/bx/n/12 127
  []
 
 
 Overfull \hbox (2.03766pt too wide) detected at line 144
- \OT1/cmr/bx/n/12 149
+ \OT1/cmr/bx/n/12 147
  []
 
 [7]
 Overfull \hbox (2.03766pt too wide) detected at line 162
- \OT1/cmr/bx/n/12 169
+ \OT1/cmr/bx/n/12 167
  []
 
 
 Overfull \hbox (2.03766pt too wide) detected at line 163
- \OT1/cmr/bx/n/12 171
+ \OT1/cmr/bx/n/12 169
  []
 
 
 Overfull \hbox (2.03766pt too wide) detected at line 164
- \OT1/cmr/bx/n/12 173
+ \OT1/cmr/bx/n/12 171
  []
 
-) [8] (./thesis.bbl [172
+) [8]
+\openout2 = `introduction/introduction.aux'.
+
+ (./introduction/introduction.tex [9
+
+
+]) [10]
+\openout2 = `neutrinophysics/neutrinophysics.aux'.
+
+
+(./neutrinophysics/neutrinophysics.tex
+Underfull \hbox (badness 1838) in paragraph at lines 23--26
+\OT1/cmr/m/n/12 The Standard Model of particle physics describes the strong, we
+ak and
+ []
+
+[11
 
 
 
+]
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/SM_chart.p
+df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<neutrinophysics/fig_neutrinophysics/SM_chart.pdf, id=729, 512.1496pt x 426.791
+32pt>
+File: neutrinophysics/fig_neutrinophysics/SM_chart.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/SM_chart.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/SM_chart.pdf  used
+ on input line 32.
+(pdftex.def)             Requested size: 418.25368pt x 348.55798pt.
+[12 <./neutrinophysics/fig_neutrinophysics/SM_chart.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+ [13]
+LaTeX Font Info:    Try loading font information for U+eus on input line 144.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+) [14]
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/IO_NO.pdf)
+: PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<neutrinophysics/fig_neutrinophysics/IO_NO.pdf, id=791, 845.04686pt x 597.50786
+pt>
+File: neutrinophysics/fig_neutrinophysics/IO_NO.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/IO_NO.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/IO_NO.pdf  used on
+ input line 183.
+(pdftex.def)             Requested size: 418.25368pt x 295.73538pt.
+[15]
+Underfull \hbox (badness 2158) in paragraph at lines 230--230
+[]\OT1/cmr/m/n/10 Table 1.1: |Best fit values of neutrino oscillation parameter
+s,
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/ckm_draw.p
+df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<neutrinophysics/fig_neutrinophysics/ckm_draw.pdf, id=809, 284.52756pt x 284.52
+756pt>
+File: neutrinophysics/fig_neutrinophysics/ckm_draw.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/ckm_draw.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/ckm_draw.pdf  used
+ on input line 245.
+(pdftex.def)             Requested size: 140.53549pt x 140.53136pt.
 
 
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/upmns_draw
+.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowe
+d
+<neutrinophysics/fig_neutrinophysics/upmns_draw.pdf, id=810, 284.52756pt x 284.
+52756pt>
+File: neutrinophysics/fig_neutrinophysics/upmns_draw.pdf Graphic file (type pdf
+)
+<use neutrinophysics/fig_neutrinophysics/upmns_draw.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/upmns_draw.pdf  us
+ed on input line 253.
+(pdftex.def)             Requested size: 140.53549pt x 140.53136pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <./neutrinophysics/fig_neutrinophysics/IO_NO.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./neutrinophysics/fig_neutrinophysics/ckm_draw.pdf> <./neutrinophysics/fi
+g_neutrinophysics/upmns_draw.pdf
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/upmns_draw
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [18] [19]
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/Weinberg_d
+iagram.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> 
+allowed
+<neutrinophysics/fig_neutrinophysics/Weinberg_diagram.pdf, id=877, 711.31892pt 
+x 597.50786pt>
+File: neutrinophysics/fig_neutrinophysics/Weinberg_diagram.pdf Graphic file (ty
+pe pdf)
+<use neutrinophysics/fig_neutrinophysics/Weinberg_diagram.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/Weinberg_diagram.p
+df  used on input line 399.
+(pdftex.def)             Requested size: 125.47737pt x 105.3951pt.
+[20 <./neutrinophysics/fig_neutrinophysics/Weinberg_diagram.pdf>] [21]
+Underfull \hbox (badness 2512) in paragraph at lines 486--489
+[]\OT1/cmr/m/n/12 We can also consider a combination giving a heavy scalar trip
+let
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/seesaw_I.p
+df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<neutrinophysics/fig_neutrinophysics/seesaw_I.pdf, id=919, 711.31892pt x 597.50
+786pt>
+File: neutrinophysics/fig_neutrinophysics/seesaw_I.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/seesaw_I.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/seesaw_I.pdf  used
+ on input line 499.
+(pdftex.def)             Requested size: 111.53404pt x 93.69055pt.
+
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/seesaw_II.
+pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+<neutrinophysics/fig_neutrinophysics/seesaw_II.pdf, id=920, 711.31892pt x 597.5
+0786pt>
+File: neutrinophysics/fig_neutrinophysics/seesaw_II.pdf Graphic file (type pdf)
+
+<use neutrinophysics/fig_neutrinophysics/seesaw_II.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/seesaw_II.pdf  use
+d on input line 507.
+(pdftex.def)             Requested size: 111.53404pt x 93.69055pt.
+
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/seesaw_III
+.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowe
+d
+<neutrinophysics/fig_neutrinophysics/seesaw_III.pdf, id=921, 711.31892pt x 597.
+50786pt>
+File: neutrinophysics/fig_neutrinophysics/seesaw_III.pdf Graphic file (type pdf
+)
+<use neutrinophysics/fig_neutrinophysics/seesaw_III.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/seesaw_III.pdf  us
+ed on input line 515.
+(pdftex.def)             Requested size: 111.53404pt x 93.69055pt.
+[22 <./neutrinophysics/fig_neutrinophysics/seesaw_I.pdf> <./neutrinophysics/fig
+_neutrinophysics/seesaw_II.pdf
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/seesaw_II.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./neutrinophysics/fig_neutrinophysics/seesaw_III.pdf
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/seesaw_III
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<neutrinophysics/fig_neutrinophysics/2nu_even.pdf, id=964, 633.36626pt x 693.59
+125pt>
+File: neutrinophysics/fig_neutrinophysics/2nu_even.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/2nu_even.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/2nu_even.pdf  used
+ on input line 554.
+(pdftex.def)             Requested size: 200.75996pt x 219.84764pt.
+<neutrinophysics/fig_neutrinophysics/2nu_odd.pdf, id=965, 645.41125pt x 693.591
+25pt>
+File: neutrinophysics/fig_neutrinophysics/2nu_odd.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/2nu_odd.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/2nu_odd.pdf  used 
+on input line 562.
+(pdftex.def)             Requested size: 200.75996pt x 215.74132pt.
+
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/2nubb_diag
+ram.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> all
+owed
+<neutrinophysics/fig_neutrinophysics/2nubb_diagram.pdf, id=968, 284.52756pt x 2
+84.52756pt>
+File: neutrinophysics/fig_neutrinophysics/2nubb_diagram.pdf Graphic file (type 
+pdf)
+<use neutrinophysics/fig_neutrinophysics/2nubb_diagram.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/2nubb_diagram.pdf 
+ used on input line 575.
+(pdftex.def)             Requested size: 167.30539pt x 167.2989pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23 <./neutrinophysics/fig_neutrinophysics/2nu_even.pdf> <./neutrinophysics/fig
+_neutrinophysics/2nu_odd.pdf
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/2nu_odd.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>] [24 <./neutrinophysics/fig_neutrinophysics/2nubb_diagram.pdf>]
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/0nubb_diag
+ram.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> all
+owed
+<neutrinophysics/fig_neutrinophysics/0nubb_diagram.pdf, id=1013, 284.52756pt x 
+284.52756pt>
+File: neutrinophysics/fig_neutrinophysics/0nubb_diagram.pdf Graphic file (type 
+pdf)
+<use neutrinophysics/fig_neutrinophysics/0nubb_diagram.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/0nubb_diagram.pdf 
+ used on input line 615.
+(pdftex.def)             Requested size: 167.30539pt x 167.2989pt.
+[25 <./neutrinophysics/fig_neutrinophysics/0nubb_diagram.pdf>]
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/reconstruc
+ted_energy.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1
+.5> allowed
+<neutrinophysics/fig_neutrinophysics/reconstructed_energy.pdf, id=1036, 569.055
+13pt x 426.79132pt>
+File: neutrinophysics/fig_neutrinophysics/reconstructed_energy.pdf Graphic file
+ (type pdf)
+<use neutrinophysics/fig_neutrinophysics/reconstructed_energy.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/reconstructed_ener
+gy.pdf  used on input line 642.
+(pdftex.def)             Requested size: 278.83945pt x 209.12683pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 649.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 649.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 649.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 649.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 649.
+
+[26 <./neutrinophysics/fig_neutrinophysics/reconstructed_energy.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 701.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 701.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 701.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 701.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 701.
+
+[27]
+<neutrinophysics/fig_neutrinophysics/GERDA.png, id=1069, 1192.455pt x 1065.9825
+pt>
+File: neutrinophysics/fig_neutrinophysics/GERDA.png Graphic file (type png)
+<use neutrinophysics/fig_neutrinophysics/GERDA.png>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/GERDA.png  used on
+ input line 724.
+(pdftex.def)             Requested size: 284.52756pt x 254.34459pt.
+ [28 <./neutrinophysics/fig_neutrinophysics/GERDA.png (PNG copy)>] [29]
+<neutrinophysics/fig_neutrinophysics/CUPID-Mo.pdf, id=1098, 400.49625pt x 398.4
+8875pt>
+File: neutrinophysics/fig_neutrinophysics/CUPID-Mo.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/CUPID-Mo.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/CUPID-Mo.pdf  used
+ on input line 771.
+(pdftex.def)             Requested size: 209.12683pt x 208.07877pt.
+
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+ [30 <./neutrinophysics/fig_neutrinophysics/CUPID-Mo.pdf>]
+<neutrinophysics/fig_neutrinophysics/EXO-200.png, id=1115, 1015.795pt x 994.716
+25pt>
+File: neutrinophysics/fig_neutrinophysics/EXO-200.png Graphic file (type png)
+<use neutrinophysics/fig_neutrinophysics/EXO-200.png>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/EXO-200.png  used 
+on input line 812.
+(pdftex.def)             Requested size: 227.62204pt x 222.89081pt.
+
+Underfull \hbox (badness 1490) in paragraph at lines 820--824
+\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ^^W^^L^^L$ \OT1/cmr/m/n/12 decay of $[]$Xe is
+otope at the Canfranc underground laboratory in
+ []
+
+[31 <./neutrinophysics/fig_neutrinophysics/EXO-200.png>]
+<neutrinophysics/fig_neutrinophysics/KamLAND-ZEN.pdf, id=1136, 351.3125pt x 490
+.83376pt>
+File: neutrinophysics/fig_neutrinophysics/KamLAND-ZEN.pdf Graphic file (type pd
+f)
+<use neutrinophysics/fig_neutrinophysics/KamLAND-ZEN.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/KamLAND-ZEN.pdf  u
+sed on input line 848.
+(pdftex.def)             Requested size: 209.12683pt x 292.18826pt.
+ [32]
+<neutrinophysics/fig_neutrinophysics/CANDLES.pdf, id=1149, 714.67pt x 710.655pt
+>
+File: neutrinophysics/fig_neutrinophysics/CANDLES.pdf Graphic file (type pdf)
+<use neutrinophysics/fig_neutrinophysics/CANDLES.pdf>
+Package pdftex.def Info: neutrinophysics/fig_neutrinophysics/CANDLES.pdf  used 
+on input line 870.
+(pdftex.def)             Requested size: 209.12683pt x 207.94978pt.
+
+Underfull \vbox (badness 4001) has occurred while \output is active []
+
+ [33 <./neutrinophysics/fig_neutrinophysics/KamLAND-ZEN.pdf> <./neutrinophysics
+/fig_neutrinophysics/CANDLES.pdf
+
+pdfTeX warning: pdflatex (file ./neutrinophysics/fig_neutrinophysics/CANDLES.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>]) [34]
+\openout2 = `SNdemonstrator/SNdemonstrator.aux'.
+
+ (./SNdemonstrator/SNdemonstrator.tex
+Underfull \hbox (badness 2277) in paragraph at lines 4--11
+\OT1/cmr/m/n/12 The Neutrino Ettore Majorana Observatory (NEMO) is an internati
+onal
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/detector_closing.pdf, id=1178, 501.875pt x 3
+76.40625pt>
+File: SNdemonstrator/fig_SNdemonstrator/detector_closing.pdf Graphic file (type
+ pdf)
+<use SNdemonstrator/fig_SNdemonstrator/detector_closing.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/detector_closing.pdf
+  used on input line 23.
+(pdftex.def)             Requested size: 292.77629pt x 219.59082pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35
+
+
+
+]
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/demonstrator
+_sheme.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> 
+allowed
+<SNdemonstrator/fig_SNdemonstrator/demonstrator_sheme.pdf, id=1185, 845.04686pt
+ x 597.50786pt>
+File: SNdemonstrator/fig_SNdemonstrator/demonstrator_sheme.pdf Graphic file (ty
+pe pdf)
+<use SNdemonstrator/fig_SNdemonstrator/demonstrator_sheme.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/demonstrator_sheme.p
+df  used on input line 46.
+(pdftex.def)             Requested size: 418.25368pt x 295.73538pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./SNdemonstrator/fig_SNdemonstrator/detector_closing.pdf>] [37 <./SNdemons
+trator/fig_SNdemonstrator/demonstrator_sheme.pdf>] [38]
+Underfull \hbox (badness 2197) in paragraph at lines 140--140
+[]\OT1/cmr/m/n/10 Table 2.2: |Different purification techniques and correspondi
+ng
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/ITEP_source_foils.png, id=1264, 602.25pt x 7
+70.88pt>
+File: SNdemonstrator/fig_SNdemonstrator/ITEP_source_foils.png Graphic file (typ
+e png)
+<use SNdemonstrator/fig_SNdemonstrator/ITEP_source_foils.png>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/ITEP_source_foils.pn
+g  used on input line 159.
+(pdftex.def)             Requested size: 184.45068pt x 236.10023pt.
+<SNdemonstrator/fig_SNdemonstrator/LAPP_source_foils.png, id=1265, 602.25pt x 7
+70.88pt>
+File: SNdemonstrator/fig_SNdemonstrator/LAPP_source_foils.png Graphic file (typ
+e png)
+<use SNdemonstrator/fig_SNdemonstrator/LAPP_source_foils.png>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/LAPP_source_foils.pn
+g  used on input line 167.
+(pdftex.def)             Requested size: 184.45068pt x 236.10023pt.
+[39]
+<SNdemonstrator/fig_SNdemonstrator/sources_installed.jpg, id=1276, 1284.8pt x 9
+63.6pt>
+File: SNdemonstrator/fig_SNdemonstrator/sources_installed.jpg Graphic file (typ
+e jpg)
+<use SNdemonstrator/fig_SNdemonstrator/sources_installed.jpg>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/sources_installed.jp
+g  used on input line 187.
+(pdftex.def)             Requested size: 376.42575pt x 282.3187pt.
+ [40 <./SNdemonstrator/fig_SNdemonstrator/ITEP_source_foils.png> <./SNdemonstra
+tor/fig_SNdemonstrator/LAPP_source_foils.png>]
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/geiger_avala
+nche.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> al
+lowed
+<SNdemonstrator/fig_SNdemonstrator/geiger_avalanche.pdf, id=1286, 845.04686pt x
+ 597.50786pt>
+File: SNdemonstrator/fig_SNdemonstrator/geiger_avalanche.pdf Graphic file (type
+ pdf)
+<use SNdemonstrator/fig_SNdemonstrator/geiger_avalanche.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/geiger_avalanche.pdf
+  used on input line 215.
+(pdftex.def)             Requested size: 292.77629pt x 207.01569pt.
+[41 <./SNdemonstrator/fig_SNdemonstrator/sources_installed.jpg>]
+<SNdemonstrator/fig_SNdemonstrator/geiger_cell.pdf, id=1295, 1553.805pt x 369.3
+8pt>
+File: SNdemonstrator/fig_SNdemonstrator/geiger_cell.pdf Graphic file (type pdf)
+
+<use SNdemonstrator/fig_SNdemonstrator/geiger_cell.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/geiger_cell.pdf  use
+d on input line 236.
+(pdftex.def)             Requested size: 418.25368pt x 99.42957pt.
+ [42 <./SNdemonstrator/fig_SNdemonstrator/geiger_avalanche.pdf>]
+Underfull \hbox (badness 1043) in paragraph at lines 257--258
+[]\OT1/cmr/m/n/12 Ethanol ($4$%) is used as a quenching agent, stopping the suc
+cessive
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/tracker_selfie.jpg, id=1309, 1850.112pt x 13
+87.584pt>
+File: SNdemonstrator/fig_SNdemonstrator/tracker_selfie.jpg Graphic file (type j
+pg)
+<use SNdemonstrator/fig_SNdemonstrator/tracker_selfie.jpg>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/tracker_selfie.jpg  
+used on input line 270.
+(pdftex.def)             Requested size: 376.42575pt x 282.3181pt.
+[43 <./SNdemonstrator/fig_SNdemonstrator/geiger_cell.pdf>] [44 <./SNdemonstrato
+r/fig_SNdemonstrator/tracker_selfie.jpg>]
+<SNdemonstrator/fig_SNdemonstrator/square_shape.pdf, id=1339, 219.82124pt x 168
+.63pt>
+File: SNdemonstrator/fig_SNdemonstrator/square_shape.pdf Graphic file (type pdf
+)
+<use SNdemonstrator/fig_SNdemonstrator/square_shape.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/square_shape.pdf  us
+ed on input line 329.
+(pdftex.def)             Requested size: 87.23596pt x 66.9198pt.
+
+Overfull \hbox (3.58652pt too wide) in paragraph at lines 329--332
+ [][] 
+ []
+
+File: SNdemonstrator/fig_SNdemonstrator/square_shape.pdf Graphic file (type pdf
+)
+<use SNdemonstrator/fig_SNdemonstrator/square_shape.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/square_shape.pdf  us
+ed on input line 337.
+(pdftex.def)             Requested size: 87.23596pt x 66.9198pt.
+
+Overfull \hbox (3.58652pt too wide) in paragraph at lines 337--340
+ [][] 
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/pyramid_shape.pdf, id=1340, 208.78pt x 167.6
+2625pt>
+File: SNdemonstrator/fig_SNdemonstrator/pyramid_shape.pdf Graphic file (type pd
+f)
+<use SNdemonstrator/fig_SNdemonstrator/pyramid_shape.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/pyramid_shape.pdf  u
+sed on input line 345.
+(pdftex.def)             Requested size: 83.34804pt x 66.9198pt.
+<SNdemonstrator/fig_SNdemonstrator/bee_shape.pdf, id=1341, 205.76875pt x 192.72
+pt>
+File: SNdemonstrator/fig_SNdemonstrator/bee_shape.pdf Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/bee_shape.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/bee_shape.pdf  used 
+on input line 353.
+(pdftex.def)             Requested size: 71.44868pt x 66.9198pt.
+
+Underfull \hbox (badness 1297) in paragraph at lines 360--360
+[]\OT1/cmr/m/n/10 Figure 2.8: |Scintillator shapes considered for the SuperNEMO
+
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/scintillator_plan.pdf, id=1342, 1061.9675pt 
+x 968.61874pt>
+File: SNdemonstrator/fig_SNdemonstrator/scintillator_plan.pdf Graphic file (typ
+e pdf)
+<use SNdemonstrator/fig_SNdemonstrator/scintillator_plan.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/scintillator_plan.pd
+f  used on input line 366.
+(pdftex.def)             Requested size: 213.45921pt x 194.69864pt.
+
+Overfull \hbox (8.51262pt too wide) in paragraph at lines 366--367
+ [][] 
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/scintillator_pic.pdf, id=1343, 871.255pt x 8
+63.225pt>
+File: SNdemonstrator/fig_SNdemonstrator/scintillator_pic.pdf Graphic file (type
+ pdf)
+<use SNdemonstrator/fig_SNdemonstrator/scintillator_pic.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/scintillator_pic.pdf
+  used on input line 371.
+(pdftex.def)             Requested size: 196.5025pt x 194.69864pt.
+
+Underfull \hbox (badness 1389) in paragraph at lines 310--377
+\OT1/cmr/m/n/12 based material, doped with $0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 
+05$% of POPOP (1.4-bis(5-phenyloxazol-2-yl)
+ []
+
+[45]
+Underfull \hbox (badness 1983) in paragraph at lines 378--382
+\OT1/cmr/m/n/12 photons proportionally to the deposited energy, propagating thr
+ough the
+ []
+
+[46 <./SNdemonstrator/fig_SNdemonstrator/square_shape.pdf> <./SNdemonstrator/fi
+g_SNdemonstrator/pyramid_shape.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/pyramid_shap
+e.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./SNdemonstrator/fig_SNdemonstrator/bee_shape.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/bee_shape.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <./SNdemonstrator/fig_SNdemonstrator/scintillator_plan.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/scintillator
+_plan.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./SNdemonstrator/fig_SNdemonstrator/scintillator_pic.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/scintillator
+_pic.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>]
+<SNdemonstrator/fig_SNdemonstrator/PMT_plan.pdf, id=1389, 945.5325pt x 532.9912
+6pt>
+File: SNdemonstrator/fig_SNdemonstrator/PMT_plan.pdf Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/PMT_plan.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/PMT_plan.pdf  used o
+n input line 398.
+(pdftex.def)             Requested size: 292.77629pt x 165.03853pt.
+
+Underfull \hbox (badness 1939) in paragraph at lines 391--404
+\OT1/cmr/m/n/12 absorbed and photoelectrons are emitted through the photoelectr
+ic effect
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/scintillator_wrap.pdf, id=1393, 687.56876pt 
+x 918.43124pt>
+File: SNdemonstrator/fig_SNdemonstrator/scintillator_wrap.pdf Graphic file (typ
+e pdf)
+<use SNdemonstrator/fig_SNdemonstrator/scintillator_wrap.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/scintillator_wrap.pd
+f  used on input line 419.
+(pdftex.def)             Requested size: 167.2989pt x 223.46906pt.
+<SNdemonstrator/fig_SNdemonstrator/main_wall_back_view.pdf, id=1394, 1044.90375
+pt x 781.92125pt>
+File: SNdemonstrator/fig_SNdemonstrator/main_wall_back_view.pdf Graphic file (t
+ype pdf)
+<use SNdemonstrator/fig_SNdemonstrator/main_wall_back_view.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/main_wall_back_view.
+pdf  used on input line 428.
+(pdftex.def)             Requested size: 357.6033pt x 267.60358pt.
+<SNdemonstrator/fig_SNdemonstrator/main_wall_front_view.pdf, id=1395, 970.62625
+pt x 795.97375pt>
+File: SNdemonstrator/fig_SNdemonstrator/main_wall_front_view.pdf Graphic file (
+type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/main_wall_front_view.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/main_wall_front_view
+.pdf  used on input line 436.
+(pdftex.def)             Requested size: 357.6033pt x 293.25468pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[47 <./SNdemonstrator/fig_SNdemonstrator/PMT_plan.pdf>] [48 <./SNdemonstrator/f
+ig_SNdemonstrator/scintillator_wrap.pdf>]
+
+LaTeX Warning: Text page 49 contains only floats.
+
+[49 <./SNdemonstrator/fig_SNdemonstrator/main_wall_back_view.pdf> <./SNdemonstr
+ator/fig_SNdemonstrator/main_wall_front_view.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/main_wall_fr
+ont_view.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+<commissioning/fig_commissioning/electron_energy_loss.pdf, id=1444, 569.12625pt
+ x 384.43625pt>
+File: commissioning/fig_commissioning/electron_energy_loss.pdf Graphic file (ty
+pe pdf)
+<use commissioning/fig_commissioning/electron_energy_loss.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/electron_energy_loss.p
+df  used on input line 485.
+(pdftex.def)             Requested size: 200.75996pt x 135.61058pt.
+<commissioning/fig_commissioning/free_path_electrons.pdf, id=1445, 1223.57124pt
+ x 916.42375pt>
+File: commissioning/fig_commissioning/free_path_electrons.pdf Graphic file (typ
+e pdf)
+<use commissioning/fig_commissioning/free_path_electrons.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/free_path_electrons.pd
+f  used on input line 493.
+(pdftex.def)             Requested size: 200.75996pt x 150.36438pt.
+<commissioning/fig_commissioning/photon_energy_loss.pdf, id=1452, 569.12625pt x
+ 384.43625pt>
+File: commissioning/fig_commissioning/photon_energy_loss.pdf Graphic file (type
+ pdf)
+<use commissioning/fig_commissioning/photon_energy_loss.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/photon_energy_loss.pdf
+  used on input line 517.
+(pdftex.def)             Requested size: 200.75996pt x 135.61058pt.
+<commissioning/fig_commissioning/attenuation_length_photons.pdf, id=1453, 1157.
+32375pt x 927.465pt>
+File: commissioning/fig_commissioning/attenuation_length_photons.pdf Graphic fi
+le (type pdf)
+<use commissioning/fig_commissioning/attenuation_length_photons.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/attenuation_length_pho
+tons.pdf  used on input line 524.
+(pdftex.def)             Requested size: 200.75996pt x 160.87946pt.
+ [50 <./commissioning/fig_commissioning/electron_energy_loss.pdf, page is rotat
+ed 90 degrees> <./commissioning/fig_commissioning/free_path_electrons.pdf>]
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/coil_3D.pdf)
+: PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<SNdemonstrator/fig_SNdemonstrator/coil_3D.pdf, id=1519, 1306.86351pt x 1435.35
+612pt>
+File: SNdemonstrator/fig_SNdemonstrator/coil_3D.pdf Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/coil_3D.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/coil_3D.pdf  used on
+ input line 555.
+(pdftex.def)             Requested size: 304.64027pt x 334.60422pt.
+[51 <./commissioning/fig_commissioning/photon_energy_loss.pdf, page is rotated 
+90 degrees> <./commissioning/fig_commissioning/attenuation_length_photons.pdf>]
+<SNdemonstrator/fig_SNdemonstrator/coil_lal.jpg, id=1579, 5171.32pt x 2906.86pt
+>
+File: SNdemonstrator/fig_SNdemonstrator/coil_lal.jpg Graphic file (type jpg)
+<use SNdemonstrator/fig_SNdemonstrator/coil_lal.jpg>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/coil_lal.jpg  used o
+n input line 568.
+(pdftex.def)             Requested size: 371.97179pt x 209.12683pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<SNdemonstrator/fig_SNdemonstrator/magnetic_shields.jpg, id=1583, 1606.0pt x 12
+04.5pt>
+File: SNdemonstrator/fig_SNdemonstrator/magnetic_shields.jpg Graphic file (type
+ jpg)
+<use SNdemonstrator/fig_SNdemonstrator/magnetic_shields.jpg>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/magnetic_shields.jpg
+  used on input line 583.
+(pdftex.def)             Requested size: 278.8242pt x 209.12683pt.
+
+Underfull \hbox (badness 1057) in paragraph at lines 586--586
+\OT1/cmr/m/n/10 installation at LSM. The magnetic shields are the black boxes
+ []
+
+[52 <./SNdemonstrator/fig_SNdemonstrator/coil_3D.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53 <./SNdemonstrator/fig_SNdemonstrator/coil_lal.jpg> <./SNdemonstrator/fig_S
+Ndemonstrator/magnetic_shields.jpg>]
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/207Bi_decay_
+scheme.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> 
+allowed
+<SNdemonstrator/fig_SNdemonstrator/207Bi_decay_scheme.pdf, id=1606, 845.04686pt
+ x 597.50786pt>
+File: SNdemonstrator/fig_SNdemonstrator/207Bi_decay_scheme.pdf Graphic file (ty
+pe pdf)
+<use SNdemonstrator/fig_SNdemonstrator/207Bi_decay_scheme.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/207Bi_decay_scheme.p
+df  used on input line 605.
+(pdftex.def)             Requested size: 295.75793pt x 209.12683pt.
+
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/bi_sources_p
+osition.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5>
+ allowed
+<SNdemonstrator/fig_SNdemonstrator/bi_sources_position.pdf, id=1608, 845.04686p
+t x 597.50786pt>
+File: SNdemonstrator/fig_SNdemonstrator/bi_sources_position.pdf Graphic file (t
+ype pdf)
+<use SNdemonstrator/fig_SNdemonstrator/bi_sources_position.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/bi_sources_position.
+pdf  used on input line 619.
+(pdftex.def)             Requested size: 231.87927pt x 163.95789pt.
+
+Overfull \hbox (26.93268pt too wide) in paragraph at lines 619--620
+ [][] 
+ []
+
+<SNdemonstrator/fig_SNdemonstrator/bi_source_pic.pdf, id=1609, 641.39626pt x 76
+9.87625pt>
+File: SNdemonstrator/fig_SNdemonstrator/bi_source_pic.pdf Graphic file (type pd
+f)
+<use SNdemonstrator/fig_SNdemonstrator/bi_source_pic.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/bi_source_pic.pdf  u
+sed on input line 624.
+(pdftex.def)             Requested size: 136.59584pt x 163.95789pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/LIS_scheme.p
+df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<SNdemonstrator/fig_SNdemonstrator/LIS_scheme.pdf, id=1612, 845.04686pt x 597.5
+0786pt>
+File: SNdemonstrator/fig_SNdemonstrator/LIS_scheme.pdf Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/LIS_scheme.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/LIS_scheme.pdf  used
+ on input line 642.
+(pdftex.def)             Requested size: 284.52756pt x 201.18066pt.
+
+Underfull \vbox (badness 2726) has occurred while \output is active []
+
+ [54 <./SNdemonstrator/fig_SNdemonstrator/207Bi_decay_scheme.pdf>] [55 <./SNdem
+onstrator/fig_SNdemonstrator/bi_sources_position.pdf> <./SNdemonstrator/fig_SNd
+emonstrator/bi_source_pic.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/bi_source_pi
+c.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./SNdemonstrator/fig_SNdemonstrator/LIS_scheme.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/LIS_scheme.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<SNdemonstrator/fig_SNdemonstrator/cable_calo_pic.pdf, id=1659, 3513.125pt x 31
+23.67pt>
+File: SNdemonstrator/fig_SNdemonstrator/cable_calo_pic.pdf Graphic file (type p
+df)
+<use SNdemonstrator/fig_SNdemonstrator/cable_calo_pic.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/cable_calo_pic.pdf  
+used on input line 673.
+(pdftex.def)             Requested size: 334.60422pt x 297.46669pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/calo_cabling
+.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowe
+d
+<SNdemonstrator/fig_SNdemonstrator/calo_cabling.pdf, id=1661, 845.04686pt x 597
+.50786pt>
+File: SNdemonstrator/fig_SNdemonstrator/calo_cabling.pdf Graphic file (type pdf
+)
+<use SNdemonstrator/fig_SNdemonstrator/calo_cabling.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/calo_cabling.pdf  us
+ed on input line 684.
+(pdftex.def)             Requested size: 376.42575pt x 266.15912pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[56]
+Underfull \hbox (badness 1960) in paragraph at lines 705--708
+[]\OT1/cmr/m/n/12 The triggering and acquisition electronics are based on a thr
+ee-levels
+ []
+
+[57 <./SNdemonstrator/fig_SNdemonstrator/cable_calo_pic.pdf>]
+<SNdemonstrator/fig_SNdemonstrator/calo_crate.pdf, id=1685, 2093.8225pt x 1439.
+3775pt>
+File: SNdemonstrator/fig_SNdemonstrator/calo_crate.pdf Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/calo_crate.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/calo_crate.pdf  used
+ on input line 737.
+(pdftex.def)             Requested size: 334.60422pt x 230.01958pt.
+ [58 <./SNdemonstrator/fig_SNdemonstrator/calo_cabling.pdf>] [59 <./SNdemonstra
+tor/fig_SNdemonstrator/calo_crate.pdf>]
+<SNdemonstrator/fig_SNdemonstrator/leaks.pdf, id=1751, 1336.995pt x 773.89125pt
+>
+File: SNdemonstrator/fig_SNdemonstrator/leaks.pdf Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/leaks.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/leaks.pdf  used on i
+nput line 774.
+(pdftex.def)             Requested size: 334.60422pt x 193.67308pt.
+<SNdemonstrator/fig_SNdemonstrator/Nylon_film.jpg, id=1752, 4175.6pt x 3131.7pt
+>
+File: SNdemonstrator/fig_SNdemonstrator/Nylon_film.jpg Graphic file (type jpg)
+<use SNdemonstrator/fig_SNdemonstrator/Nylon_film.jpg>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/Nylon_film.jpg  used
+ on input line 781.
+(pdftex.def)             Requested size: 334.60422pt x 250.9234pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[60 <./SNdemonstrator/fig_SNdemonstrator/leaks.pdf>]
+Underfull \vbox (badness 2119) has occurred while \output is active []
+
+ [61 <./SNdemonstrator/fig_SNdemonstrator/Nylon_film.jpg>]
+<SNdemonstrator/fig_SNdemonstrator/internal_contamination_IC.pdf, id=1772, 298.
+75392pt x 421.10078pt>
+File: SNdemonstrator/fig_SNdemonstrator/internal_contamination_IC.pdf Graphic f
+ile (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/internal_contamination_IC.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/internal_contaminati
+on_IC.pdf  used on input line 841.
+(pdftex.def)             Requested size: 109.75325pt x 154.69966pt.
+<SNdemonstrator/fig_SNdemonstrator/internal_contamination_moller.pdf, id=1773, 
+298.75392pt x 421.10078pt>
+File: SNdemonstrator/fig_SNdemonstrator/internal_contamination_moller.pdf Graph
+ic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/internal_contamination_moller.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/internal_contaminati
+on_moller.pdf  used on input line 849.
+(pdftex.def)             Requested size: 109.75325pt x 154.69966pt.
+<SNdemonstrator/fig_SNdemonstrator/internal_contamination_compton.pdf, id=1774,
+ 298.75392pt x 421.10078pt>
+File: SNdemonstrator/fig_SNdemonstrator/internal_contamination_compton.pdf Grap
+hic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/internal_contamination_compton.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/internal_contaminati
+on_compton.pdf  used on input line 857.
+(pdftex.def)             Requested size: 109.75325pt x 154.69966pt.
+ [62 <./SNdemonstrator/fig_SNdemonstrator/internal_contamination_IC.pdf> <./SNd
+emonstrator/fig_SNdemonstrator/internal_contamination_moller.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/internal_con
+tamination_moller.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+> <./SNdemonstrator/fig_SNdemonstrator/internal_contamination_compton.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/internal_con
+tamination_compton.pdf): PDF inclusion: multiple pdfs with page group included 
+in a single page
+>]
+Underfull \hbox (badness 1142) in paragraph at lines 893--915
+[]\OT1/cmr/m/n/12 We summarise measured contamination levels in Tab. [][]2.3[][
+], and give a
+ []
+
+[63]
+Underfull \hbox (badness 1418) in paragraph at lines 923--924
+[]\OT1/cmr/m/n/12 External high energy $\OML/cmm/m/it/12 ^^M$\OT1/cmr/m/n/12 's
+ emitted after the disintegration of natural
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/external_con
+tamination_pair.pdf): PDF inclusion: found PDF version <1.6>, but at most versi
+on <1.5> allowed
+<SNdemonstrator/fig_SNdemonstrator/external_contamination_pair.pdf, id=1822, 29
+8.75392pt x 421.10078pt>
+File: SNdemonstrator/fig_SNdemonstrator/external_contamination_pair.pdf Graphic
+ file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/external_contamination_pair.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/external_contaminati
+on_pair.pdf  used on input line 939.
+(pdftex.def)             Requested size: 109.75325pt x 154.69966pt.
+
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/external_con
+tamination_double_compton.pdf): PDF inclusion: found PDF version <1.6>, but at 
+most version <1.5> allowed
+<SNdemonstrator/fig_SNdemonstrator/external_contamination_double_compton.pdf, i
+d=1823, 298.75392pt x 421.10078pt>
+File: SNdemonstrator/fig_SNdemonstrator/external_contamination_double_compton.p
+df Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/external_contamination_double_compton.pd
+f>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/external_contaminati
+on_double_compton.pdf  used on input line 947.
+(pdftex.def)             Requested size: 109.75325pt x 154.69966pt.
+
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/external_con
+tamination_compton_moller.pdf): PDF inclusion: found PDF version <1.6>, but at 
+most version <1.5> allowed
+<SNdemonstrator/fig_SNdemonstrator/external_contamination_compton_moller.pdf, i
+d=1824, 298.75392pt x 421.10078pt>
+File: SNdemonstrator/fig_SNdemonstrator/external_contamination_compton_moller.p
+df Graphic file (type pdf)
+<use SNdemonstrator/fig_SNdemonstrator/external_contamination_compton_moller.pd
+f>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/external_contaminati
+on_compton_moller.pdf  used on input line 955.
+(pdftex.def)             Requested size: 109.75325pt x 154.69966pt.
+[64 <./SNdemonstrator/fig_SNdemonstrator/external_contamination_pair.pdf> <./SN
+demonstrator/fig_SNdemonstrator/external_contamination_double_compton.pdf
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/external_con
+tamination_double_compton.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+> <./SNdemonstrator/fig_SNdemonstrator/external_contamination_compton_moller.pd
+f
+
+pdfTeX warning: pdflatex (file ./SNdemonstrator/fig_SNdemonstrator/external_con
+tamination_compton_moller.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+>] [65] [66] [67]
+<SNdemonstrator/fig_SNdemonstrator/Falaise_visu.pdf, id=1898, 1093.08376pt x 99
+6.72375pt>
+File: SNdemonstrator/fig_SNdemonstrator/Falaise_visu.pdf Graphic file (type pdf
+)
+<use SNdemonstrator/fig_SNdemonstrator/Falaise_visu.pdf>
+Package pdftex.def Info: SNdemonstrator/fig_SNdemonstrator/Falaise_visu.pdf  us
+ed on input line 1083.
+(pdftex.def)             Requested size: 292.77629pt x 266.95937pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[68]
+Underfull \hbox (badness 1527) in paragraph at lines 1132--1137
+\OT1/cmr/m/n/12 de-excitation time. $[][]$ is the temporal dispersion linked to
+ the
+ []
+
+[69 <./SNdemonstrator/fig_SNdemonstrator/Falaise_visu.pdf>]
+Underfull \hbox (badness 3219) in paragraph at lines 1146--1147
+[]\OT1/cmr/bx/n/12 The uncertainty $\OML/cmm/m/it/12 ^^[[]$ \OT1/cmr/bx/n/12 on
+ the expected time-of-flight induced by
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 1146--1147
+\OT1/cmr/bx/n/12 the uncertainty on the particle energy[] \OT1/cmr/m/n/12 This 
+term is derived from
+ []
+
+[70]) [71]
+\openout2 = `Sensitivity/Sensitivity.aux'.
+
+ (./Sensitivity/Sensitivity.tex [72
+
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+[73]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 26.
+
+[74]
+Underfull \hbox (badness 1062) in paragraph at lines 74--79
+\OT1/cmr/m/n/12 double $\OML/cmm/m/it/12 ^^L$ \OT1/cmr/m/n/12 decays is driven 
+by its half-life value: the higher the half-life,
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 98--98
+[]\OT1/cmr/m/n/10 Table 3.1: |Expected number of background events, for the
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 109--111
+\OT1/cmr/m/n/12 For SuperNEMO, the $0\OML/cmm/m/it/12 ^^W^^L^^L$ \OT1/cmr/m/n/1
+2 signature is two-electrons events, emitted
+ []
+
+[75] [76]
+<Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se.pdf, id=1997, 569.1262
+5pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se.pdf Graphic file 
+(type pdf)
+<use Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/energy_spectrum_with_B_82S
+e.pdf  used on input line 149.
+(pdftex.def)             Requested size: 357.6033pt x 242.19917pt.
+<Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se_zoom.pdf, id=1998, 569
+.12625pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se_zoom.pdf Graphic 
+file (type pdf)
+<use Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se_zoom.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/energy_spectrum_with_B_82S
+e_zoom.pdf  used on input line 158.
+(pdftex.def)             Requested size: 357.6033pt x 242.19917pt.
+
+Underfull \hbox (badness 2376) in paragraph at lines 166--166
+\OT1/cmr/m/n/10 backgrounds, for (a) the full energy range, and (b) for the
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[77]
+
+LaTeX Warning: Text page 78 contains only floats.
+
+
+Overfull \vbox (0.17905pt too high) has occurred while \output is active []
+
+
+[78 <./Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se.pdf, page is rot
+ated 90 degrees> <./Sensitivity/fig_sensitivity/energy_spectrum_with_B_82Se_zoo
+m.pdf, page is rotated 90 degrees>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 195.
+
+[79]
+<Sensitivity/fig_sensitivity/sensitivity_spectrum_with_B_82Se.pdf, id=2114, 569
+.12625pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/sensitivity_spectrum_with_B_82Se.pdf Graphic 
+file (type pdf)
+<use Sensitivity/fig_sensitivity/sensitivity_spectrum_with_B_82Se.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/sensitivity_spectrum_with_
+B_82Se.pdf  used on input line 252.
+(pdftex.def)             Requested size: 460.08159pt x 311.6048pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 252--255
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[80] [81 <./Sensitivity/fig_sensitivity/sensitivity_spectrum_with_B_82Se.pdf, p
+age is rotated 90 degrees>] [82]
+<Sensitivity/fig_sensitivity/contamination_level_Se_B.pdf, id=2187, 569.12625pt
+ x 277.035pt>
+File: Sensitivity/fig_sensitivity/contamination_level_Se_B.pdf Graphic file (ty
+pe pdf)
+<use Sensitivity/fig_sensitivity/contamination_level_Se_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/contamination_level_Se_B.p
+df  used on input line 366.
+(pdftex.def)             Requested size: 460.08159pt x 223.96594pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 366--372
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 407--410
+[]\OT1/cmr/m/n/12 The degradation of the limit on the $0\OML/cmm/m/it/12 ^^W^^L
+^^L$ \OT1/cmr/m/n/12 half-life with the level of
+ []
+
+[83]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84 <./Sensitivity/fig_sensitivity/contamination_level_Se_B.pdf, page is rotat
+ed 90 degrees>]
+<Sensitivity/fig_sensitivity/InternalProbability.pdf, id=2255, 569.12625pt x 38
+4.43625pt>
+File: Sensitivity/fig_sensitivity/InternalProbability.pdf Graphic file (type pd
+f)
+<use Sensitivity/fig_sensitivity/InternalProbability.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/InternalProbability.pdf  u
+sed on input line 435.
+(pdftex.def)             Requested size: 355.51817pt x 240.15474pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Sensitivity/fig_sensitivity/82Se_cont_cut_nexcl_B.pdf, id=2257, 569.12625pt x 
+385.44pt>
+File: Sensitivity/fig_sensitivity/82Se_cont_cut_nexcl_B.pdf Graphic file (type 
+pdf)
+<use Sensitivity/fig_sensitivity/82Se_cont_cut_nexcl_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/82Se_cont_cut_nexcl_B.pdf 
+ used on input line 455.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/ROI_cut_Pint_B.pdf, id=2258, 569.12625pt x 385.44p
+t>
+File: Sensitivity/fig_sensitivity/ROI_cut_Pint_B.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/ROI_cut_Pint_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/ROI_cut_Pint_B.pdf  used o
+n input line 463.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/cont_cut_eff_B.pdf, id=2259, 569.12625pt x 385.44p
+t>
+File: Sensitivity/fig_sensitivity/cont_cut_eff_B.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/cont_cut_eff_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/cont_cut_eff_B.pdf  used o
+n input line 471.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/cont_cut_T12_B.pdf, id=2260, 569.12625pt x 385.44p
+t>
+File: Sensitivity/fig_sensitivity/cont_cut_T12_B.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/cont_cut_T12_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/cont_cut_T12_B.pdf  used o
+n input line 479.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/legend_cut_Pint.pdf, id=2261, 569.12625pt x 155.58
+125pt>
+File: Sensitivity/fig_sensitivity/legend_cut_Pint.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/legend_cut_Pint.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/legend_cut_Pint.pdf  used 
+on input line 487.
+(pdftex.def)             Requested size: 102.4733pt x 28.01291pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[85] [86 <./Sensitivity/fig_sensitivity/InternalProbability.pdf, page is rotate
+d 90 degrees>]
+Package epstopdf Info: Source file: <Sensitivity/fig_sensitivity/Vertex_distanc
+e.eps>
+(epstopdf)                    date: 2020-08-29 12:54:03
+(epstopdf)                    size: 13974 bytes
+(epstopdf)             Output file: <Sensitivity/fig_sensitivity/Vertex_distanc
+e-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-29 12:54:08
+(epstopdf)                    size: 9550 bytes
+(epstopdf)             Command: <repstopdf --outfile=Sensitivity/fig_sensitivit
+y/Vertex_distance-eps-converted-to.pdf Sensitivity/fig_sensitivity/Vertex_dista
+nce.eps>
+(epstopdf)             \includegraphics on input line 540.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Sensitivity/fig_sensitivity/Vertex_distance-ep
+s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<Sensitivity/fig_sensitivity/Vertex_distance-eps-converted-to.pdf, id=2329, 569
+.12625pt x 384.43625pt>
+File: Sensitivity/fig_sensitivity/Vertex_distance-eps-converted-to.pdf Graphic 
+file (type pdf)
+<use Sensitivity/fig_sensitivity/Vertex_distance-eps-converted-to.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/Vertex_distance-eps-conver
+ted-to.pdf  used on input line 540.
+(pdftex.def)             Requested size: 334.60422pt x 226.02937pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87 <./Sensitivity/fig_sensitivity/82Se_cont_cut_nexcl_B.pdf, page is rotated 
+90 degrees> <./Sensitivity/fig_sensitivity/ROI_cut_Pint_B.pdf, page is rotated 
+90 degrees> <./Sensitivity/fig_sensitivity/cont_cut_eff_B.pdf, page is rotated 
+90 degrees> <./Sensitivity/fig_sensitivity/cont_cut_T12_B.pdf, page is rotated 
+90 degrees> <./Sensitivity/fig_sensitivity/legend_cut_Pint.pdf, page is rotated
+ 90 degrees>]
+<Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_nexcl_B.pdf, id=2551, 569.126
+25pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_nexcl_B.pdf Graphic file
+ (type pdf)
+<use Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_nexcl_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_nexcl
+_B.pdf  used on input line 558.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/82Se_ROI_cut_vertex_B.pdf, id=2552, 569.12625pt x 
+385.44pt>
+File: Sensitivity/fig_sensitivity/82Se_ROI_cut_vertex_B.pdf Graphic file (type 
+pdf)
+<use Sensitivity/fig_sensitivity/82Se_ROI_cut_vertex_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/82Se_ROI_cut_vertex_B.pdf 
+ used on input line 566.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_eff_B.pdf, id=2553, 569.12625
+pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_eff_B.pdf Graphic file (
+type pdf)
+<use Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_eff_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_eff_B
+.pdf  used on input line 574.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+<Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_T12_B.pdf, id=2554, 569.12625
+pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_T12_B.pdf Graphic file (
+type pdf)
+<use Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_T12_B.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_T12_B
+.pdf  used on input line 582.
+(pdftex.def)             Requested size: 184.45068pt x 124.91951pt.
+File: Sensitivity/fig_sensitivity/legend_cut_Pint.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/legend_cut_Pint.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/legend_cut_Pint.pdf  used 
+on input line 590.
+(pdftex.def)             Requested size: 102.4733pt x 28.01291pt.
+ [88 <./Sensitivity/fig_sensitivity/Vertex_distance-eps-converted-to.pdf>]
+Overfull \hbox (14.70546pt too wide) in paragraph at lines 634--653
+[][] 
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 655--655
+[]\OT1/cmr/m/n/10 Table 3.4: |The selection efficiencies and expected number of
+
+ []
+
+[89 <./Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_nexcl_B.pdf, page is ro
+tated 90 degrees> <./Sensitivity/fig_sensitivity/82Se_ROI_cut_vertex_B.pdf, pag
+e is rotated 90 degrees> <./Sensitivity/fig_sensitivity/82Se_cont_cut_vertex_ef
+f_B.pdf, page is rotated 90 degrees> <./Sensitivity/fig_sensitivity/82Se_cont_c
+ut_vertex_T12_B.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 7540) has occurred while \output is active []
+
+ [90]
+Underfull \hbox (badness 8189) in paragraph at lines 685--689
+[]\OT1/cmr/m/n/12 Simulations with a uniform $25$ Gauss magnetic field (followi
+ng
+ []
+
+[91]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf, id=2775, 569.12625pt x
+ 307.1475pt>
+File: Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf Graphic file (type
+ pdf)
+<use Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf
+  used on input line 783.
+(pdftex.def)             Requested size: 418.25368pt x 225.73428pt.
+[92]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 812--812
+\OT1/cmr/m/n/10 Specified and measured (with $[]$Bi) activities are considered.
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 827--836
+[]\OT1/cmr/m/n/12 SuperNEMO PMTs are protected from the external magnetic field
+ by
+ []
+
+[93] [94 <./Sensitivity/fig_sensitivity/contamination_Se_w_woB.pdf, page is rot
+ated 90 degrees>] [95]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 913.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 913.
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 916--921
+\OT1/cmr/m/n/12 This study was conducted jointly with the PhD student Axel Pin,
+ from
+ []
+
+[96]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 922.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 922.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 922.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 922.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 922.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 934.
+
+<Sensitivity/fig_sensitivity/energy_spectrum_with_B_150Nd.pdf, id=2862, 569.126
+25pt x 385.44pt>
+File: Sensitivity/fig_sensitivity/energy_spectrum_with_B_150Nd.pdf Graphic file
+ (type pdf)
+<use Sensitivity/fig_sensitivity/energy_spectrum_with_B_150Nd.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/energy_spectrum_with_B_150
+Nd.pdf  used on input line 959.
+(pdftex.def)             Requested size: 334.60422pt x 226.61952pt.
+[97] [98 <./Sensitivity/fig_sensitivity/energy_spectrum_with_B_150Nd.pdf, page 
+is rotated 90 degrees>]
+Underfull \hbox (badness 1067) in paragraph at lines 1051--1051
+\OT1/cmr/m/n/10 activities are considered. The topological selections have been
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[99] [100]
+<Sensitivity/fig_sensitivity/final_t12.pdf, id=2934, 569.12625pt x 307.1475pt>
+File: Sensitivity/fig_sensitivity/final_t12.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/final_t12.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/final_t12.pdf  used on inp
+ut line 1119.
+(pdftex.def)             Requested size: 418.25368pt x 225.73428pt.
+<Sensitivity/fig_sensitivity/final_mbb.pdf, id=2935, 569.12625pt x 307.1475pt>
+File: Sensitivity/fig_sensitivity/final_mbb.pdf Graphic file (type pdf)
+<use Sensitivity/fig_sensitivity/final_mbb.pdf>
+Package pdftex.def Info: Sensitivity/fig_sensitivity/final_mbb.pdf  used on inp
+ut line 1127.
+(pdftex.def)             Requested size: 418.25368pt x 225.73428pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [101] [102 <./Sensitivity/fig_sensitivity/final_t12.pdf, page is rotated 90 d
+egrees> <./Sensitivity/fig_sensitivity/final_mbb.pdf, page is rotated 90 degree
+s>]
+\openout2 = `timedifference/timedifference.aux'.
+
+ (./timedifference/timedifference.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 in optimised energy ranges for the SuperNEMO demonstrator
+ []
+
+[103
+
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 47.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 47.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 47.
+
+<timedifference/fig_timediff/Tl_decay_scheme.pdf, id=3046, 845.04686pt x 597.50
+786pt>
+File: timedifference/fig_timediff/Tl_decay_scheme.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/Tl_decay_scheme.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/Tl_decay_scheme.pdf  used 
+on input line 60.
+(pdftex.def)             Requested size: 369.88582pt x 261.53668pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[104] [105 <./timedifference/fig_timediff/Tl_decay_scheme.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 111.
+
+<timedifference/fig_timediff/Arnaud_RMS_PM.pdf, id=3072, 796.67719pt x 597.5078
+6pt>
+File: timedifference/fig_timediff/Arnaud_RMS_PM.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/Arnaud_RMS_PM.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/Arnaud_RMS_PM.pdf  used on
+ input line 156.
+(pdftex.def)             Requested size: 369.88582pt x 277.41888pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[106]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 175.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107 <./timedifference/fig_timediff/Arnaud_RMS_PM.pdf>] [108]
+<timedifference/fig_timediff/flatness.pdf, id=3115, 569.12625pt x 384.43625pt>
+File: timedifference/fig_timediff/flatness.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/flatness.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/flatness.pdf  used on inpu
+t line 226.
+(pdftex.def)             Requested size: 369.88582pt x 249.86299pt.
+<timedifference/fig_timediff/Pint_comparison.pdf, id=3116, 569.12625pt x 384.43
+625pt>
+File: timedifference/fig_timediff/Pint_comparison.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/Pint_comparison.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/Pint_comparison.pdf  used 
+on input line 235.
+(pdftex.def)             Requested size: 369.88582pt x 249.86299pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[109 <./timedifference/fig_timediff/flatness.pdf, page is rotated 90 degrees>]
+[110 <./timedifference/fig_timediff/Pint_comparison.pdf, page is rotated 90 deg
+rees>]
+<timedifference/fig_timediff/proba_expo_test.pdf, id=3221, 569.12625pt x 385.44
+pt>
+File: timedifference/fig_timediff/proba_expo_test.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/proba_expo_test.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/proba_expo_test.pdf  used 
+on input line 302.
+(pdftex.def)             Requested size: 397.3397pt x 269.11215pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<timedifference/fig_timediff/proba_expo_400.pdf, id=3223, 569.12625pt x 385.44p
+t>
+File: timedifference/fig_timediff/proba_expo_400.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/proba_expo_400.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/proba_expo_400.pdf  used o
+n input line 313.
+(pdftex.def)             Requested size: 397.3397pt x 269.11215pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[111]
+
+LaTeX Warning: Text page 112 contains only floats.
+
+
+Overfull \vbox (5.89398pt too high) has occurred while \output is active []
+
+
+[112 <./timedifference/fig_timediff/proba_expo_test.pdf, page is rotated 90 deg
+rees> <./timedifference/fig_timediff/proba_expo_400.pdf, page is rotated 90 deg
+rees>]
+Package epstopdf Info: Source file: <timedifference/fig_timediff/0nubb_delta_t.
+eps>
+(epstopdf)                    date: 2020-10-19 20:36:32
+(epstopdf)                    size: 8250 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/0nubb_delta_t-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 20:36:34
+(epstopdf)                    size: 8167 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/0nubb_delta_t-eps-converted-to.pdf timedifference/fig_timediff/0nubb_delta_t.
+eps>
+(epstopdf)             \includegraphics on input line 363.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/0nubb_delta_t-eps-
+converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
+<1.5> allowed
+<timedifference/fig_timediff/0nubb_delta_t-eps-converted-to.pdf, id=3327, 569.1
+2625pt x 385.44pt>
+File: timedifference/fig_timediff/0nubb_delta_t-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use timedifference/fig_timediff/0nubb_delta_t-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/0nubb_delta_t-eps-converte
+d-to.pdf  used on input line 363.
+(pdftex.def)             Requested size: 271.86234pt x 184.12689pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/208Tl_delta_t.
+eps>
+(epstopdf)                    date: 2020-10-19 20:36:32
+(epstopdf)                    size: 8799 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/208Tl_delta_t-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 20:36:35
+(epstopdf)                    size: 8305 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/208Tl_delta_t-eps-converted-to.pdf timedifference/fig_timediff/208Tl_delta_t.
+eps>
+(epstopdf)             \includegraphics on input line 371.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/208Tl_delta_t-eps-
+converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
+<1.5> allowed
+<timedifference/fig_timediff/208Tl_delta_t-eps-converted-to.pdf, id=3328, 569.1
+2625pt x 385.44pt>
+File: timedifference/fig_timediff/208Tl_delta_t-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use timedifference/fig_timediff/208Tl_delta_t-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/208Tl_delta_t-eps-converte
+d-to.pdf  used on input line 371.
+(pdftex.def)             Requested size: 271.86234pt x 184.12689pt.
+[113] [114 <./timedifference/fig_timediff/0nubb_delta_t-eps-converted-to.pdf> <
+./timedifference/fig_timediff/208Tl_delta_t-eps-converted-to.pdf>] [115]
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_200.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 27594 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_200-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:19
+(epstopdf)                    size: 10623 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_208Tl_200-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_208Tl_200.eps>
+(epstopdf)             \includegraphics on input line 426.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_208Tl_2
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_208Tl_200-eps-converted-to.pdf, id=3374
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_208Tl_200-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_208Tl_200-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_208Tl_200-eps-c
+onverted-to.pdf  used on input line 426.
+(pdftex.def)             Requested size: 426.79134pt x 373.3637pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 426--429
+ [][] 
+ []
+
+<timedifference/fig_timediff/proba_expo_1.pdf, id=3375, 569.12625pt x 385.44pt>
+
+File: timedifference/fig_timediff/proba_expo_1.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/proba_expo_1.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/proba_expo_1.pdf  used on 
+input line 435.
+(pdftex.def)             Requested size: 254.29716pt x 172.22307pt.
+<timedifference/fig_timediff/proba_expo_2.pdf, id=3376, 569.12625pt x 385.44pt>
+
+File: timedifference/fig_timediff/proba_expo_2.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/proba_expo_2.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/proba_expo_2.pdf  used on 
+input line 443.
+(pdftex.def)             Requested size: 254.29716pt x 172.22307pt.
+<timedifference/fig_timediff/proba_expo_3.pdf, id=3377, 569.12625pt x 385.44pt>
+
+File: timedifference/fig_timediff/proba_expo_3.pdf Graphic file (type pdf)
+<use timedifference/fig_timediff/proba_expo_3.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/proba_expo_3.pdf  used on 
+input line 451.
+(pdftex.def)             Requested size: 254.29716pt x 172.22307pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[116 <./timedifference/fig_timediff/PintVSPexp_208Tl_200-eps-converted-to.pdf>]
+
+LaTeX Warning: Text page 117 contains only floats.
+
+
+Overfull \vbox (1.33888pt too high) has occurred while \output is active []
+
+
+[117 <./timedifference/fig_timediff/proba_expo_1.pdf, page is rotated 90 degree
+s> <./timedifference/fig_timediff/proba_expo_2.pdf, page is rotated 90 degrees>
+ <./timedifference/fig_timediff/proba_expo_3.pdf, page is rotated 90 degrees>]
+<timedifference/fig_timediff/compare_sigma_cut_delta_t.pdf, id=3527, 569.12625p
+t x 384.43625pt>
+File: timedifference/fig_timediff/compare_sigma_cut_delta_t.pdf Graphic file (t
+ype pdf)
+<use timedifference/fig_timediff/compare_sigma_cut_delta_t.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/compare_sigma_cut_delta_t.
+pdf  used on input line 495.
+(pdftex.def)             Requested size: 369.88582pt x 249.86299pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_0.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 18500 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_0-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:19
+(epstopdf)                    size: 8505 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_208Tl_0-eps-converted-to.pdf timedifference/fig_timediff/PintVSPex
+p_208Tl_0.eps>
+(epstopdf)             \includegraphics on input line 510.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_208Tl_0
+-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
+sion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_208Tl_0-eps-converted-to.pdf, id=3530, 
+569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_208Tl_0-eps-converted-to.pdf Graph
+ic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_208Tl_0-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_208Tl_0-eps-con
+verted-to.pdf  used on input line 510.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_0.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 16841 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_0-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:20
+(epstopdf)                    size: 8162 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_0nubb_0-eps-converted-to.pdf timedifference/fig_timediff/PintVSPex
+p_0nubb_0.eps>
+(epstopdf)             \includegraphics on input line 518.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_0nubb_0
+-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
+sion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_0nubb_0-eps-converted-to.pdf, id=3531, 
+569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_0nubb_0-eps-converted-to.pdf Graph
+ic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_0nubb_0-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_0nubb_0-eps-con
+verted-to.pdf  used on input line 518.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_100.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 24929 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_100-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:20
+(epstopdf)                    size: 10076 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_208Tl_100-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_208Tl_100.eps>
+(epstopdf)             \includegraphics on input line 526.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_208Tl_1
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_208Tl_100-eps-converted-to.pdf, id=3532
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_208Tl_100-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_208Tl_100-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_208Tl_100-eps-c
+onverted-to.pdf  used on input line 526.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_100.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 23111 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_100-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:20
+(epstopdf)                    size: 9578 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_0nubb_100-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_0nubb_100.eps>
+(epstopdf)             \includegraphics on input line 534.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_0nubb_1
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_0nubb_100-eps-converted-to.pdf, id=3533
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_0nubb_100-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_0nubb_100-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_0nubb_100-eps-c
+onverted-to.pdf  used on input line 534.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_300.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 27498 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_300-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:21
+(epstopdf)                    size: 10564 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_208Tl_300-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_208Tl_300.eps>
+(epstopdf)             \includegraphics on input line 542.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_208Tl_3
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_208Tl_300-eps-converted-to.pdf, id=3534
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_208Tl_300-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_208Tl_300-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_208Tl_300-eps-c
+onverted-to.pdf  used on input line 542.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_300.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 26077 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_300-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:21
+(epstopdf)                    size: 10293 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_0nubb_300-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_0nubb_300.eps>
+(epstopdf)             \includegraphics on input line 550.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_0nubb_3
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_0nubb_300-eps-converted-to.pdf, id=3535
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_0nubb_300-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_0nubb_300-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_0nubb_300-eps-c
+onverted-to.pdf  used on input line 550.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_400.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 26900 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_208
+Tl_400-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:21
+(epstopdf)                    size: 10334 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_208Tl_400-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_208Tl_400.eps>
+(epstopdf)             \includegraphics on input line 558.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_208Tl_4
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_208Tl_400-eps-converted-to.pdf, id=3536
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_208Tl_400-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_208Tl_400-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_208Tl_400-eps-c
+onverted-to.pdf  used on input line 558.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+Package epstopdf Info: Source file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_400.eps>
+(epstopdf)                    date: 2020-10-19 16:01:16
+(epstopdf)                    size: 25465 bytes
+(epstopdf)             Output file: <timedifference/fig_timediff/PintVSPexp_0nu
+bb_400-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-19 16:01:22
+(epstopdf)                    size: 10130 bytes
+(epstopdf)             Command: <repstopdf --outfile=timedifference/fig_timedif
+f/PintVSPexp_0nubb_400-eps-converted-to.pdf timedifference/fig_timediff/PintVSP
+exp_0nubb_400.eps>
+(epstopdf)             \includegraphics on input line 566.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./timedifference/fig_timediff/PintVSPexp_0nubb_4
+00-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<timedifference/fig_timediff/PintVSPexp_0nubb_400-eps-converted-to.pdf, id=3537
+, 569.12625pt x 497.86pt>
+File: timedifference/fig_timediff/PintVSPexp_0nubb_400-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use timedifference/fig_timediff/PintVSPexp_0nubb_400-eps-converted-to.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/PintVSPexp_0nubb_400-eps-c
+onverted-to.pdf  used on input line 566.
+(pdftex.def)             Requested size: 155.75829pt x 136.2548pt.
+[118 <./timedifference/fig_timediff/compare_sigma_cut_delta_t.pdf, page is rota
+ted 90 degrees>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<timedifference/fig_timediff/compare_sigma_cut_proba.pdf, id=3588, 569.12625pt 
+x 384.43625pt>
+File: timedifference/fig_timediff/compare_sigma_cut_proba.pdf Graphic file (typ
+e pdf)
+<use timedifference/fig_timediff/compare_sigma_cut_proba.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/compare_sigma_cut_proba.pd
+f  used on input line 600.
+(pdftex.def)             Requested size: 369.88582pt x 249.86299pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 625.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 625.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 625.
+
+[119]
+
+LaTeX Warning: Text page 120 contains only floats.
+
+
+Overfull \vbox (7.6889pt too high) has occurred while \output is active []
+
+
+[120 <./timedifference/fig_timediff/PintVSPexp_208Tl_0-eps-converted-to.pdf> <.
+/timedifference/fig_timediff/PintVSPexp_0nubb_0-eps-converted-to.pdf> <./timedi
+fference/fig_timediff/PintVSPexp_208Tl_100-eps-converted-to.pdf> <./timediffere
+nce/fig_timediff/PintVSPexp_0nubb_100-eps-converted-to.pdf> <./timedifference/f
+ig_timediff/PintVSPexp_208Tl_300-eps-converted-to.pdf> <./timedifference/fig_ti
+mediff/PintVSPexp_0nubb_300-eps-converted-to.pdf> <./timedifference/fig_timedif
+f/PintVSPexp_208Tl_400-eps-converted-to.pdf> <./timedifference/fig_timediff/Pin
+tVSPexp_0nubb_400-eps-converted-to.pdf>]
+<timedifference/fig_timediff/compare_sigma_cut_delta_t_T12.pdf, id=3645, 569.12
+625pt x 384.43625pt>
+File: timedifference/fig_timediff/compare_sigma_cut_delta_t_T12.pdf Graphic fil
+e (type pdf)
+<use timedifference/fig_timediff/compare_sigma_cut_delta_t_T12.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/compare_sigma_cut_delta_t_
+T12.pdf  used on input line 641.
+(pdftex.def)             Requested size: 409.88681pt x 276.88187pt.
+<timedifference/fig_timediff/compare_sigma_cut_proba_T12.pdf, id=3646, 569.1262
+5pt x 384.43625pt>
+File: timedifference/fig_timediff/compare_sigma_cut_proba_T12.pdf Graphic file 
+(type pdf)
+<use timedifference/fig_timediff/compare_sigma_cut_proba_T12.pdf>
+Package pdftex.def Info: timedifference/fig_timediff/compare_sigma_cut_proba_T1
+2.pdf  used on input line 648.
+(pdftex.def)             Requested size: 409.88681pt x 276.88187pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[121 <./timedifference/fig_timediff/compare_sigma_cut_proba.pdf, page is rotate
+d 90 degrees>]
+
+LaTeX Warning: Text page 122 contains only floats.
+
+
+Overfull \vbox (2.43341pt too high) has occurred while \output is active []
+
+
+[122 <./timedifference/fig_timediff/compare_sigma_cut_delta_t_T12.pdf, page is 
+rotated 90 degrees> <./timedifference/fig_timediff/compare_sigma_cut_proba_T12.
+pdf, page is rotated 90 degrees>] [123]) [124] [125]
+\openout2 = `commissioning/commissioning.aux'.
+
+
+(./commissioning/commissioning.tex [126
+
+
+
+]
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/waveform.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<commissioning/fig_commissioning/waveform.pdf, id=3809, 845.04686pt x 426.79132
+pt>
+File: commissioning/fig_commissioning/waveform.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/waveform.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/waveform.pdf  used on 
+input line 28.
+(pdftex.def)             Requested size: 418.25368pt x 211.23956pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+ [127]
+[128 <./commissioning/fig_commissioning/waveform.pdf>]
+<commissioning/fig_commissioning/equal_gains_Axel.pdf, id=3835, 569.12625pt x 3
+85.44pt>
+File: commissioning/fig_commissioning/equal_gains_Axel.pdf Graphic file (type p
+df)
+<use commissioning/fig_commissioning/equal_gains_Axel.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/equal_gains_Axel.pdf  
+used on input line 68.
+(pdftex.def)             Requested size: 334.60422pt x 226.61952pt.
+ [129 <./commissioning/fig_commissioning/equal_gains_Axel.pdf, page is rotated 
+90 degrees>]
+<commissioning/fig_commissioning/LI_1d_counts.pdf, id=3889, 569.12625pt x 277.0
+35pt>
+File: commissioning/fig_commissioning/LI_1d_counts.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/LI_1d_counts.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/LI_1d_counts.pdf  used
+ on input line 115.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 115--119
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<commissioning/fig_commissioning/LI_mean_ampl.pdf, id=3891, 569.12625pt x 277.0
+35pt>
+File: commissioning/fig_commissioning/LI_mean_ampl.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/LI_mean_ampl.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/LI_mean_ampl.pdf  used
+ on input line 134.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 134--138
+ [][] 
+ []
+
+[130] [131 <./commissioning/fig_commissioning/LI_1d_counts.pdf, page is rotated
+ 90 degrees> <./commissioning/fig_commissioning/LI_mean_ampl.pdf, page is rotat
+ed 90 degrees>]
+Underfull \hbox (badness 1286) in paragraph at lines 160--164
+[]\OT1/cmr/m/n/12 Each coaxial cable length was determined by taking into accou
+nt the
+ []
+
+[132]
+<commissioning/fig_commissioning/scheme_reflecto.pdf, id=4000, 738.76pt x 237.8
+8875pt>
+File: commissioning/fig_commissioning/scheme_reflecto.pdf Graphic file (type pd
+f)
+<use commissioning/fig_commissioning/scheme_reflecto.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/scheme_reflecto.pdf  u
+sed on input line 193.
+(pdftex.def)             Requested size: 138.02586pt x 44.4443pt.
+
+Overfull \hbox (12.5485pt too wide) in paragraph at lines 193--196
+ [][] 
+ []
+
+<commissioning/fig_commissioning/scheme_reflecto_1.pdf, id=4001, 738.76pt x 236
+.885pt>
+File: commissioning/fig_commissioning/scheme_reflecto_1.pdf Graphic file (type 
+pdf)
+<use commissioning/fig_commissioning/scheme_reflecto_1.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/scheme_reflecto_1.pdf 
+ used on input line 201.
+(pdftex.def)             Requested size: 138.02586pt x 44.25677pt.
+
+Overfull \hbox (12.5485pt too wide) in paragraph at lines 201--204
+ [][] 
+ []
+
+<commissioning/fig_commissioning/scheme_reflecto_2.pdf, id=4002, 738.76pt x 236
+.885pt>
+File: commissioning/fig_commissioning/scheme_reflecto_2.pdf Graphic file (type 
+pdf)
+<use commissioning/fig_commissioning/scheme_reflecto_2.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/scheme_reflecto_2.pdf 
+ used on input line 209.
+(pdftex.def)             Requested size: 138.02586pt x 44.25677pt.
+
+Overfull \hbox (12.5485pt too wide) in paragraph at lines 209--212
+ [][] 
+ []
+
+<commissioning/fig_commissioning/pulses_example.pdf, id=4004, 569.12625pt x 277
+.035pt>
+File: commissioning/fig_commissioning/pulses_example.pdf Graphic file (type pdf
+)
+<use commissioning/fig_commissioning/pulses_example.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/pulses_example.pdf  us
+ed on input line 229.
+(pdftex.def)             Requested size: 418.25368pt x 203.60347pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[133 <./commissioning/fig_commissioning/scheme_reflecto.pdf> <./commissioning/f
+ig_commissioning/scheme_reflecto_1.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/scheme_reflect
+o_1.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./commissioning/fig_commissioning/scheme_reflecto_2.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/scheme_reflect
+o_2.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+>]
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/normal_pulse_5
+.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowe
+d
+<commissioning/fig_commissioning/normal_pulse_5.pdf, id=4038, 845.04686pt x 284
+.52756pt>
+File: commissioning/fig_commissioning/normal_pulse_5.pdf Graphic file (type pdf
+)
+<use commissioning/fig_commissioning/normal_pulse_5.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/normal_pulse_5.pdf  us
+ed on input line 261.
+(pdftex.def)             Requested size: 292.77629pt x 98.57889pt.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/anormal_pulse.
+pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+<commissioning/fig_commissioning/anormal_pulse.pdf, id=4039, 845.04686pt x 284.
+52756pt>
+File: commissioning/fig_commissioning/anormal_pulse.pdf Graphic file (type pdf)
+
+<use commissioning/fig_commissioning/anormal_pulse.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/anormal_pulse.pdf  use
+d on input line 268.
+(pdftex.def)             Requested size: 292.77629pt x 98.57889pt.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/anormal_pulse_
+misco.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> a
+llowed
+<commissioning/fig_commissioning/anormal_pulse_misco.pdf, id=4040, 845.04686pt 
+x 284.52756pt>
+File: commissioning/fig_commissioning/anormal_pulse_misco.pdf Graphic file (typ
+e pdf)
+<use commissioning/fig_commissioning/anormal_pulse_misco.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/anormal_pulse_misco.pd
+f  used on input line 275.
+(pdftex.def)             Requested size: 292.77629pt x 98.57889pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[134 <./commissioning/fig_commissioning/pulses_example.pdf, page is rotated 90 
+degrees>] [135 <./commissioning/fig_commissioning/normal_pulse_5.pdf> <./commis
+sioning/fig_commissioning/anormal_pulse.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/anormal_pulse.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./commissioning/fig_commissioning/anormal_pulse_misco.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/anormal_pulse_
+misco.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/CFD_example_zo
+om.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allo
+wed
+<commissioning/fig_commissioning/CFD_example_zoom.pdf, id=4116, 845.04686pt x 5
+97.50786pt>
+File: commissioning/fig_commissioning/CFD_example_zoom.pdf Graphic file (type p
+df)
+<use commissioning/fig_commissioning/CFD_example_zoom.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/CFD_example_zoom.pdf  
+used on input line 333.
+(pdftex.def)             Requested size: 292.77629pt x 179.15634pt.
+
+Underfull \hbox (badness 1552) in paragraph at lines 337--337
+[]\OT1/cmr/m/n/10 Figure 5.8: |Graphical representation of the Constant Fractio
+n
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<commissioning/fig_commissioning/deltat.pdf, id=4121, 569.12625pt x 385.44pt>
+File: commissioning/fig_commissioning/deltat.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/deltat.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/deltat.pdf  used on in
+put line 356.
+(pdftex.def)             Requested size: 292.77629pt x 198.28914pt.
+<commissioning/fig_commissioning/CFD_study.pdf, id=4122, 569.12625pt x 385.44pt
+>
+File: commissioning/fig_commissioning/CFD_study.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/CFD_study.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/CFD_study.pdf  used on
+ input line 362.
+(pdftex.def)             Requested size: 292.77629pt x 198.28914pt.
+[136]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[137 <./commissioning/fig_commissioning/CFD_example_zoom.pdf> <./commissioning/
+fig_commissioning/deltat.pdf, page is rotated 90 degrees>]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/celerity.e
+ps>
+(epstopdf)                    date: 2020-10-23 02:21:17
+(epstopdf)                    size: 8487 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/celerity-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-23 02:21:20
+(epstopdf)                    size: 8737 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/celerity-eps-converted-to.pdf commissioning/fig_commissioning/celerity.ep
+s>
+(epstopdf)             \includegraphics on input line 385.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/celerity-eps-c
+onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
+1.5> allowed
+<commissioning/fig_commissioning/celerity-eps-converted-to.pdf, id=4196, 569.12
+625pt x 439.6425pt>
+File: commissioning/fig_commissioning/celerity-eps-converted-to.pdf Graphic fil
+e (type pdf)
+<use commissioning/fig_commissioning/celerity-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/celerity-eps-converted
+-to.pdf  used on input line 385.
+(pdftex.def)             Requested size: 292.77629pt x 226.17355pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/length_dif
+f.eps>
+(epstopdf)                    date: 2020-03-10 15:09:46
+(epstopdf)                    size: 10979 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/length_dif
+f-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-10 15:49:14
+(epstopdf)                    size: 9183 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/length_diff-eps-converted-to.pdf commissioning/fig_commissioning/length_d
+iff.eps>
+(epstopdf)             \includegraphics on input line 417.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/length_diff-ep
+s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<commissioning/fig_commissioning/length_diff-eps-converted-to.pdf, id=4198, 569
+.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/length_diff-eps-converted-to.pdf Graphic 
+file (type pdf)
+<use commissioning/fig_commissioning/length_diff-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/length_diff-eps-conver
+ted-to.pdf  used on input line 417.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 417--421
+ [][] 
+ []
+
+[138 <./commissioning/fig_commissioning/CFD_study.pdf, page is rotated 90 degre
+es>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/cut_biais.
+eps>
+(epstopdf)                    date: 2020-03-10 15:09:46
+(epstopdf)                    size: 14197 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/cut_biais-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-10 15:49:14
+(epstopdf)                    size: 11558 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/cut_biais-eps-converted-to.pdf commissioning/fig_commissioning/cut_biais.
+eps>
+(epstopdf)             \includegraphics on input line 438.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/cut_biais-eps-
+converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
+<1.5> allowed
+<commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf, id=4252, 569.1
+2625pt x 277.035pt>
+File: commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use commissioning/fig_commissioning/cut_biais-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/cut_biais-eps-converte
+d-to.pdf  used on input line 438.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 438--441
+ [][] 
+ []
+
+[139 <./commissioning/fig_commissioning/celerity-eps-converted-to.pdf>]
+[140 <./commissioning/fig_commissioning/length_diff-eps-converted-to.pdf> <./co
+mmissioning/fig_commissioning/cut_biais-eps-converted-to.pdf>] [141]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/attenuatio
+n_length.eps>
+(epstopdf)                    date: 2020-03-11 17:59:15
+(epstopdf)                    size: 20382 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/attenuatio
+n_length-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-11 18:00:07
+(epstopdf)                    size: 15873 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/attenuation_length-eps-converted-to.pdf commissioning/fig_commissioning/a
+ttenuation_length.eps>
+(epstopdf)             \includegraphics on input line 509.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/attenuation_le
+ngth-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
+ version <1.5> allowed
+<commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf, id=42
+99, 569.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf G
+raphic file (type pdf)
+<use commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/attenuation_length-eps
+-converted-to.pdf  used on input line 509.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 509--514
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[142]
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/clock_distribu
+tion_back_plain.pdf): PDF inclusion: found PDF version <1.6>, but at most versi
+on <1.5> allowed
+<commissioning/fig_commissioning/clock_distribution_back_plain.pdf, id=4308, 84
+5.04686pt x 398.3386pt>
+File: commissioning/fig_commissioning/clock_distribution_back_plain.pdf Graphic
+ file (type pdf)
+<use commissioning/fig_commissioning/clock_distribution_back_plain.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/clock_distribution_bac
+k_plain.pdf  used on input line 542.
+(pdftex.def)             Requested size: 376.42575pt x 177.43942pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<commissioning/fig_commissioning/time_offset.pdf, id=4310, 569.12625pt x 385.44
+pt>
+File: commissioning/fig_commissioning/time_offset.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/time_offset.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/time_offset.pdf  used 
+on input line 557.
+(pdftex.def)             Requested size: 292.77629pt x 198.28914pt.
+[143 <./commissioning/fig_commissioning/attenuation_length-eps-converted-to.pdf
+>]
+<commissioning/fig_commissioning/mean_distance.pdf, id=4328, 569.12625pt x 306.
+14375pt>
+File: commissioning/fig_commissioning/mean_distance.pdf Graphic file (type pdf)
+
+<use commissioning/fig_commissioning/mean_distance.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/mean_distance.pdf  use
+d on input line 567.
+(pdftex.def)             Requested size: 376.42575pt x 202.4946pt.
+ [144 <./commissioning/fig_commissioning/clock_distribution_back_plain.pdf> <./
+commissioning/fig_commissioning/time_offset.pdf, page is rotated 90 degrees>]) 
+[145 <./commissioning/fig_commissioning/mean_distance.pdf, page is rotated 90 d
+egrees>]
+\openout2 = `CobaltStudy/CobaltStudy.aux'.
+
+ (./CobaltStudy/CobaltStudy.tex [146
+
+
+
+] [147]
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_multi_refle
+ction.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> a
+llowed
+<commissioning/fig_commissioning/Co_multi_reflection.pdf, id=4449, 483.69685pt 
+x 369.88583pt>
+File: commissioning/fig_commissioning/Co_multi_reflection.pdf Graphic file (typ
+e pdf)
+<use commissioning/fig_commissioning/Co_multi_reflection.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_multi_reflection.pd
+f  used on input line 58.
+(pdftex.def)             Requested size: 227.62204pt x 174.06647pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[148] [149 <./commissioning/fig_commissioning/Co_multi_reflection.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 119.
+
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_decay_schem
+e.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allow
+ed
+<commissioning/fig_commissioning/Co_decay_scheme.pdf, id=4481, 845.04686pt x 59
+7.50786pt>
+File: commissioning/fig_commissioning/Co_decay_scheme.pdf Graphic file (type pd
+f)
+<use commissioning/fig_commissioning/Co_decay_scheme.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_decay_scheme.pdf  u
+sed on input line 128.
+(pdftex.def)             Requested size: 256.0748pt x 181.05894pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[150] [151 <./commissioning/fig_commissioning/Co_decay_scheme.pdf>]
+<commissioning/fig_commissioning/Co_setup.pdf, id=4507, 660.4675pt x 511.9125pt
+>
+File: commissioning/fig_commissioning/Co_setup.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/Co_setup.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_setup.pdf  used on 
+input line 173.
+(pdftex.def)             Requested size: 181.31166pt x 140.53136pt.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_setup_wall.
+pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+<commissioning/fig_commissioning/Co_setup_wall.pdf, id=4508, 455.2441pt x 256.0
+748pt>
+File: commissioning/fig_commissioning/Co_setup_wall.pdf Graphic file (type pdf)
+
+<use commissioning/fig_commissioning/Co_setup_wall.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_setup_wall.pdf  use
+d on input line 181.
+(pdftex.def)             Requested size: 249.8432pt x 140.53136pt.
+
+Overfull \hbox (49.08324pt too wide) in paragraph at lines 181--184
+ [][] 
+ []
+
+[152 <./commissioning/fig_commissioning/Co_setup.pdf> <./commissioning/fig_comm
+issioning/Co_setup_wall.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_setup_wall.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<commissioning/fig_commissioning/Co_energy_cut.pdf, id=4531, 569.12625pt x 369.
+38pt>
+File: commissioning/fig_commissioning/Co_energy_cut.pdf Graphic file (type pdf)
+
+<use commissioning/fig_commissioning/Co_energy_cut.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_energy_cut.pdf  use
+d on input line 258.
+(pdftex.def)             Requested size: 398.33858pt x 258.54732pt.
+ [153] [154 <./commissioning/fig_commissioning/Co_energy_cut.pdf, page is rotat
+ed 90 degrees>]
+<CobaltStudy/fig_CobaltStudy/ex_charge_distrib.pdf, id=4591, 569.12625pt x 385.
+44pt>
+File: CobaltStudy/fig_CobaltStudy/ex_charge_distrib.pdf Graphic file (type pdf)
+
+<use CobaltStudy/fig_CobaltStudy/ex_charge_distrib.pdf>
+Package pdftex.def Info: CobaltStudy/fig_CobaltStudy/ex_charge_distrib.pdf  use
+d on input line 328.
+(pdftex.def)             Requested size: 334.60422pt x 226.61952pt.
+<CobaltStudy/fig_CobaltStudy/ex_energy_distrib.pdf, id=4592, 569.12625pt x 385.
+44pt>
+File: CobaltStudy/fig_CobaltStudy/ex_energy_distrib.pdf Graphic file (type pdf)
+
+<use CobaltStudy/fig_CobaltStudy/ex_energy_distrib.pdf>
+Package pdftex.def Info: CobaltStudy/fig_CobaltStudy/ex_energy_distrib.pdf  use
+d on input line 336.
+(pdftex.def)             Requested size: 334.60422pt x 226.61952pt.
+ [155]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<CobaltStudy/fig_CobaltStudy/calib_energy_done.pdf, id=4601, 569.12625pt x 384.
+43625pt>
+File: CobaltStudy/fig_CobaltStudy/calib_energy_done.pdf Graphic file (type pdf)
+
+<use CobaltStudy/fig_CobaltStudy/calib_energy_done.pdf>
+Package pdftex.def Info: CobaltStudy/fig_CobaltStudy/calib_energy_done.pdf  use
+d on input line 356.
+(pdftex.def)             Requested size: 334.60422pt x 226.02937pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[156] [157 <./CobaltStudy/fig_CobaltStudy/ex_charge_distrib.pdf, page is rotate
+d 90 degrees> <./CobaltStudy/fig_CobaltStudy/ex_energy_distrib.pdf, page is rot
+ated 90 degrees>]
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_bkg_1.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<commissioning/fig_commissioning/Co_bkg_1.pdf, id=4707, 341.43306pt x 142.26378
+pt>
+File: commissioning/fig_commissioning/Co_bkg_1.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/Co_bkg_1.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_bkg_1.pdf  used on 
+input line 410.
+(pdftex.def)             Requested size: 150.56964pt x 62.73868pt.
+
+Overfull \hbox (25.09227pt too wide) in paragraph at lines 410--413
+ [][] 
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_bkg_2.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<commissioning/fig_commissioning/Co_bkg_2.pdf, id=4708, 284.52756pt x 142.26378
+pt>
+File: commissioning/fig_commissioning/Co_bkg_2.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/Co_bkg_2.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_bkg_2.pdf  used on 
+input line 418.
+(pdftex.def)             Requested size: 125.4747pt x 62.73868pt.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_bkg_3.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<commissioning/fig_commissioning/Co_bkg_3.pdf, id=4709, 341.43306pt x 142.26378
+pt>
+File: commissioning/fig_commissioning/Co_bkg_3.pdf Graphic file (type pdf)
+<use commissioning/fig_commissioning/Co_bkg_3.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_bkg_3.pdf  used on 
+input line 426.
+(pdftex.def)             Requested size: 150.56964pt x 62.73868pt.
+
+Overfull \hbox (25.09227pt too wide) in paragraph at lines 426--429
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[158 <./CobaltStudy/fig_CobaltStudy/calib_energy_done.pdf, page is rotated 90 d
+egrees>] [159 <./commissioning/fig_commissioning/Co_bkg_1.pdf> <./commissioning
+/fig_commissioning/Co_bkg_2.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_bkg_2.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./commissioning/fig_commissioning/Co_bkg_3.pdf
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_bkg_3.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_data_bk
+g.eps>
+(epstopdf)                    date: 2020-06-17 18:45:15
+(epstopdf)                    size: 10766 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/Co_data_bk
+g-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-06-17 18:45:22
+(epstopdf)                    size: 11204 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/Co_data_bkg-eps-converted-to.pdf commissioning/fig_commissioning/Co_data_
+bkg.eps>
+(epstopdf)             \includegraphics on input line 489.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_data_bkg-ep
+s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<commissioning/fig_commissioning/Co_data_bkg-eps-converted-to.pdf, id=4772, 569
+.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/Co_data_bkg-eps-converted-to.pdf Graphic 
+file (type pdf)
+<use commissioning/fig_commissioning/Co_data_bkg-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_data_bkg-eps-conver
+ted-to.pdf  used on input line 489.
+(pdftex.def)             Requested size: 460.08159pt x 223.96594pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 489--492
+ [][] 
+ []
+
+[160 <./commissioning/fig_commissioning/Co_data_bkg-eps-converted-to.pdf>]
+<commissioning/fig_commissioning/Co_ratioSB_distance.pdf, id=4792, 569.12625pt 
+x 277.035pt>
+File: commissioning/fig_commissioning/Co_ratioSB_distance.pdf Graphic file (typ
+e pdf)
+<use commissioning/fig_commissioning/Co_ratioSB_distance.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_ratioSB_distance.pd
+f  used on input line 520.
+(pdftex.def)             Requested size: 460.08159pt x 223.96594pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 520--522
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [161]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_deltat_
+distrib_ex.eps>
+(epstopdf)                    date: 2020-10-24 16:44:31
+(epstopdf)                    size: 11058 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/Co_deltat_
+distrib_ex-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-24 16:44:34
+(epstopdf)                    size: 9396 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/Co_deltat_distrib_ex-eps-converted-to.pdf commissioning/fig_commissioning
+/Co_deltat_distrib_ex.eps>
+(epstopdf)             \includegraphics on input line 621.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_deltat_dist
+rib_ex-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
+st version <1.5> allowed
+<commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf, id=
+4804, 569.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf
+ Graphic file (type pdf)
+<use commissioning/fig_commissioning/Co_deltat_distrib_ex-eps-converted-to.pdf>
+
+Package pdftex.def Info: commissioning/fig_commissioning/Co_deltat_distrib_ex-e
+ps-converted-to.pdf  used on input line 621.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 621--624
+ [][] 
+ []
+
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+ [162 <./commissioning/fig_commissioning/Co_ratioSB_distance.pdf, page is rotat
+ed 90 degrees>] [163 <./commissioning/fig_commissioning/Co_deltat_distrib_ex-ep
+s-converted-to.pdf>]
+Package epstopdf Info: Source file: <commissioning/fig_commissioning/Co_sigma_d
+istance.eps>
+(epstopdf)                    date: 2020-05-12 18:09:24
+(epstopdf)                    size: 13914 bytes
+(epstopdf)             Output file: <commissioning/fig_commissioning/Co_sigma_d
+istance-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-12 18:10:48
+(epstopdf)                    size: 12027 bytes
+(epstopdf)             Command: <repstopdf --outfile=commissioning/fig_commissi
+oning/Co_sigma_distance-eps-converted-to.pdf commissioning/fig_commissioning/Co
+_sigma_distance.eps>
+(epstopdf)             \includegraphics on input line 667.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./commissioning/fig_commissioning/Co_sigma_dista
+nce-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
+version <1.5> allowed
+<commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf, id=487
+0, 569.12625pt x 277.035pt>
+File: commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf Gr
+aphic file (type pdf)
+<use commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf>
+Package pdftex.def Info: commissioning/fig_commissioning/Co_sigma_distance-eps-
+converted-to.pdf  used on input line 667.
+(pdftex.def)             Requested size: 426.79134pt x 207.75882pt.
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 667--669
+ [][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 690.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Sigma' on input line 690.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 690.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 690.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [164 <./commissioning/fig_commissioning/Co_sigma_distance-eps-converted-to.pdf
+>]
+<CobaltStudy/fig_CobaltStudy/final_sigmas.pdf, id=4884, 569.12625pt x 385.44pt>
+
+File: CobaltStudy/fig_CobaltStudy/final_sigmas.pdf Graphic file (type pdf)
+<use CobaltStudy/fig_CobaltStudy/final_sigmas.pdf>
+Package pdftex.def Info: CobaltStudy/fig_CobaltStudy/final_sigmas.pdf  used on 
+input line 739.
+(pdftex.def)             Requested size: 292.77629pt x 198.28914pt.
+ [165])
+[166 <./CobaltStudy/fig_CobaltStudy/final_sigmas.pdf, page is rotated 90 degree
+s>]
+\openout2 = `conclusion/conclusion.aux'.
+
+ (./conclusion/conclusion.tex [167
+
+
+
+]
+Underfull \hbox (badness 1845) in paragraph at lines 27--31
+[]\OT1/cmr/m/n/12 During my PhD, I was also given the opportunity to participat
+e in
+ []
+
+) [168]
+\openout2 = `resume/resume.aux'.
+
+ (./resume/resume.tex) [169
+
+
+
+] (./thesis.bbl [170
 
 
 ]
@@ -1702,108 +4801,195 @@ Underfull \hbox (badness 1297) in paragraph at lines 14--17
 trinos.
  []
 
-[173]
-Underfull \hbox (badness 1436) in paragraph at lines 122--124
+[171]
+Underfull \hbox (badness 1231) in paragraph at lines 87--89
+[]\OT1/cmr/m/it/12 LEGEND: The Large Enriched Germanium Experiment forNeutrinol
+ess
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 150--152
 []\OT1/cmr/m/n/12 Estar database (nist).  [][]$\OT1/cmtt/m/n/12 http : / / phys
 ics . nist . gov / PhysRefData / Star /
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 133--135
+Underfull \hbox (badness 1097) in paragraph at lines 161--163
 []\OT1/cmr/m/n/12 Xcom database (nist).  [][]$\OT1/cmtt/m/n/12 http : / / physi
 cs . nist . gov / PhysRefData / Xcom /
  []
 
-[174]
-Underfull \hbox (badness 2409) in paragraph at lines 218--224
+[172]
+Underfull \hbox (badness 2409) in paragraph at lines 246--252
 \OT1/cmr/m/it/12 SuperNEMO et impact sur la recherche de la d^^Secroissance du 
 82Se
  []
 
-) [175]
+[173]) [174]
 \openout2 = `Abstract/Abstract.aux'.
 
  (./Abstract/Abstract.tex
-Package mdframed Info: mdframed works in twoside mode on input line 5.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 766.80179pt, 35.56593pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=766.80179pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-63.96466pt
+* \headheight=14.5pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=92.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Underfull \hbox (badness 7777) in paragraph at lines 26--32
-[]\OT1/cmr/m/n/10 La sen-si-bilit^^Se du d^^Semonstrateur ^^Ra
+LaTeX Font Info:    Try loading font information for OT1+rm on input line 11.
+LaTeX Font Info:    No file OT1rm.fd. on input line 11.
+
+
+LaTeX Font Warning: Font shape `OT1/rm/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 11.
+
+<Abstract/PHENIICS.jpeg, id=4981, 212.211pt x 48.9465pt>
+File: Abstract/PHENIICS.jpeg Graphic file (type jpg)
+<use Abstract/PHENIICS.jpeg>
+Package pdftex.def Info: Abstract/PHENIICS.jpeg  used on input line 23.
+(pdftex.def)             Requested size: 302.23543pt x 69.70915pt.
+Package mdframed Info: mdframed works in twoside mode on input line 28.
+
+Underfull \hbox (badness 5817) in paragraph at lines 34--35
+[]\OT1/cmr/bx/n/12 Mots cl^^Ses: \OT1/rm/m/n/10 Neutrino, Double d^^Sesint^^Seg
+ration b^eta, SuperNEMO, Simulation Monte-Carlo,
  []
 
 
-Underfull \hbox (badness 5726) in paragraph at lines 33--36
-[]\OT1/cmr/m/n/10 Le bruit de fond in-terne le plus
- []
-
-Package mdframed Info: Not enough space on this page on input line 49.
-Package mdframed Info: mdframed works in twoside mode on input line 51.
-
-Underfull \hbox (badness 1215) in paragraph at lines 54--55
-[]\OT1/cmr/bx/n/12 Title: \OT1/cmr/m/n/10 Study of $[]$Tl background rejection 
-influence on the neutrinoless double
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+[]\OT1/rm/m/n/10 Les exp^^Seriences NEMO font par-tie des
  []
 
 
-Underfull \vbox (badness 3058) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 49--55
+[]\OT1/rm/m/n/10 La sen-si-bilit^^Se du d^^Semonstrateur ^^Ra la
+ []
 
- [176
 
-]
-Package mdframed Info: Not enough space on this page on input line 96.
-LaTeX Font Info:    Try loading font information for OT1+fvs on input line 101.
+Underfull \hbox (badness 5175) in paragraph at lines 65--69
+[]\OT1/rm/m/n/10 Une ^^Setude fi-nale visant ^^Ra d^^Seterminer la
+ []
 
-LaTeX Font Info:    No file OT1fvs.fd. on input line 101.
+[175
 
+
+ <./Abstract/PHENIICS.jpeg>]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 766.80179pt, 35.56593pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=766.80179pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-63.96466pt
+* \headheight=14.5pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=92.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: Abstract/PHENIICS.jpeg Graphic file (type jpg)
+<use Abstract/PHENIICS.jpeg>
+Package pdftex.def Info: Abstract/PHENIICS.jpeg  used on input line 91.
+(pdftex.def)             Requested size: 302.23543pt x 69.70915pt.
+Package mdframed Info: mdframed works in twoside mode on input line 96.
+
+Underfull \hbox (badness 5189) in paragraph at lines 102--103
+[]\OT1/cmr/bx/n/12 Keywords: \OT1/rm/m/n/10 Neutrino, Double beta decay, SuperN
+EMO, Monte-Carlo simulation, software
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+fvs on input line 147.
+
+LaTeX Font Info:    No file OT1fvs.fd. on input line 147.
 
 LaTeX Font Warning: Font shape `OT1/fvs/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 101.
+(Font)              using `OT1/cmr/m/n' instead on input line 147.
 
 
-Overfull \hbox (56.9055pt too wide) in paragraph at lines 105--107
+Overfull \hbox (56.9055pt too wide) in paragraph at lines 151--151
 []|[]| 
  []
 
+<Abstract/e.pdf, id=4990, 237.88875pt x 315.1775pt>
+File: Abstract/e.pdf Graphic file (type pdf)
+<use Abstract/e.pdf>
+Package pdftex.def Info: Abstract/e.pdf  used on input line 151.
+(pdftex.def)             Requested size: 47.02878pt x 62.3116pt.
 
-Overfull \hbox (9.70972pt too wide) in paragraph at lines 102--108
+Overfull \vbox (23.16168pt too high) detected at line 151
+ []
+
+)
+Overfull \hbox (18.57814pt too wide) in paragraph at lines 148--186
 [][] 
  []
 
-) [177]
+[176
 
-Package caption Warning: Unused \captionsetup[figure] on input line 64.
+ <./Abstract/e.pdf>]
+
+Package caption Warning: Unused \captionsetup[tabular] on input line 77.
 See the caption package documentation for explanation.
 
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 65.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: Unused \captionsetup[table] on input line 66.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: Unused \captionsetup[subtable] on input line 67.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: Unused \captionsetup[tabular] on input line 68.
-See the caption package documentation for explanation.
-
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 (./thesis.aux (./remerciements/remerciements.aux)
 (./introduction/introduction.aux) (./neutrinophysics/neutrinophysics.aux)
 (./SNdemonstrator/SNdemonstrator.aux) (./Sensitivity/Sensitivity.aux)
 (./timedifference/timedifference.aux) (./commissioning/commissioning.aux)
 (./CobaltStudy/CobaltStudy.aux) (./conclusion/conclusion.aux)
 (./resume/resume.aux) (./Abstract/Abstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1942C1CF47AAA17801493387A55193A3;94.
+(rerunfilecheck)             Checksum: 851BD054AF42487AF8F7C2E740A6FF40;9273.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1811,397 +4997,46 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 23385 strings out of 492982
- 395635 string characters out of 6134896
- 624360 words of memory out of 5000000
- 26468 multiletter control sequences out of 15000+600000
- 540141 words of font info for 60 fonts, out of 8000000 for 9000
+ 35230 strings out of 492982
+ 667708 string characters out of 6134896
+ 805451 words of memory out of 5000000
+ 37424 multiletter control sequences out of 15000+600000
+ 548379 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,43p,10463b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.207} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.206} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.7.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.7.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.7.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.6.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.6.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.6.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.6.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.6.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.6.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.5.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.5.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.10} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.9} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.8} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.1} has been referenced but does not exist,
- replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (12 pages, 236774 bytes).
+ 64i,18n,71p,10463b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eule
+r/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvsb8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmssdc10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex
+-gyre/qtmb.pfb>
+Output written on thesis.pdf (176 pages, 49716295 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
- 186 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5226 PDF objects out of 6186 (max. 8388607)
+ 3460 compressed objects within 35 object streams
+ 665 named destinations out of 1000 (max. 500000)
+ 1715 words of extra memory for PDF output out of 10000 (max. 10000000)
 
